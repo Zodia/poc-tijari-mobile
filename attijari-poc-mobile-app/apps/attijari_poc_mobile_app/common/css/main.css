@@ -1,0 +1,138 @@
+* {
+	text-shadow: none;
+}
+
+html, body {
+	height: 100%; 
+	margin: 0px !important;
+}
+
+#page {
+	overflow: hidden;
+}
+
+#header {
+	height: 88px;
+    background-color: #F7F7F7;
+    position: absolute;
+    width: 100%;
+}
+
+#header .left {
+	float: left;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	height: 48px;
+	display:table-cell;
+}
+
+#header .right {
+	float: right;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	display: inline-block;
+	height: 48px;
+	display:table-cell;
+}
+
+#header .right i, #header .left i, #header .left span {
+	width: inherit;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#header .left span {
+	position: inherit;
+	vertical-align: sub;
+}
+
+#header .center {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 48px;
+}
+
+#footer {
+	height: 88px;
+	background-color: #F7F7F7;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+}
+
+#footer .footer-limit {
+	width: 50%;
+	margin: 0 auto;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#footer .footer-limit .ui-grid-c {
+	vertical-align: middle;
+	transform: translateY(17%);
+}
+
+#footer .footer-limit .ui-grid-c div p {
+	margin: 0;
+	font-size: 15px;
+}
+
+#footer .footer-actions {
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#footer .footer-actions p.label {
+	margin: 0;
+}
+
+#menu i {
+	transform: translate(30%, 6%);
+}
+
+#menu span {
+	transform: translate(15%, -15%);
+	display: inline-block;
+}
+
+#menu .menu-profile i {
+	transform: inherit;
+}
+
+#menu .menu-profile span {
+	transform: inherit;
+}
+
+#menu .menu-profile .fa-user {
+	position: absolute;
+	transform: inherit;
+	transform: translate(-113%, 8%);
+	color: #EDEDED;
+}
+
+#menu .menu-profile span {
+	position: absolute;
+}
+
+#menu .menu-profile span.name {
+	top: 24%;
+	font-size: 22px;
+}
+
+#menu .menu-profile span.email {
+	bottom: 25%;
+	font-size: 15px;
+}
+
+#pageContent {
+	overflow: hidden;
+}

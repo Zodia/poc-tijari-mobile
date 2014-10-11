@@ -1,0 +1,21 @@
+.tablist-left {
+    width: 30%;
+    display: inline-block;
+}
+.tablist-content {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.customer-view-content{
+	
+	margin-top: 90px;
+}
+#allTable{
+	width: 100%;
+	
+}
+
+
+

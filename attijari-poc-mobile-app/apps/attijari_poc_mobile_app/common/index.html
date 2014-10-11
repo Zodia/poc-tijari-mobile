@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="utf-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		
+   		<title>attijari_mobile_app</title>
+   		
+   		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.inline-svg-1.4.4.min.css">
+   		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.4.css">
+   		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.4.4.css">
+   		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.icons-1.4.4.css">
+   		<link rel="stylesheet" href="css/jquery.mmenu.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css">
+   		
+   		<link rel="stylesheet" href="css/main.css">
+   		
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   		<script src="js/jquery-2.1.1.js"></script>
+   		<script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
+   		<script src="js/jquery.mmenu.min.js"></script>
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>
+   	</head>
+   	<body style="display: none;">
+   		<div data-role="page" id="page">
+			<div data-role="header" id="header" data-position="fixed">
+				<div class="right">
+					<a class="menu-display" href="#menu">
+						<i class="fa fa-align-justify fa-fw fa-2x"></i>
+					</a>
+				</div>
+				<div class="left">
+					<i class="fa fa-angle-left fa-fw fa-2x"></i>
+					<span class="back">Home</span>
+				</div>
+				<div class="center">
+					<p class="current-title">Attijari Mobile App</p>
+				</div>
+			</div>
+			
+			<div data-role="content" id="pageContent"></div>
+			
+			<div data-role="footer" id="footer"data-position="fixed">
+				<div class="footer-limit">
+					<div class="ui-grid-c">
+						<div id="homeAction" class="ui-block-a">
+							<i class="fa fa-home fa-fw fa-2x"></i>
+							<p class="label">Home</p>
+						</div>
+						<div id="messageAction" class="ui-block-b">
+							<i class="fa fa-envelope-o fa-fw fa-2x"></i>
+							<p class="label">Messages</p>
+						</div>
+						<div id="mortgageAction" class="ui-block-c">
+							<i class="fa fa-cogs fa-fw fa-2x"></i>
+							<p class="label">Mortgage simulator</p>
+						</div>
+						<div id="askAction" class="ui-block-d">
+							<i class="fa fa-user fa-fw fa-2x"></i>
+							<p class="label">Ask an expert</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<nav id="menu">
+				<ul>
+					<li>
+						<a class="menu-profile">
+							<i class="fa fa-circle fa-fw fa-5x"></i>
+							<i class="fa fa-user fa-fw fa-4x"></i> 
+							<span class="name">Mehdi Bendriss</span>
+							<span class="email">mehdiben@ma.ibm.com</span>
+						</a>
+					</li>
+					<li>
+						<a class="menu-preferences">
+							<i class="fa fa-cog fa-fw fa-2x"></i> 
+							<span>Preferences</span>
+						</a>
+					</li>
+					<li>
+						<a class="menu-logout">
+							<i class="fa fa-sign-out fa-fw fa-2x"></i> 
+							<span>Logout</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+   		</div>		
+   	</body>
+</html>

@@ -1,0 +1,35 @@
+<div id="mortgageSimulator" align="center" style="margin:0 auto;
+margin-left:auto;
+margin-right:auto;
+align:center;
+text-align:center;"> 
+
+	<div data-role="header" id="header" data-position="absolute">
+		<h1 style="text-align: center">Mortgage Simulator</h1>
+	</div>
+			
+<form name=first> 
+			<label for="loanAmountField">Loan Amounts:</label>
+			<input type="text" name="loanAmountField" id="loanAmountField" style="text-align: center"  onkeyup=checnum(this)>
+			<br>
+			<label for="interestRatesField">Interest Rates:</label>
+			<input type="text" name="interestRatesField" id="interestRatesField" style="text-align: center"  onkeyup=checnum(this)> 
+			<br>
+			<label for="TermField">Term (Years):	   
+			</label>
+			<input type="text" name="TermField" id="TermField" style="text-align: center"  onkeyup=checnum(this)>
+			<br><br>
+			<button class="mybutton" id="submitButton" onclick=loan()>Submit</button>	
+			<br><br><br>
+			<label for="monthlyPaymentField">Monthly Payment EMI:</label>
+			<input type="text" name="monthlyPaymentField" id="monthlyPaymentField" style="text-align: center" > 
+			<br>
+			<label for="monthlyAverageInterestField">Monthly Average Interest:</label>
+			<input type="text" name="monthlyAverageInterestField" id="monthlyAverageInterestField" style="text-align: center" >
+			<br>
+			<label for="monthlyInterestField">Monthly Interest:</label>
+			<input type="text" name="monthlyInterestField" id="monthlyInterestField" style="text-align: center" >	
+</form>	
+</div>
+
+<script src="js/pages/mortgage-simulator-view.js"></script>

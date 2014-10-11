@@ -1,0 +1,96 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pages/property-view.css">
+
+<div data-role="tabs">
+	<ul data-role="listview" data-inset="true" class="tablist-left">
+		<li><a id="AddBuil" class="translate" href="#one" data-ajax="false">Address and building</a></li>
+		<li><a href="#two" data-ajax="false">Property details</a></li>
+		<li><a href="#three" data-ajax="false">Evaluation details</a></li>
+	</ul>
+	<div id="one" class="ui-body-d tablist-content">
+		<div class="ui-field-contain">
+			<label for="select-native-1" style="width: 20%; height: 100%;">Already
+				an owner?</label> <select name="select-native-1" id="select-native-1">
+				<option value="small">Yes</option>
+				<option value="medium">No</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="select-native-1">New/Existing</label> <select
+				name="select-native-1" id="select-native-1">
+				<option value="small">New</option>
+				<option value="medium">Existing</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="textarea-1">Property Address</label>
+			<textarea cols="40" rows="8" name="textarea-1" id="textarea-1"
+				placeholder="Address"></textarea>
+		</div>
+	</div>
+	<div id="two" class="tablist-content">
+		<div class="ui-field-contain">
+			<label for="select-native-1" style="width: 20%; height: 100%;">Property
+				type</label> <select name="select-native-1" id="select-native-1">
+				<option value="small">Apartment</option>
+				<option value="medium">Villa</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="select-native-1" style="width: 20%; height: 100%;">Rooms</label>
+			<select name="select-native-1" id="select-native-1">
+				<option value="small">Studio</option>
+				<option value="medium">1 BR</option>
+				<option value="medium">2 BR</option>
+				<option value="medium">3 BR</option>
+				<option value="medium">4 BR</option>
+				<option value="medium">>4 BR</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="select-native-1" style="width: 20%; height: 100%;">Usage</label>
+			<select name="select-native-1" id="select-native-1">
+				<option value="small">Personal</option>
+				<option value="medium">Commercial</option>
+				<option value="medium">For rent</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="textinput-1">Liveable Area</label> <input
+				name="textinput-1" id="textinput-1" value="110 sqm" type="text">
+		</div>
+		<div class="ui-field-contain">
+			<label for="textinput-1">Built Area</label> <input name="textinput-1"
+				id="textinput-1" placeholder="Text input" value="117 sqm"
+				type="text">
+		</div>
+	</div>
+	<div id="three" class="tablist-content">
+		<div class="ui-field-contain">
+			<label for="select-native-1" style="width: 20%; height: 100%;">Existing
+				evaluation</label> <select name="select-native-1" id="select-native-1">
+				<option value="small">No</option>
+				<option value="medium">Yes</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="textinput-1">Evaluation sum (MAD)</label> <input
+				name="textinput-1" id="textinput-1" value="420,000" type="text">
+		</div>
+	</div>
+</div>
+<div data-type="horizontal">
+	<button id="customer_call"
+		style="width:30%; float: left; background-color: #515151; color: white;"
+		class="ui-btn">Back</button>
+	<button id="cancel"
+		style="width:30%;margin-left:5%;margin-right:5%; float: left; background-color: #515151; color: white;"
+		class="ui-btn">Cancel</button>
+	<button id="doc_call"
+		style="width:30%; float: right; background-color: #515151; color: white;"
+		class="ui-btn">Next</button>
+</div>
+<br>
+<script src="js/pages/property-view.js"></script>
+<script src="../jqueryMobile/jquery.mobile-1.4.4.js"></script>
+<link href="../css/jquery.mobile.min.css" rel="stylesheet">
