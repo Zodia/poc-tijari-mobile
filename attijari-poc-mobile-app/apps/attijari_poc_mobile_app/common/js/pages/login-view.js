@@ -7,7 +7,6 @@ $( document ).ready(function() {
     	$("#dialog").hide();
     });
 
-
 });
 
 $("#buttongo").on("click",function(){
