@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-
+	
 	$("#dialog").hide();	
-
+	
 	$("#dialog").click(function () {
         $(this).dialog('close');
     	$("#dialog").hide();
@@ -14,10 +14,10 @@ $("#buttongo").on("click",function(){
   //alert(login);
 	if($('#login').val()=="demo" && $('#password').val()=="demo"  )
 	{
-	alert("success");
+		$(".header").show();
+		$(".footer").show();	
 	
-	//$.mobile.loadPage("pages/existing-or-new-custemer.html");
-		$("#pageContent").load("pages/existing-or-new-custemer.html", function () {
+		$("#pageContent").load("pages/customer-entry-view.html", function () {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 		
@@ -25,7 +25,6 @@ $("#buttongo").on("click",function(){
 	}
 	else
 	{
-		//alert("failure");
 		$("#dialog").show();
 		$("#dialog").shake();
 	}
