@@ -40,7 +40,7 @@ html, body {
 	display:table-cell;
 }
 
-#header .right i, #header .left i, #header .left span {
+#header .right i, #header .left i {
 	width: inherit;
 	position: relative;
 	top: 50%;
@@ -48,8 +48,8 @@ html, body {
 }
 
 #header .left span {
-	position: inherit;
-	vertical-align: sub;
+	/*position: inherit;
+	vertical-align: sub;*/
 }
 
 #header .center {

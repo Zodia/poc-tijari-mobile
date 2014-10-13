@@ -13,17 +13,10 @@ function wlCommonInit () {
 	
 	// Common initialization code goes here
 	
-	$(".myButton").on ("click", function () {
-		$("#pageContent").load("pages/splash-view.html", function () {
-	        $(this).enhanceWithin(); /* apply styles */
-	    });
-	});
-	$("#pageContent").load("pages/splash-view.html", function () {
-        $(this).enhanceWithin(); /* apply styles */
-    });
-	
 	$.mobile.linkBindingEnabled = true;
 	$.mobile.ajaxEnabled = true;
+	
+	loadPage ("pages/splash-view.html");
 	
 	/* Navigation drawer menu */
 	$(function () {
@@ -33,4 +26,22 @@ function wlCommonInit () {
 		    direction: 'left'
 		});
 	});
+	
+	$("#homeAction").on ("click", function () {
+		loadPage ("pages/customer-entry-view.html");
+	});
+	
+	$("#notificationsAction").on ("click", function () {
+		loadPage ("pages/notifications-view.html");
+	});
+	
+	$("#mortgageAction").on ("click", function () {
+		loadPage ("pages/mortgage-simulator-view.html");
+	});
 }
+
+function loadPage (url) {
+	$("#pageContent").load(url, function () {
+        $(this).enhanceWithin(); /* apply styles */
+    });
+} 

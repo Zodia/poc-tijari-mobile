@@ -6,7 +6,6 @@
    		
    		<title>attijari_mobile_app</title>
    		
-   		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.inline-svg-1.4.4.min.css">
    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.4.css">
    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.4.4.css">
    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.icons-1.4.4.css">
@@ -14,14 +13,6 @@
    		<link rel="stylesheet" href="css/font-awesome.min.css">
    		
    		<link rel="stylesheet" href="css/main.css">
-   		
-   		<script>window.$ = window.jQuery = WLJQ;</script>
-   		<script src="js/jquery-2.1.1.js"></script>
-   		<script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
-   		<script src="js/jquery.mmenu.min.js"></script>
-   		<script src="js/initOptions.js"></script>
-   		<script src="js/main.js"></script>
-   		<script src="js/messages.js"></script>
    	</head>
    	<body style="display: none;">
    		<div data-role="page" id="page">
@@ -32,8 +23,10 @@
 					</a>
 				</div>
 				<div class="left">
-					<i class="fa fa-angle-left fa-fw fa-2x"></i>
-					<span class="back">Home</span>
+					<a class="list-group-item" href="">
+						<i class="fa fa-angle-left fa-fw fa-2x"></i>
+						&nbsp;<span class="back">Home</span>
+					</a>
 				</div>
 				<div class="center">
 					<p class="current-title">Attijari Mobile App</p>
@@ -49,7 +42,7 @@
 							<i class="fa fa-home fa-fw fa-2x"></i>
 							<p class="label">Home</p>
 						</div>
-						<div id="messageAction" class="ui-block-b">
+						<div id="notificationsAction" class="ui-block-b">
 							<i class="fa fa-envelope-o fa-fw fa-2x"></i>
 							<p class="label">Messages</p>
 						</div>
@@ -89,6 +82,14 @@
 					</li>
 				</ul>
 			</nav>
-   		</div>		
+   		</div>
+   		
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   		<script src="js/jquery-2.1.1.js"></script>
+   		<script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
+   		<script src="js/jquery.mmenu.min.js"></script>
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>		
    	</body>
 </html>

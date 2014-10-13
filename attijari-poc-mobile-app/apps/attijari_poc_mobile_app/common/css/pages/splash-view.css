@@ -33,6 +33,17 @@
 	margin-top: 35px;
 }
 
+/* switch toggle */
+.ui-bar-a, 
+.ui-page-theme-a .ui-bar-inherit, 
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit, 
+html body .ui-group-theme-a .ui-bar-inherit {
+	width: 150px;
+	display: block;
+	margin: 0 auto; 
+}
+
 .logo {
     width: 150px;
     height: 150px;

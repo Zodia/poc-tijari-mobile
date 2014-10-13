@@ -5,18 +5,11 @@
 	<div class="splash-content">
 		<img class="logo" src="images/logo.png" />
 		<form class="language-form">
-			<fieldset data-role="controlgroup">
-		     	<input type="radio" name="language" id="language-1" value="Arabic" checked="checked" />
-		     	<label for="language-1">Arabic</label>
-		
-		     	<input type="radio" name="language" id="language-2" value="French" />
-		     	<label for="language-2">Français</label>
-		
-		     	<input type="radio" name="language" id="language-3" value="English"  />
-		     	<label for="language-3">English</label>
-		     	
-		     	<a href="#" data-role="button" data-inline="true" data-theme="b" id="loginAction">Login</a>
-			</fieldset>
+			<select name="flip" id="flip" data-role="slider">
+				<option value="french">Français</option>
+				<option value="arabic">العربية</option>
+			</select>
+			<a href="#" data-role="button" data-inline="true" data-theme="b" id="loginAction">Login</a>
 		</form>
 	</div>
 </div>
