@@ -13,8 +13,8 @@ $("#buttongo").on("click",function(){
   //alert(login);
 	if($('#login').val()=="demo" && $('#password').val()=="demo"  )
 	{
-		$(".header").show();
-		$(".footer").show();	
+		$("#header").show();
+		$("#footer").show();	
 	
 		$("#pageContent").load("pages/customer-entry-view.html", function () {
 			$(this).enhanceWithin(); /* apply styles */
