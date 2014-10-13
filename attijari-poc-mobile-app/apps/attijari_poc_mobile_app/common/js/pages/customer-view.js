@@ -8,3 +8,8 @@ $("#proprety_call").on ("click", function () {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
+
+$(".current-title").text ("Customer View");
+$(".left").on ("click", function () {
+	loadPage ("pages/customer-view.html"); // "pages/splash-view.html"
+});
