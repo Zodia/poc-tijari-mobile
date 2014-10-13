@@ -1,9 +1,10 @@
 $( document ).ready(function() {
 	
 	$("#dialog").hide();	
-	
+	//$("#header").show();
+	//$("#footer").show();
 	$("#dialog").click(function () {
-        $(this).dialog('close');
+        //$(this).dialog('close');
     	$("#dialog").hide();
     });
 
@@ -24,8 +25,11 @@ $("#buttongo").on("click",function(){
 	}
 	else
 	{
+		
+	
+		$( "#dialog").dialog();
 		$("#dialog").show();
-		$("#dialog").shake();
+		
 	}
 });
 
