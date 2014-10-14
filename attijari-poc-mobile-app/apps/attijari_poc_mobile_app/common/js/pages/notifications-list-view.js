@@ -40,3 +40,13 @@ $(function() {
         })
     })
 });
+
+$("#unread-notifications").addClass ($.mobile.activeBtnClass);
+
+$("#unread-notifications").on ("click", function () {
+	
+});
+
+$("#all-notifications").on ("click", function () {
+	
+});

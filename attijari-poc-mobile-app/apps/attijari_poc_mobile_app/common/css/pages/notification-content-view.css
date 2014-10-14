@@ -1,0 +1,81 @@
+#splash-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #F0F0F0;
+}
+
+/*.splash-content {
+	width: 50%;
+	top: 0;
+	left: 25%;
+	position: absolute;
+	margin: 0 auto;
+}*/
+
+.language-form {
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	position: absolute;
+	margin: 0 auto;
+}
+
+.language-form #loginAction {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	margin-top: 35px;
+}
+
+/* switch toggle */
+.ui-bar-a, 
+.ui-page-theme-a .ui-bar-inherit, 
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit, 
+html body .ui-group-theme-a .ui-bar-inherit {
+	width: 150px;
+	display: block;
+	margin: 0 auto; 
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    left: 42%;
+    animation: move 15s infinite;
+    -webkit-animation: move 15s infinite;
+}
+
+@-webkit-keyframes move { 
+    3% {
+        top: calc(30% - 25px); 
+        opacity: 1;
+    }
+    3.5% {
+        top: calc(30% - 30px); 
+        opacity: 1;
+    }
+    4% {
+        top: calc(30% - 25px); 
+        opacity: 1;
+    }
+    4.5% {
+        top: calc(30% - 28px); 
+        opacity: 1;
+    }
+    5% {
+        top: calc(30% - 25px); 
+        opacity: 1;
+    }
+    100% {
+        top: calc(30% - 25px); 
+        opacity: 0;
+    }
+}

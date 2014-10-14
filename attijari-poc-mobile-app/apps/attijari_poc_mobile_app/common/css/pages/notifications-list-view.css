@@ -46,6 +46,18 @@
 	-o-animation: fall 15s infinite;
 }
 
+.notifications-content .notifications-new-all-switch a {
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 40px;
+}
+
+.notifications-content .notifications-new-all-switch a i {
+	height: 40px;
+	line-height: 40px;
+}
+
 .ui-listview > li p.notification-core {
 	display: block;
 	max-height: 32px;
@@ -53,7 +65,7 @@
 	white-space: initial;
 }
 
-.ui-listview > li p.notification-core:after {
+.ui-listview > li p.notification-core::after {
 	content: ' ...';
 }
 
@@ -98,31 +110,4 @@
 	background-image: url("../../images/mehdi.jpg");
 	float: left;
 	margin-right: 15px; 
-}
-
-@-webkit-keyframes fall { 
-    3% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    3.5% {
-        top: calc(30% - 30px); 
-        opacity: 1;
-    }
-    4% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    4.5% {
-        top: calc(30% - 28px); 
-        opacity: 1;
-    }
-    5% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    100% {
-        top: calc(30% - 25px); 
-        opacity: 0;
-    }
 }

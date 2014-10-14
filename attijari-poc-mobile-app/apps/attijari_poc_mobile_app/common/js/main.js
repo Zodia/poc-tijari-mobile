@@ -1,3 +1,4 @@
+var customer_index = -1;
 
 var  customers = [
 			{
@@ -91,11 +92,9 @@ var  customers = [
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						} ]
-			} ];
+			} 
+];
 	
-
-
-
 
 function wlCommonInit () {
 	/*
@@ -111,21 +110,6 @@ function wlCommonInit () {
 	 */
 	
 	// Common initialization code goes here
-	
-	
-	///////////////////////////////////////////////
-	var customer_index = -1;
-	
-	
-	
-	
-	
-	///////////////////////////////////////////////
-	
-
-    //////////////////////////////////////////////
-	
-	
 	
 	$.mobile.linkBindingEnabled = true;
 	$.mobile.ajaxEnabled = true;
@@ -146,7 +130,7 @@ function wlCommonInit () {
 	});
 	
 	$("#notificationsAction").on ("click", function () {
-		loadPage ("pages/notifications-view.html");
+		loadPage ("pages/notifications-list-view.html");
 	});
 	
 	$("#mortgageAction").on ("click", function () {
@@ -158,13 +142,8 @@ function loadPage (url) {
 	$("#pageContent").load(url, function () {
         $(this).enhanceWithin(); /* apply styles */
     });
-	
-	
-	
-	
 } 
-function  getusers(){
 
+function  getUsers (){
 	return  customers	;	
-}	
-
+}
