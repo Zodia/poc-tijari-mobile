@@ -11,12 +11,11 @@ $("#cancel").on ("click", function () {
 });
 
 $(".current-title").text ("Properties list");
-$(".left .back").text("Properties List");
+$(".left .back").text("Customer details");
 $(".left .back").on ("click", function () {
-	loadPage ("pages/custormer-view.html");
-});
-$(".left").on ("click", function () {
-	loadPage ("pages/properties-listview.html");
+	$("#pageContent").load("pages/customer-view.html", function () {
+		$(this).enhanceWithin(); /* apply styles */
+	});
 });
 
 $('#listProperties li').on('click', function (){

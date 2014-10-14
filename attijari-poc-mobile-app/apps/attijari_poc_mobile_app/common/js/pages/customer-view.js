@@ -10,8 +10,9 @@ $("#proprety_call").on ("click", function () {
 });
 
 $(".current-title").text ("Customer View");
-$(".left").on ("click", function () {
-	loadPage ("pages/customer-view.html"); // "pages/splash-view.html"
+$(".left .back").text ("New/Existing");
+$(".left .back").on ("click", function () {
+	loadPage ("pages/customer-entry-view.html"); // "pages/splash-view.html"
 });
 
 
