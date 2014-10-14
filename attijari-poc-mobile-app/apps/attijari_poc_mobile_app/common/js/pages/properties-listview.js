@@ -10,6 +10,7 @@ $("#cancel").on ("click", function () {
 	});
 });
 
+
 $(".current-title").text ("Properties list");
 $(".left .back").text("Customer details");
 $(".left .back").on ("click", function () {
