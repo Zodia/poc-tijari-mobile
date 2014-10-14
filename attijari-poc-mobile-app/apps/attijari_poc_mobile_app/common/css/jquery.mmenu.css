@@ -224,12 +224,11 @@ html.mm-opened .mm-page {
 
 html.mm-opened {
   overflow: hidden;
-  position: relative; }
+  position: inherit; }
   html.mm-opened body {
     overflow: hidden; }
   html.mm-opened .mm-page {
-    box-sizing: border-box;
-    position: relative; }
+    box-sizing: border-box; }
 
 html.mm-background .mm-page {
   background: inherit; }
