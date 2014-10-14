@@ -15,8 +15,9 @@ $("#cancel").on ("click", function () {
 });
 
 $(".current-title").text ("Property details");
-$(".left").on ("click", function () {
-	loadPage ("pages/property-view.html");
+$(".left .back").text("Properties List");
+$(".left .back").on ("click", function () {
+	loadPage ("pages/properties-listview.html");
 });
 
 data = {

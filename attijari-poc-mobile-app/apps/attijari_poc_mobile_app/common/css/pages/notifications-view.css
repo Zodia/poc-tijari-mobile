@@ -82,6 +82,24 @@
 	text-shadow: none;
 }
 
+.notification-item-a {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+
+.notification-item-a .ui-li-thumb {
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+	background-position: center;
+	background-size: cover;
+	background-color: #000;
+	background-image: url("../../images/mehdi.jpg");
+	float: left;
+	margin-right: 15px; 
+}
+
 @-webkit-keyframes fall { 
     3% {
         top: calc(30% - 25px); 
