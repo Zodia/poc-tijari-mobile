@@ -1,10 +1,10 @@
 $("#home_call").on ("click", function () {
-		$("#pageContent").load("pages/home-view.html", function () {
+		$("#pageContent").load("pages/customer-entry-view.html", function () {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 	});
 $("#proprety_call").on ("click", function () {
-	$("#pageContent").load("pages/property-view.html", function () {
+	$("#pageContent").load("pages/properties-listview.html", function () {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
