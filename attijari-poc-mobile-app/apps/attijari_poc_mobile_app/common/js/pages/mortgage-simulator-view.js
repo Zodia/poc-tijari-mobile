@@ -5,7 +5,8 @@ if(isNaN(dd))
 {
 dd = dd.substring(0,(dd.length-1));
 as.value = dd;
-}
+}         
+
 } function loan() {
 var a = document.first.aa.value;
 var b = document.first.bb.value;
