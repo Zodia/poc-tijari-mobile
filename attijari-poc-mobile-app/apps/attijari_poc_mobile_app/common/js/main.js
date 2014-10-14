@@ -38,6 +38,10 @@ function wlCommonInit () {
 	$("#mortgageAction").on ("click", function () {
 		loadPage ("pages/mortgage-simulator-view.html");
 	});
+	
+	$("#askAction").on ("click", function () {
+		loadPage ("pages/expert-view.html");
+	}); 
 }
 
 function loadPage (url) {

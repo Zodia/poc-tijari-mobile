@@ -40,7 +40,21 @@
     top: -50px;
     left: 42%;
     animation: move 15s infinite;
-    -webkit-animation: move 15s infinite;
+    -webkit-animation: fall 15s infinite;
+	-moz-animation: fall 15s infinite;
+	-ms-animation: fall 15s infinite;
+	-o-animation: fall 15s infinite;
+}
+
+.ui-listview > li p.notification-core {
+	display: block;
+	max-height: 32px;
+	overflow: hidden;
+	white-space: initial;
+}
+
+.ui-listview > li p.notification-core:after {
+	content: ' ...';
 }
 
 .delete-button {
@@ -68,7 +82,7 @@
 	text-shadow: none;
 }
 
-@-webkit-keyframes move { 
+@-webkit-keyframes fall { 
     3% {
         top: calc(30% - 25px); 
         opacity: 1;
