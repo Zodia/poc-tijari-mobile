@@ -1,37 +1,42 @@
-<div id="mortgageSimulator" align="center" style="margin:0 auto;
-margin-left:auto;
-margin-right:auto;
-align:center;
-text-align:center;"> 
+<link rel="stylesheet" href="css/pages/mortgage-simulator-view.css">
 
-<!-- 	<div data-role="header" id="header" data-position="absolute"> -->
-<!-- 		<h1 style="text-align: center">Mortgage Simulator</h1> -->
-<!-- 	</div> -->
+<div id="mortgageSimulator" style="text-align:center;"> 
+
+<table  class="center">
+		<tr>
+			<td><label for="loanAmountField">Loan Amounts:</label></td>
+			<td><input type="text" name="loanAmountField" id="loanAmountField" style="text-align: center"  onkeyup=checnum(this)></td>
+			</tr>
+			<tr>
+			<td><label for="interestRatesField">Interest Rates:</label></td>
+			<td><input type="text" name="interestRatesField" id="interestRatesField" style="text-align: center"  onkeyup=checnum(this)> </td>
+			</tr>
+			<tr>
+			<td><label for="TermField">Term (Years):	   
+			</label></td>
+			<td><input type="text" name="TermField" id="TermField" style="text-align: center"  onkeyup=checnum(this)></td>
+			</tr>
+			<tr>
+			<td colspan="2" align="center"><button class="mybutton" id="submitButton">Get Estimate</button>	</td>
+			</tr>
+			 <tr>
+			<td colspan="2" align="center"> <label id="label">Results: </label> </td>
+			</tr>
+			 <tr>
+			<td>  <label for="monthlyPaymentField">Monthly Payment EMI:</label></td>
 			
-
-			<label for="loanAmountField">Loan Amounts:</label>
-			<input type="text" name="loanAmountField" id="loanAmountField" style="text-align: center"  onkeyup=checnum(this)>
-			<br>
-			<label for="interestRatesField">Interest Rates:</label>
-			<input type="text" name="interestRatesField" id="interestRatesField" style="text-align: center"  onkeyup=checnum(this)> 
-			<br>
-			<label for="TermField">Term (Years):	   
-			</label>
-			<input type="text" name="TermField" id="TermField" style="text-align: center"  onkeyup=checnum(this)>
-			<br>
-			<button class="mybutton" id="submitButton">Submit</button>	
-			<br>
-			 <label id="label">Results: </label> <br>
-			  <label for="monthlyPaymentField">Monthly Payment EMI:</label>
+			<td><input type="text" name="monthlyPaymentField" id="monthlyPaymentField" style="text-align: center"   > </td>
+			</tr>
+			<tr>
+			<td><label for="monthlyAverageInterestField">Monthly Average Interest:</label></td>
+			<td><input type="text" name="monthlyAverageInterestField" id="monthlyAverageInterestField" style="text-align: center" ></td>
+			</tr>
+			<tr>
+			<td><label for="monthlyInterestField">Monthly Interest:</label></td>
+			<td><input type="text" name="monthlyInterestField" id="monthlyInterestField" style="text-align: center" >	</td>
+			</tr>
 			
-			<input type="text" name="monthlyPaymentField" id="monthlyPaymentField" style="text-align: center"   > 
-			<br>
-			<label for="monthlyAverageInterestField">Monthly Average Interest:</label>
-			<input type="text" name="monthlyAverageInterestField" id="monthlyAverageInterestField" style="text-align: center" >
-			<br>
-			<label for="monthlyInterestField">Monthly Interest:</label>
-			<input type="text" name="monthlyInterestField" id="monthlyInterestField" style="text-align: center" >	
-
+</table>
 </div>
 
 <script src="js/pages/mortgage-simulator-view.js"></script>

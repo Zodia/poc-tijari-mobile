@@ -4,7 +4,7 @@
 $(".current-title").text ("Mortgage Simulator");
 $(".left .back").text("Home");
 $(".left .back").on ("click", function () {
-	loadPage ("pages/customer-entry-view.html"); // "pages/splash-view.html"
+	loadPage ("pages/customer-entry-view.html");
 });
 
 
