@@ -33,7 +33,11 @@ data = {
         "evaluationSum" : "430,000" 
 };
 
-$.each(data, function (name, val) {
+function loadForm(){ 
+	alert(prop_index);
+	if(prop_index ==-1)
+		return 0;
+	$.each(customers[customer_index].properties[prop_index], function (name, val) {
     var $el = $('[name="' + name + '"]'),
         type = $el.attr('type');
 
@@ -47,5 +51,8 @@ $.each(data, function (name, val) {
         default:
             $el.val(val);
     }
-});
+})
+}
+
+loadForm();
 
