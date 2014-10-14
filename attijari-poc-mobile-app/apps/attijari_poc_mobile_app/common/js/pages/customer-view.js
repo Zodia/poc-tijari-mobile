@@ -16,7 +16,6 @@ $(".left").on ("click", function () {
 
 
 
-autoFill{
 
 data = {
 	        "Title": "Mr",
@@ -55,6 +54,5 @@ data = {
 	            $el.val(val);
 	    }
 	})}
-}
 	
  resetForm();
