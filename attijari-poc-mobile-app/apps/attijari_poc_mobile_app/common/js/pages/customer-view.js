@@ -9,12 +9,12 @@ $("#proprety_call").on ("click", function () {
 	});
 });
 
-
 $(".current-title").text ("Customer View");
-$(".left .back").text ("New/Existing");
+$(".left .back").text("New/Existing");
 $(".left .back").on ("click", function () {
 	loadPage ("pages/customer-entry-view.html"); // "pages/splash-view.html"
 });
+
 
 
 
@@ -55,6 +55,7 @@ data = {
 	        default:
 	            $el.val(val);
 	    }
-	})}
+	})
+}
 	
  resetForm();
