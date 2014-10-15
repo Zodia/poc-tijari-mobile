@@ -19,7 +19,7 @@ $("#proprety_call").on("click", function() {
 $(".current-title").text("Customer View");
 $(".left .back").text("Back");
 $(".left").unbind("click").on("click", function() {
-	loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
+	loadPage("pages/customers-list.html"); // "pages/splash-view.html"
 });
 
 data = {
@@ -69,16 +69,6 @@ $(document).on("pageshow", "#registerPage", function() {
 
 	
 
-	$("#registerForm").validate({
-
-		errorPlacement: function(error, element) {
-			if (element.attr("name") === "favcolor") {
-				error.insertAfter($("#favcolor").parent());
-			} else {
-				error.insertAfter(element);
-			}
-		}
-
-	});
+	$("#registerForm").validate();
 
 });
