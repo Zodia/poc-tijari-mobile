@@ -4,17 +4,17 @@
 <div id="notifications-wrapper">
 	<div class="notifications-content">
 
-		<div data-role="navbar" id="navbar">
-			<ul style="padding-top: 15px;">
+		<div data-role="navbar" id="navbar" class="notifications-categories">
+			<ul>
 				<li>
-					<a href="#" id="unread-notifications" style="height: 60px; line-height: 60px; text-align: center; padding-left: 30%;">
-						<span style="display: inline-block; float: left;">Unread notifications</span>
-						<i style="display: inline-block; font-size: 62px; float: left;" class="fa fa-circle fa-fw"></i>
-						<span style="display: inline-block; float: left; margin-left: -45px; color: #FF0000; font-size: 20px;">4</span>
+					<a href="#" id="unread-notifications">
+						<span class="title">Unread notifications</span>
+						<i class="fa fa-circle fa-fw"></i>
+						<span class="count">4</span>
 					</a>
 				</li>
 				<li>
-					<a href="#" id="all-notifications" style="height: 60px; line-height: 60px; ">All notifications</a>
+					<a href="#" id="all-notifications">All notifications</a>
 				</li>
 			</ul>
 		</div>
@@ -22,6 +22,11 @@
 		<ul data-role="listview" class="notifications-list" data-inset="true">
 			
 		</ul>
+		
+		<p class="load-more">
+			<a href="#">More messages</a>
+		</p>
+		
 	</div>
 </div>
 

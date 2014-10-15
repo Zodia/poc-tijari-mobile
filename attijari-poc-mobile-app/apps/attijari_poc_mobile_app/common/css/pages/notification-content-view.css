@@ -1,81 +1,73 @@
-#splash-wrapper {
+.header-message {
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #F0F0F0;
+	float: left;
+	margin-bottom: 30px;
 }
 
-/*.splash-content {
-	width: 50%;
-	top: 0;
-	left: 25%;
-	position: absolute;
-	margin: 0 auto;
-}*/
-
-.language-form {
-	width: 50%;
-	top: 50%;
-	left: 25%;
-	position: absolute;
-	margin: 0 auto;
+.header-message .thumbnail {
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+	background-position: center;
+	background-size: cover;
+	background-color: #000;
+	background-image: url("../../images/mehdi.jpg");
+	float: left;
+	margin-right: 15px;
 }
 
-.language-form #loginAction {
-	display: block;
-	margin: 0 auto;
-	width: 30%;
-	margin-top: 35px;
+.header-message .title {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-/* switch toggle */
-.ui-bar-a, 
-.ui-page-theme-a .ui-bar-inherit, 
-html .ui-bar-a .ui-bar-inherit,
-html .ui-body-a .ui-bar-inherit, 
-html body .ui-group-theme-a .ui-bar-inherit {
-	width: 150px;
-	display: block;
-	margin: 0 auto; 
+.header-message .date {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 800px;
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -50px;
-    left: 42%;
-    animation: move 15s infinite;
-    -webkit-animation: move 15s infinite;
+.message-core {
+	float: left;
+	margin-top: 0;
+	width: 100%;
+	text-align: justify;
 }
 
-@-webkit-keyframes move { 
-    3% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    3.5% {
-        top: calc(30% - 30px); 
-        opacity: 1;
-    }
-    4% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    4.5% {
-        top: calc(30% - 28px); 
-        opacity: 1;
-    }
-    5% {
-        top: calc(30% - 25px); 
-        opacity: 1;
-    }
-    100% {
-        top: calc(30% - 25px); 
-        opacity: 0;
-    }
+h3 {
+	float: left;
+	width: 100%;
+}
+
+.attachements {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.attachements .attachements-content {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+}
+
+.attachements .attachements-content:first-child {
+	margin-right: 20px;	
+}
+
+.attachements .attachements-content i {
+	font-size: 30px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.attachements .attachements-content span {
+	display: inline-block;
+	width: 100%;
+	float: left;
 }

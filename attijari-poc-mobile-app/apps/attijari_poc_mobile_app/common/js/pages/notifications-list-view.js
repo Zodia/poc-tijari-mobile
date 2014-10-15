@@ -42,22 +42,24 @@ $(function() {
 });
 
 $("#unread-notifications").addClass ($.mobile.activeBtnClass);
-fillList (4)
+fillList (4, false, false)
 
 $("#unread-notifications").on ("click", function () {
-	fillList (4);
+	fillList (4, false, false);
 });
 
 $("#all-notifications").on ("click", function () {
-	fillList (10);
+	fillList (10, false, true);
 });
 
-function fillList (count) {
+function fillList (count, append, all) {
 	var listItemClass = "listItem";
 	var content = "";
 	
 	if (!$(this).hasClass ($.mobile.activeBtnClass)) {
+		
 		for (i = 0; i < count; i ++) {
+			
 			content += '<li id=' + listItemClass + '>';
 			content += '<div class="delete-button"><a href="#" class="ui-btn delete-btn">Delete</a></div>';
 			content += '<a href="#" class="notification-item-a">';
@@ -78,6 +80,30 @@ function fillList (count) {
 			listItemClass = "listItem" + i;
 		}
 		
-		$(".notifications-list").html (content).enhanceWithin ();
+		if (all) {
+			$(".load-more").css ("display", "block");
+		} else {
+			$(".load-more").css ("display", "none");
+		}
+		
+		if (!append) {
+			$(".notifications-list").html (content);
+		} else {
+			$(".notifications-list").append (content);
+		}
+		
+		if ($(".notifications-list").hasClass ("ui-listview")) {
+			$(".notifications-list").listview ("refresh");
+		} else {
+			$(".notifications-list").listview ();
+		}
 	}
 }
+
+$(".load-more").on ("click", function () {
+	fillList (10, true, true);
+});
+
+$(".notifications-list").on ("click", "li", function () {
+	loadPage ("pages/notification-content-view.html");
+});

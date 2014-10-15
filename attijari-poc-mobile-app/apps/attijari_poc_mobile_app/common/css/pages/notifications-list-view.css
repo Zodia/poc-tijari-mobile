@@ -1,51 +1,3 @@
-#splash-wrapper {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #F0F0F0;
-}
-
-/*.splash-content {
-	width: 50%;
-	top: 0;
-	left: 25%;
-	position: absolute;
-	margin: 0 auto;
-}*/
-
-.language-form {
-	width: 50%;
-	top: 50%;
-	left: 25%;
-	position: absolute;
-	margin: 0 auto;
-	/*noth*/
-}
-
-.language-form #loginAction {
-	display: block;
-	margin: 0 auto;
-	width: 30%;
-	margin-top: 35px;
-}
-
-.logo {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -50px;
-    left: 42%;
-    animation: move 15s infinite;
-    -webkit-animation: fall 15s infinite;
-	-moz-animation: fall 15s infinite;
-	-ms-animation: fall 15s infinite;
-	-o-animation: fall 15s infinite;
-}
-
 .notifications-content .notifications-new-all-switch a {
 	height: 40px;
 	padding-top: 10px;
@@ -56,6 +8,41 @@
 .notifications-content .notifications-new-all-switch a i {
 	height: 40px;
 	line-height: 40px;
+}
+
+.notifications-categories ul {
+	padding-top: 15px;
+}
+
+.notifications-categories ul #all-notifications {
+	height: 60px; 
+	line-height: 60px;  
+}
+
+.notifications-categories ul #unread-notifications {
+	height: 60px; 
+	line-height: 60px; 
+	text-align: center; 
+	padding-left: 30%;
+}
+
+.notifications-categories ul #unread-notifications span.title {
+	display: inline-block; 
+	float: left;
+}
+
+.notifications-categories ul #unread-notifications i {
+	display: inline-block; 
+	font-size: 62px; 
+	float: left;
+}
+
+.notifications-categories ul #unread-notifications span.count {
+	display: inline-block; 
+	float: left; 
+	margin-left: -45px; 
+	color: #FF0000; 
+	font-size: 20px;
 }
 
 .ui-listview > li p.notification-core {
@@ -110,4 +97,10 @@
 	background-image: url("../../images/mehdi.jpg");
 	float: left;
 	margin-right: 15px; 
+}
+
+.load-more {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: right;
 }

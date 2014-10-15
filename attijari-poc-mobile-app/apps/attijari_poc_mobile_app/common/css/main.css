@@ -119,7 +119,7 @@ html, body {
 #menu .menu-profile .fa-user {
 	position: absolute;
 	transform: inherit;
-	transform: translate(-113%, 8%);
+	transform: translate (-113%, 8%);
 	color: #EDEDED;
 }
 
@@ -138,5 +138,9 @@ html, body {
 }
 
 #pageContent {
-	overflow: hidden;
+	top: 90px;
+	bottom: 88px;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
