@@ -8,6 +8,7 @@ $("#customer_call").on("click", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 });
+
 $("#doc_call").on("click", function() {
 	$("#pageContent").load("pages/document-preview-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
