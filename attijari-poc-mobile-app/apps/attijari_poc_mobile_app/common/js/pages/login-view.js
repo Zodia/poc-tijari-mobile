@@ -10,6 +10,14 @@ $( document ).ready(function() {
 
 });
 
+
+$("#gosemulator").on("click",function(){
+	
+	$("#pageContent").load("pages/mortgage-simulator-view.html", function () {
+		$(this).enhanceWithin();
+	});
+});
+
 $("#buttongo").on("click",function(){
   //alert(login);
 	if($('#login').val()=="demo" && $('#password').val()=="demo"  )

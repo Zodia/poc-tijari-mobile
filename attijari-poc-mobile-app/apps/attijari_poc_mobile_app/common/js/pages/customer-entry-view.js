@@ -1,27 +1,18 @@
 /**
  * 
  */
-$( document ).ready(function() {
 
-	$("#listholder").hide();
-
-	
-
-});
 
 
 $("#existinguser").click(function() {
-	$("#listholder").show();	
-	$("#newuser").hide();
-	$("#existinguser").hide();
+
+$("#pageContent").load("pages/customers-list.html", function () {
+		
+		$(this).enhanceWithin(); /* apply styles */
+	});
 	
 });
 
-$('#listview').children('li').on('click', function () {
-	  // alert('Selected Name=' + $(this).find("id").text());
-	   customer_index =$(this).attr("id");
-	   loadPage("pages/customer-view.html");
-	});
 
 
 
@@ -31,4 +22,11 @@ $("#newuser").on ("click", function () {
 		
 		$(this).enhanceWithin(); /* apply styles */
 	});
+});
+
+$( document ).ready(function() {
+	$(".left .back").text("Back");
+	
+	$(".current-title").text ("Choosing Customer Type");	
+	
 });
