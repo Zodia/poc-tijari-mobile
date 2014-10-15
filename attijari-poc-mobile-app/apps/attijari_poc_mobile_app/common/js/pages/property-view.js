@@ -9,7 +9,7 @@ $("#customer_call").on("click", function() {
 		});
 });
 $("#doc_call").on("click", function() {
-	$("#pageContent").load("pages/supporting-docs-view.html", function() {
+	$("#pageContent").load("pages/document-preview-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
