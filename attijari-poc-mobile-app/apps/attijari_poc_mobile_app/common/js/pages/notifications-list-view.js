@@ -42,11 +42,42 @@ $(function() {
 });
 
 $("#unread-notifications").addClass ($.mobile.activeBtnClass);
+fillList (4)
 
 $("#unread-notifications").on ("click", function () {
-	
+	fillList (4);
 });
 
 $("#all-notifications").on ("click", function () {
-	
+	fillList (10);
 });
+
+function fillList (count) {
+	var listItemClass = "listItem";
+	var content = "";
+	
+	if (!$(this).hasClass ($.mobile.activeBtnClass)) {
+		for (i = 0; i < count; i ++) {
+			content += '<li id=' + listItemClass + '>';
+			content += '<div class="delete-button"><a href="#" class="ui-btn delete-btn">Delete</a></div>';
+			content += '<a href="#" class="notification-item-a">';
+			content += '<div class="ui-li-thumb"></div>';
+			content += '<div class="ui-li-text">';
+			content += '<h3>Credit elligibility</h3>';
+			content += '<p class="notification-core">';
+			content += 'We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it\'s not good';
+			content += 'We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it\'s not good';
+			content += 'We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it\'s not good';
+			content += 'We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it\'s not good';
+			content += 'We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it\'s not good';
+			content += '</p>';
+			content += '</div>';
+			content += '</a>';
+			content += '</li>';
+			
+			listItemClass = "listItem" + i;
+		}
+		
+		$(".notifications-list").html (content).enhanceWithin ();
+	}
+}
