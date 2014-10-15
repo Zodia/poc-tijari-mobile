@@ -1,4 +1,4 @@
-var prop_index = -1;
+
 
 $("#customer_call").on ("click", function () {
 	$("#pageContent").load("pages/customer-view.html", function () {
@@ -15,7 +15,7 @@ $("#cancel").on ("click", function () {
 
 $(".current-title").text ("Properties list");
 $(".left .back").text("Customer details");
-$(".left .back").on ("click", function () {
+$(".left .back").unbind("click").on ("click", function () {
 	$("#pageContent").load("pages/customer-view.html", function () {
 		$(this).enhanceWithin(); /* apply styles */
 	});

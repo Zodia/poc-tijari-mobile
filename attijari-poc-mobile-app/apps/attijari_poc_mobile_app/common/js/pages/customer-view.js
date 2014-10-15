@@ -1,3 +1,4 @@
+var prop_index = -1;
 $("#home_call").on("click", function() {
 	$("#pageContent").load("pages/customer-entry-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
@@ -17,7 +18,7 @@ $("#proprety_call").on("click", function() {
 
 $(".current-title").text("Customer View");
 $(".left .back").text("New/Existing");
-$(".left .back").on("click", function() {
+$(".left .back").unbind("click").on("click", function() {
 	loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
 });
 

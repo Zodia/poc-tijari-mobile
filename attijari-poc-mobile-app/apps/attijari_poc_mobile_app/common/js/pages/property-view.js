@@ -1,7 +1,12 @@
 $("#customer_call").on("click", function() {
-	$("#pageContent").load("pages/customer-view.html", function() {
-		$(this).enhanceWithin(); /* apply styles */
-	});
+	if (prop_index != -1)
+		$("#pageContent").load("pages/properties-listview.html", function() {
+			$(this).enhanceWithin(); /* apply styles */
+		});
+	else
+		$("#pageContent").load("pages/customer-view.html", function() {
+			$(this).enhanceWithin(); /* apply styles */
+		});
 });
 $("#doc_call").on("click", function() {
 	$("#pageContent").load("pages/supporting-docs-view.html", function() {
@@ -9,19 +14,23 @@ $("#doc_call").on("click", function() {
 	});
 });
 $("#cancel").on("click", function() {
-	$("#pageContent").load("pages/customer-view.html", function() {
+	$("#pageContent").load("pages/customer-entry-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
 
 $(".current-title").text("Property details");
-if (prop_index != -1)
+if (prop_index != -1) {
 	$(".left .back").text("Properties List");
-else
+	$(".left").unbind("click").on("click", function() {
+		loadPage("pages/properties-listview.html");
+	});
+} else {
 	$(".left .back").text("Customer details");
-$(".left .back").on("click", function() {
-	loadPage("pages/properties-listview.html");
-});
+	$(".left").unbind("click").on("click", function() {
+		loadPage("pages/customer-view.html");
+	});
+}
 
 data = {
 	"AlreadyOwn" : "N",
@@ -57,4 +66,4 @@ function loadForm() {
 			})
 }
 
-loadForm(); 
+loadForm();
