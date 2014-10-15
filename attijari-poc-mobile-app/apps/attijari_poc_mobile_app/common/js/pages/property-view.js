@@ -1,16 +1,5 @@
-$("#customer_call").on("click", function() {
-	if (prop_index != -1)
-		$("#pageContent").load("pages/properties-listview.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
-		});
-	else
-		$("#pageContent").load("pages/customer-view.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
-		});
-});
-
 $("#doc_call").on("click", function() {
-	$("#pageContent").load("pages/document-preview-view.html", function() {
+	$("#pageContent").load("pages/supporting-docs-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
@@ -21,13 +10,12 @@ $("#cancel").on("click", function() {
 });
 
 $(".current-title").text("Property details");
+$(".left .back").text("Back");
 if (prop_index != -1) {
-	$(".left .back").text("Properties List");
 	$(".left").unbind("click").on("click", function() {
 		loadPage("pages/properties-listview.html");
 	});
 } else {
-	$(".left .back").text("Customer details");
 	$(".left").unbind("click").on("click", function() {
 		loadPage("pages/customer-view.html");
 	});
@@ -45,6 +33,9 @@ data = {
 	"isEvaluated" : "Y",
 	"evaluationSum" : "430,000"
 };
+
+if(prop_index== -1)
+	document.getElementById("doc_call").disabled = true; 
 
 function loadForm() {
 	if (prop_index == -1)

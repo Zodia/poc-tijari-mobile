@@ -28,8 +28,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						},
@@ -40,8 +40,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						}
@@ -75,8 +75,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						},
@@ -87,8 +87,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						} ]

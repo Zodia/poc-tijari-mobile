@@ -1,5 +1,7 @@
-$(".left .back").text("Property details");
+$(".left .back").text("Back");
 
 $(".left").unbind("click").on("click", function() {
-	loadPage("pages/property-view.html"); // "pages/splash-view.html"
+	loadPage("pages/supporting-docs-view.html"); // "pages/splash-view.html"
 });
+
+$(".current-title").text ("Documents Viewer");
