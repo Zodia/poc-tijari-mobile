@@ -15,7 +15,7 @@ $("#cancel").on ("click", function () {
 
 $(".current-title").text ("Properties list");
 $(".left .back").text("Customer details");
-$(".left .back").unbind("click").on ("click", function () {
+$(".left").unbind("click").on ("click", function () {
 	$("#pageContent").load("pages/customer-view.html", function () {
 		$(this).enhanceWithin(); /* apply styles */
 	});

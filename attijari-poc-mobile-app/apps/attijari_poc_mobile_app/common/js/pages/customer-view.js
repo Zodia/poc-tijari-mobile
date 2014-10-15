@@ -18,7 +18,7 @@ $("#proprety_call").on("click", function() {
 
 $(".current-title").text("Customer View");
 $(".left .back").text("New/Existing");
-$(".left .back").unbind("click").on("click", function() {
+$(".left").unbind("click").on("click", function() {
 	loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
 });
 
