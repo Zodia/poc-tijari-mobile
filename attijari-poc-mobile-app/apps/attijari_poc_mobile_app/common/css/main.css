@@ -9,6 +9,7 @@ html, body {
 
 #page {
 	overflow: hidden;
+	background-color: #F0F0F0;
 }
 
 #header {
