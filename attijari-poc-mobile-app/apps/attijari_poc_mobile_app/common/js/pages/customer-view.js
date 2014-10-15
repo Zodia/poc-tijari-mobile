@@ -1,9 +1,9 @@
 var prop_index = -1;
-$("#home_call").on("click", function() {
-	$("#pageContent").load("pages/customer-entry-view.html", function() {
-		$(this).enhanceWithin(); /* apply styles */
-	});
-});
+//$("#home_call").on("click", function() {
+//	$("#pageContent").load("pages/customer-entry-view.html", function() {
+//		$(this).enhanceWithin(); /* apply styles */
+//	});
+//});
 $("#proprety_call").on("click", function() {
 	
 	if (customer_index == -1)
@@ -17,7 +17,7 @@ $("#proprety_call").on("click", function() {
 });
 
 $(".current-title").text("Customer View");
-$(".left .back").text("New/Existing");
+$(".left .back").text("Back");
 $(".left").unbind("click").on("click", function() {
 	loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
 });
@@ -62,3 +62,23 @@ function resetForm() {
 }
 
 resetForm();
+
+
+$(document).on("pageshow", "#registerPage", function() {
+
+
+	
+
+	$("#registerForm").validate({
+
+		errorPlacement: function(error, element) {
+			if (element.attr("name") === "favcolor") {
+				error.insertAfter($("#favcolor").parent());
+			} else {
+				error.insertAfter(element);
+			}
+		}
+
+	});
+
+});
