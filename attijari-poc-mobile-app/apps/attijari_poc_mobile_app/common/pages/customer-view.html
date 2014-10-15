@@ -22,19 +22,21 @@
 				
 				    <div id="one" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="textinput-1">Title</label> <input
-							name="Title" id="textinput-1" 
-							type="text">
+						<label for="textinput-1">Title</label> <select name="Title" id="select-native-1">
+							<option value="Yes">Ms</option>
+							<option value="No">Mr</option>
+						</select>
+
 					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">First name</label> <input
 							name="First_name" id="textinput-1" 
-							type="text">
+							type="text" class="required">
 					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">Last name</label> <input
 							name="Last_name" id="textinput-1" 
-							type="text">
+							type="text" class="required">
 					</div>
 						<div class="ui-field-contain">
 						<label for="textinput-1">D.O.B</label> 
@@ -69,8 +71,9 @@
    <div id="three" class="ui-body-d"> 
    <div class="ui-field-contain">
 						<label for="select-native-1" >you have existing personal loans?</label> <select name="personal_loans" id="select-native-1">
-							<option value="Yes">Yes</option>
 							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+							
 						</select>
 					</div>
 					<div class="ui-field-contain">
@@ -96,8 +99,9 @@
    <div id="five" class="ui-body-d">
     <div class="ui-field-contain">
 						<label for="select-native-1" >you have existing mortgages?</label> <select name="existing_mortgages" id="select-native-1">
-							<option value="Yes">Yes</option>
 							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+							
 						</select>
 					</div>
 					<div class="ui-field-contain">
@@ -133,9 +137,7 @@
 </div>
 </div>
 <div data-type="horizontal">
-	<button id="home_call"
-		style="width:30%; float: left; background-color: #515151; color: white;"
-		class="ui-btn">Back</button>
+	
 	<button id="proprety_call"
 		style="width:30%; float: right; background-color: #515151; color: white;"
 		class="ui-btn">Next</button>
