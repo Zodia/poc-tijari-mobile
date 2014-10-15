@@ -3,7 +3,7 @@
  */
 $(".current-title").text ("Mortgage Simulator");
 $(".left .back").text("Home");
-$(".left .back").on ("click", function () {
+$(".left .back").unbind("click").on ("click", function () {
 	loadPage ("pages/customer-entry-view.html");
 });
 
