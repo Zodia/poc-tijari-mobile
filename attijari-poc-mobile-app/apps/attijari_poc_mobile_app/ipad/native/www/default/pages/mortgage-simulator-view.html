@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="css/pages/mortgage-simulator-view.css">
+
+<div id="mortgageSimulator" style="text-align:center;"> 
+
+<table  class="center">
+		<tr>
+			<td><label for="loanAmountField">Loan Amounts:</label></td>
+			<td><input type="text" name="loanAmountField" id="loanAmountField" style="text-align: center"  onkeyup=checnum(this)></td>
+			</tr>
+			<tr>
+			<td><label for="interestRatesField">Interest Rates:</label></td>
+			<td><input type="text" name="interestRatesField" id="interestRatesField" style="text-align: center"  onkeyup=checnum(this)> </td>
+			</tr>
+			<tr>
+			<td><label for="TermField">Term (Years):	   
+			</label></td>
+			<td><input type="text" name="TermField" id="TermField" style="text-align: center"  onkeyup=checnum(this)></td>
+			</tr>
+			<tr>
+			<td colspan="2" align="center"><button class="mybutton" id="submitButton">Get Estimate</button>	</td>
+			</tr>
+			 <tr>
+			<td colspan="2" align="center"> <label id="label">Results: </label> </td>
+			</tr>
+			 <tr>
+			<td>  <label for="monthlyPaymentField">Monthly Payment EMI:</label></td>
+			
+			<td><input type="text" name="monthlyPaymentField" id="monthlyPaymentField" style="text-align: center"   > </td>
+			</tr>
+			<tr>
+			<td><label for="monthlyAverageInterestField">Monthly Average Interest:</label></td>
+			<td><input type="text" name="monthlyAverageInterestField" id="monthlyAverageInterestField" style="text-align: center" ></td>
+			</tr>
+			<tr>
+			<td><label for="monthlyInterestField">Monthly Interest:</label></td>
+			<td><input type="text" name="monthlyInterestField" id="monthlyInterestField" style="text-align: center" >	</td>
+			</tr>
+			
+</table>
+</div>
+
+<script src="js/pages/mortgage-simulator-view.js"></script>
+<script src="../jqueryMobile/jquery.mobile-1.4.4.js"></script>
+<link
+	href="../native/www/default/jqueryMobile/jquery.mobile.external-png-1.4.4.css"
+	rel="stylesheet">

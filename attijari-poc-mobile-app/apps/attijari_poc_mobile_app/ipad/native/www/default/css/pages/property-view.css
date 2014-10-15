@@ -1,0 +1,12 @@
+
+/* Stylesheet content from css/pages/property-view.css in folder common */
+.tablist-left {
+width: 25%;
+display: inline-block;
+}
+.tablist-content {
+width: 60%;
+display: inline-block;
+vertical-align: top;
+margin-left: 5%;
+}

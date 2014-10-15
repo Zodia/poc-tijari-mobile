@@ -1,0 +1,146 @@
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" href="css/jquery.mobile508datepicker.css"/> -->
+
+<link rel="stylesheet" href="css/pages/customer-view.css">
+<div class="customer-view-content">
+<div data-role="tabs">
+	<table id="allTable">
+		<tbody>
+			<tr>
+				<td class="tablist-left">
+                <ul data-role="listview" data-inset="true" >
+      <li><a href="#one" data-ajax="false">Personal data</a></li>
+      <li><a href="#two" data-ajax="false">Regular income/ other sources</a></li>
+      <li><a href="#three" data-ajax="false">Existing personal loans</a></li>
+      <li><a href="#four" data-ajax="false">Existing car loans</a></li>
+      <li><a href="#five" data-ajax="false">Existing mortgages</a></li>
+      <li><a href="#six" data-ajax="false">Existing cards</a></li>
+      
+    </ul>
+               </td>
+				<td class="tablist-content">
+				
+				    <div id="one" class="ui-body-d"> 
+      <div class="ui-field-contain">
+						<label for="textinput-1">Title</label> <input
+							name="Title" id="textinput-1" 
+							type="text">
+					</div>
+					 <div class="ui-field-contain">
+						<label for="textinput-1">First name</label> <input
+							name="First_name" id="textinput-1" 
+							type="text">
+					</div>
+					 <div class="ui-field-contain">
+						<label for="textinput-1">Last name</label> <input
+							name="Last_name" id="textinput-1" 
+							type="text">
+					</div>
+						<div class="ui-field-contain">
+						<label for="textinput-1">D.O.B</label> 
+						<input type="text" name="startDate"  id="filter-date-from"  readonly="" class="ui-input-text ui-body-b">
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Nationality</label> <input
+							name="Nationality" id="textinput-1" 
+							type="text">
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Email</label> <input
+							name="Email" id="textinput-1" 
+							type="text">
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Mobile</label> <input
+							name="Mobile" id="textinput-1" 
+							type="text">
+					</div>
+					
+				
+					
+   </div>
+    <div id="two" class="ui-body-d"> 
+    <div class="ui-field-contain">
+						<label for="textinput-1">Monthly income</label> <input
+							name="Monthly_income" id="textinput-1" 
+							type="text">
+					</div>
+   </div>
+   <div id="three" class="ui-body-d"> 
+   <div class="ui-field-contain">
+						<label for="select-native-1" >you have existing personal loans?</label> <select name="personal_loans" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Monthly payment</label> <input
+							name="MP_personal_loans" id="textinput-1" 
+							type="text">
+					</div>
+    
+   </div>
+   <div id="four" class="ui-body-d"> 
+      <div class="ui-field-contain">
+						<label for="select-native-1" >you have existing car loans?</label> <select name="car_loans" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Monthly payment</label> <input
+							name="MP_car_loans" id="textinput-1" 
+							type="text">
+					</div>
+   </div>
+   <div id="five" class="ui-body-d">
+    <div class="ui-field-contain">
+						<label for="select-native-1" >you have existing mortgages?</label> <select name="existing_mortgages" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="ui-field-contain">
+						<label for="textinput-1">Monthly payment</label> <input
+							name="MP_existing_mortgages" id="textinput-1" 
+							type="text">
+					</div> 
+    
+   </div>
+   <div id="six" class="ui-body-d"> 
+    <div class="ui-field-contain">
+						<label for="select-native-1" >Existing debit card</label> <select name="Existing_debit_card" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					 <div class="ui-field-contain">
+						<label for="select-native-1" >Existing credit card</label> <select name="Existing_credit_card" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+    
+   </div>
+				
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+    
+
+</div>
+</div>
+<div data-type="horizontal">
+	<button id="home_call"
+		style="width:30%; float: left; background-color: #515151; color: white;"
+		class="ui-btn">Back</button>
+	<button id="proprety_call"
+		style="width:30%; float: right; background-color: #515151; color: white;"
+		class="ui-btn">Next</button>
+</div>
+<script src="js/pages/customer-view.js"></script>
+<script src="js/libs/jquery.scroll.start.stop.js"></script>
+<script src="js/libs/jquery.mobile508datepicker.js"></script>
+<script src="js/libs/demo1.js"></script>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
-  <runtime name="HTTP Preview"/>
+  <runtime name="J2EE Preview (2)"/>
   <fixed facet="worklight.base"/>
   <fixed facet="wst.jsdt.web"/>
   <fixed facet="wst.web"/>

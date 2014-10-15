@@ -1,22 +1,16 @@
 <!DOCTYPE HTML><html>
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <title>attijari_poc_mobile_app</title>
+        <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
-    		<!--
-    			<link rel="shortcut icon" href="images/favicon.png">
-    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
-    		-->
+        <title>attijari_mobile_app</title>
         <link href="worklight/worklight.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.structure-1.4.4.css" rel="stylesheet">
         <link href="jqueryMobile/jquery.mobile-1.4.4.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.inline-png-1.4.4.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.external-png-1.4.4.css" rel="stylesheet">
         <link href="jqueryMobile/jquery.mobile.theme-1.4.4.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.inline-svg-1.4.4.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
         <link href="jqueryMobile/jquery.mobile.icons-1.4.4.css" rel="stylesheet">
+        <link href="css/jquery.mmenu.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <script>
 		// Define WL namespace.
 		var WL = WL ? WL : {};
@@ -40,18 +34,79 @@
 		<script src="worklight/wljq.js"></script>
 		<script src="worklight/worklight.js"></script>
 		<script src="worklight/checksum.js"></script>
-		<script>window.$ = window.jQuery = WLJQ;</script>
-    		<script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
     </head>
     <body style="display: none;">
         <div data-role="page" id="page">
-            <div data-role="content" style="padding: 15px">
-    				<!--application UI goes here-->
-    				Hello Worklight
-    			</div>
+            <div data-position="fixed" data-role="header" id="header">
+                <div class="right">
+                    <a class="menu-display" href="#menu">
+						<i class="fa fa-align-justify fa-fw fa-2x"></i>
+					</a>
+                </div>
+                <div class="left">
+                    <a class="list-group-item" href="">
+						<i class="fa fa-angle-left fa-fw fa-2x"></i>
+						&nbsp;<span class="back">Home</span>
+					</a>
+                </div>
+                <div class="center">
+                    <p class="current-title">Attijari Mobile App</p>
+                </div>
+            </div>
+            <div data-role="content" id="pageContent"></div>
+            <div data-position="fixed" data-role="footer" id="footer">
+                <div class="footer-limit">
+                    <div class="ui-grid-c">
+                        <div class="ui-block-a" id="homeAction">
+                            <i class="fa fa-home fa-fw fa-2x"></i>
+                            <p class="label">Home</p>
+                        </div>
+                        <div class="ui-block-b" id="notificationsAction">
+                            <i class="fa fa-envelope-o fa-fw fa-2x"></i>
+                            <p class="label">Messages</p>
+                        </div>
+                        <div class="ui-block-c" id="mortgageAction">
+                            <i class="fa fa-cogs fa-fw fa-2x"></i>
+                            <p class="label">Mortgage simulator</p>
+                        </div>
+                        <div class="ui-block-d" id="askAction">
+                            <i class="fa fa-user fa-fw fa-2x"></i>
+                            <p class="label">Ask an expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a class="menu-profile">
+							<i class="fa fa-circle fa-fw fa-5x"></i>
+							<i class="fa fa-user fa-fw fa-4x"></i> 
+							<span class="name">Mehdi Bendriss</span>
+							<span class="email">mehdiben@ma.ibm.com</span>
+						</a>
+                    </li>
+                    <li>
+                        <a class="menu-preferences">
+							<i class="fa fa-cog fa-fw fa-2x"></i> 
+							<span>Preferences</span>
+						</a>
+                    </li>
+                    <li>
+                        <a class="menu-logout">
+							<i class="fa fa-sign-out fa-fw fa-2x"></i> 
+							<span>Logout</span>
+						</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <script src="js/initOptions.js"></script>
-    		<script src="js/main.js"></script>
-    		<script src="js/messages.js"></script>
+        <script>window.$ = window.jQuery = WLJQ;</script>
+   		<script src="js/jquery-2.1.1.js"></script>
+   		<script src="jqueryMobile/jquery.mobile-1.4.4.js"></script>
+   		<script src="js/jquery.mmenu.min.js"></script>
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>		
     </body>
 </html>
