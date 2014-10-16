@@ -22,11 +22,15 @@
 				
 				    <div id="one" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="textinput-1">Title</label> <select name="Title" id="select-native-1">
-							<option value="Yes">Ms</option>
-							<option value="No">Mr</option>
-						</select>
-
+						<label for="textinput-1">Title</label> 
+            <fieldset data-role="controlgroup" data-type="horizontal">
+						<label>
+        <input type="radio" checked="checked" name="Title" id="radio-choice-0a">Ms
+    </label>
+    <label>
+        <input type="radio" name=Title id="radio-choice-0a">Mr
+    </label>
+    </fieldset>
 					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">First name <em>* </em></label> <input
@@ -70,11 +74,11 @@
    </div>
    <div id="three" class="ui-body-d"> 
    <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing personal loans?</label> <select name="personal_loans" id="select-native-1">
-							<option value="No">No</option>
-							<option value="Yes">Yes</option>
-							
-						</select>
+						<label for="select-native-1" >you have existing personal loans?</label> 
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<label><input type="radio" name="personal_loans" id="radio-choice-0a">Yes</label>
+                        <label><input type="radio" checked="checked"  name=personal_loans id="radio-choice-0a">No </label>
+               </fieldset>
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -85,10 +89,12 @@
    </div>
    <div id="four" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing car loans?</label> <select name="car_loans" id="select-native-1">
-							<option value="Yes">Yes</option>
-							<option value="No">No</option>
-						</select>
+						<label for="select-native-1" >you have existing car loans?</label> 
+						
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<label><input type="radio" name="car_loans" id="radio-choice-0a">Yes</label>
+                        <label><input type="radio" checked="checked"  name=car_loans id="radio-choice-0a">No </label>
+               </fieldset>
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -98,11 +104,11 @@
    </div>
    <div id="five" class="ui-body-d">
     <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing mortgages? <em>* </em></label> <select name="existing_mortgages" id="select-native-1">
-							<option value="No">No</option>
-							<option value="Yes">Yes</option>
-							
-						</select>
+						<label for="select-native-1" >you have existing mortgages? <em>* </em></label> 
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<label><input type="radio" name="existing_mortgages" id="radio-choice-0a">Yes</label>
+                        <label><input type="radio" checked="checked"  name=existing_mortgages id="radio-choice-0a">No </label>
+               </fieldset>	
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -113,16 +119,18 @@
    </div>
    <div id="six" class="ui-body-d"> 
     <div class="ui-field-contain">
-						<label for="select-native-1" >Existing debit card</label> <select name="Existing_debit_card" id="select-native-1">
-							<option value="Yes">Yes</option>
-							<option value="No">No</option>
-						</select>
+						<label for="select-native-1" >Existing debit card</label> 
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<label><input type="radio" name="Existing_debit_card" id="radio-choice-0a">Yes</label>
+                        <label><input type="radio" checked="checked"  name=Existing_debit_card id="radio-choice-0a">No </label>
+               </fieldset>	
 					</div>
 					 <div class="ui-field-contain">
-						<label for="select-native-1" >Existing credit card</label> <select name="Existing_credit_card" id="select-native-1">
-							<option value="Yes">Yes</option>
-							<option value="No">No</option>
-						</select>
+						<label for="select-native-1" >Existing credit card</label> 
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						<label><input type="radio" name="Existing_credit_card" id="radio-choice-0a">Yes</label>
+                        <label><input type="radio" checked="checked"  name=Existing_credit_card id="radio-choice-0a">No </label>
+               </fieldset>	
 					</div>
     
    </div>
