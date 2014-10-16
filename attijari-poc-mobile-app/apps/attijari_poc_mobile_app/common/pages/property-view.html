@@ -10,20 +10,24 @@
 	</ul>
 	<div id="one" class="ui-body-d tablist-content">
 		<div class="ui-field-contain">
-			<label for="select-native-1" style="width: 20%; height: 100%;">
-			Already an owner?
-			</label> 
-			<select name="AlreadyOwn" id="select-native-1">
-				<option value="Y">Yes</option>
-				<option value="N">No</option>
-			</select>
+			<fieldset data-role="controlgroup">
+				<legend>Already an owner?</legend>
+				<input type="radio" name="AlreadyOwn" id="radio-choice-1"
+					value="Y" checked="checked" /> <label for="radio-choice-1">Yes</label>
+
+				<input type="radio" name="AlreadyOwn" id="radio-choice-2"
+					value="N" /> <label for="radio-choice-2">No</label>
+			</fieldset>
 		</div>
-		<div class="ui-field-contain">
-			<label for="select-native-1">New/Existing</label> <select
-				name="isExisting" id="select-native-1">
-				<option value="N">New</option>
-				<option value="E">Existing</option>
-			</select>
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+				<legend>New/Existing</legend>
+				<input type="radio" name="isExisting" id="radio-choice-3"
+					value="N" checked="checked" /> <label for="radio-choice-3">New</label>
+
+				<input type="radio" name="isExisting" id="radio-choice-4"
+					value="E" /> <label for="radio-choice-4">Existing</label>
+			</fieldset>
 		</div>
 		<div class="ui-field-contain">
 			<label for="textarea-1">Property Address</label>
@@ -34,9 +38,7 @@
 	<div id="two" class="tablist-content">
 		<div class="ui-field-contain">
 			<label for="select-native-1" style="width: 20%; height: 100%;">
-			Property type
-			</label>
-			<select name="propType" id="select-native-1">
+				Property type </label> <select name="propType" id="select-native-1">
 				<option value="apartment">Apartment</option>
 				<option value="villa">Villa</option>
 			</select>
@@ -65,18 +67,21 @@
 				name="liveableArea" id="textinput-1" type="text">
 		</div>
 		<div class="ui-field-contain">
-			<label for="textinput-1">Built Area (sqm)</label> <input name="builtArea"
-				id="textinput-1" placeholder="Text input"
+			<label for="textinput-1">Built Area (sqm)</label> <input
+				name="builtArea" id="textinput-1" placeholder="Text input"
 				type="text">
 		</div>
 	</div>
-	<div id="three" class="tablist-content">
+	<div id="three" style="width: 60%;" class="tablist-content">
 		<div class="ui-field-contain">
-			<label for="select-native-1" style="width: 20%; height: 100%;">Existing
-				evaluation</label> <select name="isEvaluated" id="select-native-1">
-				<option value="N">No</option>
-				<option value="Y">Yes</option>
-			</select>
+			<fieldset data-role="controlgroup">
+				<legend>Existing evaluation</legend>
+				<input type="radio" name="isEvaluated" id="radio-choice-5"
+					value="Y" checked="checked" /> <label for="radio-choice-5">Yes</label>
+
+				<input type="radio" name="isEvaluated" id="radio-choice-6"
+					value="N" /> <label for="radio-choice-6">No</label>
+			</fieldset>
 		</div>
 		<div class="ui-field-contain">
 			<label for="textinput-1">Evaluation sum (MAD)</label> <input
