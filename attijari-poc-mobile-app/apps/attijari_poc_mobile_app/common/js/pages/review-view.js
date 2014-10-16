@@ -46,3 +46,24 @@ $('#submit').on('click', function() {
 		alert('Confirmed');
 	});
 });
+
+function resetForm() {
+	if (customer_index == -1)
+		return 0;
+	$.each(customers[customer_index], function(name, val) {
+		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
+
+		switch (type) {
+		case 'checkbox':
+			$el.attr('checked', 'checked');
+			break;
+		case 'radio':
+			$el.filter('[value="' + val + '"]').attr('checked', 'checked');
+			break;
+		default:
+			$el.val(val);
+		}
+	})
+}
+
+resetForm();
