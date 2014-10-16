@@ -137,6 +137,10 @@ function wlCommonInit () {
 		loadPage ("pages/mortgage-simulator-view.html");
 	});
 	
+	$("#askExpertAction").on ("click", function () {
+		loadPage ("pages/ask_expert/expert-view.html");
+	});
+	
 	$(".menu-profile").on ("click", function () {
 		loadPage ("pages/employee-profile-view.html");
 	});
