@@ -1,0 +1,15 @@
+
+.ui-icon-available-status {
+	background-image: url("images/Pages/ask_expert/expert_view/icon-available.png");
+	background-size: 18px 18px;
+}
+
+.ui-icon-busy-status {
+	background-image: url("images/Pages/ask_expert/expert_view/icon-busy.png");	
+	background-size: 18px 18px;                   
+}
+
+.ui-icon-offline-status {
+	background-image: url("images/Pages/ask_expert/expert_view/icon-offline.png");	
+	background-size: 18px 18px;                   
+}

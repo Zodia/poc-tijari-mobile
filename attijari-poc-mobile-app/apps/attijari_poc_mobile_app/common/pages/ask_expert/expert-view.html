@@ -1,0 +1,175 @@
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="css/pages/ask_expert/expert-view.css">
+<script src="js/pages/ask_expert/expert-view.js"></script>
+<script src="js/pages/ask_expert/chat-with-expert.js"></script>
+
+
+<div class="ui-grid-a">
+
+	<!-----------------------------  Expert List and Search Div Section---------------------------->
+	<div class="ui-block-a" style="width: 45%">
+
+		<!---------------  Start : Expert List screen----------------- -->
+		<div data-role="fieldcontain" id="fieldcontain"
+			style="background-color: #003366; border: solid; layer-background-color: #FFBF00; border: 2px solid; border-radius: 5px;">
+
+			<!--------   Header Images : Ask the Expert ----------------->
+			<div>
+				<img src="images/pages/ask_expert/expert_view/ask-the-expert.png"
+					height="10%" width="40%">
+			</div>
+
+			<!-----------------   Search textbox : Search the experts  ---------------->
+			<div id="listholder">
+				<ul data-role="listview" id="listview" data-inset="true"
+					data-filter-reveal="true" data-filter-placeholder="Search Experts"
+					data-filter="true">
+					<li id="searchlistitem1"><a href="#">Cristian Carstoiu</a></li>
+					<li id="searchlistitem2"><a href="#">Mehdi Bendriss</a></li>
+					<li id="searchlistitem3"><a href="#">Mohemad Sara</a></li>
+					<li id="searchlistitem4"><a href="#">Shailendra K Mishra</a></li>
+					<li id="searchlistitem5"><a href="#">Souhail Guennouni</a></li>
+
+				</ul>
+			</div>
+
+			<!------------------------------- Start :  Categorized  Expert List   ----->
+			<!-- ---------------Start : Car Loan Section ---------------------------->
+			<div data-role="collapsible" data-inset="true" data-theme="b"
+				data-content-theme="a" data-collapsed="false">
+				<h3>Car Loan Expert</h3>
+				<ul data-role="listview">
+					<!-- <li><a href="#" data-role="button"
+						data-icon="available-status" id="carLoanExpert1">Shailendra
+							Mishra </a></li>
+					<li><a href="#" data-role="button" data-icon="busy-status"
+						id="carLoanExpert2">Cristian Carstoiu</a></li> -->
+
+					<li><a href="#" id="carLoanExpert1">Cristian Carstoiu</a></li>
+					<li><a href="#" id="carLoanExpert2">Mehdi Bendriss</a></li>
+					<li><a href="#" id="carLoanExpert3">Mohemad Sara</a></li>
+					<li><a href="#" id="carLoanExpert4">Shailendra Mishra</a></li>
+					<li><a href="#" id="carLoanExpert5">Souhail Guennouni</a></li>
+
+
+				</ul>
+			</div>
+			<!-- ---------------End : Car Loan Section ------------------------------->
+
+			<!-- ---------------Start : Home Loan Section ---------------------------->
+			<div data-role="collapsible" data-inset="true" data-theme="b"
+				data-content-theme="a">
+				<h3>Home Loan Expert</h3>
+				<ul data-role="listview">
+					<li><a href="#">Shailendra Mishra</a></li>
+					<li><a href="#">Cristian Carstoiu</a></li>
+					<li><a href="#">Souhail Guennouni</a></li>
+					<li><a href="#">Mohemad Sara</a></li>
+				</ul>
+			</div>
+			<!-- ---------------End : Home Loan Section ------------------------------->
+
+			<!-- ---------------Start : Personal Loan Section ---------------------------->
+			<div data-role="collapsible" data-inset="true" data-theme="b"
+				data-content-theme="a">
+				<h3>Personal Loan Expert</h3>
+				<ul data-role="listview">
+					<li><a href="#">Shailendra Mishra</a></li>
+					<li><a href="#">Cristian Carstoiu</a></li>
+					<li><a href="#">Souhail Guennouni</a></li>
+					<li><a href="#">Mohemad Sara</a></li>
+				</ul>
+			</div>
+			<!-- ---------------End : Personal Loan Section ------------------------------->
+
+			<!-- ---------------Start : Education Loan Section ---------------------------->
+			<div data-role="collapsible" data-inset="true" data-theme="b"
+				data-content-theme="a">
+				<h3>Education Loan Expert</h3>
+				<ul data-role="listview">
+					<li><a href="#">Shailendra Mishra</a></li>
+					<li><a href="#">Cristian Carstoiu</a></li>
+					<li><a href="#">Souhail Guennouni</a></li>
+				</ul>
+			</div>
+			<!-- ---------------End : Education Loan Section ------------------------------->
+
+			<!-- ---------------Start : Mortgage Section ---------------------------->
+			<div data-role="collapsible" data-inset="true" data-theme="b"
+				data-content-theme="a">
+				<h3>Mortgage Expert</h3>
+				<ul data-role="listview">
+					<li><a href="#">Shailendra Mishra</a></li>
+					<li><a href="#">Cristian Carstoiu</a></li>
+					<li><a href="#">Souhail Guennouni</a></li>
+					<li><a href="#">Mohemad Sara</a></li>
+				</ul>
+			</div>
+			<!-- ---------------End : Mortgage Section ------------------------------->
+			<!---------------------- End :  Categorized  Expert List   ------------->
+
+			<!-- 			<div data-role="collapsible-set" id="collapsible-set">
+				<div data-role="collapsible" id="collapsible">
+					<h3>Collapsible</h3>
+				</div>
+				<div data-role="collapsible" id="collapsible0">
+					<h3>Collapsible</h3>
+				</div>
+				<div data-role="collapsible" id="collapsible1">
+					<h3>Collapsible</h3>
+				</div>
+			</div> -->
+		</div>
+
+	</div>
+
+	<div class="ui-block-b" style="width: 10%"></div>
+
+	<!-----------------------------  Chat window Div Section-------------------------------->
+	<div class="ui-block-c" style="width: 45%">
+
+
+		<div id="main-chat-with-expert" class="ui-field-contain"
+			style="background-color: #003366; border: solid; layer-background-color: #003366; border: 2px solid; border-radius: 5px;">
+
+			<!-- ------------------------Start: Expert Detail ------------------------  -->
+			<div class="ui-grid-a">
+				<div class="ui-block-a" style="width: 35%">
+					<img
+						src="images/pages/ask_expert/chat_with_expert/expert-cristian.jpg">
+				</div>
+				<div class="ui-block-b" style="width: 65%">
+					<font face="verdana" size="4" color="white">Cristian
+						carstoiu </font><br> <font face="verdana" size="2" color="white">Designation:
+						Car Loan Expert <br> Phone: +971 566766488<br>Email:
+						cristian.carstoiu@ae.ibm.com <br> Address: DIC Building 5,
+						Dubai, UAE
+					</font>
+				</div>
+			</div>
+			<!-- ------------------------End: Expert Detail ------------------------  -->
+			<!-- ------------------------Start: Chat window------------------------  --->
+
+			<div data-role="header" class="ui-bar"
+				style="background-color: #FFBF00; border: 2px solid; border-radius: 5px;">Chat
+				window</div>
+
+			<div id="chatConversionArea"
+				style="background-color: #FFFFFF; border: 2px solid; border-radius: 5px; height: 200px;"></div>
+
+			<!------------ Textarea where user can enter his/her chat text----------------->
+			<textarea id="inputchatText" maxlength="60"></textarea>
+
+			<!------------------- Footer of Chat window ----------------------->
+			<div data-role="footer" class="ui-bar">
+				<a data-role="button" data-icon="arrow-u"
+					onClick="chatConversation()">Send</a> <a data-role="button"
+					data-icon="audio">audio</a> <a data-role="button" data-icon="video">video</a>
+				<a data-role="button" data-icon="busy-status">Back</a>
+			</div>
+			<!-- ------------------------End: Chat Window ------------------------  -->
+		</div>
+
+	</div>
+</div>
