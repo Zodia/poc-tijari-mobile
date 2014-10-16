@@ -125,6 +125,18 @@ html, body {
 	color: #EDEDED;
 }
 
+#menu .menu-profile .thumbnail {
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+	background-position: center;
+	background-size: cover;
+	background-color: #000;
+	background-image: url("../images/mehdi.jpg");
+	float: left;
+	margin-right: 15px;
+}
+
 #menu .menu-profile span {
 	position: absolute;
 }

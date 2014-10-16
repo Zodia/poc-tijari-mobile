@@ -30,8 +30,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						},
@@ -42,8 +42,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						}
@@ -77,8 +77,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						},
@@ -89,8 +89,8 @@ var  customers = [
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
-							"liveableArea" : "210 sqm",
-							"builtArea" : "250 sqm",
+							"liveableArea" : "210",
+							"builtArea" : "250",
 							"isEvaluated" : "Y",
 							"evaluationSum" : "430,000"
 						} ]
@@ -137,6 +137,10 @@ function wlCommonInit () {
 	
 	$("#mortgageAction").on ("click", function () {
 		loadPage ("pages/mortgage-simulator-view.html");
+	});
+	
+	$(".menu-profile").on ("click", function () {
+		loadPage ("pages/employee-profile-view.html");
 	});
 }
 

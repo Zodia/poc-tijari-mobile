@@ -136,6 +136,10 @@ function wlCommonInit () {
 	$("#mortgageAction").on ("click", function () {
 		loadPage ("pages/mortgage-simulator-view.html");
 	});
+	
+	$(".menu-profile").on ("click", function () {
+		loadPage ("pages/employee-profile-view.html");
+	});
 }
 
 function loadPage (url) {

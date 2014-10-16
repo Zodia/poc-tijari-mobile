@@ -9,7 +9,6 @@ html, body {
 
 #page {
 	overflow: hidden;
-	background-color: #F0F0F0;
 }
 
 #header {
@@ -120,8 +119,20 @@ html, body {
 #menu .menu-profile .fa-user {
 	position: absolute;
 	transform: inherit;
-	transform: translate (-113%, 8%);
+	transform: translate(-113%, 8%);
 	color: #EDEDED;
+}
+
+#menu .menu-profile .thumbnail {
+	width: 75px;
+	height: 75px;
+	border-radius: 100px;
+	background-position: center;
+	background-size: cover;
+	background-color: #000;
+	background-image: url("../images/mehdi.jpg");
+	float: left;
+	margin-right: 15px;
 }
 
 #menu .menu-profile span {
@@ -139,9 +150,5 @@ html, body {
 }
 
 #pageContent {
-	top: 90px;
-	bottom: 88px;
-	left: 0;
-	right: 0;
-	position: absolute;
+	overflow: hidden;
 }
