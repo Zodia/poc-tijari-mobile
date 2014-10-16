@@ -1,0 +1,16 @@
+
+/* Stylesheet content from css/pages/document-preview-view.css in folder common */
+#document-preview-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.document-preview-content {
+	width: 100%;
+	height: 100%;
+}
+
+.document-preview-content embed {
+	height: 100%;
+	width: 100%;
+}
