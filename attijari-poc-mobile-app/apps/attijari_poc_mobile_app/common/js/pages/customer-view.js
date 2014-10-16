@@ -6,9 +6,6 @@ var prop_index = -1;
 //});
 $("#proprety_call").on("click", function() {
 	
-   if(!$("#registerPage").validationEngine('validate'))
-	   return;
-
 	if (customer_index == -1)
 		$("#pageContent").load("pages/property-view.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
@@ -67,26 +64,11 @@ function resetForm() {
 resetForm();
 
 
-$(document).ready(function(){
-	$("#registerPage").validationEngine();
-/*	jQuery("#registerPage").validationEngine({'custom_error_messages' : {
-        '#First_name' : {
-            'required': {
-                'message': "This field is required"
-            }
-//	        ,
-//            'custom[min]': {
-//                'message': "."
-//            }
-        }
-//	    ,
-//        '.required': {
-//            'equals': {
-//                'message': ""
-//            }
-//        }
-    }
+$(document).on("pageshow", "#registerPage", function() {
 
-});
-*/
+
+	
+
+	$("#registerForm").validate();
+
 });
