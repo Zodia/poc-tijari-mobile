@@ -1,11 +1,12 @@
 
 //$("#main-chat-with-expert").style.visibility = 'hidden';
 
-$("#main-chat-with-expert").style.display = "hidden"; 
+//$("#main-chat-with-expert").style.display = "hidden"; 
 
 // Invoking "Chat with expert" page
 	$("#carLoanExpert1").on ("click", function () {
-		$("#main-chat-with-expert").style.visibility = 'visible';
+		//$("#main-chat-with-expert").style.visibility = 'visible';
+		loadPage ("pages/ask_expert/chat-with-expert.html");
 	});
 	
 	// Invoking "Chat with expert" page
