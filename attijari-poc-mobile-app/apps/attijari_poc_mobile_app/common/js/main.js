@@ -49,6 +49,11 @@ function wlCommonInit () {
 		loadPage ("pages/employee-profile-view.html");
 		$("nav#menu").trigger ("close.mm");
 	});
+	
+	$(".menu-logout").on ("click", function () {
+		loadPage ("pages/login-view.html");
+		$("nav#menu").trigger ("close.mm");
+	});
 }
 
 function loadPage (url) {
