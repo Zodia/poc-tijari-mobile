@@ -1,0 +1,27 @@
+.confirmation-content p {
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 150px;
+	line-height: 200px;
+	height: 200px;
+	text-align: center;
+}
+
+.confirmation-content i {
+	font-size: 200px;
+	display: inline-block;
+	float: left;
+	margin-left: 15%;
+	color: #5CFF00;
+}
+
+.confirmation-content span {
+	height: 200px;
+	line-height: 200px;
+	display: inline-block;
+	float: left;
+	font-size: 35px;
+	margin-left: 50px;
+	color: #5CFF00;
+}

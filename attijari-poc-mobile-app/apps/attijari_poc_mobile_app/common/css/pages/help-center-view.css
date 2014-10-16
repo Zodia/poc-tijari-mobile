@@ -1,0 +1,39 @@
+.help-center-content {
+	width: 100%;
+	margin-top: 10%;
+}
+
+.help-center-content h2 {
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 80px;
+}
+
+.go-to-faq {
+	width: 20%;
+	height: 120px;
+	float: left;
+	margin-left: 20%;
+	border: 1px solid #666;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px;
+}
+
+.go-to-send-problem {
+	width: 20%;
+	height: 120px;
+	float: right;
+	margin-right: 20%;
+	border: 1px solid #666;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px;
+}
+
+.help-center-content .go-to-faq i, 
+.help-center-content .go-to-send-problem i {
+	font-size: 65px;
+}

@@ -42,6 +42,12 @@ html, body {
 	display:table-cell;
 }
 
+#header .left a,
+#header .right a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
 #header .right i, #header .left i {
 	width: inherit;
 	position: relative;

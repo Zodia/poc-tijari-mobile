@@ -50,6 +50,11 @@ function wlCommonInit () {
 		$("nav#menu").trigger ("close.mm");
 	});
 	
+	$(".menu-help").on ("click", function () {
+		loadPage ("pages/help-center-view.html");
+		$("nav#menu").trigger ("close.mm");
+	});
+	
 	$(".menu-logout").on ("click", function () {
 		loadPage ("pages/login-view.html");
 		$("nav#menu").trigger ("close.mm");

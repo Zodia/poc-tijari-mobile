@@ -1,0 +1,19 @@
+.subject-problem {
+	width: 100%;
+	float: left;
+}
+
+.message-core {
+	width: 100%;
+	float: left;
+}
+
+.message-core textarea {
+	width: 100%;
+	height: 370px;
+}
+
+.submit-problem-form .ui-btn {
+	width: 30%;
+	float: right;
+}

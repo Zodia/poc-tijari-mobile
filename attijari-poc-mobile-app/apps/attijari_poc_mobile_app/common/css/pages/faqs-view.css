@@ -1,0 +1,14 @@
+#faq-set .faq-item h3 a {
+	height: 65px;
+	line-height: 65px;
+	font-size: 16px;
+}
+
+#faq-set .faq-item .details-container pre {
+	display: inline;
+	background: #fafafa;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #ececec;
+	border-radius: 3px;
+}
