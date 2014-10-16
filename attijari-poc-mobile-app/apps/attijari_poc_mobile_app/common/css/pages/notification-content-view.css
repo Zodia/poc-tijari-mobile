@@ -1,5 +1,5 @@
 .header-message {
-	width: 100%;
+	width: 85%;
 	float: left;
 	margin-bottom: 30px;
 }
@@ -18,15 +18,35 @@
 
 .header-message .title {
 	float: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	width: 700px;
+	margin-bottom: 0px;
 }
 
 .header-message .date {
 	float: left;
 	margin-top: 0;
 	margin-bottom: 0;
-	width: 800px;
+	width: 700px;
+	font-size: 13px;
+}
+
+.header-message .status {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: bold;
+	width: 700px;
+}
+
+.notifications-content-content .resend-rejected {
+	width: 14%;
+	display: inline-block;
+	float: right;
+	background: #FF0000;
+	text-shadow: none;
+	color: #FFF;
 }
 
 .message-core {
