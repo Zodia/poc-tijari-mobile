@@ -49,8 +49,8 @@ function resetForm() {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
-		case 'checkbox':
-			$el.attr('checked', 'checked');
+		case 'checkbox':  
+			$el.attr('checked', 'checked');  
 			break;
 		case 'radio':
 			$el.filter('[value="' + val + '"]').attr('checked', 'checked');

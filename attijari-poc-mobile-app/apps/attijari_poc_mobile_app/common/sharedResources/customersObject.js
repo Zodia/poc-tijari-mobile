@@ -16,7 +16,7 @@ var  customers = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"DOB":"16/08/1980",
+				"startDate":"16/08/1980",
 
 				"properties" : [
 						{
@@ -64,7 +64,7 @@ var  customers = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"DOB":"16/08/1990",
+				"startDate":"16/08/1990",
 				"properties" : [
 						{
 							"AlreadyOwn" : "N",

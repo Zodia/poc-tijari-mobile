@@ -25,11 +25,21 @@
 				<ul data-role="listview" id="listview" data-inset="true"
 					data-filter-reveal="true" data-filter-placeholder="Search Experts"
 					data-filter="true">
-					<li id="searchlistitem1"><a href="#">Cristian Carstoiu</a></li>
-					<li id="searchlistitem2"><a href="#">Mehdi Bendriss</a></li>
-					<li id="searchlistitem3"><a href="#">Mohemad Sara</a></li>
-					<li id="searchlistitem4"><a href="#">Shailendra K Mishra</a></li>
-					<li id="searchlistitem5"><a href="#">Souhail Guennouni</a></li>
+					<li><a id="search_Cristian_Carstoiu"
+						onClick="chatWithExpert('Cristian','Carstoiu','Car Loan Expert')"
+						href="#">Cristian Carstoiu</a></li>
+					<li><a id="search_Mehdi_Bendriss"
+						onClick="chatWithExpert('Mehdi','Bendriss','Car Loan Expert')"
+						href="#">Mehdi Bendriss</a></li>
+					<li><a id="search_Mohemad Sara"
+						onClick="chatWithExpert('Mohemad','Sara','Car Loan Expert')"
+						href="#">Mohemad Sara</a></li>
+					<li><a id="search_Shailendra_Mishra"
+						onClick="chatWithExpert('Shailendra','Mishra','Car Loan Expert')"
+						href="#">Shailendra Mishra</a></li>
+					<li><a id="search_Souhail_Guennouni"
+						onClick="chatWithExpert('Souhail','Guennouni','Car Loan Expert')"
+						href="#">Souhail Guennouni</a></li>
 
 				</ul>
 			</div>
@@ -136,11 +146,11 @@
 
 			<!-- ------------------------Start: Expert Detail ------------------------  -->
 			<div class="ui-grid-a">
-				<div class="ui-block-a" style="width: 35%">
+				<div class="ui-block-a" id="expertImageSection" style="width: 35%">
 					<img
 						src="images/pages/ask_expert/chat_with_expert/expert-cristian.jpg">
 				</div>
-				<div class="ui-block-b" style="width: 65%">
+				<div class="ui-block-b" id="expertInfoSection" style="width: 65%">
 					<font face="verdana" size="4" color="white">Cristian
 						carstoiu </font><br> <font face="verdana" size="2" color="white">Designation:
 						Car Loan Expert <br> Phone: +971 566766488<br>Email:
