@@ -150,5 +150,9 @@ html, body {
 }
 
 #pageContent {
-	overflow: hidden;
+	position: absolute;
+	top: 91px;
+	bottom: 91px;
+	left: 0;
+	right: 0;
 }

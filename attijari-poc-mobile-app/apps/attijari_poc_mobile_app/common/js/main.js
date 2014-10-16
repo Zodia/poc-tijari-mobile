@@ -47,6 +47,7 @@ function wlCommonInit () {
 	
 	$(".menu-profile").on ("click", function () {
 		loadPage ("pages/employee-profile-view.html");
+		$("nav#menu").trigger ("close.mm");
 	});
 }
 
