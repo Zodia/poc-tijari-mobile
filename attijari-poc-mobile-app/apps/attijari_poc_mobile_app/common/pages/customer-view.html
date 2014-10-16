@@ -18,38 +18,29 @@
       
     </ul>
                </td>
-				<td class="tablist-content" id="registerPage">
-				<form id="customer_form">
+				<td class="tablist-content">
+				
 				    <div id="one" class="ui-body-d"> 
-				    
-				    
-                   <div class="ui-field-contain">
-						<label for="select-native-1" >Title </label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
-						<label>
-        <input type="radio" checked="checked" name="Title" id="radio-choice-0a">Ms
-    </label>
-    <label>
-        <input type="radio" name=Title id="radio-choice-0a">Mr
-    </label>
-    </fieldset>
-    </div>
-    
-    
-    
+      <div class="ui-field-contain">
+						<label for="textinput-1">Title</label> <select name="Title" id="select-native-1">
+							<option value="Yes">Ms</option>
+							<option value="No">Mr</option>
+						</select>
+
+					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">First name <em>* </em></label> <input
 							name="First_name" id="First_name" 
-							type="text" class="validate[required]">
+							type="text" class="required">
 					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">Last name <em>* </em></label> <input
 							name="Last_name" id="Last_name" 
-							type="text" class="validate[required]">
+							type="text" class="required">
 					</div>
 						<div class="ui-field-contain">
 						<label for="textinput-1">D.O.B</label> 
-						<input type="text" name="startDate"  id="filter-date-from" placeholder="Click to show the picker" readonly="" class="ui-input-text ui-body-b">
+						<input type="text" name="startDate"  id="filter-date-from"  readonly="" class="ui-input-text ui-body-b">
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Nationality</label> <input
@@ -79,12 +70,11 @@
    </div>
    <div id="three" class="ui-body-d"> 
    <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing personal loans?</label>
-			   <fieldset data-role="controlgroup" data-type="horizontal">
-						<label><input type="radio" name="personal_loans" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=personal_loans id="radio-choice-0a">No </label>
-               </fieldset>
-						 
+						<label for="select-native-1" >you have existing personal loans?</label> <select name="personal_loans" id="select-native-1">
+							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+							
+						</select>
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -95,12 +85,10 @@
    </div>
    <div id="four" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing car loans?</label> 
-				<fieldset data-role="controlgroup" data-type="horizontal">
-						<label><input type="radio" name="car_loans" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=car_loans id="radio-choice-0a">No </label>
-               </fieldset>
-						
+						<label for="select-native-1" >you have existing car loans?</label> <select name="car_loans" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -110,12 +98,11 @@
    </div>
    <div id="five" class="ui-body-d">
     <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing mortgages? <em>* </em></label> 
-					<fieldset data-role="controlgroup" data-type="horizontal">
-						<label><input type="radio" name="existing_mortgages" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=existing_mortgages id="radio-choice-0a">No </label>
-               </fieldset>	
-						
+						<label for="select-native-1" >you have existing mortgages? <em>* </em></label> <select name="existing_mortgages" id="select-native-1">
+							<option value="No">No</option>
+							<option value="Yes">Yes</option>
+							
+						</select>
 					</div>
 					<div class="ui-field-contain">
 						<label for="textinput-1">Monthly payment</label> <input
@@ -126,31 +113,19 @@
    </div>
    <div id="six" class="ui-body-d"> 
     <div class="ui-field-contain">
-						<label for="select-native-1" >Existing debit card</label> 
-						
-						
-				<fieldset data-role="controlgroup" data-type="horizontal">
-						<label><input type="radio" name="Existing_debit_card" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=Existing_debit_card id="radio-choice-0a">No </label>
-               </fieldset>	
-	</div>
+						<label for="select-native-1" >Existing debit card</label> <select name="Existing_debit_card" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
 					 <div class="ui-field-contain">
-						<label for="select-native-1" >Existing credit card</label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
-						<label><input type="radio" name="Existing_credit_card" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=Existing_credit_card id="radio-choice-0a">No </label>
-               </fieldset>	
-						
+						<label for="select-native-1" >Existing credit card</label> <select name="Existing_credit_card" id="select-native-1">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
 					</div>
     
    </div>
-   <div data-type="horizontal">
-	
-	<button id="proprety_call"
-		style="width:30%; float: right; background-color: #515151; color: white;"
-		class="ui-btn" type="submit">Next</button>
-</div>
-   </form>
 				
 				</td>
 			</tr>
@@ -161,8 +136,13 @@
 
 </div>
 </div>
-<script src="js/libs/jquery.validationEngine-en.js"></script>
-<script src="js/libs/jquery.validationEngine.js"></script>
+<div data-type="horizontal">
+	
+	<button id="proprety_call"
+		style="width:30%; float: right; background-color: #515151; color: white;"
+		class="ui-btn">Next</button>
+</div>
+<script src="js/libs/jquery.validate.js"></script>
 <script src="js/pages/customer-view.js"></script>
 <script src="js/libs/jquery.scroll.start.stop.js"></script>
 <script src="js/libs/jquery.mobile508datepicker.js"></script>
