@@ -51,7 +51,7 @@ $('#submit')
 								var message = "Thank you for your mortgage application."
 										+ "Our Mortgage Specialists will analyse it and will be"
 										+ " responding to your application soon.";
-								var additionalAction = '<a href="#" data-role="button" data-inline="true" data-theme="b" id="new-app-action">New application</a>';
+								var additionalAction = '<a data-role="button" data-inline="true" data-theme="b" id="new-app-action">New application</a>';
 								var promoteTitle = "Next best offers";
 								var promoteContent = '<div class="ui-grid-a">';
 								promoteContent += '<div class="ui-block-a">';
@@ -82,11 +82,14 @@ $('#submit')
 
 								confirmOperation(message, additionalAction,
 										promoteTitle, promoteContent);
+								$("#confirmation-wrapper .confirmation-content .confirmation-message .additional-action #new-app-action")
+										.on(
+												"click",
+												function() {
+													loadPage("pages/customer-entry-view.html");
+												});
 							});
 				});
-$("#new-app-action").on("click", function() {
-	loadPage("pages/customer-entry-view.html");
-});
 
 function resetFormCustomer() {
 	var data;

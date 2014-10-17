@@ -18,7 +18,11 @@ if (prop_index != -1) {
 	});
 }
 
+$(document).ready(function(){
 
+	$("#property_form").validationEngine({validateNonVisibleFields: true});	
+
+});
 //if(prop_index== -1)
 //	document.getElementById("doc_call").disabled = true; 
 
@@ -64,7 +68,10 @@ loadForm();
 
 $("#doc_call").on("click", function() {
 	property = $("form").serializeObject();
+	var correct=$("#property_form").validationEngine('validate');
+	//alert(correct);
+	if(correct){
 	$("#pageContent").load("pages/supporting-docs-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
-	});
+	});}
 });

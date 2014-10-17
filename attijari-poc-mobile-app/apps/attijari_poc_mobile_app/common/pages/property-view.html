@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/pages/property-view.css">
 
-<form data-role="tabs" action="" method="post">
+<form data-role="tabs" action="" method="post" id="property_form">
 	<ul data-role="listview" data-inset="true" class="tablist-left">
 		<li><a id="AddBuil" class="translate" href="#one"
 			data-ajax="false">Address and building</a></li>
@@ -30,9 +30,9 @@
 			</fieldset>
 		</div>
 		<div class="ui-field-contain">
-			<label for="textarea-1">Property Address</label>
+			<label for="textarea-1">Property Address <em>* </em></label>
 			<textarea cols="40" rows="8" name="propAddress" id="textarea-1"
-				placeholder="Address"></textarea>
+				placeholder="Address" class="validate[required]"></textarea>
 		</div>
 	</div>
 	<div id="two" class="tablist-content">
@@ -98,4 +98,6 @@
 		class="ui-btn">Next</button>
 </div>
 <br>
+<script src="js/libs/jquery.validationEngine-en.js"></script>
+<script src="js/libs/jquery.validationEngine.js"></script>
 <script src="js/pages/property-view.js"></script>
