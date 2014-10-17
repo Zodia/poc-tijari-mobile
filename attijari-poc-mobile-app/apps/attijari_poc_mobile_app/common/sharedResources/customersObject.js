@@ -20,27 +20,27 @@ var  customers = [
 
 				"properties" : [
 						{
-							"AlreadyOwn" : "N",
-							"isExisting" : "E",
+							"AlreadyOwn" : "New",
+							"isExisting" : "Existing",
 							"propAddress" : "Casa Nearshore, Shore 19, Sidi Maârouf, Casablanca",
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
 							"liveableArea" : "210",
 							"builtArea" : "250",
-							"isEvaluated" : "Y",
+							"isEvaluated" : "Yes",
 							"evaluationSum" : "430,000"
 						},
 						{
-							"AlreadyOwn" : "N",
-							"isExisting" : "E",
+							"AlreadyOwn" : "New",
+							"isExisting" : "Existing",
 							"propAddress" : "maarif , Casablanca",
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
 							"liveableArea" : "210",
 							"builtArea" : "250",
-							"isEvaluated" : "Y",
+							"isEvaluated" : "Yes",
 							"evaluationSum" : "430,000"
 						}
 
@@ -67,27 +67,27 @@ var  customers = [
 				"startDate":"16/08/1990",
 				"properties" : [
 						{
-							"AlreadyOwn" : "N",
-							"isExisting" : "E",
+							"AlreadyOwn" : "New",
+							"isExisting" : "Existing",
 							"propAddress" : "bd anfa ",
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
 							"liveableArea" : "210",
 							"builtArea" : "250",
-							"isEvaluated" : "Y",
+							"isEvaluated" : "Yes",
 							"evaluationSum" : "430,000"
 						},
 						{
-							"AlreadyOwn" : "N",
-							"isExisting" : "E",
+							"AlreadyOwn" : "New",
+							"isExisting" : "Existing",
 							"propAddress" : "bd mohamed V",
 							"propType" : "villa",
 							"rooms" : ">4",
 							"usage" : "rent",
 							"liveableArea" : "210",
 							"builtArea" : "250",
-							"isEvaluated" : "Y",
+							"isEvaluated" : "Yes",
 							"evaluationSum" : "430,000"
 						} ]
 			} 
