@@ -11,12 +11,13 @@ $("#cancel").on("click", function() {
 
 $(".current-title").text("Property details");
 $(".left .back").text("Back");
+$(".left").off();
 if (prop_index != -1) {
-	$(".left").unbind("click").on("click", function() {
+	$(".left").on("click", function() {
 		loadPage("pages/properties-listview.html");
 	});
 } else {
-	$(".left").unbind("click").on("click", function() {
+	$(".left").on("click", function() {
 		loadPage("pages/customer-view.html");
 	});
 }

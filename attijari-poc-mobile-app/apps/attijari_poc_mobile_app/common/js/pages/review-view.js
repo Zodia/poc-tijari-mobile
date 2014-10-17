@@ -1,6 +1,6 @@
 $(".current-title").text("All info review");
-
-$(".left").unbind("click").on("click", function() {
+$(".left").off();
+$(".left").on("click", function() {
 	loadPage("pages/supporting-docs-view.html");
 });
 

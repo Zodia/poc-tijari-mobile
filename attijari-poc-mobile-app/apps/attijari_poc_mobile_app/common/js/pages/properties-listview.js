@@ -7,11 +7,13 @@ $("#cancel").on ("click", function () {
 
 $(".current-title").text ("Properties list");
 $(".left .back").text("Back");
-$(".left").unbind("click").on ("click", function () {
+$(".left").off();
+$(".left").on ("click", function () {
 	$("#pageContent").load("pages/customer-view.html", function () {
 		$(this).enhanceWithin(); /* apply styles */
 	});
 });
+
 
 
 

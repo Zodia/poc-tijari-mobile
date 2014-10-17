@@ -4,8 +4,8 @@
 
 var i = 0;
 $(".current-title").text("Property Supporting Documents");
-
-$(".left").unbind("click").on("click", function() {
+$(".left").off();
+$(".left").on("click", function() {
 	loadPage("pages/property-view.html");
 });
 
