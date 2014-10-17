@@ -22,6 +22,9 @@ $("#buttongo").on("click",function(){
   //alert(login);
 	if($('#login').val()=="demo" && $('#password').val()=="demo"  )
 	{
+		
+		connected = 1;
+		$(".right").show();
 		$("#header").show();
 		$("#footer").show();	
 	
