@@ -1,2 +1,55 @@
 
 /* Stylesheet content from css/pages/employee-profile-view.css in folder common */
+.fields { 
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+}
+
+.fields .thumbnail {
+	width: 325px;
+	height: 325px;
+	border-radius: 170px;
+	background-position: center;
+	background-size: cover;
+	background-color: #000;
+	background-image: url("../../images/mehdi.jpg");
+	float: left;
+	margin-right: 70px;
+}
+
+.fields form {
+	width: 500px;
+	float: left;
+	clear: inherit;
+	margin-top: 0;
+	border-bottom: none;
+}
+
+.fields form p div {
+	width: 40%;
+	background: #FF0000;
+	text-shadow: none;
+	float: left;
+}
+
+.fields form p div:last-child {
+	float: right;
+	background: #00FF52;
+}
+
+.fields .thumbnail-actions {
+	float: left;
+	width: 325px;
+	margin-top: -75px;
+}
+
+.fields .thumbnail-actions i {
+	display: block;
+	font-size: 35px;
+	float: left;
+}
+
+.fields .thumbnail-actions i.fa-pencil {
+	float: right;
+}

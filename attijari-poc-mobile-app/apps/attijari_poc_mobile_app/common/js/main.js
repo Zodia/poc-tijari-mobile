@@ -59,6 +59,7 @@ function wlCommonInit () {
 	$(".menu-logout").on ("click", function () {
 		loadPage ("pages/login-view.html");
 		$("nav#menu").trigger ("close.mm");
+		setConnectionStatus (0);
 	});
 }
 
@@ -88,4 +89,12 @@ function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
         	$(".promote-content").html (promoteContent).enhanceWithin ();
         }
     });
+}
+
+function getConnectionStatus () {
+	return connected;
+}
+
+function setConnectionStatus (status) {
+	connected = status;
 }

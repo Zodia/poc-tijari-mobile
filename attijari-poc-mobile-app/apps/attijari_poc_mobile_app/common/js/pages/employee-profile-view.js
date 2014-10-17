@@ -1,1 +1,1 @@
-$("").text ("Employee profile");
+$(".current-title").text ("Employee profile");

@@ -44,6 +44,12 @@ html, body {
 	display:table-cell;
 }
 
+#header .left a,
+#header .right a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
 #header .right i, #header .left i {
 	width: inherit;
 	position: relative;
@@ -152,8 +158,13 @@ html, body {
 }
 
 #pageContent {
-	overflow: hidden;
+	position: absolute;
+	top: 91px;
+	bottom: 91px;
+	left: 0;
+	right: 0;
 }
+
 /* Stylesheet content from css/main.css in folder ipad */
 
 /* this CSS file extends the application CSS file found under common\css */
