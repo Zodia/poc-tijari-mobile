@@ -24,7 +24,10 @@ $("#proprety_call").on("click", function() {
 $(".current-title").text("Customer View");
 $(".left .back").text("Back");
 $(".left").unbind("click").on("click", function() {
-	loadPage("pages/customers-list.html"); // "pages/splash-view.html"
+	if (customer_index == -1)
+	     loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
+	else
+		loadPage("pages/customers-list.html");
 });
 
 data = {
