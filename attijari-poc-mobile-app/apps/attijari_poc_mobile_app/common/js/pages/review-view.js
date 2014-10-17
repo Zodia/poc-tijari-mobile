@@ -43,7 +43,7 @@ function confirmDialog(text, callback) {
 }
 $('#submit').on('click', function() {
 	confirmDialog("submit", function() {
-		alert('Confirmed');
+		loadPage("pages/confirmation-view.html");
 	});
 });
 
