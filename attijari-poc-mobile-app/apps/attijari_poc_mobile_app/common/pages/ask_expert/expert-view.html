@@ -57,11 +57,11 @@
 					<li><a href="#" data-role="button" data-icon="busy-status"
 						id="carLoanExpert2">Cristian Carstoiu</a></li> -->
 
-					<li><a href="#" id="carLoanExpert1">Cristian Carstoiu</a></li>
-					<li><a href="#" id="carLoanExpert2">Mehdi Bendriss</a></li>
-					<li><a href="#" id="carLoanExpert3">Mohemad Sara</a></li>
-					<li><a href="#" id="carLoanExpert4">Shailendra Mishra</a></li>
-					<li><a href="#" id="carLoanExpert5">Souhail Guennouni</a></li>
+					<li><a href="#" id="carLoanExpert1" onClick="chatWithExpert('Cristian','Carstoiu','Car Loan Expert')">Cristian Carstoiu</a></li>
+					<li><a href="#" id="carLoanExpert2" onClick="chatWithExpert('Mehdi','Bendriss','Car Loan Expert')">Mehdi Bendriss</a></li>
+					<li><a href="#" id="carLoanExpert3" onClick="chatWithExpert('Mohemad','Sara','Car Loan Expert')">Mohemad Sara</a></li>
+					<li><a href="#" id="carLoanExpert4" onClick="chatWithExpert('Shailendra','Mishra','Car Loan Expert')">Shailendra Mishra</a></li>
+					<li><a href="#" id="carLoanExpert5" onClick="chatWithExpert('Souhail','Guennouni','Car Loan Expert')">Souhail Guennouni</a></li>
 
 
 				</ul>
@@ -73,10 +73,10 @@
 				data-content-theme="a">
 				<h3>Home Loan Expert</h3>
 				<ul data-role="listview">
-					<li><a href="#">Shailendra Mishra</a></li>
-					<li><a href="#">Cristian Carstoiu</a></li>
-					<li><a href="#">Souhail Guennouni</a></li>
-					<li><a href="#">Mohemad Sara</a></li>
+					<li><a href="#" onClick="chatWithExpert('Shailendra','Mishra','Home Loan Expert')">Shailendra Mishra</a></li>
+					<li><a href="#" onClick="chatWithExpert('Cristian','Carstoiu','Home Loan Expert')">Cristian Carstoiu</a></li>
+					<li><a href="#" onClick="chatWithExpert('Souhail','Guennouni','Home Loan Expert')">Souhail Guennouni</a></li>
+					<li><a href="#" onClick="chatWithExpert('Mohemad','Sara','Home Loan Expert')">Mohemad Sara</a></li>
 				</ul>
 			</div>
 			<!-- ---------------End : Home Loan Section ------------------------------->
@@ -86,9 +86,9 @@
 				data-content-theme="a">
 				<h3>Personal Loan Expert</h3>
 				<ul data-role="listview">
-					<li><a href="#">Shailendra Mishra</a></li>
-					<li><a href="#">Cristian Carstoiu</a></li>
-					<li><a href="#">Souhail Guennouni</a></li>
+					<li><a href="#" onClick="chatWithExpert('Shailendra','Mishra','Personal Loan Expert')">Shailendra Mishra</a></li>
+					<li><a href="#" onClick="chatWithExpert('Cristian','Carstoiu','Personal Loan Expert')">Cristian Carstoiu</a></li>
+					<li><a href="#" onClick="chatWithExpert('Souhail','Guennouni','Personal Loan Expert')">Souhail Guennouni</a></li>
 					<li><a href="#">Mohemad Sara</a></li>
 				</ul>
 			</div>
@@ -99,9 +99,9 @@
 				data-content-theme="a">
 				<h3>Education Loan Expert</h3>
 				<ul data-role="listview">
-					<li><a href="#">Shailendra Mishra</a></li>
-					<li><a href="#">Cristian Carstoiu</a></li>
-					<li><a href="#">Souhail Guennouni</a></li>
+					<li><a href="#" onClick="chatWithExpert('Shailendra','Mishra','Education Loan Expert')">Shailendra Mishra</a></li>
+					<li><a href="#" onClick="chatWithExpert('Cristian','Carstoiu','Education Loan Expert')">Cristian Carstoiu</a></li>
+					<li><a href="#" onClick="chatWithExpert('Souhail','Guennouni','Education Loan Expert')">Souhail Guennouni</a></li>
 				</ul>
 			</div>
 			<!-- ---------------End : Education Loan Section ------------------------------->
@@ -111,10 +111,10 @@
 				data-content-theme="a">
 				<h3>Mortgage Expert</h3>
 				<ul data-role="listview">
-					<li><a href="#">Shailendra Mishra</a></li>
-					<li><a href="#">Cristian Carstoiu</a></li>
-					<li><a href="#">Souhail Guennouni</a></li>
-					<li><a href="#">Mohemad Sara</a></li>
+					<li><a href="#" onClick="chatWithExpert('Shailendra','Mishra','Mortgage Expert')">Shailendra Mishra</a></li>
+					<li><a href="#" onClick="chatWithExpert('Cristian','Carstoiu','Mortgage Expert')">Cristian Carstoiu</a></li>
+					<li><a href="#" onClick="chatWithExpert('Souhail','Guennouni','Mortgage Expert')">Souhail Guennouni</a></li>
+					<li><a href="#" onClick="chatWithExpert('Mohemad','Sara','Mortgage Expert')">Mohemad Sara</a></li>
 				</ul>
 			</div>
 			<!-- ---------------End : Mortgage Section ------------------------------->
@@ -138,7 +138,7 @@
 	<div class="ui-block-b" style="width: 5%"></div>
 
 	<!-----------------------------  Chat window Div Section-------------------------------->
-	<div class="ui-block-c" style="width: 50%">
+	<div class="ui-block-c" style="width: 50%; display: none;" id="chatWindowSection">
 
 
 		<div id="main-chat-with-expert" class="ui-field-contain"
