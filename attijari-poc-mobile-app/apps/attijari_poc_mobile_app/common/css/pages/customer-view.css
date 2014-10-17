@@ -16,6 +16,13 @@
 	width: 100%;
 	
 }
+.good{
+  background-color: #83FF6B;	
+}
+.bad{
+	 background-color: #ff234f;
+}
+
 
 em { color: red; font-weight: bold; padding-right: .25em; }
 

@@ -1,3 +1,20 @@
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
 var prop_index = -1;
 //$("#home_call").on("click", function() {
 //	$("#pageContent").load("pages/customer-entry-view.html", function() {
@@ -24,36 +41,41 @@ $("#proprety_call").on("click", function() {
 $(".current-title").text("Customer View");
 $(".left .back").text("Back");
 $(".left").unbind("click").on("click", function() {
+	customer={};
 	if (customer_index == -1)
 	     loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
 	else
 		loadPage("pages/customers-list.html");
 });
 
-data = {
-	"Title" : "",
-	"First_name" : "",
-	"Last_name" : "",
-	"Nationality" : "",
-	"Email" : "",
-	"Mobile" : "",
-	"Monthly_income" : "",
-	"personal_loans" : "",
-	"MP_personal_loans" : "",
-	"car_loans" : "",
-	"MP_car_loans" : "",
-	"existing_mortgages" : "",
-	"MP_existing_mortgages" : "",
-	"Existing_debit_card" : "",
-	"Existing_credit_card" : ""
-
-};
+//data = {
+//	"Title" : "",
+//	"First_name" : "",
+//	"Last_name" : "",
+//	"Nationality" : "",
+//	"Email" : "",
+//	"Mobile" : "",
+//	"Monthly_income" : "",
+//	"personal_loans" : "",
+//	"MP_personal_loans" : "",
+//	"car_loans" : "",
+//	"MP_car_loans" : "",
+//	"existing_mortgages" : "",
+//	"MP_existing_mortgages" : "",
+//	"Existing_debit_card" : "",
+//	"Existing_credit_card" : ""
+//
+//};
 
 // reset form values from json object
 function resetForm() {
+	var data;
 	if (customer_index == -1)
-		return 0;
-	$.each(customers[customer_index], function(name, val) {
+		data=customer;
+	else
+		data=customers[customer_index];
+	
+	$.each(data, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
@@ -95,20 +117,3 @@ function hideHistory(){
 
 
 hideHistory(); 
-
-$.fn.serializeObject = function()
-{
-    var o = {};
-    var a = this.serializeArray();
-    $.each(a, function() {
-        if (o[this.name] !== undefined) {
-            if (!o[this.name].push) {
-                o[this.name] = [o[this.name]];
-            }
-            o[this.name].push(this.value || '');
-        } else {
-            o[this.name] = this.value || '';
-        }
-    });
-    return o;
-};
