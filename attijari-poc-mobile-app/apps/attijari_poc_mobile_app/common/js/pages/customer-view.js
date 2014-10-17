@@ -6,7 +6,7 @@ var prop_index = -1;
 //});
 $("#proprety_call").on("click", function() {
 	var correct=$("#customer_form").validationEngine('validate');
-	alert(correct);
+	//alert(correct);
 	if(correct){
 	
 	if (customer_index == -1)
