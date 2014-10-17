@@ -46,6 +46,7 @@ html, body {
 #header .right a {
 	font-weight: normal;
 	text-decoration: none;
+	color: #FFF;
 }
 
 #header .right i, #header .left i {
@@ -53,11 +54,14 @@ html, body {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	float: left;
 }
 
 #header .left span {
-	/*position: inherit;
-	vertical-align: sub;*/
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+	margin-top: 15px;
 }
 
 #header .center {

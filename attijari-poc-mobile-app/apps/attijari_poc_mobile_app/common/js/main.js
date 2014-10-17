@@ -58,8 +58,8 @@ function wlCommonInit () {
 	
 	$(".menu-logout").on ("click", function () {
 		loadPage ("pages/login-view.html");
+		connected = 0;
 		$("nav#menu").trigger ("close.mm");
-		setConnectionStatus (0);
 	});
 }
 
