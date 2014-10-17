@@ -9,7 +9,7 @@
 			<tr>
 				<td class="tablist-left">
                 <ul data-role="listview" data-inset="true" >
-      <li><a href="#one" data-ajax="false">Personal data</a></li>
+      <li><a href="#one" data-ajax="false" >Personal data</a></li>
       <li><a href="#two" data-ajax="false">Regular income/ other sources</a></li>
       <li><a href="#three" data-ajax="false">Existing personal loans</a></li>
       <li><a href="#four" data-ajax="false">Existing car loans</a></li>
@@ -24,15 +24,16 @@
 				
 				    <div id="one" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="textinput-1">Title</label> 
-            <fieldset data-role="controlgroup" data-type="horizontal">
-						<label>
-        <input type="radio" checked="checked" name="Title" id="radio-choice-0a">Ms
-    </label>
-    <label>
-        <input type="radio" name=Title id="radio-choice-0a">Mr
-    </label>
-    </fieldset>
+				
+						<fieldset data-role="controlgroup">
+				<legend>Title</legend>
+				<input type="radio" name="Title" id="radio-choice-1"
+					value="Yes" checked="checked" /> <label for="radio-choice-1">Ms</label>
+
+				<input type="radio" name="Title" id="radio-choice-2"
+					value="No" /> <label for="radio-choice-2">Mr</label>
+			</fieldset>
+            
 					</div>
 					 <div class="ui-field-contain">
 						<label for="textinput-1">First name <em>* </em></label> <input
@@ -54,7 +55,7 @@
 							type="text">
 					</div>
 					<div class="ui-field-contain">
-						<label for="textinput-1">Email</label> <input
+						<label for="textinput-1">Email <em>* </em></label> <input class="validate[required,custom[email]]"
 							name="Email" id="textinput-1" 
 							type="text">
 					</div>
@@ -76,8 +77,9 @@
    </div>
    <div id="three" class="ui-body-d"> 
    <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing personal loans?</label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						
+						<fieldset data-role="controlgroup">
+						<legend  >you have existing personal loans?</legend> 
 						<label><input type="radio" name="personal_loans" id="radio-choice-0a">Yes</label>
                         <label><input type="radio" checked="checked"  name=personal_loans id="radio-choice-0a">No </label>
                </fieldset>
@@ -91,9 +93,10 @@
    </div>
    <div id="four" class="ui-body-d"> 
       <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing car loans?</label> 
 						
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						
+						<fieldset data-role="controlgroup" >
+						<legend>you have existing car loans?</legend> 
 						<label><input type="radio" name="car_loans" id="radio-choice-0a">Yes</label>
                         <label><input type="radio" checked="checked"  name=car_loans id="radio-choice-0a">No </label>
                </fieldset>
@@ -106,8 +109,9 @@
    </div>
    <div id="five" class="ui-body-d">
     <div class="ui-field-contain">
-						<label for="select-native-1" >you have existing mortgages? <em>* </em></label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						
+						<fieldset data-role="controlgroup" >
+						<legend >you have existing mortgages? <em>* </em></legend> 
 						<label><input type="radio" name="existing_mortgages" id="radio-choice-0a">Yes</label>
                         <label><input type="radio" checked="checked"  name=existing_mortgages id="radio-choice-0a">No </label>
                </fieldset>	
@@ -121,15 +125,17 @@
    </div>
    <div id="six" class="ui-body-d"> 
     <div class="ui-field-contain">
-						<label for="select-native-1" >Existing debit card</label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						
+						<fieldset data-role="controlgroup" >
+						<legend>Existing debit card</legend> 
 						<label><input type="radio" name="Existing_debit_card" id="radio-choice-0a">Yes</label>
                         <label><input type="radio" checked="checked"  name=Existing_debit_card id="radio-choice-0a">No </label>
                </fieldset>	
 					</div>
 					 <div class="ui-field-contain">
-						<label for="select-native-1" >Existing credit card</label> 
-						<fieldset data-role="controlgroup" data-type="horizontal">
+						
+						<fieldset data-role="controlgroup">
+						<legend >Existing credit card</legend> 
 						<label><input type="radio" name="Existing_credit_card" id="radio-choice-0a">Yes</label>
                         <label><input type="radio" checked="checked"  name=Existing_credit_card id="radio-choice-0a">No </label>
                </fieldset>	
@@ -140,11 +146,11 @@
    <div id="seven" class="ui-body-d"> 
    <div data-role="collapsibleset" data-theme="a" data-content-theme="a" >
     <div data-role="collapsible">
-        <h3>Car loans completely paid</h3>
+        <h3 class="good">Car loans completely paid</h3>
     <p>Car loans of 20000$ completely paid on 12/10/2012</p>
     </div>
     <div data-role="collapsible">
-        <h3>mortgage payment delayed</h3>
+        <h3 class="bad">mortgage payment delayed</h3>
     <p>mortgage payment delayed for 2 mounths from 15/03/2011 to 15/05/2011</p>
     </div>
     
