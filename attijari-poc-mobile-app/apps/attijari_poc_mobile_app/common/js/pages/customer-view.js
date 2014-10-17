@@ -5,6 +5,9 @@ var prop_index = -1;
 //	});
 //});
 $("#proprety_call").on("click", function() {
+	var correct=$("#customer_form").validationEngine('validate');
+	alert(correct);
+	if(correct){
 	
 	if (customer_index == -1)
 		$("#pageContent").load("pages/property-view.html", function() {
@@ -14,6 +17,7 @@ $("#proprety_call").on("click", function() {
 		$("#pageContent").load("pages/properties-listview.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
+}
 });
 
 $(".current-title").text("Customer View");
@@ -64,11 +68,26 @@ function resetForm() {
 resetForm();
 
 
-$(document).on("pageshow", "#registerPage", function() {
+$(document).ready(function(){
 
+	$("#customer_form").validationEngine();	
 
 	
-
-	$("#registerForm").validate();
+	
+	
+	
 
 });
+
+function hideHistory(){
+	if (customer_index == -1){
+		   $('#historyContent').hide();
+		
+		}else{
+			$('#historyContent').show();
+		} 
+	     
+}
+
+
+hideHistory(); 
