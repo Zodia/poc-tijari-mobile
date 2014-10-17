@@ -70,7 +70,7 @@ resetForm();
 
 $(document).ready(function(){
 
-	$("#customer_form").validationEngine();	
+	$("#customer_form").validationEngine({validateNonVisibleFields: true});	
 
 	
 	
