@@ -1,4 +1,5 @@
 var customer_index = -1;
+var connected = 0;
 
 function wlCommonInit () {
 	/*
@@ -66,3 +67,25 @@ function loadPage (url) {
         $(this).enhanceWithin(); /* apply styles */
     });
 } 
+
+function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
+	$("#pageContent").load("pages/confirmation-view.html", function () {
+        $(this).enhanceWithin();
+        
+        if (message !== null && message !== undefined) {
+        	$(".confirmation-message-core").text (message).enhanceWithin ();
+        }
+        
+        if (actionBlock !== null && actionBlock !== undefined) {
+        	$(".additional-action").html (actionBlock).enhanceWithin ();
+        }
+        
+        if (promoteTitle !== null && promoteTitle !== undefined) {
+        	$(".promote-title").text (promoteTitle).enhanceWithin ();
+        }
+        
+        if (promoteContent !== null && promoteContent !== undefined) {
+        	$(".promote-content").html (promoteContent).enhanceWithin ();
+        }
+    });
+}
