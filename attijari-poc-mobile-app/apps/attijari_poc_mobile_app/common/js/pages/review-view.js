@@ -114,6 +114,7 @@ function resetFormCustomer() {
 	});
 }
 
+
 resetFormCustomer();
 
 function resetFormProperty() {

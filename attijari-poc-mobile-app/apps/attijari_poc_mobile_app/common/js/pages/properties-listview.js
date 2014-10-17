@@ -21,6 +21,7 @@ $(".left").on ("click", function () {
 function loadProperties () {
 	
     
+	
 	$.each(customers[customer_index].properties, function(i,val ) {
 		
 		var li="<li id=\""+i+"\"><a>"+val.propAddress+"</a></li>";
