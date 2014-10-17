@@ -41,16 +41,61 @@ function confirmDialog(text, callback) {
 		popupDialogObj.attr('data-confirmed', 'yes');
 	});
 }
-$('#submit').on('click', function() {
-	confirmDialog("submit", function() {
-		loadPage("pages/confirmation-view.html");
-	});
+$('#submit')
+		.on(
+				'click',
+				function() {
+					confirmDialog(
+							"submit",
+							function() {
+								var message = "Thank you for your mortgage application."
+										+ "Our Mortgage Specialists will analyse it and will be"
+										+ " responding to your application soon.";
+								var additionalAction = '<a href="#" data-role="button" data-inline="true" data-theme="b" id="new-app-action">New application</a>';
+								var promoteTitle = "Next best offers";
+								var promoteContent = '<div class="ui-grid-a">';
+								promoteContent += '<div class="ui-block-a">';
+								promoteContent += '<div class="ui-bar ui-bar-e">'
+								promoteContent += '<i class="fa fa-car"></i>';
+								promoteContent += '<p>Buy a car</p>';
+								promoteContent += '</div>';
+								promoteContent += '</div>';
+								promoteContent += '<div class="ui-block-b">';
+								promoteContent += '<div class="ui-bar ui-bar-e">'
+								promoteContent += '<i class="fa fa-home"></i>';
+								promoteContent += '<p>Buy a house</p>';
+								promoteContent += '</div>';
+								promoteContent += '</div>';
+								promoteContent += '<div class="ui-block-a">';
+								promoteContent += '<div class="ui-bar ui-bar-e">'
+								promoteContent += '<i class="fa fa-plane"></i>';
+								promoteContent += '<p>Take a vacation</p>';
+								promoteContent += '</div>';
+								promoteContent += '</div>';
+								promoteContent += '<div class="ui-block-b">';
+								promoteContent += '<div class="ui-bar ui-bar-e">'
+								promoteContent += '<i class="fa fa-university"></i>';
+								promoteContent += '<p>Go to college</p>';
+								promoteContent += '</div>';
+								promoteContent += '</div>';
+								promoteContent += '</div>';
+
+								confirmOperation(message, additionalAction,
+										promoteTitle, promoteContent);
+							});
+				});
+$("#new-app-action").on("click", function() {
+	loadPage("pages/customer-entry-view.html");
 });
 
 function resetFormCustomer() {
-	if (customer_index == -1)
-		return 0;
-	$.each(customers[customer_index], function(name, val) {
+	var data;
+	if (customer_index == -1) {
+		data = customer;
+	} else {
+		data = customers[customer_index];
+	}
+	$.each(data, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
@@ -63,14 +108,19 @@ function resetFormCustomer() {
 		default:
 			$el.val(val);
 		}
-	})
+	});
 }
 
 resetFormCustomer();
+
 function resetFormProperty() {
-	if (customer_index == -1 || prop_index == -1)
-		return 0;
-	$.each(customers[customer_index].properties[prop_index], function(name, val) {
+	var data;
+	if (customer_index == -1 || prop_index == -1) {
+		data = property;
+	} else {
+		data = customers[customer_index].properties[prop_index];
+	}
+	$.each(data, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
@@ -83,7 +133,7 @@ function resetFormProperty() {
 		default:
 			$el.val(val);
 		}
-	})
+	});
 }
 
 resetFormProperty();

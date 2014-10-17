@@ -1,8 +1,4 @@
-$("#doc_call").on("click", function() {
-	$("#pageContent").load("pages/supporting-docs-view.html", function() {
-		$(this).enhanceWithin(); /* apply styles */
-	});
-});
+
 $("#cancel").on("click", function() {
 	$("#pageContent").load("pages/customer-entry-view.html", function() {
 		$(this).enhanceWithin(); /* apply styles */
@@ -22,21 +18,26 @@ if (prop_index != -1) {
 	});
 }
 
-data = {
-	"AlreadyOwn" : "N",
-	"isExisting" : "E",
-	"propAddress" : "Casa Nearshore, Shore 19, Sidi Maârouf, Casablanca",
-	"propType" : "villa",
-	"rooms" : ">4",
-	"usage" : "rent",
-	"liveableArea" : "210 sqm",
-	"builtArea" : "250 sqm",
-	"isEvaluated" : "Y",
-	"evaluationSum" : "430,000"
-};
 
-if(prop_index== -1)
-	document.getElementById("doc_call").disabled = true; 
+//if(prop_index== -1)
+//	document.getElementById("doc_call").disabled = true; 
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
 
 function loadForm() {
 	if (prop_index == -1)
@@ -56,7 +57,14 @@ function loadForm() {
 				default:
 					$el.val(val);
 				}
-			})
+			});
 }
 
 loadForm();
+
+$("#doc_call").on("click", function() {
+	property = $("form").serializeObject();
+	$("#pageContent").load("pages/supporting-docs-view.html", function() {
+		$(this).enhanceWithin(); /* apply styles */
+	});
+});
