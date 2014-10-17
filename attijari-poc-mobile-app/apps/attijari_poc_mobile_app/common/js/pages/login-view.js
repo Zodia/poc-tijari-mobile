@@ -7,7 +7,15 @@ $( document ).ready(function() {
         //$(this).dialog('close');
     	$("#dialog").hide();
     });
+	if (connected == 1){
+		
 
+		loadPage("pages/customers-list.html");
+		
+		
+	}
+		
+		
 });
 
 
