@@ -44,9 +44,7 @@ $.fn.serializeObject = function()
 };
 
 function loadForm() {
-	if (prop_index == -1)
-		return 0;
-	$.each(customers[customer_index].properties[prop_index],
+	$.each(property,
 			function(name, val) {
 				var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 

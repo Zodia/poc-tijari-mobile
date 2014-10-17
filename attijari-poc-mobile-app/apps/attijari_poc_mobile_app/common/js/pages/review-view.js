@@ -117,13 +117,13 @@ function resetFormCustomer() {
 resetFormCustomer();
 
 function resetFormProperty() {
-	var data;
-	if (customer_index == -1 || prop_index == -1) {
-		data = property;
-	} else {
-		data = customers[customer_index].properties[prop_index];
-	}
-	$.each(data, function(name, val) {
+//	var data;
+//	if (customer_index == -1 || prop_index == -1) {
+//		data = property;
+//	} else {
+//		data = customers[customer_index].properties[prop_index];
+//	}
+	$.each(property, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {

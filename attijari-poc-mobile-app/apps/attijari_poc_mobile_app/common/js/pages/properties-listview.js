@@ -29,7 +29,8 @@ function loadProperties () {
 		});
 	
 	 $('#listProperties li').on('click', function (){
-		 prop_index = $(this).attr("id"); 
+		 prop_index = $(this).attr("id");
+		 property = customers[customer_index].properties[prop_index];
 		 loadPage("pages/property-view.html");
 	});
 	 $("#listProperties").listview("refresh");
