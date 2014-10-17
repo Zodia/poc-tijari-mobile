@@ -3,9 +3,21 @@
  */
 $(".current-title").text ("Mortgage Simulator");
 $(".left .back").text("Home");
-$(".left .back").unbind("click").on ("click", function () {
-	loadPage ("pages/customer-entry-view.html");
-});
+
+
+if (connected ==1){
+	$(".right").show();
+	$(".left .back").unbind("click").on ("click", function () {
+		loadPage ("pages/customer-entry-view.html");
+	});
+}
+else {
+	$("#header").show();
+	$(".right").hide();
+	$(".left .back").unbind("click").on ("click", function () {
+		loadPage ("pages/login-view.html");
+	});
+}
 
 
 /**
@@ -16,6 +28,7 @@ $("#submitButton").on("click", function() {
 	loan();
 
 });
+
 
 /**
  * Function that checks for input values
