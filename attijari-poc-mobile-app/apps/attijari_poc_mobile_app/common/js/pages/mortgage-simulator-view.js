@@ -26,6 +26,7 @@ function checnum(as) {
 	if (isNaN(dd)) {
 		dd = dd.substring(0, (dd.length - 1));
 		as.value = dd;
+		
 	}
 }
 /**
@@ -34,6 +35,10 @@ function checnum(as) {
 function loan() {
 	var cn = document.getElementById("mortgageSimulator").getElementsByTagName(
 			"input");
+
+	
+	if(cn[0].value!="" && cn[1].value!="" && cn[2].value!=""){
+
 	var a = cn[0].value;
 	var b = cn[1].value;
 	var c = cn[2].value;
@@ -54,6 +59,11 @@ function loan() {
 		var e = a - t;
 		var l = Math.round(e * 100) / 100;
 		a = e;
+	}}
+	else{
+		cn[3].value="";
+		cn[4].value="";
+		cn[5].value="";
 	}
 }
 
