@@ -12,8 +12,9 @@
 // Chat with Expert in chat window
 function chatWithExpert(expertFirstName, expertLastName, expertType) {
 
-	// $("#chatWindowSection").style.display='visible';
-	// $("#chatWindowSection").hide();
+	//Remove if any text are present in chat window
+	$("#chatConversionArea").html("");
+	
 	$("#chatWindowSection").show();
 
 	$("#expertImageSection").html(
@@ -34,6 +35,8 @@ function chatWithExpert(expertFirstName, expertLastName, expertType) {
 							+ expertLastName
 							+ '@ae.ibm.com'
 							+ '<br> Address: Building 5,	Rabat, Morocco</font>	');
+	
+	document.getElementById("expertName").value = expertFirstName+' '+expertLastName;
 };
 
 // Alert messages when experts are Busy & Offline
@@ -47,3 +50,37 @@ function alertMsgPopup(status) {
 							+ 'Currently expert is ' + status
 							+ ', Please reach out to other experts');				
      }
+
+/**
+ * ChatConversion function is illustration only of chat services as
+ * part of POC, These are static chat messages and will be enhanced or will get
+ * replaced with chat service system.
+ */
+
+function chatConversation() {
+		
+	// Chat text entered into textbox of chat window
+	chatText = "<font color='BLACK' size='2'> Shailendra Mishra "
+			+ document.getElementById("inputchatText").value + "</font><br>";
+
+	// Response Chat
+	responseChat1 = "<font color='Blue'  size='2'> "+document.getElementById("expertName").value +" : Hello </font> <br>";
+	responseChat2 = "<font color='Blue'  size='2'> "+document.getElementById("expertName").value +" :  Please tell me </font><br>";
+	
+	// Chat conversation chat window - Div :chatConversionArea
+	document.getElementById("chatConversionArea").value = $(
+			"#chatConversionArea").html(
+			chatText + responseChat1 + responseChat2);
+
+	// Chat conversation in textArea of chat window
+
+	/*
+	 * if(!isEmpty($('#chatConversionArea'))){
+	 * document.getElementById("chatConversionArea").value =
+	 * document.getElementById("chatConversionArea").value +
+	 * $("#chatConversionArea").html( chatText + responseChat2) ; }
+	 */
+
+	// setInterval(2000);
+	document.getElementById("inputchatText").value = "";
+};

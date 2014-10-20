@@ -2,8 +2,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <!-- <link rel="stylesheet" href="css/pages/ask_expert/expert-view.css"> -->
 <script src="js/pages/ask_expert/expert-view.js"></script>
-<script src="js/pages/ask_expert/chat-with-expert.js"></script>
-
 
 <div class="ui-grid-a">
 
@@ -262,17 +260,18 @@
 			<!-- ------------------------Start: Chat window------------------------  --->
 
 			<div data-role="header" class="ui-bar"
-				style="background-color: #FFBF00; border: 2px solid; border-radius: 5px;">Chat
+				style="background-color: #FF9933; border: 2px solid; border-radius: 5px;">Chat
 				window</div>
 
 			<div id="chatConversionArea"
 				style="background-color: #FFFFFF; border: 2px solid; border-radius: 5px; height: 200px;"></div>
+				<input type="hidden" name="expertName" id="expertName"/>
 
 			<!------------ Textarea where user can enter his/her chat text----------------->
 			<textarea id="inputchatText" maxlength="60"></textarea>
 
 			<!------------------- Footer of Chat window ----------------------->
-			<div data-role="footer" class="ui-bar">
+			<div data-role="footer" class="ui-bar" style="background-color: #FF9933; border: 2px solid; border-radius: 5px;">
 				<a data-role="button" data-icon="arrow-u"
 					onClick="chatConversation()">Send</a> <a data-role="button"
 					data-icon="audio">audio</a> <a data-role="button" data-icon="video">video</a>
