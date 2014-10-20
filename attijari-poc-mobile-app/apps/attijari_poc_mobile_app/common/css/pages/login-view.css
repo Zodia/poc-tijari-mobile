@@ -1,0 +1,40 @@
+
+#pageContent{
+	
+margin-left: auto;
+margin-right: auto;
+width: 300px;	
+}
+
+#logo{
+	
+'margin-left: auto;
+ background-image: url("images/logo.png"); 
+ height: 150px; 
+ margin-right: auto;
+ background-repeat: no-repeat; 
+ width: 150px;	
+}
+#dialog{
+	margin-top: 92px;
+	
+}
+
+#contentlogin{
+	
+padding-top: 40px;
+padding-bottom: 40px;
+background: #FFF;
+}
+#semulator{
+	
+margin-left: 650px;
+margin-right: auto;
+width: 200px;
+margin-top: 250px;	
+	
+}
+#gosemulator{
+	
+	height: 170px;
+}

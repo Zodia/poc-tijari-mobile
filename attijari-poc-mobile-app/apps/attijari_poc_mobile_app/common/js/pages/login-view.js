@@ -2,6 +2,7 @@ $( document ).ready(function() {
 	
 	$("#dialog").hide();	
 	$(".right").hide();
+	$("#header").show();
 	$("#footer").hide();
 	$("#dialog").click(function () {
         //$(this).dialog('close');
@@ -33,7 +34,6 @@ $("#buttongo").on("click",function(){
 		
 		connected = 1;
 		$(".right").show();
-		$("#header").show();
 		$("#footer").show();	
 	
 		$("#pageContent").load("pages/home-view.html", function () {
