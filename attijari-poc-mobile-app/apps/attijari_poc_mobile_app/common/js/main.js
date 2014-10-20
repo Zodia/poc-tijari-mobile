@@ -1,5 +1,5 @@
 var customer_index = -1;
-var application_index=-1;
+var application_index = -1;
 var connected = 0;
 
 function wlCommonInit () {
@@ -49,6 +49,11 @@ function wlCommonInit () {
 	
 	$(".menu-profile").on ("click", function () {
 		loadPage ("pages/employee-profile-view.html");
+		$("nav#menu").trigger ("close.mm");
+	});
+	
+	$(".menu-preferences").on ("click", function () {
+		loadPage ("pages/preferences-view.html");
 		$("nav#menu").trigger ("close.mm");
 	});
 	
