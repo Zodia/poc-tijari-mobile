@@ -97,7 +97,15 @@ resetForm();
 $(document).ready(function(){
 
 	$("#customer_form").validationEngine({validateNonVisibleFields: true});	
-
+  //date picker
+	
+	$('#dob').scroller({ preset: 'date',
+        seconds: true,
+        ampm : false,
+        dateOrder: 'dMyy',
+        dateFormat :'dd/mm/yy',
+        theme: 'ios'
+    });
 	
 	
 	
