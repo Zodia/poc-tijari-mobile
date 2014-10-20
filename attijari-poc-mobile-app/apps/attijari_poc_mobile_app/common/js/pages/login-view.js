@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 	
 	$("#dialog").hide();	
-	//$("#header").show();
-	//$("#footer").show();
+	$(".right").hide();
+	$("#footer").hide();
 	$("#dialog").click(function () {
         //$(this).dialog('close');
     	$("#dialog").hide();
