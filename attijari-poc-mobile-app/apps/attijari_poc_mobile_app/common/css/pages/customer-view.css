@@ -26,7 +26,21 @@
 
 em { color: red; font-weight: bold; padding-right: .25em; }
 
+/* for the photography */
 
+#preview {
+				width: 80%; max-width: 300px;
+			}
+			#preview img {
+				width: 100%;
+			}
+			.hiddenfile {
+			 width: 0px;
+			 height: 0px;
+			 overflow: hidden;
+			}
+
+/* End photography */
 /* for the date picker*/
 
 

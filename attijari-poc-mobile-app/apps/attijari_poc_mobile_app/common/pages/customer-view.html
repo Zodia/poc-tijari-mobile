@@ -8,14 +8,17 @@
 		<tbody>
 			<tr>
 				<td class="tablist-left">
-                <ul data-role="listview" data-inset="true" >
-      <li><a href="#one" data-ajax="false" >Personal data</a></li>
+      <ul data-role="listview" data-inset="true" >
+      <li><a href="#one"  data-ajax="false" >Personal data</a></li>
       <li><a href="#two" data-ajax="false">Regular income/ other sources</a></li>
       <li><a href="#three" data-ajax="false">Existing personal loans</a></li>
       <li><a href="#four" data-ajax="false">Existing car loans</a></li>
       <li><a href="#five" data-ajax="false">Existing mortgages</a></li>
       <li><a href="#six" data-ajax="false">Existing cards</a></li>
+      
       <li><a href="#seven" data-ajax="false">History</a></li>
+      <li><a href="#eight" data-ajax="false">Photography</a></li>
+      <li><a href="#nine" data-ajax="false">Supporting documents</a></li>
       
     </ul>
                </td>
@@ -28,10 +31,10 @@
 						<fieldset data-role="controlgroup">
 				<legend>Title</legend>
 				<input type="radio" name="Title" id="radio-choice-1"
-					value="Yes" checked="checked" /> <label for="radio-choice-1">Ms</label>
+					value="Ms" checked="checked" /> <label for="radio-choice-1">Ms</label>
 
 				<input type="radio" name="Title" id="radio-choice-2"
-					value="No" /> <label for="radio-choice-2">Mr</label>
+					value="Mr" /> <label for="radio-choice-2">Mr</label>
 			</fieldset>
             
 					</div>
@@ -157,6 +160,46 @@
 </div>
   </div>
   </div>
+  
+<!--   photography  ---------------------------------------->
+   <div id="eight" class="ui-body-d"> 
+   
+   <button id="chooseFile">Choose file</button>
+			<div class="hiddenfile">
+			  <input type="file" id="imageInput" data-clear-btn="false" name="image" accept="image/*" />
+			</div>
+			<div id="preview">
+			</div>
+			<ul id="info" data-role="listview" data-inset="true">
+			</ul>
+    
+   </div>
+   
+   <!--  End photography  ---------------------------------------->
+   <!--   supporting docs  ---------------------------------------->
+   <div id="nine" class="ui-body-d"> 
+   <div id="pageone">
+
+	<div data-role="main" class="ui-content">
+		<ul id="listDocuments" data-role="listview" data-inset="true">
+			<li>
+				<i class="fa fa-file-pdf-o ui-li-icon ui-corner-none doc-type-icon"></i>
+				Document0
+				<input data-clear-btn="true" name="file-2" id="file-2" value="" type="file" />
+			</li>
+		</ul>
+	</div>
+</div>
+<div data-type="horizontal">
+	<button id="add_document"
+		style="width: 20%; margin-right: 5%; float: left; "
+		class="ui-btn">Add</button>
+	
+</div>
+    
+   </div>
+   
+   <!--  End supporting docs  ---------------------------------------->
    
    
 			</form>	
@@ -175,6 +218,7 @@
 		style="width:30%; float: right;"
 		class="ui-btn">Next</button>
 </div>
+<!-- <script src="js/pages/photography-view.js"></script> -->
 <script src="js/libs/jquery.validationEngine-en.js"></script>
 <script src="js/libs/jquery.validationEngine.js"></script>
 <script src="js/libs/mobiscroll.js"></script>
