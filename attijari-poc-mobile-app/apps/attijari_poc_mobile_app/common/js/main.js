@@ -1,4 +1,5 @@
 var customer_index = -1;
+var application_index=-1;
 var connected = 0;
 
 function wlCommonInit () {

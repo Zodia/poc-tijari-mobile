@@ -13,6 +13,14 @@ $("#pageContent").load("pages/customers-list.html", function () {
 	
 });
 
+$(".left .back").click(function() {
+
+	$("#pageContent").load("pages/home-view.html", function () {
+			
+			$(this).enhanceWithin(); /* apply styles */
+		});
+		
+	});
 
 
 

@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	if (connected == 1){
 		
 
-		loadPage("pages/customers-list.html");
+		loadPage("pages/apps-list.html");
 		
 		
 	}
@@ -36,7 +36,7 @@ $("#buttongo").on("click",function(){
 		$("#header").show();
 		$("#footer").show();	
 	
-		$("#pageContent").load("pages/customer-entry-view.html", function () {
+		$("#pageContent").load("pages/home-view.html", function () {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 		
