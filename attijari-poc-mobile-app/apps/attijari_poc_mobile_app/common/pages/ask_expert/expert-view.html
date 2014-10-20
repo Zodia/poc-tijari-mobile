@@ -29,27 +29,31 @@
 						onClick="chatWithExpert('Cristian','Carstoiu','Car Loan Expert')"
 						href="#"><img
 							src="images/pages/ask_expert/expert_view/icon-available.png"
-							alt="available" class="ui-li-icon ui-corner-none">Cristian Carstoiu</a></li>
+							alt="available" class="ui-li-icon ui-corner-none">Cristian
+							Carstoiu</a></li>
 					<li><a id="search_Mehdi_Bendriss"
-						onClick="chatWithExpert('Mehdi','Bendriss','Car Loan Expert')"
-						href="#"><img
-							src="images/pages/ask_expert/expert_view/icon-away.png"
+						onClick="alertMsgPopup('offline')" href="#statusAlertPopUp"
+						data-rel="popup"><img
+							src="images/pages/ask_expert/expert_view/icon-offline.png"
 							alt="away" class="ui-li-icon ui-corner-none">Mehdi Bendriss</a></li>
 					<li><a id="search_Mohemad Sara"
-						onClick="chatWithExpert('Mohemad','Sara','Car Loan Expert')"
-						href="#"><img
+						onClick="alertMsgPopup('offline')" href="#statusAlertPopUp"
+						data-rel="popup"><img
 							src="images/pages/ask_expert/expert_view/icon-offline.png"
-							alt="offline" class="ui-li-icon ui-corner-none">Mohemad Sara</a></li>
+							alt="offline" class="ui-li-icon ui-corner-none">Mohemad
+							Sara</a></li>
 					<li><a id="search_Shailendra_Mishra"
-						onClick="chatWithExpert('Shailendra','Mishra','Car Loan Expert')"
-						href="#"><img
-							src="images/pages/ask_expert/expert_view/icon-available.png"
-							alt="available" class="ui-li-icon ui-corner-none">Shailendra	Mishra</a></li>
+						onClick="alertMsgPopup('busy')" href="#statusAlertPopUp"
+						data-rel="popup"><img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
+							alt="available" class="ui-li-icon ui-corner-none">Shailendra
+							Mishra</a></li>
 					<li><a id="search_Souhail_Guennouni"
 						onClick="chatWithExpert('Souhail','Guennouni','Car Loan Expert')"
 						href="#"><img
-							src="images/pages/ask_expert/expert_view/icon-busy.png"
-							alt="busy" class="ui-li-icon ui-corner-none">Souhail Guennouni</a></li>
+							src="images/pages/ask_expert/expert_view/icon-away.png"
+							alt="busy" class="ui-li-icon ui-corner-none">Souhail
+							Guennouni</a></li>
 
 				</ul>
 			</div>
@@ -61,38 +65,32 @@
 				<!------------------ data-collapsed="false" ------------------->
 				<h3>Car Loan Expert</h3>
 				<ul data-role="listview">
-					<!-- <li><a href="#" data-role="button"
-						data-icon="available-status" id="carLoanExpert1">Shailendra
-							Mishra </a></li>
-					<li><a href="#" data-role="button" data-icon="busy-status"
-						id="carLoanExpert2">Cristian Carstoiu</a></li> -->
-
 					<li><a href="#" id="carLoanExpert1"
 						onClick="chatWithExpert('Cristian','Carstoiu','Car Loan Expert')">
 							<img src="images/pages/ask_expert/expert_view/icon-available.png"
 							alt="available" class="ui-li-icon ui-corner-none">Cristian
 							Carstoiu
 					</a></li>
-					<li><a href="#" id="carLoanExpert2"
-						onClick="chatWithExpert('Mehdi','Bendriss','Car Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-away.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						id="carLoanExpert2" onClick="alertMsgPopup('offline')"> <img
+							src="images/pages/ask_expert/expert_view/icon-offline.png"
 							alt="away" class="ui-li-icon ui-corner-none">Mehdi Bendriss
 					</a></li>
-					<li><a href="#" id="carLoanExpert3"
-						onClick="chatWithExpert('Mohemad','Sara','Car Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-offline.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						id="carLoanExpert3" onClick="alertMsgPopup('offline')"> <img
+							src="images/pages/ask_expert/expert_view/icon-offline.png"
 							alt="offline" class="ui-li-icon ui-corner-none">Mohemad
 							Sara
 					</a></li>
-					<li><a href="#" id="carLoanExpert4"
-						onClick="chatWithExpert('Shailendra','Mishra','Car Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-available.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						id="carLoanExpert4" onClick="alertMsgPopup('busy')"> <img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
 							alt="available" class="ui-li-icon ui-corner-none">Shailendra
 							Mishra
 					</a></li>
 					<li><a href="#" id="carLoanExpert5"
 						onClick="chatWithExpert('Souhail','Guennouni','Car Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-busy.png"
+							<img src="images/pages/ask_expert/expert_view/icon-away.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Souhail
 							Guennouni
 					</a></li>
@@ -113,26 +111,26 @@
 							alt="available" class="ui-li-icon ui-corner-none">Cristian
 							Carstoiu
 					</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Mohemad','Sara','Home Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-offline.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('offline')"> <img
+							src="images/pages/ask_expert/expert_view/icon-offline.png"
 							alt="offline" class="ui-li-icon ui-corner-none">Mohemad
 							Sara
 					</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Shailendra','Mishra','Home Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-available.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('busy')"> <img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
 							alt="available" class="ui-li-icon ui-corner-none">Shailendra
 							Mishra
 					</a></li>
-					
+
 					<li><a href="#"
 						onClick="chatWithExpert('Souhail','Guennouni','Home Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-busy.png"
+							<img src="images/pages/ask_expert/expert_view/icon-away.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Souhail
 							Guennouni
 					</a></li>
-					
+
 				</ul>
 			</div>
 			<!-- ---------------End : Home Loan Section ------------------------------->
@@ -148,15 +146,15 @@
 							alt="available" class="ui-li-icon ui-corner-none">Cristian
 							Carstoiu
 					</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Shailendra','Mishra','Personal Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-available.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('busy')"> <img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
 							alt="available" class="ui-li-icon ui-corner-none">Shailendra
 							Mishra
 					</a></li>
 					<li><a href="#"
 						onClick="chatWithExpert('Souhail','Guennouni','Personal Loan Expert')">
-							<img src="images/pages/ask_expert/expert_view/icon-busy.png"
+							<img src="images/pages/ask_expert/expert_view/icon-away.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Souhail
 							Guennouni
 					</a></li>
@@ -174,14 +172,14 @@
 							src="images/pages/ask_expert/expert_view/icon-available.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Cristian
 							Carstoiu</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Shailendra','Mishra','Education Loan Expert')"><img
-							src="images/pages/ask_expert/expert_view/icon-available.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('busy')"><img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Shailendra
-							Mishra</a></li>					
+							Mishra</a></li>
 					<li><a href="#"
 						onClick="chatWithExpert('Souhail','Guennouni','Education Loan Expert')"><img
-							src="images/pages/ask_expert/expert_view/icon-busy.png"
+							src="images/pages/ask_expert/expert_view/icon-away.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Souhail
 							Guennouni</a></li>
 				</ul>
@@ -198,21 +196,21 @@
 							src="images/pages/ask_expert/expert_view/icon-available.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Cristian
 							Carstoiu</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Mohemad','Sara','Mortgage Expert')"><img
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('offline')"><img
 							src="images/pages/ask_expert/expert_view/icon-offline.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Mohemad Sara</a></li>
-					<li><a href="#"
-						onClick="chatWithExpert('Shailendra','Mishra','Mortgage Expert')"><img
-							src="images/pages/ask_expert/expert_view/icon-available.png"
+					<li><a href="#statusAlertPopUp" data-rel="popup"
+						onClick="alertMsgPopup('busy')"><img
+							src="images/pages/ask_expert/expert_view/icon-busy.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Shailendra
-							Mishra</a></li>					
+							Mishra</a></li>
 					<li><a href="#"
 						onClick="chatWithExpert('Souhail','Guennouni','Mortgage Expert')"><img
-							src="images/pages/ask_expert/expert_view/icon-busy.png"
+							src="images/pages/ask_expert/expert_view/icon-away.png"
 							alt="busy" class="ui-li-icon ui-corner-none">Souhail
 							Guennouni</a></li>
-					
+
 				</ul>
 			</div>
 			<!-- ---------------End : Mortgage Section ------------------------------->
@@ -231,7 +229,15 @@
 			</div> -->
 		</div>
 
+		<!-- ------------------------Start: Alert popup msg ------------------------  -->
+		
+		<div data-role="popup" id="statusAlertPopUp" class="ui-content" style="max-width:380px"></div>
+
+		<!-- ------------------------End: Alert popup msg ------------------------  -->
+
 	</div>
+
+
 
 	<div class="ui-block-b" style="width: 5%"></div>
 
@@ -249,16 +255,10 @@
 					<img
 						src="images/pages/ask_expert/chat_with_expert/expert-cristian.jpg">
 				</div>
-				<div class="ui-block-b" id="expertInfoSection" style="width: 65%">
-					<font face="verdana" size="4" color="white">Cristian
-						carstoiu </font><br> <font face="verdana" size="2" color="white">Designation:
-						Car Loan Expert <br> Phone: +971 566766488<br>Email:
-						cristian.carstoiu@ae.ibm.com <br> Address: DIC Building 5,
-						Dubai, UAE
-					</font>
-				</div>
+				<div class="ui-block-b" id="expertInfoSection" style="width: 65%"></div>
 			</div>
 			<!-- ------------------------End: Expert Detail ------------------------  -->
+
 			<!-- ------------------------Start: Chat window------------------------  --->
 
 			<div data-role="header" class="ui-bar"
