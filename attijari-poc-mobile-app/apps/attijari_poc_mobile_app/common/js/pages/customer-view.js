@@ -169,7 +169,7 @@ $("#imageInput").change(function(){
 		$info.append("<li>name:<span>" + file.name + "</span></li>");
 	}
 	if (file && file.type) {
-		$info.append("<li>size:<span>" + file.type + "</span></li>");
+		$info.append("<li>type:<span>" + file.type + "</span></li>");
 	}
 	if (file && file.size) {
 		$info.append("<li>size:<span>" + file.size + " bytes</span></li>");
