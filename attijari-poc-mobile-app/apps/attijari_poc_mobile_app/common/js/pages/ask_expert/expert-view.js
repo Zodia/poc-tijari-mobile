@@ -1,3 +1,4 @@
+
 // Invoking "Chat with expert" page
 /*	$("#carLoanExpert1").on ("click", function () {
  //$("#main-chat-with-expert").style.visibility = 'visible';
@@ -8,6 +9,9 @@
  $("#searchlistitem1").on ("click", function () {
  loadPage ("pages/ask_expert/chat-with-expert.html");
  });*/
+
+//Title of page
+$(".current-title").text ("Ask an expert");
 
 // Chat with Expert in chat window
 function chatWithExpert(expertFirstName, expertLastName, expertType) {
