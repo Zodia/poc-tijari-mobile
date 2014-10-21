@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	
+	$(".current-title").text ("Login Page");
 	$("#dialog").hide();	
 	$(".right").hide();
 	$("#header").show();
@@ -12,12 +12,20 @@ $( document ).ready(function() {
 		
 
 		loadPage("pages/apps-list.html");
-		
-		
+			
 	}
-		
-		
+			
 });
+
+
+
+$("#forgotpass").on("click",function(){
+	
+	$("#pageContent").load("pages/forgot-password-view.html", function () {
+		$(this).enhanceWithin();
+	});
+});
+
 
 
 $("#gosemulator").on("click",function(){
@@ -36,9 +44,9 @@ $("#buttongo").on("click",function(){
 		$(".right").show();
 		$("#footer").show();	
 	
-		$("#pageContent").load("pages/home-view.html", function () {
-			$(this).enhanceWithin(); /* apply styles */
-		});
+		//loadPage("pages/home-view.html");
+		loadPage("pages/home-view.html");
+		
 		
 		
 	}
