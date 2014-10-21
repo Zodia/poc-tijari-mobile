@@ -27,14 +27,26 @@ $("#proprety_call").on("click", function() {
 	//alert(correct);
 	if(correct){
 	
-	if (customer_index == -1)
+	//if (customer_index == -1)
 		$("#pageContent").load("pages/property-view.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
-	else
-		$("#pageContent").load("pages/properties-listview.html", function() {
+//	else
+//		$("#pageContent").load("pages/properties-listview.html", function() {
+//			$(this).enhanceWithin(); /* apply styles */
+//		});
+}
+});
+$("#refinance_call").on("click", function() {
+	customer = $("form").serializeObject();
+	var correct=$("#customer_form").validationEngine('validate');
+	//alert(correct);
+	if(correct){
+
+		$("#pageContent").load("pages/mortgage-file-choice-view.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
+	
 }
 });
 
