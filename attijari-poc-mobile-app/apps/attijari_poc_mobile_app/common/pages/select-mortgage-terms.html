@@ -1,21 +1,27 @@
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/pages/select-mortgage-terms.css">
-<div id="content"
-	style="margin-left: auto; margin-right: auto; width: 400px">
-	<ul data-role="listview" data-inset="true">
-		<li>Loan Amounts: <input type="number"></input></li>
-		<li>Interest Rates: <input type="number"> </input></li>
-		<li>Term (Years): <input type="number"></input></li>
-	</ul>
+<div id ="content" style="margin-left: auto; margin-right: auto; width: 600px" >
+<div id="listTerms" data-inset="true" >
+
+</div>
 
 
 </div>
+
+<!-- ul data-role="listview" -->
 <div data-type="horizontal">
-	<button id="expert_call" style="width: 25%;" class="ui-btn">Ask
-		the Expert</button>
-	<button id="summurize_call" style="width: 25%;" class="ui-btn">Summarize</button>
-	<button id="mortgage_call" style="width: 25%;" class="ui-btn">Mortgage
-		Calculator</button>
+	<button id="expert_call"
+		style="width:30%; float: left;"
+		class="ui-btn">Ask the Expert</button>
+
+	<button id="mortgage_call"
+		style="width:30%; float: right;"
+		class="ui-btn">Mortgage Calculator</button>
+		
+</div>
+
+<div style="margin-left: auto; margin-right: auto;width: 30%;margin-top:90px;" >
+<button id="summurize_call"
+		
+		class="ui-btn">Summarize</button>
 </div>
 
 <script src="js/pages/select-mortgage-terms.js"></script>
