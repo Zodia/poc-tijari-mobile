@@ -34,7 +34,7 @@ $("#summurize_call").click(function() {
 
 $("#expert_call").click(function() {
 
-	   $("#pageContent").load("pages/select-refinance-terms.html", function () {
+	   $("#pageContent").load("pages/ask_expert/expert-view.html", function () {
 			
 			$(this).enhanceWithin(); /* apply styles */
 		});
