@@ -141,3 +141,23 @@ function resetFormProperty() {
 }
 
 resetFormProperty();
+
+
+
+function loadTerms () {
+	
+
+
+	$("#listTerms").append("<div class=\"ui-field-contain\"><label >Loan Amounts: </label><input readonly=\"readonly\" type=\"text\" value=\""+terms.amount+"\"></input></div>");
+	$("#listTerms").append("<div class=\"ui-field-contain\"><label >Interest Rates: </label><input readonly=\"readonly\" type=\"text\" value=\""+terms.interest+"\"></input></div>");
+	$("#listTerms").append("<div class=\"ui-field-contain\"><label >Term (Years):</label> <input readonly=\"readonly\" type=\"text\" value=\""+terms.duration+"\"></input></div>");
+
+		
+//			 $("#listTerms").append("<li>Loan Amounts: <input onkeyup=checnum(this) type=\"text\" value=\""+terms.amount+"\"></input></li>");
+//			 $("#listTerms").append("<li>Interest Rates: <input onkeyup=checnum(this) type=\"text\" value=\""+terms.interest+"\"></input></li>");
+//			 $("#listTerms").append("<li>Term (Years): <input onkeyup=checnum(this) type=\"text\" value=\""+terms.duration+"\"></input></li>");
+//		    
+//			 $("#listTerms").listview("refresh");	
+	}
+
+	loadTerms();
