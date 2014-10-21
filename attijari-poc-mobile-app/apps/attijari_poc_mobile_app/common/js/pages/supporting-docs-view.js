@@ -6,12 +6,11 @@ var i = 0;
 $(".current-title").text("Property Supporting Documents");
 $(".left").off();
 $(".left").on("click", function() {
-	loadPage("pages/property-view.html");
+	$("#pageContent").load("pages/property-view.html", function() {
+		$(this).enhanceWithin();
+	});
 });
 
-$('#preview').on('click', function() {
-	loadPage("pages/review-view.html");
-});
 
 function AddDocument() {
 	i++;

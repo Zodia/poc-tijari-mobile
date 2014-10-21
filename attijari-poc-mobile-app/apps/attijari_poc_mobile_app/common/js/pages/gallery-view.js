@@ -1,0 +1,1 @@
+Code.photoSwipe('span', '#gallery-property');
