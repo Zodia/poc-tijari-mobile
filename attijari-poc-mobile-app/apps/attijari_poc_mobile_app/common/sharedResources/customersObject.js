@@ -229,6 +229,12 @@ var applications = [
 		} ];
 var property = {};
 var customer = {};
+var terms={
+	amount:"200000",
+	interest:"7",
+	duration:"12"
+		
+};
 
 function getCustomer() {
 	return customer;
