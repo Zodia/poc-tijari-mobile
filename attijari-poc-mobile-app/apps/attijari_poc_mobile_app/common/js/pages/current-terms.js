@@ -18,3 +18,12 @@ $( document ).ready(function() {
 	$(".current-title").text ("Current Terms");	
 	
 });
+
+$(".left .back").unbind('click').click(function() {
+
+	$("#pageContent").load("pages/mortgage-file-choice-view.html", function () {
+			
+			$(this).enhanceWithin(); /* apply styles */
+		});
+		
+	});

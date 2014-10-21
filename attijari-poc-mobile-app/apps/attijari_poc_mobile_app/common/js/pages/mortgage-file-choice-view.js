@@ -24,3 +24,12 @@ $( document ).ready(function() {
 	$(".current-title").text ("Mortgage File");	
 	
 });
+
+$(".left .back").unbind('click').click(function() {
+
+	$("#pageContent").load("pages/customer-view.html", function () {
+			
+			$(this).enhanceWithin(); /* apply styles */
+		});
+		
+	});

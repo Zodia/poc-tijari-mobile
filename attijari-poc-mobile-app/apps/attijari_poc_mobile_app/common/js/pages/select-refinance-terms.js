@@ -65,3 +65,12 @@ $("#listTerms").append("<div class=\"ui-field-contain\"><label >Term (Years):</l
 }
 
 loadTerms();
+
+$(".left .back").unbind('click').click(function() {
+
+	$("#pageContent").load("pages/current-terms.html", function () {
+			
+			$(this).enhanceWithin(); /* apply styles */
+		});
+		
+	});
