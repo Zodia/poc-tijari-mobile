@@ -1,118 +1,20 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/pages/property-view.css">
-
 <div class="property-view-content" data-type="vertical">
 	<form data-role="tabs" action="" method="post" id="property_form">
-		<ul data-role="listview" data-inset="true" class="tablist-left"
-			style="float: left">
-			<li><a id="AddBuil" class="translate" href="#one"
-				data-ajax="false">Address and building</a></li>
-			<li><a href="#two" data-ajax="false">Property details</a></li>
-			<li><a href="#three" data-ajax="false">Evaluation details</a></li>
+		<ul data-role="listview" data-inset="true" class="property-details-list">
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-map-marker"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Property Address</span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				
+			</li>
 		</ul>
-		<div id="one" class="ui-body-d tablist-content" style="float: right;">
-			<div class="ui-field-contain">
-				<fieldset data-role="controlgroup">
-					<legend>Already an owner?</legend>
-					<input type="radio" name="AlreadyOwn" id="radio-choice-1"
-						value="Yes" checked="checked" /> <label for="radio-choice-1">Yes</label>
-
-					<input type="radio" name="AlreadyOwn" id="radio-choice-2"
-						value="No" /> <label for="radio-choice-2">No</label>
-				</fieldset>
-			</div>
-			<div data-role="fieldcontain">
-				<fieldset data-role="controlgroup">
-					<legend>New/Existing</legend>
-					<input type="radio" name="isExisting" id="radio-choice-3"
-						value="New" checked="checked" /> <label for="radio-choice-3">New</label>
-
-					<input type="radio" name="isExisting" id="radio-choice-4"
-						value="Existing" /> <label for="radio-choice-4">Existing</label>
-				</fieldset>
-			</div>
-			<div class="ui-field-contain">
-				<label for="textarea-1">Property Address <em>* </em></label>
-				<textarea cols="40" rows="8" name="propAddress" id="textarea-1"
-					placeholder="Address" class="validate[required]"></textarea>
-			</div>
-		</div>
-		<div id="two" class="tablist-content" style="float: right;">
-			<div class="ui-field-contain">
-				<label for="select-native-1" style="width: 20%; height: 100%;">
-					Property type </label> <select name="propType" id="select-native-1">
-					<option value="apartment">Apartment</option>
-					<option value="villa">Villa</option>
-				</select>
-			</div>
-			<div class="ui-field-contain">
-				<label for="select-native-1" style="width: 20%; height: 100%;">Rooms</label>
-				<select name="rooms" id="select-native-1">
-					<option value="studio">Studio</option>
-					<option value="1">1 BR</option>
-					<option value="2">2 BR</option>
-					<option value="3">3 BR</option>
-					<option value="4">4 BR</option>
-					<option value=">4">>4 BR</option>
-				</select>
-			</div>
-			<div class="ui-field-contain">
-				<label for="select-native-1" style="width: 20%; height: 100%;">Usage</label>
-				<select name="usage" id="select-native-1">
-					<option value="personal">Personal</option>
-					<option value="commercial">Commercial</option>
-					<option value="rent">For rent</option>
-				</select>
-			</div>
-			<div class="ui-field-contain">
-				<label for="textinput-1">Liveable Area (sqm)</label> <input
-					name="liveableArea" id="textinput-1" type="text">
-			</div>
-			<div class="ui-field-contain">
-				<label for="textinput-1">Built Area (sqm)</label> <input
-					name="builtArea" id="textinput-1" placeholder="Text input"
-					type="text">
-			</div>
-		</div>
-		<div id="three" style="width: 60%;" class="tablist-content"
-			style="float: right;"">
-			<div class="ui-field-contain">
-				<fieldset data-role="controlgroup">
-					<legend>Existing evaluation</legend>
-					<input type="radio" name="isEvaluated" id="radio-choice-5"
-						value="Yes" checked="checked" /> <label for="radio-choice-5">Yes</label>
-
-					<input type="radio" name="isEvaluated" id="radio-choice-6"
-						value="No" /> <label for="radio-choice-6">No</label>
-				</fieldset>
-			</div>
-			<div class="ui-field-contain">
-				<label for="textinput-1">Evaluation sum (MAD)</label> <input
-					name="evaluationSum" id="textinput-1" type="text">
-			</div>
-		</div>
-
 	</form>
-	<div data-type="horizontal" style="width: 100%; float: right;">
-		<button id="doc_call"
-			style="width: 30%; float: left; margin-right: 5%" class="ui-btn">
-			<i style="display: inline-block; float: left;" class="fa fa-file"></i>Attach
-			file
-		</button>
-		<button id="mortgage_terms" style="width: 30%; float: left;"
-			class="ui-btn">
-			<i style="display: inline-block; float: left;" class="fa fa-pencil"></i>Mortgage
-			terms
-		</button>
-		<button id="gallery_call"
-			style="width: 30%; margin-left: 5%; float: right;" class="ui-btn">
-			<i style="display: inline-block; float: left;" class="fa fa-camera"></i>Property
-			Gallery
-		</button>
-	</div>
 </div>
-
-<br>
-<script src="js/libs/jquery.validationEngine-en.js"></script>
-<script src="js/libs/jquery.validationEngine.js"></script>
-<script src="js/pages/property-view.js"></script>
