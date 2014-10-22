@@ -1,4 +1,0 @@
-div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-div.gallery-item { float: left; width: 33.33333333%; }
-div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
-div.gallery-item img { display: block; width: 100%; height: auto; }
