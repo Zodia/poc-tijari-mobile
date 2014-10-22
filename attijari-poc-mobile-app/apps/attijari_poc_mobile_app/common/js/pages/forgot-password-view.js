@@ -1,28 +1,25 @@
-$( document ).ready(function() {
-		
+$(document).ready(function() {
+	$("#dialog").hide();
 	$(".right").hide();
 	$("#header").show();
 	$("#footer").hide();
-	$(".current-title").text ("Forgot Password");
+	$(".current-title").text("Forgot Password");
 	$(".left .back").text("Back");
-	
-			
+
 });
 
-$(".left .back").on("click",function(){
-	
-	$("#pageContent").load("pages/login-view.html", function () {
-		$(this).enhanceWithin();
-	});
+$(".left .back").on("click", function() {
+
+	loadPage("pages/login-view.html");
 });
 
-
-$("#buttongo").on("click",function(){
+$("#buttongo").on("click", function() {
 	
-alert("email sent successfully");	
+	$("#dialog").show();
+	
 });
 
+$("#dialog").on("click", function() {
 
-
-
-
+	$("#dialog").hide();
+});
