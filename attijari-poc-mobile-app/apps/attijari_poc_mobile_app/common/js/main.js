@@ -2,6 +2,8 @@ var customer_index = -1;
 var application_index = -1;
 var connected = 0;
 
+var pagesStack = new Array ();
+
 function wlCommonInit () {
 	/*
 	 * Use of WL.Client.connect() API before any connectivity to a Worklight Server is required. 
@@ -16,9 +18,6 @@ function wlCommonInit () {
 	 */
 	
 	// Common initialization code goes here
-	
-	$.mobile.linkBindingEnabled = true;
-	$.mobile.ajaxEnabled = true;
 	
 	loadPage ("pages/splash-view.html");
 	
@@ -70,10 +69,21 @@ function wlCommonInit () {
 }
 
 function loadPage (url) {
-	$("#pageContent").load(url, function () {
+	$("#pageContent").load (url, function () {
         $(this).enhanceWithin(); /* apply styles */
     });
 } 
+
+function storeInBackstack (url) {
+	pagesStack.push (url)
+}
+
+function back () {
+	loadPage (pagesStack.pop ());
+	if (length > 0) {
+		pagesStack.length = pagesStack.length - 1
+	}
+}
 
 function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
 	$("#pageContent").load("pages/confirmation-view.html", function () {
