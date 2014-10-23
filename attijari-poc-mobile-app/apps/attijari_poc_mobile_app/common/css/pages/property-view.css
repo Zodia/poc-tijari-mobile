@@ -68,6 +68,14 @@ input.rightText{
 	height: 20px;
 }
 
+#property_form{
+	background-color: white;
+}
+
+#property_form ul li{
+	border: none;
+}
+
 .ui-listview li p {
 font-size: .75em;
 font-weight: normal;
