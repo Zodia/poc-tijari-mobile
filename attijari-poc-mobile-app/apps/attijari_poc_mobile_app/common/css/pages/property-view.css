@@ -2,7 +2,8 @@
 	float: left;
 	width: 5%;
 	height: 30px;
-	line-height: 30px;
+	line-height: 45px;
+	text-align: left;
 }
 
 .property-details-list .attribute {
@@ -34,7 +35,7 @@
 	text-align: right;
 }
 
-.property-details-list .thumb-info .thumb-info-icon{
+.thumb-icon{
 	width: 20px;
 	height: 20px;
 }
