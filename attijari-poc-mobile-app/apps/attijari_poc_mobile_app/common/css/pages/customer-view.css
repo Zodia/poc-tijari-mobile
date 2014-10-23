@@ -1,39 +1,135 @@
-.property-details-list .thumb {
+.customer-details-list .thumb {
 	float: left;
 	width: 5%;
 	height: 30px;
-	line-height: 30px;
+	line-height: 45px;
+	text-align: left;
+}
+ul.customer-details-list{
+	padding:0px;
+	margin:0px;
+}
+a#cancel{
+  margin:0;
+  border-color:#DF4B20;
+  color: #BD2020;
+  text-shadow: 0 0px 0 #eeeeee;	
+  border-radius:0px 0px 0px 5px ;
+}
+a#continue{
+  margin:0;
+  border-color: #DF4B20;
+  border-width: 1px 1px 1px 0;
+  color: #BD2020;
+  text-shadow: 0 0px 0 #eeeeee;	
+  border-radius:0px 0px 5px ;
 }
 
-
-
-.property-details-list .attribute {
+.customer-details-list .attribute {
 	float: left;
 	width: 90%;
 	height: 30px;
 }
 
-.property-details-list .attribute .attribute-label {
+.customer-details-list .attribute .attribute-label {
 	display: inline-block;
 	float: left;
+	font-size: 18px;
 	width: 60%;
+	line-height: 40px;
 }
 
-.property-details-list .attribute .attribute-value {
+.customer-details-list .attribute .attribute-value {
 	display: inline-block;
 	float: right;
 	width: 40%;
+	font-size: 18px;
 	text-align: right;
 }
 
-.property-details-list .thumb-info {
+.ui-input-text.ui-custom {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px;
+}
+input.rightText{
+	text-align: right;
+}
+
+
+.customer-details-list .thumb-info {
 	float: right;
 	width: 5%;
 	height: 30px;
-	line-height: 30px;
+	line-height: 45px;
 	text-align: right;
 }
 
+.thumb-icon{
+	width: 20px;
+	height: 20px;
+}
+
+.ui-listview li p {
+font-size: .75em;
+font-weight: normal;
+display: block;
+margin: 0px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////*/
+
+#camera-icon{
+	margin-left: 90px;
+	width: 28px;
+    height: 23px;
+    background-size: cover;
+	background-image: url("../../images/content/camera_red.png");
+}
+
+.customer-image-out-border{
+	  
+width: 100px;
+height: 100px;
+border-radius: 100px;
+background-position: center;
+background-size: cover;
+
+
+
+border: 4px solid red;
+margin-right: auto;
+margin-left: auto;
+}
+
+.customer-image{
+	  
+width: 75px;
+height: 75px;
+border-radius: 100px;
+background-position: center;
+background-size: cover;
+background-color: #000;
+background-image: url("../../images/mehdi.jpg");
+padding:2px;
+margin: auto;
+margin-top: 10px;
+
+}
 
 em { color: red; font-weight: bold; padding-right: .25em; }
 
