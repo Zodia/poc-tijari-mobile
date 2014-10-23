@@ -85,3 +85,21 @@ text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
 }
+
+a#back{
+  margin:0;
+  border-color:#DF4B20;
+  color: #BD2020;
+  background-color:white;	
+  text-shadow: 0 0px 0 #eeeeee;	
+  border-radius:0px 0px 0px 5px ;
+}
+a#continue{
+  margin:0;
+  border-color: #DF4B20;
+  border-width: 1px 1px 1px 0;
+  color: #BD2020;
+  background-color:white;
+  text-shadow: 0 0px 0 #eeeeee;	
+  border-radius:0px 0px 5px ;
+}
