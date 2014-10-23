@@ -21,8 +21,8 @@ var prop_index = -1;
 //		$(this).enhanceWithin(); /* apply styles */
 //	});
 //});
-$("#proprety_call").on("click", function() {
-	customer = $("form").serializeObject();
+$("#cancel").on("click", function() {
+	//customer = $("form").serializeObject();
 	var correct=$("#customer_form").validationEngine('validate');
 	//alert(correct);
 	if(correct){
@@ -37,17 +37,14 @@ $("#proprety_call").on("click", function() {
 //		});
 }
 });
-$("#refinance_call").on("click", function() {
-	customer = $("form").serializeObject();
-	var correct=$("#customer_form").validationEngine('validate');
-	//alert(correct);
-	if(correct){
+$("#continue").on("click", function() {
+	
 
-		$("#pageContent").load("pages/mortgage-file-choice-view.html", function() {
+		$("#pageContent").load("pages/property-view.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 	
-}
+
 });
 
 $(".current-title").text("Customer View");

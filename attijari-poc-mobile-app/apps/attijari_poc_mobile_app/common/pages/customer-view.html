@@ -1,232 +1,281 @@
 <meta charset="utf-8">
-<!-- <link rel="stylesheet" href="css/jquery.mobile508datepicker.css"/> -->
-
 <link rel="stylesheet" href="css/pages/customer-view.css">
-<div class="customer-view-content">
-<div data-role="tabs">
-	<table id="allTable">
-		<tbody>
-			<tr>
-				<td class="tablist-left">
-      <ul data-role="listview" data-inset="true" >
-      <li><a href="#one"  data-ajax="false" >Personal data</a></li>
-      <li><a href="#two" data-ajax="false">Regular income/ other sources</a></li>
-      <li><a href="#three" data-ajax="false">Existing personal loans</a></li>
-      <li><a href="#four" data-ajax="false">Existing car loans</a></li>
-      <li><a href="#five" data-ajax="false">Existing mortgages</a></li>
-      <li><a href="#six" data-ajax="false">Existing cards</a></li>
-      
-      <li><a href="#seven" data-ajax="false">History</a></li>
-      <li><a href="#eight" data-ajax="false">Photography</a></li>
-      <li><a href="#nine" data-ajax="false">Supporting documents</a></li>
-      
-    </ul>
-               </td>
-				<td class="tablist-content" >
-				<form id="customer_form">
+<div class="property-view-content" data-type="vertical">
+	<form data-role="tabs" action="" method="post" id="property_form">
+		<ul data-role="listview" data-inset="true" class="property-details-list">
+			
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">First Name</span>
+						<span class="attribute-value">Ahmed</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
 				
-				    <div id="one" class="ui-body-d"> 
-      <div class="ui-field-contain">
-				
-						<fieldset data-role="controlgroup">
-				<legend>Title</legend>
-				<input type="radio" name="Title" id="radio-choice-1"
-					value="Ms" checked="checked" /> <label for="radio-choice-1">Ms</label>
-
-				<input type="radio" name="Title" id="radio-choice-2"
-					value="Mr" /> <label for="radio-choice-2">Mr</label>
-			</fieldset>
-            
-					</div>
-					 <div class="ui-field-contain">
-						<label for="textinput-1">First name <em>* </em></label> <input
-							name="First_name" id="First_name" 
-							type="text" class="validate[required]"/>
-					</div>
-					 <div class="ui-field-contain">
-						<label for="textinput-1">Last name <em>* </em></label> <input
-							name="Last_name" id="Last_name" 
-							type="text" class="validate[required]">
-					</div>
-						<div class="ui-field-contain">
-						<label for="textinput-1">D.O.B</label> 
-						<input type="text" name="startDate"  id="dob"  readonly="" class="ui-input-text ui-body-b">
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Nationality</label> <input
-							name="Nationality" id="textinput-1" 
-							type="text">
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Email <em>* </em></label> <input class="validate[required,custom[email]]"
-							name="Email" id="textinput-1" 
-							type="text">
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Mobile</label> <input
-							name="Mobile" id="textinput-1" 
-							type="text">
-					</div>
-					
-				
-					
-   </div>
-    <div id="two" class="ui-body-d"> 
-    <div class="ui-field-contain">
-						<label for="textinput-1">Monthly income</label> <input
-							name="Monthly_income" id="textinput-1" 
-							type="text">
-					</div>
-   </div>
-   <div id="three" class="ui-body-d"> 
-   <div class="ui-field-contain">
-						
-						<fieldset data-role="controlgroup">
-						<legend  >you have existing personal loans?</legend> 
-						<label><input type="radio" name="personal_loans" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=personal_loans id="radio-choice-0a">No </label>
-               </fieldset>
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Monthly payment</label> <input
-							name="MP_personal_loans" id="textinput-1" 
-							type="text">
-					</div>
-    
-   </div>
-   <div id="four" class="ui-body-d"> 
-      <div class="ui-field-contain">
-						
-						
-						<fieldset data-role="controlgroup" >
-						<legend>you have existing car loans?</legend> 
-						<label><input type="radio" name="car_loans" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=car_loans id="radio-choice-0a">No </label>
-               </fieldset>
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Monthly payment</label> <input
-							name="MP_car_loans" id="textinput-1" 
-							type="text">
-					</div>
-   </div>
-   <div id="five" class="ui-body-d">
-    <div class="ui-field-contain">
-						
-						<fieldset data-role="controlgroup" >
-						<legend >you have existing mortgages? <em>* </em></legend> 
-						<label><input type="radio" name="existing_mortgages" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=existing_mortgages id="radio-choice-0a">No </label>
-               </fieldset>	
-					</div>
-					<div class="ui-field-contain">
-						<label for="textinput-1">Monthly payment</label> <input
-							name="MP_existing_mortgages" id="textinput-1" 
-							type="text">
-					</div> 
-    
-   </div>
-   <div id="six" class="ui-body-d"> 
-    <div class="ui-field-contain">
-						
-						<fieldset data-role="controlgroup" >
-						<legend>Existing debit card</legend> 
-						<label><input type="radio" name="Existing_debit_card" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=Existing_debit_card id="radio-choice-0a">No </label>
-               </fieldset>	
-					</div>
-					 <div class="ui-field-contain">
-						
-						<fieldset data-role="controlgroup">
-						<legend >Existing credit card</legend> 
-						<label><input type="radio" name="Existing_credit_card" id="radio-choice-0a">Yes</label>
-                        <label><input type="radio" checked="checked"  name=Existing_credit_card id="radio-choice-0a">No </label>
-               </fieldset>	
-					</div>
-    
-   </div>
-   <div id="historyContent">
-   <div id="seven" class="ui-body-d"> 
-   <div data-role="collapsibleset" data-theme="a" data-content-theme="a" >
-    <div data-role="collapsible">
-        <h3 class="good">Car loans completely paid</h3>
-    <p>Car loans of 20000$ completely paid on 12/10/2012</p>
-    </div>
-    <div data-role="collapsible">
-        <h3 class="bad">mortgage payment delayed</h3>
-    <p>mortgage payment delayed for 2 mounths from 15/03/2011 to 15/05/2011</p>
-    </div>
-    
-</div>
-  </div>
-  </div>
-  
-<!--   photography  ---------------------------------------->
-   <div id="eight" class="ui-body-d"> 
-   
-   <button id="chooseFile">Choose file</button>
-			<div class="hiddenfile">
-			  <input type="file" id="imageInput" data-clear-btn="false" name="image" accept="image/*" />
-			</div>
-			<div id="preview">
-			</div>
-			<ul id="info" data-role="listview" data-inset="true">
-			</ul>
-    
-   </div>
-   
-   <!--  End photography  ---------------------------------------->
-   <!--   supporting docs  ---------------------------------------->
-   <div id="nine" class="ui-body-d"> 
-   <div id="pageone">
-
-	<div data-role="main" class="ui-content">
-		<ul id="listDocuments" data-role="listview" data-inset="true">
-			<li>
-				<i class="fa fa-file-pdf-o ui-li-icon ui-corner-none doc-type-icon"></i>
-				Document0
-				<input data-clear-btn="true" name="file-2" id="file-2" value="" type="file" />
 			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Last Name</span>
+						<span class="attribute-value">Hussein</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Date of Birth</span>
+						<span class="attribute-value">11/03/1990</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Street Address</span>
+						<span class="attribute-value">12 Avenue Taddart</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">City</span>
+						<span class="attribute-value">Casablanca</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Country</span>
+						<span class="attribute-value">Morocco</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			
+			
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-map-marker"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Primary Language</span>
+						<span class="attribute-value">French</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Primary Phone</span>
+						<span class="attribute-value">(817)555-675</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Email Address</span>
+						<span class="attribute-value">ahmad@gmail.com</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Preferred Communication Method</span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Checking Account #</span>
+						<span class="attribute-value">123345508</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Savings Account #</span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Monghly Salary(MAD)</span>
+						<span class="attribute-value">45,500</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Other Income</span>
+						<span class="attribute-value">0</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Customer ID Documents</span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Recent Paycheck</span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label"></span>
+						<span class="attribute-value"></span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				
+			</li>
+			
 		</ul>
-	</div>
-</div>
-<div data-type="horizontal">
-	<button id="add_document"
-		style="width: 20%; margin-right: 5%; float: left; "
-		class="ui-btn">Add</button>
+	</form>
 	
-</div>
-    
-   </div>
-   
-   <!--  End supporting docs  ---------------------------------------->
-   
-   
-			</form>	
-				</td>
-			</tr>
-		</tbody>
-	</table>
 	
+	
+<!-- 	<a href="#" data-role="button" data-inline="true"  id="cancel">Cancel </a> -->
+<!-- 	<a href="#" data-role="button" data-inline="true" id="continue">Continue</a> -->
+	
+	<div class="ui-grid-a ui-responsive">
+    <div id="cancel" class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Cancel</a></div>
+    <div id="continue" class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Continue</a></div>
+    </div>
     
-
-</div>
-</div>
-<div data-type="horizontal">
-	<button id="proprety_call"
-		style="width:30%; float: left;"
-		class="ui-btn">New Mortgage</button>
-
-	<button id="refinance_call"
-		style="width:30%; float: right;"
-		class="ui-btn">Refinance Application</button>
-		
-</div>
-<!-- <script src="js/pages/photography-view.js"></script> -->
-<script src="js/libs/jquery.validationEngine-en.js"></script>
-<script src="js/libs/jquery.validationEngine.js"></script>
-<script src="js/libs/mobiscroll.js"></script>
-<link href="js/libs/mobiscroll.css" rel="stylesheet" type="text/css" />
+    
 <script src="js/pages/customer-view.js"></script>
-<!-- <script src="js/libs/jquery.scroll.start.stop.js"></script> -->
-
+</div>

@@ -1,26 +1,37 @@
-.tablist-left {
-    width: 30%;
-    display: inline-block;
+.property-details-list .thumb {
+	float: left;
+	width: 5%;
+	height: 30px;
+	line-height: 30px;
 }
-.tablist-content {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 20px;
+
+
+
+.property-details-list .attribute {
+	float: left;
+	width: 90%;
+	height: 30px;
 }
-.customer-view-content{
-	
-	margin-top: 0px;
+
+.property-details-list .attribute .attribute-label {
+	display: inline-block;
+	float: left;
+	width: 60%;
 }
-#allTable{
-	width: 100%;
-	
+
+.property-details-list .attribute .attribute-value {
+	display: inline-block;
+	float: right;
+	width: 40%;
+	text-align: right;
 }
-.good{
-  background-color: #83FF6B;	
-}
-.bad{
-	 background-color: #ff234f;
+
+.property-details-list .thumb-info {
+	float: right;
+	width: 5%;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
 }
 
 
