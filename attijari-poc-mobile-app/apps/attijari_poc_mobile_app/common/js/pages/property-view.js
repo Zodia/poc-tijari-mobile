@@ -25,6 +25,12 @@ $(document).ready(function() {
 	});
 
 });
+
+function openFileOption()
+{
+  document.getElementById("file1").click();
+}
+
 // if(prop_index== -1)
 // document.getElementById("doc_call").disabled = true;
 

@@ -27,8 +27,14 @@
 				</div>
 				<div class="ui-li-text attribute">
 					<p>
-						<span class="attribute-label">New/Existing/No Structure</span> <span
-							class="attribute-value">Existing</span>
+						<span class="attribute-label">New/Existing/No Structure</span>
+						<span class="attribute-value">
+							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
+								<option value="New">New</option>
+								<option value="Existing">Existing</option>
+								<option value="NoStruct">No Structure</option>
+							</select>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -42,8 +48,13 @@
 				</div>
 				<div class="ui-li-text attribute">
 					<p>
-						<span class="attribute-label">Residential/Commercial</span> <span
-							class="attribute-value">Residential</span>
+						<span class="attribute-label">Residential/Commercial</span>
+						<span class="attribute-value">
+    						<select data-role="none" class="select-informations" name="usage" id="select-native-1">
+								<option value="personal">Residential</option>
+								<option value="commercial">Commercial</option>
+							</select>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -57,8 +68,17 @@
 				</div>
 				<div class="ui-li-text attribute">
 					<p>
-						<span class="attribute-label">Building Type</span> <span
-							class="attribute-value">2 BR Apartment</span>
+						<span class="attribute-label">Building Type</span> 
+						<span class="attribute-value">
+							<select data-role="none" class="select-informations" name="rooms" id="select-native-1">
+								<option value="studio">Studio</option>
+								<option value="1">1 BR Apartment</option>
+								<option value="2">2 BR Apartment</option>
+								<option value="3">3 BR Apartment</option>
+								<option value="4">4 BR Apartment</option>
+								<option value=">4">>4 BR Apartment</option>
+							</select>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -72,8 +92,14 @@
 				</div>
 				<div class="ui-li-text attribute">
 					<p>
-						<span class="attribute-label">Primary Residence</span> <span
-							class="attribute-value">Yes</span>
+						<span class="attribute-label">Primary Residence</span> 
+						<span class="attribute-value">
+							<select data-role="none" class="select-informations" name="Primary" id="select-native-1">
+								<option value="studio">Studio</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -87,8 +113,10 @@
 				</div>
 				<div class="ui-li-text attribute">
 					<p>
-						<span class="attribute-label">Land Area</span> <span
-							class="attribute-value">N/A</span>
+						<span class="attribute-label">Land Area</span> 
+						<span class="attribute-value">
+							<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value="N/A"/>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -103,7 +131,9 @@
 				<div class="ui-li-text attribute">
 					<p>
 						<span class="attribute-label">Construction Area/Liveable Space</span> 
-						<span class="attribute-value">300 m²</span>
+						<span class="attribute-value">
+							<input class="rightText" data-wrapper-class="ui-custom" type="text" name="liveableArea" id="name" value="300 m²"/>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -118,7 +148,9 @@
 				<div class="ui-li-text attribute">
 					<p>
 						<span class="attribute-label">Building Contractors</span> 
-						<span class="attribute-value">N/A</span>
+						<span class="attribute-value">
+							<input class="rightText" data-wrapper-class="ui-custom" type="text" name="contractors" id="name" value="N/A"/>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -132,7 +164,9 @@
 				<div class="ui-li-text attribute">
 					<p>
 						<span class="attribute-label">Construction Estimate (MAD)</span>
-						<span class="attribute-value">N/A</span>
+						<span class="attribute-value">
+							<input class="rightText" data-wrapper-class="ui-custom" type="text" name="constructionSum" id="name" value="N/A"/>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -146,7 +180,9 @@
 				<div class="ui-li-text attribute">
 					<p>
 						<span class="attribute-label">Property Estimate (MAD)</span>
-						<span class="attribute-value">1,650,000</span>
+						<span class="attribute-value">
+							<input class="rightText" data-wrapper-class="ui-custom" type="text" name="evaluationSum" id="name" value="1,650,000"/>
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -160,7 +196,12 @@
 				<div class="ui-li-text attribute">
 					<p>
 						<span class="attribute-label">Land Registration Document</span>
-						<span class="attribute-value"><img src="images/content/img_preview.png" class="thumb-icon"></img></span>
+						<span class="attribute-value">
+							
+							<img onclick="openFileOption();return;" src="images/content/img_preview.png" class="thumb-icon">
+							<input type="file" id="file1" style="display:none" data-role="none">
+							
+						</span>
 					</p>
 				</div>
 				<div class="ui-li-thumb thumb-info">
@@ -170,7 +211,7 @@
 		</ul>
 		<div class="ui-grid-a ui-responsive">
     		<div id="back" class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Back</a></div>
-   			 <div id="continue" class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Continue</a></div>
+   			<div id="continue" class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Continue</a></div>
     	</div>
 	</form>
 </div>
