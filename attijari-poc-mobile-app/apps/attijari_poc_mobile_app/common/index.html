@@ -7,55 +7,58 @@
    		<title>attijari_mobile_app</title>
    		
    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.4.css">
-   		<link rel="stylesheet" href="css/attijari.min.css">
    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.icons-1.4.4.css">
    		<link rel="stylesheet" href="css/jquery.mmenu.css">
-   		<link rel="stylesheet" href="css/font-awesome.min.css">
    		
    		<link rel="stylesheet" href="css/main.css">
    	</head>
    	<body style="display: none;">
+   	
    		<div data-role="page" id="page">
+   		
 			<div data-role="header" id="header" data-position="fixed">
+			
 				<div class="right">
 					<a class="menu-display" href="#menu">
-						<i class="fa fa-align-justify fa-fw fa-2x"></i>
+						<img alt="mmenu" src="images/header/drawer_menu_header_button.png" />
+					</a>
+					
+					<a class="top-notifications" href="#menu">
+						<img alt="top-notifications" src="images/header/top_notification_button.png" />
 					</a>
 				</div>
 				<div class="left">
-					<a class="list-group-item">
-						<i class="fa fa-angle-left fa-fw fa-2x"></i>
-						&nbsp;<span class="back">Home</span>
+					<a>
+						<img alt="back" src="images/header/back_arrow.png" />
+						<span class="back">Home</span>
 					</a>
 				</div>
+				<!-- <div class="center with-logo"></div>-->
 				<div class="center">
-					<p class="current-title">Attijari Mobile App</p>
+					<p class="current-title"></p>
 				</div>
+				
 			</div>
 			
-			<div data-role="content" id="pageContent"></div>
+			<div data-role="content" id="pageContent">
+				
+			</div>
 			
-			<div data-role="footer" id="footer"data-position="fixed">
-				<div class="footer-limit">
-					<div class="ui-grid-c">
-						<div id="homeAction" class="ui-block-a">
-							<i class="fa fa-home fa-fw fa-2x"></i>
-							<p class="label">Home</p>
-						</div>
-						<div id="notificationsAction" class="ui-block-b">
-							<i class="fa fa-envelope-o fa-fw fa-2x"></i>
-							<p class="label">Notifications</p>
-						</div>
-						<div id="mortgageAction" class="ui-block-c">
-							<i class="fa fa-cogs fa-fw fa-2x"></i>
-							<p class="label">Mortgage simulator</p>
-						</div>
-						<div id="askExpertAction" class="ui-block-d">
-							<i class="fa fa-user fa-fw fa-2x"></i>
-							<p class="label">Ask an expert</p>
-						</div>
-					</div>
-				</div>
+			<div data-role="footer" id="footer" data-position="fixed">			
+				<a id="homeAction" class="footer-action" data-role="none">
+					<img alt="back" src="images/footer/home.png" />
+					<span class="label">Home</span>
+				</a>
+				<a id="notificationsAction" class="footer-action" data-role="none">
+					<img alt="back" src="images/footer/notifications.png" />
+					<span class="label">Inbox</span> 
+				</a>
+				<a id="settingsAction" class="footer-action right" data-role="none">
+					<img alt="back" src="images/footer/settings.png" />
+					<span class="label">Settings</span>
+				</a>
+				
+				<div id="center" class="with-logo"></div>
 			</div>
 			
 			<nav id="menu">

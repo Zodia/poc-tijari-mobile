@@ -1,5 +1,11 @@
+/*@font-face {
+    font-family: helveticaNeueThin;
+    src: url (../fonts/HelveticaNeueThin.ttf);
+}*/
+
 * {
 	text-shadow: none;
+	/*font-family: helveticaNeueThin;*/
 }
 
 html, body {
@@ -9,22 +15,25 @@ html, body {
 
 #page {
 	overflow: hidden;
+	background-color: #c9cfd6;
 }
 
 #header {
 	width: 100%;
-	height: 88px;
-    /*background-color: #F7F7F7;*/
-    position: fixed;
-    top: 0;
-    left: 0;
+	height: 48px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-position: center;
+	background-size: cover;
+	background-color: #ef5a49;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border: none;
 }
 
 #header .left {
 	float: left;
-	padding-left: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
 	margin-right: 20px;
 	display: inline-block;
 	height: 48px;
@@ -33,13 +42,13 @@ html, body {
 
 #header .right {
 	float: right;
-	padding-right: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
 	margin-left: 20px;
-	display: inline-block;
 	height: 48px;
-	display:table-cell;
+}
+
+#header .right a {
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 #header .left a,
@@ -47,66 +56,118 @@ html, body {
 	font-weight: normal;
 	text-decoration: none;
 	color: #FFF;
+	height: 40px;
+	margin-top: 8px;
+	display: block;
+	float: right;
 }
 
-#header .right i, #header .left i {
-	width: inherit;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+#header .left a {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 10px;
+}
+
+#header .right a img {
+	height: 34px;
+}
+
+#header .left img {
+	display: inline-block;
 	float: left;
+	height: 24px;
 }
 
 #header .left span {
 	display: inline-block;
 	float: left;
-	margin-left: 5px;
-	margin-top: 15px;
+	margin-left: 8px;
+	line-height: 24px;
+	height: 24px;
 }
 
 #header .center {
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background-repeat: no-repeat;
 	height: 48px;
+	width: 300px;
+}
+
+#header .center.with-logo {
+	background-position: center;
+	background-size: contain;
+	background-image: url("../images/logo_white.png");
+}
+
+#header .center .current-title {
+	margin: 0;
+	height: 48px;
+	line-height: 48px;
+	color: #FFF;
+	font-weight: normal;
 }
 
 #footer {
 	width: 100%;
-	height: 88px;
-	/*background-color: #F7F7F7;*/
-	text-align: center;
+	height: 48px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ef5a49;
 	position: fixed;
-    bottom: 0;
-    left: 0;
+	bottom: 0px;
+	left: 0px;
+	border: none;
 }
 
-#footer .footer-limit {
-	width: 50%;
+#footer #center.with-logo {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("../images/logo_white.png");
 	margin: 0 auto;
-	height: 100%;
-	vertical-align: middle;
+	text-align: center;
+	height: 48px;
+	width: 165px;
 }
 
-#footer .footer-limit .ui-grid-c {
-	vertical-align: middle;
-	transform: translateY(17%);
+#footer .footer-action {
+	display: block;
+	width: 65px;
+	text-align: center;
+	width: 65px;
+	height: 48px;
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
-#footer .footer-limit .ui-grid-c div p {
-	margin: 0;
-	font-size: 15px;
+#footer .footer-action.right {
+	float: right;
 }
 
-#footer .footer-actions {
-	width: 50%;
-	height: 100%;
+#footer .footer-action:first-child {
+	margin-left: 20px;
+}
+
+#footer .footer-action img {
+	height: 34px;
+	display: block;
 	margin: 0 auto;
 }
 
-#footer .footer-actions p.label {
-	margin: 0;
+#footer .footer-action img {
+	height: 34px;
+	display: block;
+	margin: 0 auto;
+}
+
+#footer .footer-action span.label {
+	display: block;
+	margin: 0 auto;
+	color: #FFF;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 #menu i {
@@ -161,8 +222,16 @@ html, body {
 
 #pageContent {
 	position: absolute;
-	top: 91px;
-	bottom: 91px;
-	left: 0;
-	right: 0;
+	top: 68px;
+	bottom: 100px;
+	left: 12px;
+	right: 12px;
+	border: none;
+	margin-top: 0;
+	padding: 0;
+	-webkit-box-shadow: rgba(66, 66, 66, 0.89) 4px 4px 12px 0px; 
+	-moz-box-shadow: rgba(66, 66, 66, 0.89) 4px 4px 12px 0px; 
+	box-shadow: rgba(66, 66, 66, 0.89) 4px 4px 12px 0px;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
