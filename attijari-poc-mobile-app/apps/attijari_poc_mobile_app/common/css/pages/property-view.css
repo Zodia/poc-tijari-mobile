@@ -17,6 +17,7 @@
 	float: left;
 	font-size: 18px;
 	width: 60%;
+	line-height: 40px;
 }
 
 .property-details-list .attribute .attribute-value {
@@ -26,6 +27,17 @@
 	font-size: 18px;
 	text-align: right;
 }
+
+.ui-input-text.ui-custom {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px;
+}
+input.rightText{
+	text-align: right;
+}
+
 
 .property-details-list .thumb-info {
 	float: right;
@@ -38,4 +50,14 @@
 .thumb-icon{
 	width: 20px;
 	height: 20px;
+}
+
+.ui-listview li p {
+font-size: .75em;
+font-weight: normal;
+display: block;
+margin: 0px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
 }
