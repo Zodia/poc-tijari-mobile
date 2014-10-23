@@ -7,7 +7,7 @@
 
 .property-details-list .attribute {
 	float: left;
-	width: 95%;
+	width: 90%;
 	height: 30px;
 }
 
@@ -21,4 +21,13 @@
 	display: inline-block;
 	float: right;
 	width: 40%;
+	text-align: right;
+}
+
+.property-details-list .thumb-info {
+	float: right;
+	width: 5%;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
 }
