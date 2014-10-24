@@ -1,105 +1,12 @@
-<div data-role="page" id="page" data-url="pages/faqs-view.html">
-   	
-   	<link rel="stylesheet" href="css/pages/faqs-view.css" />
-   	
-	<div data-role="header" id="header" data-position="fixed">
-	
-		<div class="right">
-			<a class="menu-display" href="#menu">
-				<img alt="mmenu" src="images/header/drawer_menu_header_button.png" />
-			</a>
-			
-			<a class="top-notifications">
-				<img alt="top-notifications" src="images/header/top_notification_button.png" />
-			</a>
-		</div>
-		<div class="left">
-			<a data-rel="back" data-transition="slide" data-direction="reverse">
-				<img alt="back" src="images/header/back_arrow.png" />
-				<span class="back">Home</span>
-			</a>
-		</div>
-		<!-- <div class="center with-logo"></div>-->
-		<div class="center">
-			<p class="current-title"></p>
-		</div>
-		
-	</div>
-	
-	<div data-role="content" id="pageContent">
-		<div id="faqs-wrapper">
-			<div class="faqs-content">
-				<div data-role="collapsible-set" data-corners="false" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="faq-set">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div data-role="footer" id="footer" data-position="fixed">			
-		<a id="homeAction" class="footer-action" data-role="none">
-			<img alt="back" src="images/footer/home.png" />
-			<span class="label">Home</span>
-		</a>
-		<a id="notificationsAction" class="footer-action" data-role="none">
-			<img alt="back" src="images/footer/notifications.png" />
-			<span class="label">Inbox</span> 
-		</a>
-		<a id="settingsAction" class="footer-action right" data-role="none">
-			<img alt="back" src="images/footer/settings.png" />
-			<span class="label">Settings</span>
-		</a>
-		
-		<div id="center" class="with-logo"></div>
-	</div>
-	
-	<nav id="menu">
-		<p class="employee-name">Welcome, Ali</p>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pages/faqs-view.css">
 
-		<ul data-role="listview" data-inset="true">
-			<li>
-				<img src="images/content/home_filled.png" />
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<img src="images/content/settings_filled.png" />
-				<a href="#">Settings</a>
-			</li>
-			<li>
-				<img src="images/content/notifications_filled.png" />
-				<a href="#">Notifications</a>
-			</li>
-			<li>
-				<img src="images/content/recent_activity.png" />
-				<a href="#">Recent Activity</a>
-			</li>
-			<li>
-				<img src="images/content/news.png" />
-				<a href="#">News, Events & Projects</a>
-			</li>
-			<li>
-				<img src="images/content/mortgage.png" />
-				<a href="pages/mortgage-simulator-view.html">Mortgage Center</a>
-			</li>
-			<li>
-				<img src="images/content/amount.png" />
-				<a href="#">Investment Center</a>
-			</li>
-			<li>
-				<img src="images/content/auto_loan.png" />
-				<a href="#">Auto Loans Center</a>
-			</li>
-			<li>
-				<img src="images/content/insurance_center.png" />
-				<a href="#">Insurance Center</a>
-			</li>
-			<li>
-				<img src="images/content/help.png" />
-				<a href="#">Help Center</a>
-			</li>
-		</ul>
-	</nav>
-	
-	<script src="js/pages/faqs-view.js"></script>
-	
- </div>
+<div id="faqs-wrapper">
+	<div class="faqs-content">
+		<div data-role="collapsible-set" data-corners="false" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="faq-set">
+			
+		</div>
+	</div>
+</div>
+
+<script src="js/pages/faqs-view.js"></script>

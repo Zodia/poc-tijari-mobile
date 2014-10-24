@@ -5,25 +5,45 @@ var connected = 0;
 var pagesStack = new Array ();
 
 function wlCommonInit () {
+	/*
+	 * Use of WL.Client.connect() API before any connectivity to a Worklight Server is required. 
+	 * This API should be called only once, before any other WL.Client methods that communicate with the Worklight Server.
+	 * Don't forget to specify and implement onSuccess and onFailure callback functions for WL.Client.connect(), e.g:
+	 *    
+	 *    WL.Client.connect({
+	 *    		onSuccess: onConnectSuccess,
+	 *    		onFailure: onConnectFailure
+	 *    });
+	 *     
+	 */
 	
 	// Common initialization code goes here
 	
-	changePage ("pages/splash-view.html");
+	loadPage ("pages/splash-view.html");
+	
+	/* Navigation drawer menu */
+	$(function () {
+		$("nav#menu").mmenu ({
+			dragOpen: true,
+		    position: 'right',
+		    direction: 'left'
+		});
+	});
 	
 	$("#homeAction").on ("click", function () {
-		changePage ("pages/customer-entry-view.html");
+		loadPage ("pages/home-view.html");
 	});
 	
 	$("#notificationsAction").on ("click", function () {
-		changePage ("pages/notifications-list-view.html");
+		loadPage ("pages/notifications-list-view.html");
 	});
 	
-	/*$("#settingsAction").on ("click", function () {
-		changePage ("pages/mortgage-simulator-view.html");
-	});*/
+	$("#settingsAction").on ("click", function () {
+		loadPage ("pages/mortgage-simulator-view.html");
+	});
 	
 	$("#askExpertAction").on ("click", function () {
-		changePage ("pages/ask_expert/expert-view.html");
+		loadPage ("pages/ask_expert/expert-view.html");
 	});
 	
 	$("nav#menu li a").on ("click", function () {
@@ -31,10 +51,27 @@ function wlCommonInit () {
 	});
 	
 	$(".menu-logout").on ("click", function () {
-		changePage ("pages/login-view.html");
+		loadPage ("pages/login-view.html");
 		connected = 0;
 		$("nav#menu").trigger ("close.mm");
 	});
+}
+
+function loadPage (url) {
+	$("#pageContent").load (url, function () {
+        $(this).enhanceWithin(); /* apply styles */
+    });
+} 
+
+function storeInBackstack (url) {
+	pagesStack.push (url)
+}
+
+function back () {
+	loadPage (pagesStack.pop ());
+	if (length > 0) {
+		pagesStack.length = pagesStack.length - 1
+	}
 }
 
 function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
@@ -65,8 +102,4 @@ function getConnectionStatus () {
 
 function setConnectionStatus (status) {
 	connected = status;
-}
-
-function changePage (url) {
-	$(":mobile-pagecontainer").pagecontainer ("change", url).enhanceWithin ();
 }
