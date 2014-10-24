@@ -1,44 +1,39 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/pages/login-view.css">
 
-<div id="loginWrapper"  >
-	<div id="loginContent" >
+<div id="loginWrapper">
+	<div id="loginContent">
 		<div id="logo"></div>
-		
-		<div class="login-fields">
-			<div class="input-group margin-bottom-sm">
-				<span class="input-group-addon">
-					<i class="fa fa-user" ></i>
-				</span> 
-				<input class="" type="text" id ="login" placeholder="demo"/>
-			</div>
-			
-			<div class="input-group">
-				<span class="input-group-addon">
-					<i class="fa fa-key fa-fw"></i>
-				</span>
-				<input class="form-control" type="password" id ="password" placeholder="demo" />
-			</div>
-			
+
+		<div id="email">
+			<input type="text" id="emailinput" placeholder="Email address">
+			<img src="images/content/envelop.png" width="15" class="smallicon" />
+		</div>
+		<div id="password">
+			<input type="password" id="passwordinput" placeholder="password">
+			<img src="images/content/lock.png" class="smallicon" width="15" />
+		</div>
 			<button class="mybutton" id="buttongo">Login</button>
-			<a id="forgotpass" href="#" >Forgot password?</a>
-		
+		<div id=links>
+  			<div id="forgot"><a id="forgotpass" href="#">Forgot password?</a></div>
+			<div id="register"><a id="registerlink" href="#">Register</a></div>
 		</div>
 		
-		<div id="simulator">
-			<button class="mybutton" id="gosemulator">Mortgage calculator</button>
-		</div>
-		
-		<div data-role="dialog" id="dialog">
-			<div data-role="header" id="headerdialog">
-				<h3 align="center">Erreur d'autentification</h3>
-			</div>
-			<div data-role="content" id="contentlogin" align="center">
-				<b>veuillez réessayer !!</b>
-			</div>
-		</div>
-	</div>	
+	</div>
+
+
+
+
+
 </div>
+<div data-role="dialog" id="dialog">
+	<div data-role="header" id="headerdialog">
+		<h3 align="center">Erreur d'autentification</h3>
+	</div>
+	<div data-role="content" id="dialogmessage" align="center">
+		<b>veuillez réessayer !!</b>
+	</div>
+</div>
+
 <!--  -->
 <script src="js/pages/login-view.js"></script>
- 

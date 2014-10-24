@@ -17,12 +17,12 @@ $("#forgotpass").on ("click",function () {
 	loadPage ("pages/forgot-password-view.html");
 });
 
-$("#gosemulator").on ("click",function () {
-	loadPage ("pages/mortgage-simulator-view.html");
+$("#registerlink").on ("click",function () {
+	loadPage ("pages/register-view.html");
 });
 
 $("#buttongo").on("click",function(){
-	if($('#login').val () == "demo" && $('#password').val () == "demo") {
+	if($('#emailinput').val () == "demo" && $('#passwordinput').val () == "demo") {
 		connected = 1;
 		$(".right").show ();
 		$("#footer").show ();	
