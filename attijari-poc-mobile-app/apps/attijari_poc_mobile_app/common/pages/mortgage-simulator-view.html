@@ -1,46 +1,169 @@
+
 <link rel="stylesheet" href="css/pages/mortgage-simulator-view.css">
 
-<div id="mortgageSimulator" style="text-align:center;"> 
+	
+	
+	
+	
+	
+<header>
+    <figure>
+        <img src="images/pages/image1.png" alt="header" />
+    </figure>
+</header>
 
-<table  class="center">
-		<tr>
-			<td><label for="loanAmountField">Loan Amounts:</label></td>
-			<td><input type="text" name="loanAmountField" id="loanAmountField" style="text-align: center"  onkeyup=checnum(this)></td>
-			</tr>
-			<tr>
-			<td><label for="interestRatesField">Interest Rates:</label></td>
-			<td><input type="text" name="interestRatesField" id="interestRatesField" style="text-align: center"  onkeyup=checnum(this)> </td>
-			</tr>
-			<tr>
-			<td><label for="TermField">Term (Years):	   
-			</label></td>
-			<td><input type="text" name="TermField" id="TermField" style="text-align: center"  onkeyup=checnum(this)></td>
-			</tr>
-			<tr>
-			<td colspan="2" align="center"><button class="mybutton" id="submitButton">Get Estimate</button>	</td>
-			</tr>
-			 <tr>
-			<td colspan="2" align="center"> <label id="label">Results: </label> </td>
-			</tr>
-			 <tr>
-			<td>  <label for="monthlyPaymentField">Monthly Payment EMI:</label></td>
+<div id="mortgageSimulator">
+	<ul data-role="listview" data-inset="true"
+			class="property-details-list">
+			<li class="ui-field-contain">
+
+			</li>
+			<li class="ui-field-contain">
+				<div class="thumb">
+					<img src="images/content/terms.png" class="thumb-icon"></img>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Mortgage Term</span>
+						<span class="attribute-value">
+							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
+								<option value="5years">5 years</option>
+								<option value="10years">10 years</option>
+								<option value="15years">15 years</option>
+								<option value="20years">20 years</option>
+								<option value="25years">25 years</option>
+								<option value="30years">30 years</option>
+								<option value="35years">35 years</option>
+								<option value="40years">40 years</option>
+							</select>
+						</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<img src="images/content/info.png" class="thumb-icon"></img>
+				</div>
+
+			</li>
+			<li class="ui-field-contain">
+				<div class="thumb">
+					<img src="images/content/percent.png" class="thumb-icon"></img>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Interest Type</span>
+						<span class="attribute-value">
+    						<select data-role="none" class="select-informations" name="usage" id="select-native-1">
+								<option value="1percent">1% ARM</option>
+								<option value="2percent">2% ARM</option>
+								<option value="3percent">3% ARM</option>
+								<option value="4percent">4% ARM</option>
+								<option value="5percent">5% ARM</option>
+								<option value="6percent">6% ARM</option>
+								<option value="7percent">7% ARM</option>
+								<option value="8percent">8% ARM</option>
+								<option value="9percent">9% ARM</option>
+								<option value="10percent">10% ARM</option>
+							</select>
+						</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<img src="images/content/info.png" class="thumb-icon"></img>
+				</div>
+			</li>
 			
-			<td><input type="text" name="monthlyPaymentField" id="monthlyPaymentField" style="text-align: center" disabled  > </td>
-			</tr>
-			<tr>
-			<td><label for="monthlyAverageInterestField">Monthly Average Interest:</label></td>
-			<td><input type="text" name="monthlyAverageInterestField" id="monthlyAverageInterestField" style="text-align: center" disabled></td>
-			</tr>
-			<tr>
-			<td><label for="monthlyInterestField">Monthly Interest:</label></td>
-			<td><input type="text" name="monthlyInterestField" id="monthlyInterestField" style="text-align: center" disabled >	</td>
-			</tr>
-			
-</table>
+			<li class="ui-field-contain">
+				<div class="thumb">
+					<img src="images/content/amount.png" class="thumb-icon"></img>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Loan Amount</span> 
+						<span class="attribute-value">
+
+					<input  data-wrapper-class="ui-custom"type = "text" onkeyup=checnum(this) />
+
+						</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<img src="images/content/info.png" class="thumb-icon"></img>
+				</div>
+			</li>
+			<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<img src="images/content/estimate.png" class="thumb-icon"></img>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">PMI</span> 
+						<span class="attribute-value">
+							<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checnum(this) />
+						</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<img src="images/content/info.png" class="thumb-icon"></img>
+				</div>
+</li>
+
+				<li class="ui-field-contain">
+				<div class="ui-li-thumb thumb">
+					<img src="images/content/pmi.png" class="thumb-icon"></img>
+				</div>
+				<div class="ui-li-text attribute">
+					<p>
+						<span class="attribute-label">Property Tax Rate</span> 
+						<span class="attribute-value">
+							<input  data-wrapper-class="ui-custom"type = "text" onkeyup=checnum(this)  />
+						</span>
+					</p>
+				</div>
+				<div class="ui-li-thumb thumb-info">
+					<img src="images/content/info.png" class="thumb-icon"></img>
+				</div> 
+</li>
+
+</ul>
+
+
+
+    <table style="width: 100%;">
+	<tr>
+	<td> Total Monthly Payment<br>
+	<input class="centerText" data-wrapper-class="ui-custom"type = "text"  /></td>
+	<td> Total Interest Rate<br>
+	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  /></td>
+	</tr>
+	<tr>
+	<td> Total Tax Paid <br>
+	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  />
+	</td>
+	<td> Total PMI Paid <br>
+	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  />
+	 </td>
+	</tr>
+	</table>
+
+		<div class="ui-grid-a ui-responsive">
+    		<div class="ui-block-a"><a id="back" href="#" class="ui-btn ui-shadow">Back</a></div>
+    		<div class="ui-block-b"><a id="continue" href="#" class="ui-btn ui-shadow">Continue</a></div>
+    	</div>
+
+
 </div>
+
+
+	
+
+
+
+
+
 
 <script src="js/pages/mortgage-simulator-view.js"></script>
 <script src="../jqueryMobile/jquery.mobile-1.4.4.js"></script>
-<link
-	href="../native/www/default/jqueryMobile/jquery.mobile.external-png-1.4.4.css"
-	rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/pages/iphonepicker/jquery.iphonepicker.min.js"></script>
+
+

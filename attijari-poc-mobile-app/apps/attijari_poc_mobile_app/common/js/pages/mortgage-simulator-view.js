@@ -41,7 +41,8 @@ function checnum(as) {
 		as.value = dd;
 		
 	}
-}
+}   
+
 /**
  * Function that computes the loan details
  */
