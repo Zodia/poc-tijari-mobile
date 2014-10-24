@@ -9,7 +9,7 @@ ul.customer-details-list{
 	padding:0px;
 	margin:0px;
 }
-a#cancel{
+a#cs-cancel{
   margin:0;
   border-color:#DF4B20;
   color: #BD2020;
@@ -17,7 +17,7 @@ a#cancel{
   border-radius:0px 0px 0px 5px ;
   background-color:white;
 }
-a#continue{
+a#cs-continue{
   margin:0;
   border-color: #DF4B20;
   border-width: 1px 1px 1px 0;
