@@ -5,21 +5,10 @@ var connected = 0;
 var pagesStack = new Array ();
 
 function wlCommonInit () {
-	/*
-	 * Use of WL.Client.connect() API before any connectivity to a Worklight Server is required. 
-	 * This API should be called only once, before any other WL.Client methods that communicate with the Worklight Server.
-	 * Don't forget to specify and implement onSuccess and onFailure callback functions for WL.Client.connect(), e.g:
-	 *    
-	 *    WL.Client.connect({
-	 *    		onSuccess: onConnectSuccess,
-	 *    		onFailure: onConnectFailure
-	 *    });
-	 *     
-	 */
 	
 	// Common initialization code goes here
 	
-	loadPage ("pages/splash-view.html");
+	changePage ("pages/splash-view.html");
 	
 	/* Navigation drawer menu */
 	$(function () {
@@ -31,19 +20,19 @@ function wlCommonInit () {
 	});
 	
 	$("#homeAction").on ("click", function () {
-		loadPage ("pages/customer-entry-view.html");
+		changePage ("pages/customer-entry-view.html");
 	});
 	
 	$("#notificationsAction").on ("click", function () {
-		loadPage ("pages/notifications-list-view.html");
+		changePage ("pages/notifications-list-view.html");
 	});
 	
 	$("#mortgageAction").on ("click", function () {
-		loadPage ("pages/mortgage-simulator-view.html");
+		changePage ("pages/mortgage-simulator-view.html");
 	});
 	
 	$("#askExpertAction").on ("click", function () {
-		loadPage ("pages/ask_expert/expert-view.html");
+		changePage ("pages/ask_expert/expert-view.html");
 	});
 	
 	$("nav#menu li a").on ("click", function () {
@@ -51,7 +40,7 @@ function wlCommonInit () {
 	});
 	
 	$(".menu-logout").on ("click", function () {
-		loadPage ("pages/login-view.html");
+		changePage ("pages/login-view.html");
 		connected = 0;
 		$("nav#menu").trigger ("close.mm");
 	});
@@ -102,4 +91,8 @@ function getConnectionStatus () {
 
 function setConnectionStatus (status) {
 	connected = status;
+}
+
+function changePage (url) {
+	$(":mobile-pagecontainer").pagecontainer ("change", url).enhanceWithin ();
 }
