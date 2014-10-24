@@ -101,7 +101,7 @@ white-space: nowrap;
 }
 
 /* for the pager*/
-#pager .item img{
+#pager .item{
         display: block;
         width: 100%;
         height: auto;

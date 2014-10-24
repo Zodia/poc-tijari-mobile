@@ -21,7 +21,7 @@ var prop_index = -1;
 //		$(this).enhanceWithin(); /* apply styles */
 //	});
 //});
-$("#cancel").on("click", function() {
+$("#cs-cancel").on("click", function() {
 	//customer = $("form").serializeObject();
 	var correct=$("#customer_form").validationEngine('validate');
 	//alert(correct);
@@ -37,7 +37,7 @@ $("#cancel").on("click", function() {
 //		});
 }
 });
-$("#continue").on("click", function() {
+$("#cs-continue").on("click", function() {
 	
 
 		$("#pageContent").load("pages/property-view.html", function() {
