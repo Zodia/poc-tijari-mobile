@@ -10,15 +10,6 @@ function wlCommonInit () {
 	
 	changePage ("pages/splash-view.html");
 	
-	/* Navigation drawer menu */
-	$(function () {
-		$("nav#menu").mmenu ({
-			dragOpen: true,
-		    position: 'right',
-		    direction: 'left'
-		});
-	});
-	
 	$("#homeAction").on ("click", function () {
 		changePage ("pages/customer-entry-view.html");
 	});
@@ -96,3 +87,11 @@ function setConnectionStatus (status) {
 function changePage (url) {
 	$(":mobile-pagecontainer").pagecontainer ("change", url).enhanceWithin ();
 }
+
+$(document).on ('pageinit', function () {
+	$("nav#menu").mmenu ({
+		dragOpen: true,
+	    position: 'right',
+	    direction: 'left'
+	});
+});
