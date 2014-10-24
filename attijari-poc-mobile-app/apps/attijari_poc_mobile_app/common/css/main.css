@@ -170,54 +170,82 @@ html, body {
 	font-size: 14px;
 }
 
-#menu i {
-	transform: translate(30%, 6%);
+#menu {
+	color: #818181;
 }
 
-#menu span {
-	transform: translate(15%, -15%);
-	display: inline-block;
-}
-
-#menu .menu-profile i {
-	transform: inherit;
-}
-
-#menu .menu-profile span {
-	transform: inherit;
-}
-
-#menu .menu-profile .fa-user {
-	position: absolute;
-	transform: inherit;
-	transform: translate(-113%, 8%);
-	color: #EDEDED;
-}
-
-#menu .menu-profile .thumbnail {
-	width: 75px;
-	height: 75px;
-	border-radius: 100px;
-	background-position: center;
-	background-size: cover;
-	background-color: #000;
-	background-image: url("../images/mehdi.jpg");
+#menu p.employee-name {
+	color: #000;
+	z-index: 10000;
+	font-size: 25px;
+	position: relative;
 	float: left;
-	margin-right: 15px;
+	margin: 0;
+	margin-top: 15px;
+	padding-left: 20px;
 }
 
-#menu .menu-profile span {
+#menu ul {
+	border: none;
+	padding-left: 35px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none; 
+	box-shadow: none;
+}
+
+#menu ul li {
+	height: 45px;
+}
+
+#menu ul li img {
+	height: 25px;
+	width: 4%;
 	position: absolute;
+	left: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+	float: left;
+	object-fit: contain;
+	object-position: center;
 }
 
-#menu .menu-profile span.name {
-	top: 24%;
-	font-size: 22px;
+#menu ul li a {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #abacae;
+	font-weight: normal;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	display: block;
+	padding-left: 0;
+	width: 93%;
+	left: 6%;
+	position: absolute;
+	min-height: inherit;
 }
 
-#menu .menu-profile span.email {
-	bottom: 25%;
-	font-size: 15px;
+#menu ul li:last-child a {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+#menu ul li a.ui-icon-carat-r:after {
+	background-color: #FFF;
+	background-image: url("../images/content/arrow_right.png");
+	background-position: center;
+	background-size: 10px;
+	background-repeat: no-repeat;
+}
+
+#menu ul.menu-bottom {
+	top: inherit;
+	bottom: 0;
 }
 
 #pageContent {
