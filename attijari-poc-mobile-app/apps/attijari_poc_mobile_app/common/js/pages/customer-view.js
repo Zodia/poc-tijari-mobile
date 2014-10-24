@@ -107,28 +107,51 @@ resetForm();
 
 
 
-$(document).ready(function(){
+//$(document).ready(function(){
+//
+//	$("#customer_form").validationEngine({validateNonVisibleFields: true});	
+//  //date picker
+//	
+//	$('#dob').scroller({ preset: 'date',
+//        seconds: true,
+//        ampm : false,
+//        dateOrder: 'dMyy',
+//        dateFormat :'dd/mm/yy',
+//        theme: 'ios'
+//    });
+//	
+//	// photography preview
+//	
+//	
+//	
+//	
+//	
+//	
+//
+//});
 
-	$("#customer_form").validationEngine({validateNonVisibleFields: true});	
-  //date picker
-	
-	$('#dob').scroller({ preset: 'date',
-        seconds: true,
-        ampm : false,
-        dateOrder: 'dMyy',
-        dateFormat :'dd/mm/yy',
-        theme: 'ios'
+$(document).ready(function() {
+    $("#owl-demo").owlCarousel({
+
+    navigation : false,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem : true,
+	  afterInit : function(elem){
+    var that = this;
+    that.owlControls.prependTo(elem);
+	 
+  }
+
+    // "singleItem:true" is a shortcut for:
+    // items : 1, 
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+
     });
-	
-	// photography preview
-	
-	
-	
-	
-	
-	
-
-});
+  });
 
 function hideHistory(){
 	if (customer_index == -1){
