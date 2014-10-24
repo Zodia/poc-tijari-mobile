@@ -46,18 +46,7 @@ function wlCommonInit () {
 		loadPage ("pages/ask_expert/expert-view.html");
 	});
 	
-	$(".menu-profile").on ("click", function () {
-		loadPage ("pages/employee-profile-view.html");
-		$("nav#menu").trigger ("close.mm");
-	});
-	
-	$(".menu-preferences").on ("click", function () {
-		loadPage ("pages/preferences-view.html");
-		$("nav#menu").trigger ("close.mm");
-	});
-	
-	$(".menu-help").on ("click", function () {
-		loadPage ("pages/help-center-view.html");
+	$("nav#menu li a").on ("click", function () {
 		$("nav#menu").trigger ("close.mm");
 	});
 	
