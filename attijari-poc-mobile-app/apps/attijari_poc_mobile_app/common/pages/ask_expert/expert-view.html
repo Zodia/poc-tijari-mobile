@@ -1,24 +1,111 @@
 <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<!-- <link rel="stylesheet" href="css/pages/ask_expert/expert-view.css"> -->
+<link rel="stylesheet" href="css/pages/ask_expert/expert-view.css">
 <script src="js/pages/ask_expert/expert-view.js"></script>
 
-<div class="ui-grid-a">
+<div data-type="vertical">
 
-	<!-----------------------------  Expert List and Search Div Section---------------------------->
+	<!-- ------------------------Start: Expert Detail section ------------------------  -->
+	<div class="ui-grid-b" style="height: 100px;">
+		<div class="ui-block-a" style="width: 20%;">
+			<img class="expertImage"
+				src="images/pages/ask_expert/chat_with_expert/expert-Souhail.jpg">
+		</div>
+		<div class="ui-block-b" style="width: 60%; margin-top: 10px;">
+			<b>Shailendra Mishra</b>
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					Car Loan Expert<br> +971 566766488
+				</div>
+				<div class="ui-block-b">
+					Dic Building 5 <br> Rabat, Morocco
+				</div>
+			</div>
+		</div>
+		<div class="ui-block-c"
+			style="width: 20%; height: 100px; background-color: #000000;"><br><br>
+				<span style="color:#FFFFFF; margin-top:100px; margin-left:60px;">Email</span>
+			</div>
+	</div>
+	<!-- ------------------------End: Expert Detail section------------------------  ------------>
+
+
+
+	<!-- ------------------------Start: Live chat bar section ------------------------  -->
+	<div data-role="header" class="ui-bar"
+		style="background-color: #FF9933;">Live Chat</div>
+	<!-- ------------------------End: Live chat bar section ------------------------  -->
+
+	<!-- ------------------------Start: Chat area section ------------------------  -->
+	<div data-role="content" id="chatArea" class="chatArea">
+		
+			<div class="ui-grid-a" style="color:#B22222; margin-left:15px;">
+				<div class="ui-block-a" style="width:25%">
+					Souhail Guennouni: 
+				</div>
+				<div class="ui-block-b" style="width:75%">
+					Good Afternoon, Eli, How can I help you today ?
+				</div>
+			</div>
+			<div class="ui-grid-a" style="color:#000000;  margin-left:15px;">
+					<div class="ui-block-a" style="width:25%">
+						Eli Abbas:
+					</div>
+					<div class="ui-block-b" style="width:75%">
+						I have Mr. Ahmad with me, and he has few questions about interest rates</font>
+					</div>
+			</div>	
+	</div>
+	<!-- ------------------------End: Chat area section ------------------------  -->
+
+	<div class="ui-grid-a">
+		<div class="ui-block-a" style="width: 15%">
+			<img class="logoRed"
+				src="images/pages/ask_expert/expert_view/logo-red.png">
+		</div>
+		<div class="ui-block-b" style="width: 70%">
+			<input type="text" id="ane_inputchatText" maxlength="60"
+				data-clear-btn="true" />
+		</div>
+		<div class="ui-block-c" style="width: 15%">
+			<img style="height:55%; width:55%; align:center; margin-top:10px; margin-left:15px" src="images/pages/ask_expert/expert_view/btn-send.png" onClick="chatConversation()">
+		</div>
+	</div>
+
+	<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
+	<div class="ui-grid-a ui-responsive">
+		<div id="audioChat" class="ui-block-a">
+			<a id="audioChat" href="#" class="ui-btn ui-shadow">Audio Chat</a>
+		</div>
+		<div id="videoChat" class="ui-block-b">
+			<a id="videoChat" href="#" class="ui-btn ui-shadow">Video Chat</a>
+		</div>
+	</div>
+	<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
+	<!-- ------------------------Start: Footer Bar ------------------------  -->
+	<div style="background-color: #BDBDBD; height:25px;"></div>
+	<!-- ------------------------End: Footer Bar------------------------  -->
+
+</div>
+
+
+
+<!-- <div class="ui-grid-a">
+
+	---------------------------  Expert List and Search Div Section--------------------------
 	<div class="ui-block-a" style="width: 45%">
 
-		<!---------------  Start : Expert List screen----------------- -->
+		-------------  Start : Expert List screen-----------------
 		<div data-role="fieldcontain" id="fieldcontain"
 			style="background-color: #003366; border: solid; layer-background-color: #FFBF00; border: 2px solid; border-radius: 5px;">
 
-			<!--------   Header Images : Ask the Expert ----------------->
+			------   Header Images : Ask the Expert ---------------
 			<div>
 				<img src="images/pages/ask_expert/expert_view/ask-the-expert.png"
 					height="10%" width="40%">
 			</div>
 
-			<!-----------------   Search textbox : Search the experts  ---------------->
+			---------------   Search textbox : Search the experts  --------------
 			<div id="listholder">
 				<ul data-role="listview" id="listview" data-inset="true"
 					data-filter-reveal="true" data-filter-placeholder="Search Experts"
@@ -56,11 +143,11 @@
 				</ul>
 			</div>
 
-			<!------------------------------- Start :  Categorized  Expert List   ----->
-			<!-- ---------------Start : Car Loan Section ---------------------------->
+			----------------------------- Start :  Categorized  Expert List   ---
+			---------------Start : Car Loan Section --------------------------
 			<div data-role="collapsible" data-inset="true" data-theme="b"
 				data-content-theme="a">
-				<!------------------ data-collapsed="false" ------------------->
+				---------------- data-collapsed="false" -----------------
 				<h3>Car Loan Expert</h3>
 				<ul data-role="listview">
 					<li><a href="#" id="carLoanExpert1"
@@ -96,9 +183,9 @@
 
 				</ul>
 			</div>
-			<!-- ---------------End : Car Loan Section ------------------------------->
+			---------------End : Car Loan Section -----------------------------
 
-			<!-- ---------------Start : Home Loan Section ---------------------------->
+			---------------Start : Home Loan Section --------------------------
 			<div data-role="collapsible" data-inset="true" data-theme="b"
 				data-content-theme="a">
 				<h3>Home Loan Expert</h3>
@@ -131,9 +218,9 @@
 
 				</ul>
 			</div>
-			<!-- ---------------End : Home Loan Section ------------------------------->
+			---------------End : Home Loan Section -----------------------------
 
-			<!-- ---------------Start : Personal Loan Section ---------------------------->
+			---------------Start : Personal Loan Section --------------------------
 			<div data-role="collapsible" data-inset="true" data-theme="b"
 				data-content-theme="a">
 				<h3>Personal Loan Expert</h3>
@@ -158,9 +245,9 @@
 					</a></li>
 				</ul>
 			</div>
-			<!-- ---------------End : Personal Loan Section ------------------------------->
+			---------------End : Personal Loan Section -----------------------------
 
-			<!-- ---------------Start : Education Loan Section ---------------------------->
+			---------------Start : Education Loan Section --------------------------
 			<div data-role="collapsible" data-inset="true" data-theme="b"
 				data-content-theme="a">
 				<h3>Education Loan Expert</h3>
@@ -182,9 +269,9 @@
 							Guennouni</a></li>
 				</ul>
 			</div>
-			<!-- ---------------End : Education Loan Section ------------------------------->
+			---------------End : Education Loan Section -----------------------------
 
-			<!-- ---------------Start : Mortgage Section ---------------------------->
+			---------------Start : Mortgage Section --------------------------
 			<div data-role="collapsible" data-inset="true" data-theme="b"
 				data-content-theme="a">
 				<h3>Mortgage Expert</h3>
@@ -211,10 +298,10 @@
 
 				</ul>
 			</div>
-			<!-- ---------------End : Mortgage Section ------------------------------->
-			<!---------------------- End :  Categorized  Expert List   ------------->
+			---------------End : Mortgage Section -----------------------------
+			-------------------- End :  Categorized  Expert List   -----------
 
-			<!-- 			<div data-role="collapsible-set" id="collapsible-set">
+						<div data-role="collapsible-set" id="collapsible-set">
 				<div data-role="collapsible" id="collapsible">
 					<h3>Collapsible</h3>
 				</div>
@@ -224,14 +311,15 @@
 				<div data-role="collapsible" id="collapsible1">
 					<h3>Collapsible</h3>
 				</div>
-			</div> -->
+			</div>
 		</div>
 
-		<!-- ------------------------Start: Alert popup msg ------------------------  -->
-		
-		<div data-role="popup" id="statusAlertPopUp" class="ui-content" style="max-width:250px"></div>
+		------------------------Start: Alert popup msg ------------------------ 
 
-		<!-- ------------------------End: Alert popup msg ------------------------  -->
+		<div data-role="popup" id="statusAlertPopUp" class="ui-content"
+			style="max-width: 250px"></div>
+
+		------------------------End: Alert popup msg ------------------------ 
 
 	</div>
 
@@ -239,7 +327,7 @@
 
 	<div class="ui-block-b" style="width: 5%"></div>
 
-	<!-----------------------------  Chat window Div Section-------------------------------->
+	---------------------------  Chat window Div Section------------------------------
 	<div class="ui-block-c" style="width: 50%; display: none;"
 		id="chatWindowSection">
 
@@ -247,7 +335,7 @@
 		<div id="main-chat-with-expert" class="ui-field-contain"
 			style="background-color: #003366; border: solid; layer-background-color: #003366; border: 2px solid; border-radius: 5px;">
 
-			<!-- ------------------------Start: Expert Detail ------------------------  -->
+			------------------------Start: Expert Detail ------------------------ 
 			<div class="ui-grid-a">
 				<div class="ui-block-a" id="expertImageSection" style="width: 35%">
 					<img
@@ -255,9 +343,9 @@
 				</div>
 				<div class="ui-block-b" id="expertInfoSection" style="width: 65%"></div>
 			</div>
-			<!-- ------------------------End: Expert Detail ------------------------  -->
+			------------------------End: Expert Detail ------------------------ 
 
-			<!-- ------------------------Start: Chat window------------------------  --->
+			------------------------Start: Chat window------------------------  -
 
 			<div data-role="header" class="ui-bar"
 				style="background-color: #FF9933; border: 2px solid; border-radius: 5px;">Chat
@@ -265,20 +353,21 @@
 
 			<div id="chatConversionArea"
 				style="background-color: #FFFFFF; border: 2px solid; border-radius: 5px; height: 200px;"></div>
-				<input type="hidden" name="expertName" id="expertName"/>
+			<input type="hidden" name="expertName" id="expertName" />
 
-			<!------------ Textarea where user can enter his/her chat text----------------->
+			---------- Textarea where user can enter his/her chat text---------------
 			<textarea id="inputchatText" maxlength="60"></textarea>
 
-			<!------------------- Footer of Chat window ----------------------->
-			<div data-role="footer" class="ui-bar" style="background-color: #FF9933; border: 2px solid; border-radius: 5px;">
+			----------------- Footer of Chat window ---------------------
+			<div data-role="footer" class="ui-bar"
+				style="background-color: #FF9933; border: 2px solid; border-radius: 5px;">
 				<a data-role="button" data-icon="arrow-u"
 					onClick="chatConversation()">Send</a> <a data-role="button"
 					data-icon="audio">audio</a> <a data-role="button" data-icon="video">video</a>
 				<a data-role="button" data-icon="busy-status">Back</a>
 			</div>
-			<!-- ------------------------End: Chat Window ------------------------  -->
+			------------------------End: Chat Window ------------------------ 
 		</div>
 
 	</div>
-</div>
+</div> -->
