@@ -18,9 +18,9 @@ function wlCommonInit () {
 		changePage ("pages/notifications-list-view.html");
 	});
 	
-	$("#mortgageAction").on ("click", function () {
+	/*$("#settingsAction").on ("click", function () {
 		changePage ("pages/mortgage-simulator-view.html");
-	});
+	});*/
 	
 	$("#askExpertAction").on ("click", function () {
 		changePage ("pages/ask_expert/expert-view.html");
@@ -35,23 +35,6 @@ function wlCommonInit () {
 		connected = 0;
 		$("nav#menu").trigger ("close.mm");
 	});
-}
-
-function loadPage (url) {
-	$("#pageContent").load (url, function () {
-        $(this).enhanceWithin(); /* apply styles */
-    });
-} 
-
-function storeInBackstack (url) {
-	pagesStack.push (url)
-}
-
-function back () {
-	loadPage (pagesStack.pop ());
-	if (length > 0) {
-		pagesStack.length = pagesStack.length - 1
-	}
 }
 
 function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
@@ -87,11 +70,3 @@ function setConnectionStatus (status) {
 function changePage (url) {
 	$(":mobile-pagecontainer").pagecontainer ("change", url).enhanceWithin ();
 }
-
-$(document).on ('pageinit', function () {
-	$("nav#menu").mmenu ({
-		dragOpen: true,
-	    position: 'right',
-	    direction: 'left'
-	});
-});

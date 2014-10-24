@@ -172,6 +172,7 @@ html, body {
 
 #menu {
 	color: #818181;
+	display: none;
 }
 
 #menu p.employee-name {
