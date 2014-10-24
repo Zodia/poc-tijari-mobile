@@ -6,16 +6,28 @@
 
 $("#existingapp").click(function() {
 
-$("#pageContent").load("pages/apps-list.html", function () {
-		
-		$(this).enhanceWithin(); /* apply styles */
-	});
+loadPage("pages/apps-list.html");
 	
 });
 
 
+$("#newmortgages").click(function() {
 
+	loadPage("pages/customers-list.html");
+		
+	});
 
+$("#newmortgages").click(function() {
+
+	loadPage("pages/customers-list.html");
+		
+	});
+
+$("#mortgagesimulator").click(function() {
+
+	loadPage("pages/mortgage-simulator-view.html");
+		
+	});
 //$("#newapp").on ("click", function () {
 //	customer_index = -1;
 //	$("#pageContent").load("pages/customer-entry-view.html", function () {
