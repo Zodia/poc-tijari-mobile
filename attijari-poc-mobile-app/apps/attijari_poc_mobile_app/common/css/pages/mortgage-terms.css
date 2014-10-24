@@ -130,6 +130,32 @@ a#back {
 	border-radius: 0px 0px 0px 5px;
 }
 
+a#btn-submit {
+	display: block;
+	margin: 0;
+	border: 1px solid #DF4B20;
+	border-color: #DF4B20;
+	width: 99%;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px 0px;
+}
+
+a#btn-back {
+	display: block;
+	margin: 0;
+	border: 1px solid #DF4B20;
+	border-color: #DF4B20;
+	width: 100%;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
+}
+
 a#submit {
 	margin: 0;
 	border-color: #DF4B20;
@@ -146,4 +172,15 @@ a#submit {
 	left: 10px;
 	right: 10px;
 	bottom: 10px;
+}
+
+#popupDialog-popup {
+	max-width: 738px;
+	top: 461.5px;
+	left: 28%;
+	width: 360px;
+}
+
+#popupDialog {
+	background-color: white;
 }
