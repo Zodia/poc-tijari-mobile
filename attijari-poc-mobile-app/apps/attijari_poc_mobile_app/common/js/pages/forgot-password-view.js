@@ -1,3 +1,5 @@
+/*   hiding the dialog box , */
+
 $(document).ready(function() {
 	$("#dialog").hide();
 	$(".right").hide();
@@ -7,11 +9,7 @@ $(document).ready(function() {
 	$(".left .back").text("Back");
 
 });
-
-$(".left .back").on("click", function() {
-
-	loadPage("pages/login-view.html");
-});
+/*   */
 
 $("#buttongo").on("click", function() {
 	

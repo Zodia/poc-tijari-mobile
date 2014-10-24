@@ -6,7 +6,7 @@
 	
 }
 #loginContent {
-	width: 400px;
+	width: 300px;
 	margin: 0 auto;
 	right: auto; 
 	left: auto;
@@ -31,8 +31,9 @@
     position: absolute;
 	left: 9px;
 	top: 8px;
-	width: 27px;
-	height: 19px;
+	object-fit: contain;
+	width: 20px;
+	height: 20px; 
 	background-color: #FFF;
 }
 #logo{	
@@ -53,6 +54,14 @@
 	background-color: white;
 	height: 100px;
 }
+#links a{
+color : #ef5a49;	
+}
+#buttongo{
+	background-color: #ef5a49;
+	color: white;
+		
+}
 
 #sentpassword{
 	margin-top: 92px;
@@ -61,6 +70,7 @@
 
 #register{
 	float: right;
+	
 }
 #forgot{
 	float: left;
