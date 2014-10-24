@@ -1,0 +1,149 @@
+.mortgage-view-content {
+	height: 100%;
+}
+
+#panel-expert img {
+	width: 100%;
+	height: 100%;
+}
+
+#panel-expert {
+	height: 40%;
+}
+
+#pageContent {
+	background-color: white;
+}
+
+#mortgage-terms {
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.mortgage-terms-list {
+	box-shadow: none;
+}
+
+.mortgage-terms-list .thumb {
+	float: left;
+	width: 5%;
+	height: 30px;
+	line-height: 45px;
+	text-align: left;
+}
+
+.mortgage-terms-list .thumb-info {
+	float: right;
+	width: 5%;
+	height: 30px;
+	line-height: 45px;
+	text-align: right;
+}
+
+.thumb-icon {
+	margin-top: 8px;
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
+}
+
+#mortgage-terms-form {
+	background-color: white;
+	bottom: 0;
+	position: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+input.rightText {
+	text-align: right;
+}
+
+#mortgage-terms-form ul li {
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+
+.ui-listview li p {
+	font-size: .75em;
+	font-weight: normal;
+	display: block;
+	margin: 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.select-informations {
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
+	height: 40px;
+	font-size: 18px;
+	overflow: hidden;
+	width: 105%;
+	float: right;
+	direction: rtl;
+}
+
+.mortgage-terms-list .attribute {
+	float: left;
+	width: 90%;
+	height: 30px;
+}
+
+.mortgage-terms-list .attribute .attribute-label {
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	width: 60%;
+	line-height: 40px;
+}
+
+.mortgage-terms-list .attribute .attribute-value {
+	display: inline-block;
+	float: right;
+	width: 40%;
+	font-size: 18px;
+	text-align: right;
+}
+
+.ui-input-text.ui-custom {
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+}
+
+a#back {
+	margin: 0;
+	border-color: #DF4B20;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
+}
+
+a#submit {
+	margin: 0;
+	border-color: #DF4B20;
+	border-width: 1px 1px 1px 0;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
+}
+
+#button-div {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}

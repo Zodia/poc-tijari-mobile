@@ -1,0 +1,124 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pages/mortgage-terms.css">
+<div class="mortgage-view-content" data-type="vertical">
+	<div id="panel-expert">
+		<img alt="" src="images/content/ask_expert_pic.png">
+	</div>
+	<div id="mortgage-terms">
+		<form data-role="tabs" action="" method="post" id="mortgage-terms-form">
+			<ul data-role="listview" data-inset="true" class="mortgage-terms-list">
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/terms.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Mortgage Term</span>
+							<span class="attribute-value">
+								<select data-role="none" class="select-informations" name="mortgage_term" id="select-native-1">
+									<option value="10">10%</option>
+									<option value="20">20%</option>
+									<option value="30">30%</option>
+									<option value="40">40%</option>
+									<option value="50">50%</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/percent.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Interest Type</span>
+							<span class="attribute-value">
+								<select data-role="none" class="select-informations" name="interesType" id="select-native-1">
+									<option value="6">6% Fixed/Variable</option>
+									<option value="7">7% Fixed</option>
+									<option value="5">5% ARM</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/amount.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Loan Amount (MAD)</span>
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="number" name="loanAmount" id="name" value="1,428,888"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/pay_off_date.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Origination Date</span>
+							<span class="attribute-value">
+								<input data-wrapper-class="ui-custom" type="date" name="orgDate" class="rightText"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/pay_off_date.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Paye-off Date</span>
+							<span class="attribute-value">
+								<input data-wrapper-class="ui-custom" type="date" name="payOffDate" class="rightText"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="images/content/amount.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Monthly Payment (MAD)</span>
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="number" name="monthlyPay" id="name" value="9,471,43"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+			</ul>
+			<div class="ui-grid-a ui-responsive" id="button-div">
+    			<div class="ui-block-a"><a id="back" href="#" class="ui-btn ui-shadow">Back</a></div>
+    			<div class="ui-block-b"><a id="submit" href="#" class="ui-btn ui-shadow">Submit Application</a></div>
+    		</div>
+		</form>
+	</div>
+</div>
+<script src="js/pages/mortgage-terms.js"></script>

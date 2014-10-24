@@ -2,7 +2,7 @@ $("#back").on("click", function() {
 	loadPage("pages/customer-view.html");
 });
 $("#continue").on("click", function() {
-	loadPage("pages/select-mortgage-terms.html");
+	loadPage("pages/mortgage-terms.html");
 });
 
 $(".current-title").text("Property details");

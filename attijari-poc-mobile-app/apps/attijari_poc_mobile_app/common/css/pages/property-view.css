@@ -6,6 +6,10 @@
 	text-align: left;
 }
 
+.property-details-list {
+	box-shadow: none;
+}
+
 .property-details-list .attribute {
 	float: left;
 	width: 90%;
@@ -29,30 +33,29 @@
 }
 
 .ui-input-text.ui-custom {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
 }
 
-.select-informations{
+.select-informations {
 	border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: right;
-    height: 40px;
-    font-size: 18px;
-    overflow: hidden;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
+	height: 40px;
+	font-size: 18px;
+	overflow: hidden;
 	width: 105%;
 	float: right;
 	direction: rtl;
 }
 
-input.rightText{
+input.rightText {
 	text-align: right;
 }
-
 
 .property-details-list .thumb-info {
 	float: right;
@@ -62,44 +65,66 @@ input.rightText{
 	text-align: right;
 }
 
-.thumb-icon{
+.thumb-icon {
 	margin-top: 8px;
 	width: 20px;
 	height: 20px;
+	object-fit: contain;
 }
 
-#property_form{
+#property_form {
 	background-color: white;
+	bottom: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
-#property_form ul li{
-	border: none;
+#property_form ul li {
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
 }
 
 .ui-listview li p {
-font-size: .75em;
-font-weight: normal;
-display: block;
-margin: 0px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+	font-size: .75em;
+	font-weight: normal;
+	display: block;
+	margin: 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
-a#back{
-  margin:0;
-  border-color:#DF4B20;
-  color: #BD2020;
-  background-color:white;	
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 0px 5px ;
+a#back {
+	margin: 0;
+	border-color: #DF4B20;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
 }
-a#continue{
-  margin:0;
-  border-color: #DF4B20;
-  border-width: 1px 1px 1px 0;
-  color: #BD2020;
-  background-color:white;
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 5px ;
+
+a#continue {
+	margin: 0;
+	border-color: #DF4B20;
+	border-width: 1px 1px 1px 0;
+	color: #BD2020;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
+}
+
+#pageContent {
+	background-color: white;
+}
+
+#button-div {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
 }
