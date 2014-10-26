@@ -127,8 +127,6 @@ function loan() {
 	var c = terms;
 	var n = c * 12;
 	var r = b / (12); //(12 * 100)
-	alert(n);
-	alert(r);
 	var p = (a * r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1);
 	var prin = Math.round(p * 100) / 100;
 	cn[3].value = prin+" MAD";
