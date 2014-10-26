@@ -6,26 +6,21 @@
 
 $("#existingapp").click(function() {
 
-loadPage("pages/apps-list.html");
+loadPage("../pages/apps-list.html");
 	
 });
 
 
-$("#newmortgages").click(function() {
-
-	loadPage("pages/customers-list.html");
-		
-	});
 
 $("#newmortgages").click(function() {
 
-	loadPage("pages/customers-list.html");
+	loadPage("../pages/customers-list.html");
 		
 	});
 
 $("#mortgagesimulator").click(function() {
 
-	loadPage("pages/mortgage-simulator-view.html");
+	loadPage("../pages/mortgage-simulator-view.html");
 		
 	});
 //$("#newapp").on ("click", function () {
@@ -36,11 +31,7 @@ $("#mortgagesimulator").click(function() {
 //	});
 //});
 
-$( document ).ready(function() {
-	
-	$(".current-title").text ("Choosing Application Type");	
-	
-});
+
 
 /*
  * starting  the slide  effect
@@ -74,7 +65,7 @@ $("#slider").on ("click", function () {
 
 $("#mortgages").click(function() {
 	
-loadPage("pages/mortgage-center-view.html");
+loadPage("../spages/mortgage-center-view.html");
 
 		
 });

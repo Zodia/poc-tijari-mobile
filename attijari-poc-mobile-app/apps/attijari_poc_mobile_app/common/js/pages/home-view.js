@@ -58,7 +58,7 @@ $("#slider").on ("click", function () {
 
 $("#mortgages").click(function() {
 	
-loadPage("pages/mortgage-center-view.html");
+loadPage("../pages/mortgage-center-view.html");
 
 		
 });
