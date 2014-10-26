@@ -1,27 +1,87 @@
+<meta charset="utf-8">
+<div data-role="page" id="page">
+	<link rel="stylesheet" href="../css/pages/home-view.css">
 
-<script src="js/pages/home-view.js"></script>
-<link rel="stylesheet" href="css/pages/home-view.css">
-<div id="content"
-	style="margin-left: auto; margin-right: auto; width: 300px"></div>
-<div id="imageholder">
-	<div class="ui-grid-solo">
-	<img alt="" src="images/content/main.png">
-	</div>
-		<div class="ui-grid-a">
-			<div id="mortgages" class="ui-block-a">
-				<img alt="" src="images/content/mortgagepic.png">
-			</div>
-			<div class="ui-block-b">
-				<img alt="" src="images/content/Investements.png">
-			</div>
-			<div class="ui-block-a">
-				<img alt="" src="images/content/Autoloans.png">
-			</div>
-			<div class="ui-block-b">
-				<img alt="" src="images/content/Insurance.png">
-			</div>
-		
+	<div data-role="header" id="header" data-position="fixed">
+
+		<div class="right"></div>
+		<div class="left"></div>
+		<!--<div class="center with-logo"></div>-->
+		<div class="center">
+			<p class="current-title">Login</p>
+		</div>
 
 	</div>
-	
-</div>
+
+	<div data-role="content" id="pageContent">
+		<div id="content"
+			style="margin-left: auto; margin-right: auto; width: 300px"></div>
+		<div id="imageholder">
+			<div class="ui-grid-solo">
+				<img alt="" src="../images/content/main.png">
+			</div>
+			<div class="ui-grid-a">
+				<div id="mortgages" class="ui-block-a">
+					<img alt="" src="../images/content/mortgagepic.png">
+				</div>
+				<div class="ui-block-b">
+					<img alt="" src="../images/content/Investements.png">
+				</div>
+				<div class="ui-block-a">
+					<img alt="" src="../images/content/Autoloans.png">
+				</div>
+				<div class="ui-block-b">
+					<img alt="" src="../images/content/Insurance.png">
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<div data-role="footer" id="footer" data-position="fixed">
+		<div id="center" class="with-logo"></div>
+	</div>
+	<div data-role="panel" id="right-panel" data-display="push"
+		data-position="right"
+		class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+
+			<p class="employee-name">Welcome, Ali</p>
+
+			<ul data-role="listview" data-inset="true">
+				<li><img src="../images/content/home_filled.png" /> <a
+					href="#" data-rel="close">Home</a></li>
+				<li><img src="../images/content/settings_filled.png" /> <a
+					href="#" data-rel="close">Settings</a></li>
+				<li><img src="../images/content/notifications_filled.png" /> <a
+					href="#" data-rel="close">Notifications</a></li>
+				<li><img src="../images/content/recent_activity.png" /> <a
+					href="#" data-rel="close">Recent Activity</a></li>
+				<li><img src="../images/content/news.png" /> <a href="#"
+					data-rel="close">News, Events & Projects</a></li>
+				<li><img src="../images/content/mortgage.png" /> <a
+					href="pages/mortgage-simulator-view.html" data-rel="close">Mortgage
+						Center</a></li>
+				<li><img src="../images/content/amount.png" /> <a href="#"
+					data-rel="close">Investment Center</a></li>
+				<li><img src="../images/content/auto_loan.png" /> <a href="#"
+					data-rel="close">Auto Loans Center</a></li>
+				<li><img src="../images/content/insurance_center.png" /> <a
+					href="#" data-rel="close"
+					onclick="loadPage ('pages/ask_expert/expert-view.html')">Insurance
+						Center</a></li>
+				<li><img src="../images/content/help.png" /> <a href="#"
+					data-rel="close">Help Center</a></li>
+
+				<li class="terms-of-service"><a href="#" data-rel="close">Terms
+						Of Service</a></li>
+				<li class="logout"><a href="#" data-rel="close">Logout</a></li>
+			</ul>
+		</div>
+
+		<script src="../js/pages/home-view.js"></script>
+
+	</div>
+	</div>

@@ -1,40 +1,61 @@
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/pages/login-view.css">
+<div data-role="page" id="page">
+   	<link rel="stylesheet" href="../css/pages/login-view.css">
 
-<div id="loginWrapper">
-	<div id="loginContent">
-		<div id="logo"></div>
+	<div data-role="header" id="header" data-position="fixed">
 
-		<div id="email">
-			<input type="text" id="emailinput" placeholder="Email address">
-			<img src="images/content/envelop.png" width="15" class="smallicon" />
+		<div class="right"></div>
+		<div class="left"></div>
+		<!--<div class="center with-logo"></div>-->
+		<div class="center">
+			<p class="current-title">Login</p>
 		</div>
-		<div id="password">
-			<input type="password" id="passwordinput" placeholder="password">
-			<img src="images/content/lock.png" class="smallicon" width="15" />
-		</div>
-			<button class="mybutton" id="buttongo">Sign in</button>
-		<div id=links>
-  			<div id="forgot"><a id="forgotpass" href="#">Forgot password?</a></div>
-			<div id="register"><a id="registerlink" href="#">Register</a></div>
-		</div>
-		
+
 	</div>
 
+	<div data-role="content" id="pageContent">
+		<div id="loginWrapper">
+			<div id="loginContent">
+				<div id="logo"></div>
 
-<div id="languages">
-<div id = "frensh">français</div>
-<div id = "arabic">Arabic</div>
-</div>
-<div data-role="dialog" id="dialog">
-	<div data-role="header" id="headerdialog">
-		<h3 align="center">Erreur d'autentification</h3>
-	</div>
-	<div data-role="content" id="dialogmessage" align="center">
-		<b>veuillez réessayer !!</b>
-	</div>
-</div>
+				<div id="email">
+					<input type="text" id="emailinput" placeholder="Email address">
+					<img src="../images/content/envelop.png" width="15" class="smallicon" />
+				</div>
+				<div id="password">
+					<input type="password" id="passwordinput" placeholder="password">
+					<img src="../images/content/lock.png" class="smallicon" width="15" />
+				</div>
+					<button class="mybutton" id="buttongo">Sign in</button>
+				<div id=links>
+		  			<div id="forgot"><a id="forgotpass" href="#">Forgot password?</a></div>
+					<div id="register"><a id="registerlink" href="#">Register</a></div>
+				</div>
 
-</div> <!--   end of loginWrapper  -->
-<!--  -->
-<script src="js/pages/login-view.js"></script>
+			</div>
+
+
+			<div id="languages">
+				<div id="frensh">français</div>
+				<div id="arabic">Arabic</div>
+			</div>
+
+			<div data-role="dialog" id="dialog">
+				<div data-role="header" id="headerdialog">
+					<h3 align="center">Erreur d'autentification</h3>
+				</div>
+				<div data-role="content" id="dialogmessage" align="center">
+					<b>veuillez réessayer !!</b>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div data-role="footer" id="footer" data-position="fixed">			
+		<div id="center" class="with-logo"></div>
+	</div>
+
+	<script src="../js/pages/login-view.js"></script>
+
+ </div>
