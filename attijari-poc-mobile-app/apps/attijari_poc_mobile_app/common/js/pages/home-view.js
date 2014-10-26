@@ -6,11 +6,7 @@
 
 $("#existingapp").click(function() {
 
-$("#pageContent").load("pages/apps-list.html", function () {
-		
-		$(this).enhanceWithin(); /* apply styles */
-	});
-	
+	loadPage("pages/apps-list.html");
 });
 
 
@@ -26,7 +22,7 @@ $("#pageContent").load("pages/apps-list.html", function () {
 
 $( document ).ready(function() {
 	
-	$(".current-title").text ("Choosing Application Type");	
+	//$(".current-title").text ("Choosing Application Type");	
 	
 });
 

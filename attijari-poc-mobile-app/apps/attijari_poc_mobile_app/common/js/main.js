@@ -32,29 +32,24 @@ function wlCommonInit () {
     });
 	
 	$("#homeAction").on ("click", function () {
-		loadPage ("pages/home-view.html");
+		loadPage ("home-view.html");
 	});
 	
 	$("#notificationsAction").on ("click", function () {
-		loadPage ("pages/notifications-list-view.html");
+		loadPage ("notifications-list-view.html");
 	});
 	
 	$("#settingsAction").on ("click", function () {
-		loadPage ("pages/mortgage-simulator-view.html");
+		loadPage ("mortgage-simulator-view.html");
 	});
 	
 	$("#askExpertAction").on ("click", function () {
-		loadPage ("pages/ask_expert/expert-view.html");
+		loadPage ("ask_expert/expert-view.html");
 	});
 	
-	$("nav#menu li a").on ("click", function () {
-		$("nav#menu").trigger ("close.mm");
-	});
-	
-	$(".menu-logout").on ("click", function () {
-		loadPage ("pages/login-view.html");
+	$("#right-menu li.logout").on ("click", function () {
+		loadPage ("login-view.html");
 		connected = 0;
-		$("nav#menu").trigger ("close.mm");
 	});
 }
 
@@ -66,19 +61,8 @@ function loadPage (url) {
 	$(":mobile-pagecontainer").pagecontainer ("change", url);
 } 
 
-function storeInBackstack (url) {
-	pagesStack.push (url)
-}
-
-function back () {
-	loadPage (pagesStack.pop ());
-	if (length > 0) {
-		pagesStack.length = pagesStack.length - 1
-	}
-}
-
 function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
-	$("#pageContent").load("pages/confirmation-view.html", function () {
+	load("confirmation-view.html", function () {
         $(this).enhanceWithin();
         
         if (message !== null && message !== undefined) {

@@ -1,5 +1,3 @@
-$(".current-title").text ("FAQ's");
-
 fillFaqs (30);
 
 function fillFaqs (count) {
