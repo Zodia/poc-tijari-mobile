@@ -6,7 +6,7 @@
 
 $("#existingapp").click(function() {
 
-loadPage("../pages/apps-list.html");
+loadPage("../pages/apps-list-view.html");
 	
 });
 
@@ -14,7 +14,7 @@ loadPage("../pages/apps-list.html");
 
 $("#newmortgages").click(function() {
 
-	loadPage("../pages/customers-list.html");
+	loadPage("../pages/customers-list-view.html");
 		
 	});
 
