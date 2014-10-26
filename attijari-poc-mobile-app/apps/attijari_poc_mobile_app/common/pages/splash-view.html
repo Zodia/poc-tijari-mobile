@@ -1,21 +1,36 @@
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/pages/splash-view.css">
-
-<div id="splash-wrapper">
-	<div class="splash-content">
+<div data-role="page" id="page">
+   	<link rel="stylesheet" href="../css/pages/splash-view.css">
+   	
+	<div data-role="header" id="header" data-position="fixed">
 	
-		<div class="logo-wrapper">
-			<img class="logo" src="images/logo.png" />
-		</div>
+		<div class="right"></div>
+		<div class="left"></div>
+		<div class="center with-logo"></div>
+		<!-- <div class="center">
+			<p class="current-title"></p>
+		</div>-->
 		
-		<form class="language-form">
-			<select name="flip" id="flip" data-role="slider">
-				<option value="french">Français</option>
-				<option value="arabic">العربية</option>
-			</select>
-			<a href="#" data-role="button" data-inline="true" data-theme="b" id="loginAction">Login</a>
-		</form>
 	</div>
-</div>
-
-<script src="js/pages/splash-view.js"></script>
+	
+	<div data-role="content" id="pageContent">
+		<div id="splash-wrapper">
+			<div class="splash-content">
+			
+				<div class="logo-wrapper">
+					<img class="logo" src="../images/logo.png" />
+				</div>
+				
+				<form class="language-form">
+					<select name="flip" id="flip" data-role="slider">
+						<option value="french">Français</option>
+						<option value="arabic">العربية</option>
+					</select>
+					<a href="#" data-role="button" data-inline="true" data-theme="b" id="loginAction">Login</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../js/pages/splash-view.js"></script>
+	
+ </div>

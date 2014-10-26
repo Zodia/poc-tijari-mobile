@@ -16,6 +16,9 @@ html, body {
 #page {
 	overflow: hidden;
 	background-color: #c9cfd6;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 
 #page .ui-panel-wrapper {
@@ -33,8 +36,8 @@ html, body {
 
 #pageContent {
 	position: absolute;
-	top: 0px;
-	bottom: 32px;
+	top: 68px;
+	bottom: 88px;
 	left: 12px;
 	right: 12px;
 	border: none;

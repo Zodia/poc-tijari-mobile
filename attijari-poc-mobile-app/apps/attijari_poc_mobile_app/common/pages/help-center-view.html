@@ -1,20 +1,122 @@
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/pages/help-center-view.css">
-
-<div id="help-center-wrapper">
-	<div class="help-center-content">
-		
-		<h2><em>Before submitting a question, please read the FAQ.</em></h2>
-		<div class="go-to-faq">
-			<i class="fa fa-question-circle"></i>
-			<p>FAQ's</p>
+<div data-role="page" id="page">
+   	<link rel="stylesheet" href="../css/pages/help-center-view.css">
+   	
+	<div data-role="header" id="header" data-position="fixed">
+	
+		<div class="right">
+			<a class="menu-display" href="#right-panel">
+				<img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
+			</a>
+			
+			<a class="top-notifications">
+				<img alt="top-notifications" src="../images/header/top_notification_button.png" />
+			</a>
 		</div>
-		<div class="go-to-send-problem">
-			<i class="fa fa-envelope"></i>
-			<p>Submit problem details</p>
+		<div class="left">
+			<a href="#" data-rel="back">
+				<img alt="back" src="../images/header/back_arrow.png" />
+				<span class="back">Home</span>
+			</a>
+		</div>
+		<!--<div class="center with-logo"></div>-->
+		<div class="center">
+			<p class="current-title">Help Center</p>
 		</div>
 		
 	</div>
-</div>
+	
+	<div data-role="content" id="pageContent">
+		<div id="help-center-wrapper">
+			<div class="help-center-content">
+				
+				<h2><em>Before submitting a question, please read the FAQ.</em></h2>
+				<div class="go-to-faq">
+					<i class="fa fa-question-circle"></i>
+					<p>FAQ's</p>
+				</div>
+				<div class="go-to-send-problem">
+					<i class="fa fa-envelope"></i>
+					<p>Submit problem details</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="footer" id="footer" data-position="fixed">			
+		<a id="homeAction" class="footer-action" data-role="none">
+			<img alt="back" src="../images/footer/home.png" />
+			<span class="label">Home</span>
+		</a>
+		<a id="notificationsAction" class="footer-action" data-role="none">
+			<img alt="back" src="../images/footer/notifications.png" />
+			<span class="label">Inbox</span> 
+		</a>
+		<a id="settingsAction" class="footer-action right" data-role="none">
+			<img alt="back" src="../images/footer/settings.png" />
+			<span class="label">Settings</span>
+		</a>
+		
+		<div id="center" class="with-logo"></div>
+	</div>
+	
+	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+			
+			<p class="employee-name">Welcome, Ali</p>
 
-<script src="js/pages/help-center-view.js"></script>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<img src="../images/content/home_filled.png" />
+					<a href="#" data-rel="close">Home</a>
+				</li>
+				<li>
+					<img src="../images/content/settings_filled.png" />
+					<a href="#" data-rel="close">Settings</a>
+				</li>
+				<li>
+					<img src="../images/content/notifications_filled.png" />
+					<a href="#" data-rel="close">Notifications</a>
+				</li>
+				<li>
+					<img src="../images/content/recent_activity.png" />
+					<a href="#" data-rel="close">Recent Activity</a>
+				</li>
+				<li>
+					<img src="../images/content/news.png" />
+					<a href="#" data-rel="close">News, Events & Projects</a>
+				</li>
+				<li>
+					<img src="../images/content/mortgage.png" />
+					<a href="pages/mortgage-simulator-view.html" data-rel="close">Mortgage Center</a>
+				</li>
+				<li>
+					<img src="../images/content/amount.png" />
+					<a href="#" data-rel="close">Investment Center</a>
+				</li>
+				<li>
+					<img src="../images/content/auto_loan.png" />
+					<a href="#" data-rel="close">Auto Loans Center</a>
+				</li>
+				<li>
+					<img src="../images/content/insurance_center.png" />
+					<a href="#" data-rel="close" onclick="loadPage ('pages/ask_expert/expert-view.html')">Insurance Center</a>
+				</li>
+				<li>
+					<img src="../images/content/help.png" />
+					<a href="#" data-rel="close">Help Center</a>
+				</li>
+				
+				<li class="terms-of-service">
+					<a href="#" data-rel="close">Terms Of Service</a>
+				</li>
+				<li class="logout">
+					<a href="#" data-rel="close">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script src="../js/pages/help-center-view.js"></script>
+	
+ </div>
