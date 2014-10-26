@@ -36,8 +36,8 @@ html, body {
 
 #pageContent {
 	position: absolute;
-	top: 68px;
-	bottom: 88px;
+	top: 0px;
+	bottom: 32px;
 	left: 12px;
 	right: 12px;
 	border: none;
