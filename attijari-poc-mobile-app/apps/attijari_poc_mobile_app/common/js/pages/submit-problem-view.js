@@ -1,5 +1,3 @@
-$(".current-title").text ("Submit problem details");
-
 $(".send-problem-button"). on ("click", function () {
 	
 	var message = "Thank you! Problem details have been successfully submitted!";
