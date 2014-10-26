@@ -11,10 +11,12 @@
  });*/
 
 //Title of page
+
+
 $(".current-title").text ("Ask an expert");
 
 // Chat with Expert in chat window
-function chatWithExpert(expertFirstName, expertLastName, expertType) {
+/*function chatWithExpert(expertFirstName, expertLastName, expertType) {
 
 	//Remove if any text are present in chat window
 	$("#chatConversionArea").html("");
@@ -42,9 +44,9 @@ function chatWithExpert(expertFirstName, expertLastName, expertType) {
 	
 	document.getElementById("expertName").value = expertFirstName+' '+expertLastName;
 };
-
+*/
 // Alert messages when experts are Busy & Offline
-function alertMsgPopup(status) {
+/*function alertMsgPopup(status) {
 
 	$("#chatWindowSection").hide();
 	$("#statusAlertPopUp")
@@ -53,7 +55,7 @@ function alertMsgPopup(status) {
 							+ '<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a> '
 							+ 'Currently expert is ' + status
 							+ ', Please reach out to other experts');				
-     }
+     }*/
 
 /**
  * ChatConversion function is illustration only of chat services as
