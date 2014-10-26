@@ -15,6 +15,29 @@
 
 $(".current-title").text ("Ask an expert");
 
+/* This function will change dynamically the value of expert info based on
+ * whether he is Mortage or Refinance Expert
+ * input parameter : expertType = Mortgage Or Refinance
+ */
+function dynamicExpertInfo(expertType){
+	
+	//Mortgage Expert info
+	if(expertType=='Mortgage'){
+		 $("#expertInfoSectionImage").html("<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
+		 $("#expertInfoSectionExpertName").html("<b>Shailendra Mishra</b>");
+		 $("#expertInfoSectionDisignation").html("Mortage Expert<br> +971 566766488");	
+		 $("#chatAreaExpertName").html("Shailendra Mishra:");
+		 
+	} else if(expertType=='Refinance'){//Refinance Expert info
+		
+		 $("#expertInfoSectionImage").html("<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-souhail.jpg'>");
+		 $("#expertInfoSectionExpertName").html("<b>Souhail Guennouni</b>");
+		 $("#expertInfoSectionDisignation").html("Refinance Expert<br> +971 566766488");
+		 $("#chatAreaExpertName").html("Souhail Guennouni:");
+	}		 
+
+}
+
 // Chat with Expert in chat window
 /*function chatWithExpert(expertFirstName, expertLastName, expertType) {
 
