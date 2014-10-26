@@ -63,28 +63,12 @@ function alertMsgPopup(status) {
 
 function chatConversation() {
 		
+	//Employee Name who is chatting with Expert	
+	$("#employeeNameChat").html("Ali Abbas:");
+			
 	// Chat text entered into textbox of chat window
-	chatText = "<font color='BLACK' size='2'> Shailendra Mishra "
-			+ document.getElementById("inputchatText").value + "</font><br>";
+	$("#employeeChatAreaText").html( document.getElementById("employeechatTextInput").value);
 
-	// Response Chat
-	responseChat1 = "<font color='Blue'  size='2'> "+document.getElementById("expertName").value +" : Hello </font> <br>";
-	responseChat2 = "<font color='Blue'  size='2'> "+document.getElementById("expertName").value +" :  Please tell me </font><br>";
-	
-	// Chat conversation chat window - Div :chatConversionArea
-	document.getElementById("chatConversionArea").value = $(
-			"#chatConversionArea").html(
-			chatText + responseChat1 + responseChat2);
-
-	// Chat conversation in textArea of chat window
-
-	/*
-	 * if(!isEmpty($('#chatConversionArea'))){
-	 * document.getElementById("chatConversionArea").value =
-	 * document.getElementById("chatConversionArea").value +
-	 * $("#chatConversionArea").html( chatText + responseChat2) ; }
-	 */
-
-	// setInterval(2000);
-	document.getElementById("inputchatText").value = "";
+	//Resetting input chat text box
+	document.getElementById("employeechatTextInput").value = "";
 };
