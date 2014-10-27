@@ -42,7 +42,8 @@
 #listItem-number{
 	float: left;
 	line-height: 68px;
-	width: 40%;
+	width: 20%;
+    font-weight: normal;
 	margin-left: 10%;
 }
 
