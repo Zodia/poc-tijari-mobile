@@ -75,23 +75,23 @@
 	font-size: 30px;
 	z-index: 10;
 	
-	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 3s; /* Firefox < 16 */
-    -ms-animation: fadein 3s; /* Internet Explorer */
-    -o-animation: fadein 3s; /* Opera < 12.1 */
-    animation: fadein 3s;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation: fadein 5s;
 }
 
 .offers tr.offer-insurance {
-	background-image: url(../../images/content/insurance_best_offers.png);
+	background-image: url(../../images/content/insurance_best_offers.jpg);
 }
 
 .offers tr.offer-investment {
-	background-image: url(../../images/content/investment_best_offers.png);
+	background-image: url(../../images/content/investment_best_offers.jpg);
 }
 
 .offers tr.offer-autoloan {
-	background-image: url(../../images/content/autoloan_best_offers.png);
+	background-image: url(../../images/content/autoloan_best_offers.jpg);
 }
 
 @keyframes fadein {
