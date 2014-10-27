@@ -1,6 +1,134 @@
-#imageholder img{
-	max-width:100%;
-    max-height:100%;
-
+#mortgage-center-view-wrapper {
+	width: 100%;
+	height: 100%;
 }
 
+.mortgage-center-view-content {
+	width: 100%;
+	height: 100%;
+}
+
+.paths {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	position: relative;
+}
+
+.paths tr {
+	width: 100%;
+	position: relative;
+}
+
+.paths tr td.path {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.paths tr td.path.advertisement {
+	width: 100%;
+	background-image: url(../../images/content/advertisements_mortgage.png);
+} 
+
+.paths tr td.path.new-mortgage {
+	width: 50%;
+	border-right: 1px solid #FFF;
+	background-image: url(../../images/content/new_mortgage.png);
+} 
+
+.paths tr td.path.refinancing {
+	width: 50%;
+	border-left: 1px solid #FFF;
+	background-image: url(../../images/content/refinancing_mortgage.png);
+} 
+
+.paths tr td.path.applications {
+	width: 50%;
+	border-right: 1px solid #FFF;
+	background-image: url(../../images/content/view_application_mortgage.png);
+} 
+
+.paths tr td.path.mortgage-simulator {
+	width: 50%;
+	border-left: 1px solid #FFF;
+	background-image: url(../../images/content/simulator_mortgage.png);
+} 
+
+.paths tr.spacer {
+	height: 2px;
+}
+
+.paths tr.offer-autoloan td p.top-title{
+	color: #FFF;
+}
+
+.paths tr td div.bottom-title-effect {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	height: 45px;
+	background-color: #5e5e5e;
+	
+	-webkit-filter: blur(17px);
+    -moz-filter: blur(17px);
+    -o-filter: blur(17px);
+    -ms-filter: blur(17px);
+    filter: blur(17px);
+    z-index: 0;
+}
+
+.paths tr td p.bottom-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	text-align: right;
+	color: #FFF;
+	padding: 5px;
+	font-size: 25px;
+	z-index: 10;
+	
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
