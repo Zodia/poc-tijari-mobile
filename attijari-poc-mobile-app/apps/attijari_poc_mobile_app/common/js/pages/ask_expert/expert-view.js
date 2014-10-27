@@ -1,3 +1,15 @@
+/*
+ * sourcePage is an Object I have created for you in order to know from where your page is being 
+ * accessed : mortgage-simulator or mortgage-terms.
+ * 
+ */
+sourcePage.title = "Home"; 	 
+sourcePage.url = "home-view.html"; 	
+
+$(".left a").attr ("href", "../" + sourcePage.url);
+$(".left a .label").text (sourcePage.title);
+
+
 //Title of page
 $(".current-title").text("Ask an expert");
 
