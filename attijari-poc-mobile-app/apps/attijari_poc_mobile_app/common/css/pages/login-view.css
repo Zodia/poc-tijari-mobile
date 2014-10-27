@@ -1,5 +1,5 @@
 #loginWrapper{
-	background-image: url("../../images/content/meeting.png") ;
+	background-image: url("../../images/content/welcome-bg.jpg") ;
 	background-repeat : no-repeat;
 	overflow: hidden;
 	height : 100%;
@@ -99,18 +99,16 @@ color : #ef5a49;
 	buttom: 0;
     margin-left : 2%;
     margin-right : 10px; 
-    width : 95%;
-    height : 100px;
-    -webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+    width: 95%;
+	height: 81px;
 	border-radius: 10px;
 	overflow: hidden;
 	display: inline-block;
-	clear : both;
-	margin-top: 250px;
+	clear: both;
+	margin-top: 363px;
 }
 #frensh{
-	padding-top : 5%;
+	padding-top : 4%;
 	padding-bottom : 6%;
 	float:left;
 	width :50%;
@@ -121,7 +119,7 @@ color : #ef5a49;
 	
 }	
 #arabic{
-	padding-top : 5%;
+	padding-top : 4%;
 	padding-bottom : 5%;
 	float: right;
 	width: 49%;
