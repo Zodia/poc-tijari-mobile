@@ -20,6 +20,7 @@
 	line-height: 40px;
 }
 
+
 .property-details-list .attribute .attribute-value {
 	display: inline-block;
 	float: right;
@@ -33,6 +34,7 @@
     box-shadow: none;
     background-color: transparent;
     margin: 0px;
+    text-align: right;
 }
 
 .select-informations{
@@ -94,7 +96,7 @@ a#back{
   text-shadow: 0 0px 0 #eeeeee;	
   border-radius:0px 0px 0px 5px ;
 }
-a#continue{
+a#submitButton{
   margin:0;
   border-color: #DF4B20;
   border-width: 1px 1px 1px 0;
@@ -125,4 +127,5 @@ input.centerText{
     box-shadow: none;
     background-color: transparent;
     margin: 0px;
+    text-align: right;
 }
