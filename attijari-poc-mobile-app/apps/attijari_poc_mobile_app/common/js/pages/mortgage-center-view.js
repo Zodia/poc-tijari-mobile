@@ -1,32 +1,15 @@
-/**
- * 
- */
-
-$("#existingapp").click(function() {
-
-loadPage("../pages/apps-list-view.html");
-	
+$(".applications").click(function() {
+	loadPage ("apps-list-view.html");
 });
 
+$(".new-mortgage").click(function() {
+	loadPage ("customers-list-view.html");
+});
 
+$(".mortgage-simulator").click(function() {
+	loadPage ("mortgage-simulator-view.html");		
+});
 
-$("#newmortgages").click(function() {
-
-	loadPage("../pages/customers-list-view.html");
-		
-	});
-
-$("#mortgagesimulator").click(function() {
-
-	loadPage("../pages/mortgage-simulator-view.html");
-		
-	});
-
-
-
-$("#mortgages").click(function() {
-	
-loadPage("../spages/mortgage-center-view.html");
-
-		
+$(".refinancing").click(function() {
+	//loadPage ("mortgage-center-view.html");		
 });
