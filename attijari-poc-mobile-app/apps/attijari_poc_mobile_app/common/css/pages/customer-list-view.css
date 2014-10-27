@@ -10,14 +10,45 @@
 	float: left;
 }
 
-.customer-image {
+.customer-image-ayoub {
 	width: 45px;
 	height: 45px;
 	border-radius: 100px;
 	background-position: center center;
 	background-size: cover;
 	background-color: #000;
-	background-image: url('../../images/mehdi.jpg');
 	padding: 2px;
+	background-image: url('../../images/ayoub.jpg');
 	margin: 5px auto auto;
+}
+
+.customer-image-mehdi {
+	width: 45px;
+	height: 45px;
+	border-radius: 100px;
+	background-position: center center;
+	background-size: cover;
+	background-color: #000;
+	padding: 2px;
+	background-image: url('../../images/mehdi.jpg');
+	margin: 5px auto auto;
+}
+
+#listItem-Address {
+	float: left;
+	width: 25%;
+}
+
+#listItem-number{
+	float: left;
+	line-height: 68px;
+	width: 40%;
+	margin-left: 10%;
+}
+
+#listItem-statut{
+	width: 25%;
+	float: right;
+	line-height: 68px;
+	text-align: right;
 }
