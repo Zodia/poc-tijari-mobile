@@ -29,7 +29,7 @@ $("#cs-cancel").on("click", function() {
 	
 	//if (customer_index == -1)
 		$("#pageContent").load("pages/property-view.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
+			//$(this).enhanceWithin(); /* apply styles */
 		});
 //	else
 //		$("#pageContent").load("pages/properties-listview.html", function() {
@@ -42,9 +42,7 @@ $("#cs-cancel").on("click", function() {
 $("#cs-continue").on("click", function() {
 	
 
-		$("#pageContent").load("pages/property-view.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
-		});
+		loadPage("../pages/property-view.html");
 	
 
 });

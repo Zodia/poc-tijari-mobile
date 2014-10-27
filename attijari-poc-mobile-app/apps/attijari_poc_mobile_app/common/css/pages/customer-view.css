@@ -16,6 +16,8 @@ ul.customer-details-list {
 }
 #customers-list{
 	border:none;
+	margin:0px;
+	margin-top: 10px;
 }
 
 a#cs-cancel {
