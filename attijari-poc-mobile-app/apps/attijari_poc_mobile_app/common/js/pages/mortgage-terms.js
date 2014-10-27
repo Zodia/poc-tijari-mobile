@@ -4,3 +4,9 @@ $("#back").on("click", function() {
 $("#submit").on("click", function() {
 	alert("Submited");
 });
+
+$("#panel-expert").on("click",function(){
+	sourcePage.title = "Mortgage Terms";
+	sourcePage.url = "mortgage-terms-view.html";
+	loadPage("pages/ask_expert/expert-view.html");
+});
