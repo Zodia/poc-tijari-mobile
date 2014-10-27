@@ -22,10 +22,10 @@ var prop_index = -1;
 //	});
 //});
 $("#cs-cancel").on("click", function() {
-	//customer = $("form").serializeObject();
+	customer = $("form").serializeObject();
 	var correct=$("#customer_form").validationEngine('validate');
 	//alert(correct);
-	if(correct){
+	//if(correct){
 	
 	//if (customer_index == -1)
 		$("#pageContent").load("pages/property-view.html", function() {
@@ -35,8 +35,10 @@ $("#cs-cancel").on("click", function() {
 //		$("#pageContent").load("pages/properties-listview.html", function() {
 //			$(this).enhanceWithin(); /* apply styles */
 //		});
-}
+		
+//}
 });
+
 $("#cs-continue").on("click", function() {
 	
 
@@ -47,7 +49,7 @@ $("#cs-continue").on("click", function() {
 
 });
 
-$(".current-title").text("Customer View");
+$(".current-title").text("Customer Information");
 $(".left .back").text("Back");
 $(".left").unbind("click").on("click", function() {
 	customer={};
@@ -76,7 +78,15 @@ $(".left").unbind("click").on("click", function() {
 //
 //};
 
-// reset form values from json object
+
+function openFileOption(file)
+{
+  document.getElementById(file).click();
+}
+
+//reset form values from json object
+
+
 function resetForm() {
 	var data;
 	if (customer_index == -1)
@@ -131,40 +141,41 @@ resetForm();
 //});
 
 $(document).ready(function() {
-    $("#owl-demo").owlCarousel({
-
-    navigation : false,
-    slideSpeed : 300,
-    paginationSpeed : 400,
-    singleItem : true,
-	  afterInit : function(elem){
-    var that = this;
-    that.owlControls.prependTo(elem);
-	 
-  }
-
-    // "singleItem:true" is a shortcut for:
-    // items : 1, 
-    // itemsDesktop : false,
-    // itemsDesktopSmall : false,
-    // itemsTablet: false,
-    // itemsMobile : false
-
-    });
+	//$("#customer-form").validationEngine({validateNonVisibleFields: true});	
+//    $("#owl-demo").owlCarousel({
+//
+//    navigation : false,
+//    slideSpeed : 300,
+//    paginationSpeed : 400,
+//    singleItem : true,
+//	  afterInit : function(elem){
+//    var that = this;
+//    that.owlControls.prependTo(elem);
+//	 
+//  }
+//
+//    // "singleItem:true" is a shortcut for:
+//    // items : 1, 
+//    // itemsDesktop : false,
+//    // itemsDesktopSmall : false,
+//    // itemsTablet: false,
+//    // itemsMobile : false
+//
+//    });
   });
 
-function hideHistory(){
-	if (customer_index == -1){
-		   $('#historyContent').hide();
-		
-		}else{
-			$('#historyContent').show();
-		} 
-	     
-}
-
-
-hideHistory(); 
+//function hideHistory(){
+//	if (customer_index == -1){
+//		   $('#historyContent').hide();
+//		
+//		}else{
+//			$('#historyContent').show();
+//		} 
+//	     
+//}
+//
+//
+//hideHistory(); 
 
 
 ///////////////////////
