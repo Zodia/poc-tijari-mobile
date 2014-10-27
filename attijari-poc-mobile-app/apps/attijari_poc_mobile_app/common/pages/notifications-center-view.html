@@ -1,6 +1,6 @@
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-   	<link rel="stylesheet" href="../css/pages/next-best-offer-view.css">
+	<link rel="stylesheet" href="css/pages/notifications-center-view.css">
    	
 	<div data-role="header" id="header" data-position="fixed">
 	
@@ -20,17 +20,38 @@
 			</a>
 		</div>
 		<!--<div class="center with-logo"></div>-->
-		<!--<div class="center">
-			<p class="current-title">Help Center</p>
-		</div>-->
+		<div class="center">
+			<p class="current-title">Notifications Center</p>
+		</div>
 		
 	</div>
 	
 	<div data-role="content" id="pageContent">
-		<div id="next-best-offer-wrapper">
-			<div class="next-best-offer-content">
+		<div id="notifications-wrapper">
+			<div class="notifications-content">
+		
+				<div data-role="navbar" id="navbar" class="notifications-categories">
+					<ul>
+						<li>
+							<a href="#" id="unread-notifications">
+								<span class="title">Unread notifications</span>
+								<i class="fa fa-circle fa-fw"></i>
+								<span class="count">4</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" id="all-notifications">All notifications</a>
+						</li>
+					</ul>
+				</div>
+		
+				<ul data-role="listview" class="notifications-list" data-inset="true">
+					
+				</ul>
 				
-				
+				<p class="load-more">
+					<a href="#">More messages</a>
+				</p>
 				
 			</div>
 		</div>
@@ -41,11 +62,11 @@
 			<img alt="Home" src="../images/footer/home.png" />
 			<span class="label">Home</span>
 		</a>
-		<a href="notifications-view.html" id="notificationsAction" class="footer-action" data-role="none">
+		<a href="" id="notificationsAction" class="footer-action" data-role="none">
 			<img alt="Inbox" src="../images/footer/notifications.png" />
 			<span class="label">Inbox</span> 
 		</a>
-		<a href="preferences-view.html" id="settingsAction" class="footer-action right" data-role="none">
+		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
 			<img alt="Settings" src="../images/footer/settings.png" />
 			<span class="label">Settings</span>
 		</a>
@@ -61,7 +82,7 @@
 			<ul data-role="listview" data-inset="true">
 				<li>
 					<img src="../images/content/home_filled.png" />
-					<a href="#" data-rel="close">Home</a>
+					<a href="home-view.html" data-rel="close">Home</a>
 				</li>
 				<li>
 					<img src="../images/content/settings_filled.png" />
@@ -69,7 +90,7 @@
 				</li>
 				<li>
 					<img src="../images/content/notifications_filled.png" />
-					<a href="#" data-rel="close">Notifications</a>
+					<a href="notifications-view.html" data-rel="close">Notifications</a>
 				</li>
 				<li>
 					<img src="../images/content/recent_activity.png" />
@@ -81,7 +102,7 @@
 				</li>
 				<li>
 					<img src="../images/content/mortgage.png" />
-					<a href="pages/mortgage-simulator-view.html" data-rel="close">Mortgage Center</a>
+					<a href="mortgage-simulator-view.html" data-rel="close">Mortgage Center</a>
 				</li>
 				<li>
 					<img src="../images/content/amount.png" />
@@ -97,7 +118,7 @@
 				</li>
 				<li>
 					<img src="../images/content/help.png" />
-					<a href="#" data-rel="close">Help Center</a>
+					<a href="help-center-view.html" data-rel="close">Help Center</a>
 				</li>
 				
 				<li class="terms-of-service">
@@ -110,6 +131,6 @@
 		</div>
 	</div>
 	
-	<script src="../js/pages/next-best-offer-view.js"></script>
+	<script src="../js/pages/notifications-center-view.js"></script>
 	
- </div>
+</div>
