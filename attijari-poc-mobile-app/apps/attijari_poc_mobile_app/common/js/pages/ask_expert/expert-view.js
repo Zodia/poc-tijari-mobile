@@ -1,16 +1,4 @@
-// Invoking "Chat with expert" page
-/*	$("#carLoanExpert1").on ("click", function () {
- //$("#main-chat-with-expert").style.visibility = 'visible';
- loadPage ("pages/ask_expert/chat-with-expert.html");
- });
-
- // Invoking "Chat with expert" page
- $("#searchlistitem1").on ("click", function () {
- loadPage ("pages/ask_expert/chat-with-expert.html");
- });*/
-
 //Title of page
-
 $(".current-title").text("Ask an expert");
 
 /*
@@ -22,6 +10,9 @@ function dynamicExpertInfo(expertType) {
 
 	// Mortgage Expert info
 	if (expertType == 'Mortgage') {
+
+		document.getElementById("chatExpertName").value = 'Shailendra Mishra';
+
 		$("#expertInfoSectionImage")
 				.html(
 						"<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
@@ -31,6 +22,8 @@ function dynamicExpertInfo(expertType) {
 		$("#chatAreaExpertName").html("Shailendra Mishra:");
 
 	} else if (expertType == 'Refinance') {// Refinance Expert info
+
+		document.getElementById("chatExpertName").value = 'Souhail Guennouni';
 
 		$("#expertInfoSectionImage")
 				.html(
@@ -42,6 +35,78 @@ function dynamicExpertInfo(expertType) {
 	}
 
 }
+
+/**
+ * ChatConversion function is illustration only of chat services as part of POC,
+ * These are static chat messages and will be enhanced or will get replaced with
+ * chat service system.
+ */
+function chatConversation() {
+	htmlText = $("#chatArea").html();
+
+	$("#chatArea")
+			.html(
+					htmlText
+							+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
+							+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
+							+ '<div class="ui-block-b" style="width: 75%">'
+							+ document.getElementById("employeeChatTextInput").value
+							+ '</div>'
+							+ '</div>'
+
+							+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
+							+ '<div class="ui-block-a" style="width: 25%">'
+							+ document.getElementById('chatExpertName').value
+							+ ':</div>'
+							+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
+							+ '</div>');
+
+	document.getElementById("employeeChatTextInput").value = "";
+
+}
+
+/*
+ * This part of JS will be used if Employee/Agent will press 'Enter' Button of
+ * Keyboard
+ * 
+ */
+$('#employeeChatTextInput')
+		.keypress(
+				function(event) {
+					if (event.keyCode == 13) {
+						htmlText = $("#chatArea").html();
+
+						$("#chatArea")
+								.html(
+										htmlText
+												+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
+												+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
+												+ '<div class="ui-block-b" style="width: 75%">'
+												+ document
+														.getElementById("employeeChatTextInput").value
+												+ '</div>'
+												+ '</div>'
+
+												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
+												+ '<div class="ui-block-a" style="width: 25%">'
+												+ document
+														.getElementById('chatExpertName').value
+												+ ':</div>'
+												+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
+												+ '</div>');
+
+						document.getElementById("employeeChatTextInput").value = "";
+					}
+				});
+
+// Invoking "Chat with expert" page
+/*
+ * $("#carLoanExpert1").on ("click", function () {
+ * //$("#main-chat-with-expert").style.visibility = 'visible'; loadPage
+ * ("pages/ask_expert/chat-with-expert.html"); }); // Invoking "Chat with
+ * expert" page $("#searchlistitem1").on ("click", function () { loadPage
+ * ("pages/ask_expert/chat-with-expert.html"); });
+ */
 
 // Chat with Expert in chat window
 /*
@@ -81,36 +146,10 @@ function dynamicExpertInfo(expertType) {
  * chat service system.
  */
 
-function chatConversation() {
-
-	// Employee Name who is chatting with Expert
-	$("#employeeNameChat").html("Ali Abbas:");
-
-	// Chat text entered into textbox of chat window
-	$("#employeeChatAreaText").html(
-			document.getElementById("employeechatTextInput").value);
-
-	// Resetting input chat text box
-	document.getElementById("employeechatTextInput").value = "";
-};
-
 /*
- * This part of JS will be used if Employee/Agent will press 'Enter' Button of
- * Keyboard
- * 
+ * function chatConversation() { // Employee Name who is chatting with Expert
+ * $("#employeeNameChat").html("Ali Abbas:"); // Chat text entered into textbox
+ * of chat window $("#employeeChatAreaText").html(
+ * document.getElementById("employeechatTextInput").value); // Resetting input
+ * chat text box document.getElementById("employeechatTextInput").value = ""; };
  */
-$('#employeechatTextInput')
-		.keypress(
-				function(event) {
-					if (event.keyCode == 13) {
-						// Employee Name who is chatting with Expert
-						$("#employeeNameChat").html("Ali Abbas:");
-
-						// Chat text entered into textbox of chat window
-						$("#employeeChatAreaText")
-								.html(document.getElementById("employeechatTextInput").value);
-
-						// Resetting input chat text box
-						document.getElementById("employeechatTextInput").value = "";
-					}
-				});

@@ -3,20 +3,25 @@
 <script src="js/pages/ask_expert/expert-view.js"></script>
 
 <input type="hidden" name="chatExpertType" id="chatExpertType">
+<input type="hidden" name="chatExpertName" id="chatExpertName">
+
 <div data-type="vertical">
 
 	<!-- ------------------------Start: Expert Detail section ------------------------  -->
 	<div class="ui-grid-b" style="height: 100px;" id="expertInfoSection">
-		<div class="ui-block-a" style="width: 20%;" id="expertInfoSectionImage">
+		<div class="ui-block-a" style="width: 20%;"
+			id="expertInfoSectionImage">
 			<img class="expertImage"
 				src="images/pages/ask_expert/chat_with_expert/expert-Souhail.jpg">
 		</div>
-		<div class="ui-block-b" style="width: 60%; margin-top: 10px;" id="expertInfoSectionMain">
-			<span id="expertInfoSectionExpertName"><b>Souhail Guennouni</b></span>
+		<div class="ui-block-b" style="width: 60%; margin-top: 10px;"
+			id="expertInfoSectionMain">
+			<span id="expertInfoSectionExpertName"><b>Souhail
+					Guennouni</b></span>
 
 			<div class="ui-grid-a">
 				<div class="ui-block-a" id="expertInfoSectionDisignation">
-					Car Loan Expert<br> +971 566766488 
+					Car Loan Expert<br> +971 566766488
 				</div>
 				<div class="ui-block-b" id="expertInfoSectionAddress">
 					Dic Building 5 <br> Rabat, Morocco
@@ -24,9 +29,10 @@
 			</div>
 		</div>
 		<div class="ui-block-c" id="expertInfoSectionEmail"
-			style="width: 20%; height: 100px; background-color: #000000;"><br><br>
-				<span style="color:#FFFFFF; margin-top:100px; margin-left:60px;">Email</span>
-			</div>
+			style="width: 20%; height: 100px; background-color: #000000;">
+			<br> <br> <span
+				style="color: #FFFFFF; margin-top: 100px; margin-left: 60px;">Email</span>
+		</div>
 	</div>
 	<!-- ------------------------End: Expert Detail section------------------------  ------------>
 
@@ -38,20 +44,15 @@
 	<!-- ------------------------End: Live chat bar section ------------------------  -->
 
 	<!-- ------------------------Start: Chat area section ------------------------  -->
-	<div data-role="content" id="chatArea" class="chatArea">
+	<div data-role="content" id="chatArea" class="chatArea" style="overflow:scroll;">
+
+		<div class="ui-grid-a" style="color:#B22222; margin-left: 15px;">
+			<div class="ui-block-a" style="width: 25%">Souhail
+				Guennouni:</div>
+			<div class="ui-block-b" style="width: 75%">Good
+				Afternoon, Eli, How can I help you today ?</div>
+		</div>
 		
-			<div class="ui-grid-a" style="color:#B22222; margin-left:15px;">
-				<div class="ui-block-a" style="width:25%" id="chatAreaExpertName">
-					Souhail Guennouni:
-				</div>
-				<div class="ui-block-b" style="width:75%">
-					Good Afternoon, Eli, How can I help you today ?
-				</div>
-			</div>
-			<div class="ui-grid-a" style="color:#000000;  margin-left:15px;">
-					<div class="ui-block-a" style="width:25%" id="employeeNameChat"></div>
-					<div class="ui-block-b" style="width:75%" id="employeeChatAreaText"></div>
-			</div>	
 	</div>
 	<!-- ------------------------End: Chat area section ------------------------  -->
 
@@ -61,11 +62,14 @@
 				src="images/pages/ask_expert/expert_view/logo-red.png">
 		</div>
 		<div class="ui-block-b" style="width: 70%">
-			<input type="text" id="employeechatTextInput" maxlength="80"
+			<input type="text" id="employeeChatTextInput" maxlength="80"
 				data-clear-btn="true" />
 		</div>
 		<div class="ui-block-c" style="width: 15%">
-			<img style="height:55%; width:55%; align:center; margin-top:10px; margin-left:15px" src="images/pages/ask_expert/expert_view/btn-send.png" onClick="chatConversation()">
+			<img
+				style="height: 55%; width: 55%; align: center; margin-top: 10px; margin-left: 15px"
+				src="images/pages/ask_expert/expert_view/btn-send.png"
+				onClick="chatConversation()">
 		</div>
 	</div>
 
@@ -80,7 +84,7 @@
 	</div>
 	<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
 	<!-- ------------------------Start: Footer Bar ------------------------  -->
-	<div style="background-color: #BDBDBD; height:25px;"></div>
+	<div style="background-color: #BDBDBD; height: 25px;"></div>
 	<!-- ------------------------End: Footer Bar------------------------  -->
 
 </div>
