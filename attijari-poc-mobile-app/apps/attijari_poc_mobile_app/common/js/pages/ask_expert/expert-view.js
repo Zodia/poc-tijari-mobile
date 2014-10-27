@@ -15,7 +15,7 @@ function dynamicExpertInfo(expertType) {
 
 		$("#expertInfoSectionImage")
 				.html(
-						"<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
+						"<img class='expertImage' src='../../images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
 		$("#expertInfoSectionExpertName").html("<b>Shailendra Mishra</b>");
 		$("#expertInfoSectionDisignation").html(
 				"Mortage Expert<br> +971 566766488");
@@ -27,7 +27,7 @@ function dynamicExpertInfo(expertType) {
 
 		$("#expertInfoSectionImage")
 				.html(
-						"<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-souhail.jpg'>");
+						"<img class='expertImage' src='../../images/pages/ask_expert/chat_with_expert/expert-souhail.jpg'>");
 		$("#expertInfoSectionExpertName").html("<b>Souhail Guennouni</b>");
 		$("#expertInfoSectionDisignation").html(
 				"Refinance Expert<br> +971 566766488");
