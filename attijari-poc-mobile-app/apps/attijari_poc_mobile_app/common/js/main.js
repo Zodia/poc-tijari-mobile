@@ -58,7 +58,7 @@ function loadPage (url) {
         $(this).enhanceWithin(); /* apply styles 
     });*/
 	
-	$(":mobile-pagecontainer").pagecontainer ("change", url);
+	$(":mobile-pagecontainer").pagecontainer ("change", url, { transition: "slide" });
 } 
 
 function confirmOperation (message, actionBlock, promoteTitle, promoteContent) {
