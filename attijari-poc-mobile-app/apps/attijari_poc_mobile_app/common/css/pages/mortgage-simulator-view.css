@@ -132,6 +132,7 @@ input.centerText{
 }
 #testimage img{
 	max-width:900px;
-    max-height:500px;
+    max-height:750px;
+    min-height:380px;
 
 } 
