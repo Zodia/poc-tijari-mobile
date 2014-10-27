@@ -2,15 +2,10 @@
  * 
  */
 
-
-
 $("#existingapp").click(function() {
 
 	loadPage("apps-list.html");
 });
-
-
-
 
 //$("#newapp").on ("click", function () {
 //	customer_index = -1;
@@ -56,12 +51,6 @@ $("#slider").on ("click", function () {
 });
 
 
-$("#mortgages").click(function() {
-	
-loadPage("mortgage-center-view.html");
-
-		
+$(".mortgages").click(function() {
+	loadPage("mortgage-center-view.html");	
 });
-
-
-
