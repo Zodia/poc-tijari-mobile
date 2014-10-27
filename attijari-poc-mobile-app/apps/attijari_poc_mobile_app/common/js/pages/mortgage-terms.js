@@ -97,8 +97,7 @@ $("#panel-expert").on("click",function(){
 	loadPage("ask_expert/expert-view.html");
 });
 
-
-
+ 
 /**
  * Function that computes the loan details
  */
