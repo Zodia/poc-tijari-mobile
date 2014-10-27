@@ -15,7 +15,7 @@ var customers = [ {
 	"MP_existing_mortgages" : "4000",
 	"Existing_debit_card" : "Yes",
 	"Existing_credit_card" : "No",
-	"startDate" : "16/08/1980",
+	"dob" : "1980-08-24",
 
 	"properties" : [ {
 		"AlreadyOwn" : "New",
@@ -60,7 +60,7 @@ var customers = [ {
 	"MP_existing_mortgages" : "4000",
 	"Existing_debit_card" : "Yes",
 	"Existing_credit_card" : "No",
-	"startDate" : "16/08/1990",
+	"dob" : "11/08/1990",
 	"properties" : [ {
 		"AlreadyOwn" : "New",
 		"isExisting" : "Existing",
@@ -105,7 +105,7 @@ var applications = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"startDate" : "16/08/1980",
+				"dob" : "16/08/1980",
 
 				"property" : {
 					"AlreadyOwn" : "New",
@@ -140,7 +140,7 @@ var applications = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"startDate" : "16/08/1980",
+				"dob" : "16/08/1980",
 
 				"property" : {
 					"AlreadyOwn" : "New",
@@ -175,7 +175,7 @@ var applications = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"startDate" : "16/08/1980",
+				"dob" : "1980-08-24",
 
 				"property" : {
 					"AlreadyOwn" : "New",
@@ -210,7 +210,7 @@ var applications = [
 				"MP_existing_mortgages" : "4000",
 				"Existing_debit_card" : "Yes",
 				"Existing_credit_card" : "No",
-				"startDate" : "16/08/1980",
+				"dob" : "1980-08-24",
 
 				"property" : {
 					"AlreadyOwn" : "New",
