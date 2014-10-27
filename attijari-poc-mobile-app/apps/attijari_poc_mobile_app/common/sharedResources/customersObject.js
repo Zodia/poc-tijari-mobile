@@ -236,6 +236,11 @@ var terms={
 		
 };
 
+var sourcePage = {
+	title : "",
+	url : ""
+}
+
 function getCustomer() {
 	return customer;
 }
