@@ -11,12 +11,12 @@ function confirmDialog(text, callback) {
 	                    <div data-role="header" data-theme="a">\
 	                        <h1>Are you sure?</h1>\
 	                    </div>\
-	                    <div role="main" class="ui-content" align="center">\
-	                        <h3 style="color:black" class="ui-title">'
+	                    <div role="main" class="ui-content" align="center" style="background-color: white;">\
+	                        <h3 style="color:black;margin-bottom: 55px;font-weight: normal;" class="ui-title">'
 					+ text
 					+ '<div class="ui-grid-a ui-responsive" id="button-div">'
-						+'<div class="ui-block-a"><a href="#" class="btn-back optionConfirm" data-rel="back">Yes</a></div>'
-						+'<div class="ui-block-b"><a href="#" class="btn-submit optionCancel" data-rel="back" data-transition="flow" >No</a></div>'
+						+'<div class="ui-block-a"><a href="#" class="btn-submit optionConfirm" data-rel="back" style="color:#DF4B20;font-weight:normal;text-decoration: none;">Yes</a></div>'
+						+'<div class="ui-block-b"><a href="#" class="btn-back optionCancel" data-rel="back" data-transition="flow" style="color:#DF4B20;font-weight:normal;text-decoration: none;">No</a></div>'
 					+'</div>'
 	                +'</div>')
 			.appendTo($.mobile.pageContainer);
