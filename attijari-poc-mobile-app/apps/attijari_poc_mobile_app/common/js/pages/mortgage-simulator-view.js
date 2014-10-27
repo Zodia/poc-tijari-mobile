@@ -1,26 +1,5 @@
-/**
- * Header setting
- */
-$(".current-title").text ("Simulateur de Crédit");
-$(".left .back").text("Home");
 
-
-if (connected ==1){
-	$(".right").show();
-	$(".left .back").unbind("click").on ("click", function () {
-		loadPage ("pages/customer-entry-view.html");
-	});
-}
-else {
-	$("#header").show();
-	$(".right").hide();
-	$(".left .back").unbind("click").on ("click", function () {
-		loadPage ("pages/login-view.html");
-	});
-}
-
-
-/**
+/** 
  * Submit button Action.
  */
 

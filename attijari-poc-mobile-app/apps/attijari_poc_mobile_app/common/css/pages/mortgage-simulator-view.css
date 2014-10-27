@@ -122,6 +122,7 @@ input.centerText{
 	margin:0; 
 	padding:0;
 }
+
 .ui-input-text.ui-custom {
     border: none;
     box-shadow: none;
@@ -129,3 +130,8 @@ input.centerText{
     margin: 0px;
     text-align: right;
 }
+#testimage img{
+	max-width:900px;
+    max-height:500px;
+
+} 
