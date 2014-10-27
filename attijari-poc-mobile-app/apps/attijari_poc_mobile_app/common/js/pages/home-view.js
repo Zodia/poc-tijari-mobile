@@ -6,7 +6,7 @@
 
 $("#existingapp").click(function() {
 
-	loadPage("pages/apps-list.html");
+	loadPage("apps-list.html");
 });
 
 
@@ -58,7 +58,7 @@ $("#slider").on ("click", function () {
 
 $("#mortgages").click(function() {
 	
-loadPage("../pages/mortgage-center-view.html");
+loadPage("mortgage-center-view.html");
 
 		
 });
