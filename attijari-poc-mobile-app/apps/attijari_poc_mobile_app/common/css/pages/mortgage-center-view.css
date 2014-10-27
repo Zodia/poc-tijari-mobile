@@ -1,16 +1,6 @@
-/* #imageholder img{ */
-/* 	max-width:100%; */
-/*     max-height:100%; */
+#imageholder img{
+	max-width:100%;
+    max-height:100%;
 
-/* } */
-
-
-#imageholder{
-	width: 100px;
-	height: 100px;
 }
-#imagemain{
-	width: 746px;
-	height: 343px;
-	background-image: url(""../images/content/advertisement_1_home.png");
-}
+
