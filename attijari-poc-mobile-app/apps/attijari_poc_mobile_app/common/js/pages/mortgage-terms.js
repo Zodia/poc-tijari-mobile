@@ -85,7 +85,7 @@ $('#submit')
 										.on(
 												"click",
 												function() {
-													loadPage("pages/mortgage-center-view.html");
+													loadPage("mortgage-center-view.html");
 												});
 							});
 				});
