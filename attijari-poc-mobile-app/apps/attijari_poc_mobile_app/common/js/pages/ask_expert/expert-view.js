@@ -56,7 +56,8 @@ function chatConversation() {
 
 							+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 							+ '<div class="ui-block-a" style="width: 25%">'
-							+ document.getElementById('chatExpertName').value
+							//+ document.getElementById('chatExpertName').value
+							+'Shouhail Guennouni'
 							+ ':</div>'
 							+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
 							+ '</div>');
@@ -89,8 +90,8 @@ $('#employeeChatTextInput')
 
 												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 												+ '<div class="ui-block-a" style="width: 25%">'
-												+ document
-														.getElementById('chatExpertName').value
+											//	+ document.getElementById('chatExpertName').value
+												+'Shouhail Guennouni'
 												+ ':</div>'
 												+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
 												+ '</div>');
