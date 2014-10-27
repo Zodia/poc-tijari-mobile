@@ -17,6 +17,26 @@ $("#registerlink").on ("click",function () {
 	loadPage ("register-view.html");
 });
 
+$("#frensh").on ("click",function () {
+	$("#buttongo").html("Se connecter");
+	$("#registerlink").html("S'enregister");
+	$("#forgotpass").html("Mot de passe oulbié!");
+	$("#passwordinput").attr("placeholder", "Mot de passe");
+	$("#emailinput").attr("placeholder", "Email");
+	
+	
+	
+});
+$("#arabic").on ("click",function () {
+	$("#buttongo").html("تسجيل الدخول");
+	$("#registerlink").html("التسجيل");
+	$("#forgotpass").html("إستعادة كلمة السر");
+	$("#emailinput").attr("placeholder","البريد");
+	$("#passwordinput").attr("placeholder","كلمة السر");
+	
+});
+
+
 $("#buttongo").on("click",function(){
 	if($('#emailinput').val () == "demo" && $('#passwordinput').val () == "demo") {
 		connected = 1;
@@ -28,4 +48,5 @@ $("#buttongo").on("click",function(){
 		$("#dialog").show ();
 	}
 }); 
-//
+
+

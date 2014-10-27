@@ -1,24 +1,15 @@
 .mortgage-view-content {
 	height: 100%;
-}
-
-#panel-expert img {
-	width: 100%;
-	height: 100%;
+	background-color: white;
 }
 
 #panel-expert {
+	width: 100%;
 	height: 40%;
 }
 
 #pageContent {
 	background-color: white;
-}
-
-#mortgage-terms {
-	bottom: 0;
-	left: 0;
-	right: 0;
 }
 
 .mortgage-terms-list {
@@ -143,7 +134,34 @@ a#submit {
 
 #button-div {
 	position: absolute;
-	left: 10px;
-	right: 10px;
-	bottom: 10px;
+	left: 5px;
+	right: 5px;
+	bottom: 0px;
+	margin-bottom: 5px;
 }
+
+.ui-title #button-div .ui-block-a {
+	color: #BD2020;
+	background-color: #FFF;
+	font-weight: normal;
+	text-shadow: 0px 0px 0px #EEE;
+	border-radius: 0px 0px 0px 5px;
+	margin: 0px;
+	border: 1px solid #DF4B20;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ui-title #button-div .ui-block-b {
+	color: #BD2020;
+	background-color: #FFF;
+	font-weight: normal;
+	text-shadow: 0px 0px 0px #EEE;
+	border-radius: 0px 0px 5px 0px;
+	margin: 0px;
+	border: 1px solid #DF4B20;
+	border-left: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+

@@ -1,7 +1,7 @@
 /**
  * Header setting
  */
-$(".current-title").text ("Mortgage Simulator");
+$(".current-title").text ("Simulateur de Crédit");
 $(".left .back").text("Home");
 
 
@@ -25,10 +25,25 @@ else {
  */
 
 $("#submitButton").on("click", function() {
-	loan();
+	sourcePage.title = "Mortgage Simulator"; 
+	sourcePage.url = "mortgage-simulator-view.html";
+	loadPage("ask_expert/expert-view.html");
+
+});
+$("#back").on("click", function() {
+	loadPage ("mortgage-center-view.html");
 
 });
 
+/**
+ * Function to check and calculate the loan
+ * @param as:
+ * 	Context
+ */
+function checkAndValidate(as){
+	checnum(as);
+	loan();
+}
 
 /**
  * Function that checks for input values
@@ -149,7 +164,6 @@ function loan() {
 	}
 	}
 	else{
-		alert("Here");
 		cn[3].value="";
 		cn[4].value="";
 		cn[5].value="";

@@ -1,3 +1,15 @@
+/*
+ * sourcePage is an Object I have created for you in order to know from where your page is being 
+ * accessed : mortgage-simulator or mortgage-terms.
+ * 
+ */
+sourcePage.title = "Home"; 	 
+sourcePage.url = "home-view.html"; 	
+
+$(".left a").attr ("href", "../" + sourcePage.url);
+$(".left a .label").text (sourcePage.title);
+
+
 //Title of page
 $(".current-title").text("Ask an expert");
 
@@ -15,7 +27,7 @@ function dynamicExpertInfo(expertType) {
 
 		$("#expertInfoSectionImage")
 				.html(
-						"<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
+						"<img class='expertImage' src='../../images/pages/ask_expert/chat_with_expert/expert-Shailendra.jpg'>");
 		$("#expertInfoSectionExpertName").html("<b>Shailendra Mishra</b>");
 		$("#expertInfoSectionDisignation").html(
 				"Mortage Expert<br> +971 566766488");
@@ -27,7 +39,7 @@ function dynamicExpertInfo(expertType) {
 
 		$("#expertInfoSectionImage")
 				.html(
-						"<img class='expertImage' src='images/pages/ask_expert/chat_with_expert/expert-souhail.jpg'>");
+						"<img class='expertImage' src='../../images/pages/ask_expert/chat_with_expert/expert-souhail.jpg'>");
 		$("#expertInfoSectionExpertName").html("<b>Souhail Guennouni</b>");
 		$("#expertInfoSectionDisignation").html(
 				"Refinance Expert<br> +971 566766488");
@@ -56,7 +68,8 @@ function chatConversation() {
 
 							+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 							+ '<div class="ui-block-a" style="width: 25%">'
-							+ document.getElementById('chatExpertName').value
+							//+ document.getElementById('chatExpertName').value
+							+'Shouhail Guennouni'
 							+ ':</div>'
 							+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
 							+ '</div>');
@@ -89,8 +102,8 @@ $('#employeeChatTextInput')
 
 												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 												+ '<div class="ui-block-a" style="width: 25%">'
-												+ document
-														.getElementById('chatExpertName').value
+											//	+ document.getElementById('chatExpertName').value
+												+'Shouhail Guennouni'
 												+ ':</div>'
 												+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
 												+ '</div>');

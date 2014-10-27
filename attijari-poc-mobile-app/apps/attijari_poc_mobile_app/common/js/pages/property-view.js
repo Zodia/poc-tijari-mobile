@@ -1,8 +1,8 @@
 $("#back").on("click", function() {
-	loadPage("pages/customer-view.html");
+	loadPage("customer-view.html");
 });
 $("#continue").on("click", function() {
-	loadPage("pages/mortgage-terms.html");
+	loadPage("mortgage-terms.html");
 });
 
 $(".current-title").text("Property details");
@@ -10,11 +10,11 @@ $(".left .back").text("Back");
 $(".left").off();
 if (prop_index != -1) {
 	$(".left").on("click", function() {
-		loadPage("pages/properties-listview.html");
+		loadPage("properties-listview.html");
 	});
 } else {
 	$(".left").on("click", function() {
-		loadPage("pages/customer-view.html");
+		loadPage("customer-view.html");
 	});
 }
 
@@ -70,13 +70,13 @@ function loadForm() {
 loadForm();
 
 $("#doc_call").on("click", function() {
-		$("#pageContent").load("pages/supporting-docs-view.html", function() {
+		$("#pageContent").load("supporting-docs-view.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 });
 
 $("#gallery_call").on("click", function() {
-	$("#pageContent").load("pages/photographs-view.html", function() {
+	$("#pageContent").load("photographs-view.html", function() {
 		$(this).enhanceWithin();
 	});
 });
@@ -86,7 +86,7 @@ $("#mortgage_terms").on("click", function() {
 	var correct = $("#property_form").validationEngine('validate');
 	// alert(correct);
 	if (correct) {
-		$("#pageContent").load("pages/select-mortgage-terms.html", function() {
+		$("#pageContent").load("select-mortgage-terms.html", function() {
 			$(this).enhanceWithin(); /* apply styles */
 		});
 	}
