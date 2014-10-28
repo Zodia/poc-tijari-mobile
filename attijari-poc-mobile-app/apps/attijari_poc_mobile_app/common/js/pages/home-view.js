@@ -25,8 +25,9 @@ $( document ).ready(function() {
             $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
         };
 
-        var jssor_slider1 = new $JssorSlider$("slideshow", options);
-        $AutoPlayInterval=
+		var jssor_slider1 = new $JssorSlider$("slideshow", options);
+        var jssor_slider2 = new $JssorSlider$("slideshow1", options);
+   
         jssor_slider1.$Play();
 	//$(".current-title").text ("Choosing Application Type");	
 	
