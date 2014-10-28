@@ -135,6 +135,21 @@ $('#attachFile').change(function(click) {
 	//alert(document.getElementById('employeeChatTextInput').value());
 });
 
+
+/* Display Video section for 
+ * Chatting F2F
+ */
+function openVedio(){
+	$("#chatVideo").show();
+}
+
+/* Close F2F Video 
+ */
+function closeVideo(){
+	$("#chatVideo").hide();
+}
+
+
 // Invoking "Chat with expert" page
 /*
  * $("#carLoanExpert1").on ("click", function () {
