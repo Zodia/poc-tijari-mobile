@@ -9,8 +9,14 @@
 	height:auto !important;
 	margin: 0 auto -5px;
 	position : relative;
+	font-family: "Helvetica Neue";
+	
     
 }
+a:link {
+    text-decoration: none;
+}
+
 #imgcomplete{
 	background-image: url ("../../images/content/imgbuttom.png") ;
 	background-repeat: repeat-y;
@@ -59,8 +65,12 @@
 }
 
 #dialog{
-	margin-top: 92px;
+	margin-top: 162px;
 	height: 300px;
+}
+#headerdialog{
+	background-color:  #ef5a49;
+	color :white;
 }
 #dialogmessage{
 	background-color: white;
