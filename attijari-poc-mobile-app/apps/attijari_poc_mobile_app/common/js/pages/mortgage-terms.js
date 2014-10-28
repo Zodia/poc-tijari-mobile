@@ -45,7 +45,7 @@ $('#submit')
 					});
 });
 
-$("#panel-expert").on("click",function(){
+$(".image").on("click",function(){
 	sourcePage.title = "Mortgage Terms";
 	sourcePage.url = "mortgage-terms-view.html";
 	loadPage("ask_expert/expert-view.html");

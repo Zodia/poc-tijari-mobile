@@ -28,40 +28,37 @@
 }
 
 .paths tr td.path.advertisement {
-	height: 450px;
- 	/*background-image: url(../../images/content/advertisement_1_home.jpg); */
-
+	width: 100%;
+	background-image: url(../../images/content/advertisement_1_home.png);
 } 
 
 .paths tr td.path.mortgages {
 	width: 50%;
 	border-right: 1px solid #FFF;
-/*  	background-image: url(../../images/content/mortgage_home.jpg);  */
+	background-image: url(../../images/content/mortgage_home.png);
 } 
 
 .paths tr td.path.investments {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/investments_home.jpg);
+	background-image: url(../../images/content/investments_home.png);
 } 
 
 .paths tr td.path.autoloans {
 	width: 50%;
 	border-right: 1px solid #FFF;
-	background-image: url(../../images/content/auto_loans_home.jpg);
+	background-image: url(../../images/content/auto_loans_home.png);
 } 
 
 .paths tr td.path.insurances {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/insurance_home.jpg);
+	background-image: url(../../images/content/insurance_home.png);
 } 
 
 .paths tr.spacer {
 	height: 2px;
-	background: #FFF;
 }
-
 
 .paths tr.offer-autoloan td p.top-title{
 	color: #FFF;
@@ -96,11 +93,11 @@
 	font-size: 25px;
 	z-index: 10;
 	
-	/*-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1
-	-moz-animation: fadein 5s; /* Firefox < 16 
-    -ms-animation: fadein 5s; /* Internet Explorer 
-    -o-animation: fadein 5s; /* Opera < 12.1 
-    animation: fadein 5s;*/
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation: fadein 5s;
 }
 
 @keyframes fadein {
