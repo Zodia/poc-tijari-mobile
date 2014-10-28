@@ -2,8 +2,9 @@
 <div data-role="page" id="page">
 
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="../../css/pages/ask_expert/expert-view.css">
-    
+	<link rel="stylesheet"
+		href="../../css/pages/ask_expert/expert-view.css">
+
 	<div data-role="header" id="header" data-position="fixed">
 
 		<div class="right">
@@ -29,7 +30,8 @@
 
 
 
-	<div data-role="content" id="pageContent" style="background-color: #D8D8D8;">
+	<div data-role="content" id="pageContent"
+		style="background-color: #D8D8D8;">
 
 		<input type="hidden" name="chatExpertType" id="chatExpertType">
 		<input type="hidden" name="chatExpertName" id="chatExpertName">
@@ -99,8 +101,27 @@
 					<img
 						style="height: 55%; width: 55%; align: center; margin-top: 10px; margin-left: 15px"
 						src="../../images/pages/ask_expert/expert_view/btn-send.png"
-						onClick="chatConversation()">
+						onClick="chatConversation()"> 
+					
+					<img style="margin-top:10px;"	src="../../images/pages/ask_expert/expert_view/attachment-icon.png" onClick="openFile()"> 
+					<div style="visibility:hidden; width:1px; height:1px;"> <input type="file" name="attachFile[]" id="attachFile"  accept="image/*" style="visibility:hidden;"></input></div>
+						
+				<!-- 	<input  style="opacity:0; background-color:#DF0101; height:1px; width:1px;" type="file" name="files[]" data-icon="plus"/> -->
+						
+					<!-- 	<input type="file" name="files[]" style="background-color:#DF0101; height:1px; width:1px;"/> -->
 				</div>
+				
+				<!-- <div
+						class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c">
+						<input type="file" name="files[]" multiple class="ui-input-text ui-body-c">
+					</div> 
+					 -->
+					<!-- <a href="expert-view.html" data-rel="dialog">Open dialog</a> -->
+					
+					
+					
+					
+				
 			</div>
 
 			<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
@@ -115,7 +136,7 @@
 			<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
 			<!-- ------------------------Start: Footer Bar ------------------------  -->
 			<!-- <div style="background-color: #BDBDBD; height: 25px;"></div> -->
-			
+
 			<div style="background-color: #585858; height: 25px;"></div>
 			<!-- ------------------------End: Footer Bar------------------------  -->
 		</div>
@@ -150,8 +171,8 @@
 					href="home-view.html" data-rel="close">Home</a></li>
 				<li><img src="../../images/content/settings_filled.png" /> <a
 					href="#" data-rel="close">Settings</a></li>
-				<li><img src="../../images/content/notifications_filled.png" /> <a
-					href="notifications-view.html" data-rel="close">Notifications</a></li>
+				<li><img src="../../images/content/notifications_filled.png" />
+					<a href="notifications-view.html" data-rel="close">Notifications</a></li>
 				<li><img src="../../images/content/recent_activity.png" /> <a
 					href="#" data-rel="close">Recent Activity</a></li>
 				<li><img src="../../images/content/news.png" /> <a href="#"
@@ -161,8 +182,8 @@
 						Center</a></li>
 				<li><img src="../../images/content/amount.png" /> <a href="#"
 					data-rel="close">Investment Center</a></li>
-				<li><img src="../../images/content/auto_loan.png" /> <a href="#"
-					data-rel="close">Auto Loans Center</a></li>
+				<li><img src="../../images/content/auto_loan.png" /> <a
+					href="#" data-rel="close">Auto Loans Center</a></li>
 				<li><img src="../../images/content/insurance_center.png" /> <a
 					href="ask_expert/expert-view.html" data-rel="close">Insurance
 						Center</a></li>
