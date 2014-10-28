@@ -41,55 +41,9 @@ function confirmDialog(text, callback) {
 }
 
 $('#submit')
-		.on(
-				'click',
-				function() {
-					confirmDialog(
-							"submit",
-							function() {
-								var message = "Thank you for your mortgage application."
-										+ "Our Mortgage Specialists will analyse it and will be"
-										+ " responding to your application soon.";
-								var additionalAction = '<a data-role="button" data-inline="true" data-theme="b" id="new-app-action">New application</a>';
-								var promoteTitle = "Next best offers";
-								var promoteContent = '<div class="ui-grid-a">';
-								promoteContent += '<div class="ui-block-a">';
-								promoteContent += '<div class="ui-bar ui-bar-e">'
-								promoteContent += '<i class="fa fa-car"></i>';
-								promoteContent += '<p>Buy a car</p>';
-								promoteContent += '</div>';
-								promoteContent += '</div>';
-								promoteContent += '<div class="ui-block-b">';
-								promoteContent += '<div class="ui-bar ui-bar-e">'
-								promoteContent += '<i class="fa fa-home"></i>';
-								promoteContent += '<p>Buy a house</p>';
-								promoteContent += '</div>';
-								promoteContent += '</div>';
-								promoteContent += '<div class="ui-block-a">';
-								promoteContent += '<div class="ui-bar ui-bar-e">'
-								promoteContent += '<i class="fa fa-plane"></i>';
-								promoteContent += '<p>Take a vacation</p>';
-								promoteContent += '</div>';
-								promoteContent += '</div>';
-								promoteContent += '<div class="ui-block-b">';
-								promoteContent += '<div class="ui-bar ui-bar-e">'
-								promoteContent += '<i class="fa fa-university"></i>';
-								promoteContent += '<p>Go to college</p>';
-								promoteContent += '</div>';
-								promoteContent += '</div>';
-								promoteContent += '</div>';
-
-								confirmOperation(message, additionalAction,
-										promoteTitle, promoteContent);
-								$("#confirmation-wrapper .confirmation-content .confirmation-message .additional-action #new-app-action")
-										.on(
-												"click",
-												function() {
-													loadPage("mortgage-center-view.html");
-												});
-							});
-					
-				});
+.on('click',function() {confirmDialog("submit",	function() {	loadPage("next-best-offer-view.html");					
+					});
+});
 
 $("#panel-expert").on("click",function(){
 	sourcePage.title = "Mortgage Terms";
