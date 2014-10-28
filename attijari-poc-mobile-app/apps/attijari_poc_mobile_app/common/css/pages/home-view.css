@@ -28,8 +28,8 @@
 }
 
 .paths tr td.path.advertisement {
-	width: 100%;
- 	background-image: url(../../images/content/advertisement_1_home.png); 
+	height: 450px;
+ 	/*background-image: url(../../images/content/advertisement_1_home.jpg); */
 
 } 
 
@@ -54,7 +54,7 @@
 .paths tr td.path.insurances {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/insurance_home.png);
+	background-image: url(../../images/content/insurance_home.jpg);
 } 
 
 .paths tr.spacer {
