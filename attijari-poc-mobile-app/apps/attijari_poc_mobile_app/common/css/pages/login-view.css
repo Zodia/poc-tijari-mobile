@@ -1,17 +1,14 @@
 #loginWrapper{
-	background-image: url("../../images/content/welcome-bg.jpg") ;
-	background-repeat : no-repeat;
-	overflow: hidden;
 	height : 100%;
-    background-size: cover;
-    background-position: center;
-	min-height:100%;
-	height:auto !important;
-	margin: 0 auto -5px;
+	height:auto ;
 	position : relative;
 	font-family: "Helvetica Neue";
 	
     
+}
+#backgroundimg img{
+	max-height: 100%;
+	max-width: 100%;
 }
 a:link {
     text-decoration: none;
@@ -24,10 +21,11 @@ a:link {
 }
 #loginContent {
 	width: 300px;
-	margin: 0 auto;
-	right: auto; 
+	margin: 0px auto;
+	right: auto;
 	left: auto;
-	padding-top :300px
+	margin-top: -72px;
+
 }
 
 #email,#password {
@@ -106,16 +104,16 @@ color : #ef5a49;
 	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 	border: 1px solid #EF5A49;
-	buttom: 0;
-    margin-left : 2%;
-    margin-right : 10px; 
-    width: 95%;
+	margin-left: 2%;
+	margin-right: 10px;
+	width: 95%;
 	height: 81px;
-	border-radius: 10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
 	overflow: hidden;
 	display: inline-block;
 	clear: both;
-	margin-top: 363px;
+	margin-top: 274px;
 }
 #frensh{
 	padding-top : 4%;
