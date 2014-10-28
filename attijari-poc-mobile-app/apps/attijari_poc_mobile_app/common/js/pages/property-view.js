@@ -1,23 +1,3 @@
-$("#back").on("click", function() {
-	loadPage("customer-view.html");
-});
-$("#continue").on("click", function() {
-	loadPage("mortgage-terms.html");
-});
-
-$(".current-title").text("Property details");
-$(".left .back").text("Back");
-$(".left").off();
-if (prop_index != -1) {
-	$(".left").on("click", function() {
-		loadPage("properties-listview.html");
-	});
-} else {
-	$(".left").on("click", function() {
-		loadPage("customer-view.html");
-	});
-}
-
 $(document).ready(function() {
 
 	$("#property_form").validationEngine({
@@ -51,7 +31,9 @@ $.fn.serializeObject = function() {
 };
 
 function loadForm() {
-	$.each(property, function(name, val) {
+	var data;
+	data = property;
+	$.each(data, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
@@ -69,29 +51,13 @@ function loadForm() {
 
 loadForm();
 
-$("#doc_call").on("click", function() {
-		$("#pageContent").load("supporting-docs-view.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
-		});
-});
 
-$("#gallery_call").on("click", function() {
-	$("#pageContent").load("photographs-view.html", function() {
-		$(this).enhanceWithin();
-	});
-});
-
-$("#mortgage_terms").on("click", function() {
-	property = $("form").serializeObject();
-	var correct = $("#property_form").validationEngine('validate');
-	// alert(correct);
-	if (correct) {
-		$("#pageContent").load("select-mortgage-terms.html", function() {
-			$(this).enhanceWithin(); /* apply styles */
-		});
-	}
-});
-
-//$('#preview').on('click', function() {
-//	loadPage("pages/review-view.html");
+//$("#mortgage_terms").on("click", function() {
+//	property = $("form").serializeObject();
+//	var correct = $("#property_form").validationEngine('validate');
+//	// alert(correct);
+//	if (correct) {
+//		loadPage("mortgage-terms.html");
+//	}
 //});
+
