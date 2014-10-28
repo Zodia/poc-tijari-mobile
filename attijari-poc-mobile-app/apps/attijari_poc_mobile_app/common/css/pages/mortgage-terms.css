@@ -165,3 +165,36 @@ a#submit {
 	padding-bottom: 5px;
 }
 
+div.image {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background-image: url(../../images/content/mortgage-terms.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+div.image .bottom-title-effect {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	height: 45px;
+	background-color: #5e5e5e;	
+}
+
+div.image .bottom-title {
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	margin: 0;
+	text-align: center;
+	color: #FFF;
+	padding: 5px;
+	font-size: 25px;
+	z-index: 10;
+
+}
+
