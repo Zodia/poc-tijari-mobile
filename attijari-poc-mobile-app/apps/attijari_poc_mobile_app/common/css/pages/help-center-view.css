@@ -16,10 +16,10 @@
 	height: 120px;
 	float: left;
 	margin-left: 15%;
-	border: 1px solid #DF4B20;
+	border: 1px solid #ef5a49;
 	text-align: center;
 	padding: 10px;
-	color: #DF4B20;
+	color: #ef5a49;
 	background-color: white;
 	font-weight: normal;
 	border-bottom-left-radius: 10px;
@@ -30,13 +30,22 @@
 	height: 120px;
 	float: right;
 	margin-right: 15%;
-	border: 1px solid #DF4B20;
+	border: 1px solid #ef5a49;
 	text-align: center;
 	padding: 10px;
-	color: #DF4B20;
+	color: #ef5a49;
 	background-color: white;
 	font-weight: normal;
 	border-bottom-right-radius: 10px;
+}
+
+.go-to-faq:active,
+.go-to-faq:focus,
+.go-to-send-problem:active,
+.go-to-send-problem:focus {
+	color: #FFF;
+	background-color: #ef5a49;
+	font-weight: bold;
 }
 
 .go-to-faq p,
@@ -44,9 +53,4 @@
 	height: 100%;
 	margin: 0;
 	line-height: 120px;
-}
-
-.help-center-content .go-to-faq i, 
-.help-center-content .go-to-send-problem i {
-	font-size: 65px;
 }

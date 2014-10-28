@@ -1,7 +1,17 @@
+.faqs-content {
+	padding: 20px;
+}
+
+#faq-set {
+	margin: 0;
+	border-bottom: 1px solid #ececec;
+}
+
 #faq-set .faq-item h3 a {
-	height: 65px;
-	line-height: 65px;
+	height: 40px;
+	line-height: 40px;
 	font-size: 16px;
+	font-weight: normal;
 }
 
 #faq-set .faq-item .details-container pre {
@@ -11,4 +21,40 @@
 	padding-right: 5px;
 	border: 1px solid #ececec;
 	border-radius: 3px;
+}
+
+#faq-set .faq-item h3.ui-collapsible-heading.ui-collapsible-heading-collapsed a {
+	background-color: #f6f6f6;
+	border-bottom: none;
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	border-right: 1px solid #ececec;
+	color: #000;
+	text-shadow: none;
+}
+
+#faq-set .faq-item h3.ui-collapsible-heading a {
+	background-color: #f6f6f6;
+	border-color: #ef5a49;
+}
+
+#faq-set .faq-item .ui-collapsible-content.ui-body-inherit {
+	border-color: #ef5a49;
+}
+
+#faq-set .faq-item .ui-collapsible-content.ui-body-inherit:last-child {
+	border-bottom: 0;
+}
+
+.faq-item.ui-collapsible.ui-collapsible-inset.ui-collapsible-themed-content.ui-collapsible-collapsed {
+	margin-bottom: -1px;
+}
+
+.faq-item.ui-collapsible.ui-collapsible-inset.ui-collapsible-themed-content.ui-collapsible-collapsed:last-child {
+	border-bottom: inherit;
+}
+
+.faq-item.ui-collapsible.ui-collapsible-inset.ui-collapsible-themed-content {
+	border-bottom: 1px solid #ef5a49;
+	margin-bottom: -1px;
 }

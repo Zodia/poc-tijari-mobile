@@ -1,3 +1,3 @@
 $(".attachements-content").on ("click", function () {
-	loadPage ("pages/document-preview-view.html");
+	loadPage ("document-preview-view.html");
 });

@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 
     function prevent_default (e) {
         e.preventDefault ();
@@ -39,7 +39,7 @@ $(function() {
             $(this).remove ()
         })
     })
-});
+});*/
 
 $("#unread-notifications").addClass ($.mobile.activeBtnClass);
 fillList (4, false, false)
@@ -61,8 +61,8 @@ function fillList (count, append, all) {
 		for (i = 0; i < count; i ++) {
 			
 			content += '<li id=' + listItemClass + '>';
-			content += '<div class="delete-button"><a href="notification-content.html" class="ui-btn delete-btn">Delete</a></div>';
-			content += '<a href="#" class="notification-item-a">';
+			content += '<div class="delete-button"><a href="#" class="ui-btn delete-btn">Delete</a></div>';
+			content += '<a href="notification-content-view.html" class="notification-item-a">';
 			content += '<div class="ui-li-thumb"></div>';
 			content += '<div class="ui-li-text">';
 			content += '<h3>Credit elligibility</h3>';
