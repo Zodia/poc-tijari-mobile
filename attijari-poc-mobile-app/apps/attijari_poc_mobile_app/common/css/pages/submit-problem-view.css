@@ -1,19 +1,100 @@
-.subject-problem {
-	width: 100%;
+.submit-problem-content {
+	padding: 20px;
+	color: #818181;
+	font-weight: normal;
+}
+
+.submit-problem-content input,
+.submit-problem-content textarea,
+.submit-problem-content div {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+
+.submit-problem-content input,
+.submit-problem-content textarea {
+	border: 1px solid #DF4B20;
+	border-color: #DF4B20;
+	text-shadow: none;
+	color: #818181;
+}
+
+.submit-problem-subject input.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset,
+.submit-problem-content textarea.ui-input-text.ui-shadow-inset.ui-body-inherit.ui-corner-all.ui-textinput-autogrow {
+	border: 1px solid #DF4B20;
+	border-color: #DF4B20;
+	text-shadow: none;
+	color: #818181;
+}
+
+.submit-problem-content input.ui-focus,
+.submit-problem-content textarea.ui-focus,
+.submit-problem-content div.ui-focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.submit-problem-content input.ui-focus,
+.submit-problem-content textarea.ui-focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #DF4B20;
+	border-color: #DF4B20;
+	border-radius: 0;
+}
+
+.subject-problem,
+.attachment {
+	width: 64%;
 	float: left;
+	min-height: 50px;
+	max-height: 50px;
+	height: 50px;
+}
+
+.attachment {
+	width: 35%;
+	float: right;
+}
+
+.subject-problem input,
+.attachment input {
+	height: 50px;
+	padding-top: 12px;
 }
 
 .message-core {
 	width: 100%;
 	float: left;
+	margin-top: 30px;
+	height: 500px;
 }
 
 .message-core textarea {
 	width: 100%;
-	height: 370px;
+	height: 500px;
+	min-height: 500px;
+	max-height: 500px;
 }
 
-.submit-problem-form .ui-btn {
+.submit-problem-form .message-submit {
+	margin-top: 30px;
 	width: 30%;
 	float: right;
+}
+
+.submit-problem-form .send-problem-button {
+	width: 100%;
+	height: 45px;
+	color: #DF4B20;
+	background-color: white;
+	font-weight: normal;
+	border-bottom-right-radius: 10px;
+	outline: none;
 }

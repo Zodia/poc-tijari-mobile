@@ -1,29 +1,30 @@
-.notifications-content .notifications-new-all-switch a {
-	height: 40px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	line-height: 40px;
-}
-
-.notifications-content .notifications-new-all-switch a i {
-	height: 40px;
-	line-height: 40px;
-}
-
-.notifications-categories ul {
-	padding-top: 15px;
+.notifications-content {
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .notifications-categories ul #all-notifications {
-	height: 60px; 
-	line-height: 60px;  
+	height: 30px;
+	line-height: 30px;
+	border-bottom-right-radius: 10px;
 }
 
 .notifications-categories ul #unread-notifications {
-	height: 60px; 
-	line-height: 60px; 
+	height: 30px; 
+	line-height: 30px; 
 	text-align: center; 
 	padding-left: 30%;
+	border-bottom-left-radius: 10px;
+}
+
+.notifications-categories ul #unread-notifications, 
+.notifications-categories ul #all-notifications {
+	background-color: #FFF;
+	border-color: #DF4B20;
+	color: #DF4B20;
+	font-weight: normal;
+	font-size: 15px;
 }
 
 .notifications-categories ul #unread-notifications span.title {

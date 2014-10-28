@@ -12,25 +12,38 @@
 }
 
 .go-to-faq {
-	width: 20%;
+	width: 30%;
 	height: 120px;
 	float: left;
-	margin-left: 20%;
-	border: 1px solid #666;
-	border-radius: 3px;
+	margin-left: 15%;
+	border: 1px solid #DF4B20;
 	text-align: center;
 	padding: 10px;
+	color: #DF4B20;
+	background-color: white;
+	font-weight: normal;
+	border-bottom-left-radius: 10px;
 }
 
 .go-to-send-problem {
-	width: 20%;
+	width: 30%;
 	height: 120px;
 	float: right;
-	margin-right: 20%;
-	border: 1px solid #666;
-	border-radius: 3px;
+	margin-right: 15%;
+	border: 1px solid #DF4B20;
 	text-align: center;
 	padding: 10px;
+	color: #DF4B20;
+	background-color: white;
+	font-weight: normal;
+	border-bottom-right-radius: 10px;
+}
+
+.go-to-faq p,
+.go-to-send-problem p {
+	height: 100%;
+	margin: 0;
+	line-height: 120px;
 }
 
 .help-center-content .go-to-faq i, 
