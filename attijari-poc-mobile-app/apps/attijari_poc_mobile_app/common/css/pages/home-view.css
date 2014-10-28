@@ -54,12 +54,14 @@
 .paths tr td.path.insurances {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/insurance_home.png);
+	background-image: url(../../images/content/insurance_home.jpg);
 } 
 
 .paths tr.spacer {
 	height: 2px;
+	background: #FFF;
 }
+
 
 .paths tr.offer-autoloan td p.top-title{
 	color: #FFF;
@@ -94,11 +96,11 @@
 	font-size: 25px;
 	z-index: 10;
 	
-	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 5s; /* Firefox < 16 */
-    -ms-animation: fadein 5s; /* Internet Explorer */
-    -o-animation: fadein 5s; /* Opera < 12.1 */
-    animation: fadein 5s;
+	/*-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1
+	-moz-animation: fadein 5s; /* Firefox < 16 
+    -ms-animation: fadein 5s; /* Internet Explorer 
+    -o-animation: fadein 5s; /* Opera < 12.1 
+    animation: fadein 5s;*/
 }
 
 @keyframes fadein {

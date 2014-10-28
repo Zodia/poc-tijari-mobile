@@ -57,6 +57,12 @@
 	border-radius: 22px;
 }
 
+.notifications-categories ul #unread-notifications span.count > span {
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+}
+
 .notifications-categories ul li {
 	box-shadow: none;
 	border: none;

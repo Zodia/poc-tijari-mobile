@@ -54,7 +54,7 @@ html, body {
 #header {
 	width: 100%;
 	height: 48px;
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-bottom: 10px;
 	background-position: center;
 	background-size: cover;
@@ -81,8 +81,8 @@ html, body {
 }
 
 #header .right a {
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: 12px;
+	margin-left: 12px;
 }
 
 #header .left a,
@@ -99,7 +99,7 @@ html, body {
 #header .left a {
 	padding-top: 4px;
 	padding-bottom: 4px;
-	margin-left: 10px;
+	margin-left: 12px;
 }
 
 #header .right a img {
@@ -218,8 +218,7 @@ html, body {
 #right-panel .ui-panel-inner {
 	background: #FFF;
 	padding-left: 27px;
-	padding-right: 35px;
-	overflow: hidden;
+	padding-right: 0;
 }
 
 #right-panel p.employee-name {
@@ -245,6 +244,11 @@ html, body {
 	height: 46px;
 }
 
+#right-panel ul li:active, 
+#right-panel ul li:focus {
+	outline: none;
+}
+
 #right-panel ul li img {
 	height: 25px;
 	width: 4%;
@@ -256,6 +260,11 @@ html, body {
 	float: left;
 	object-fit: contain;
 	object-position: center;
+}
+
+#right-panel ul li:active a, 
+#right-panel ul li:focus a {
+	background: #F5F5F5;
 }
 
 #right-panel ul li a {
@@ -274,7 +283,7 @@ html, body {
 	display: block;
 	background: #FFF;
 	padding-left: 0;
-	width: 94%;
+	width: 88%;
 	left: 6%;
 	min-height: inherit;
 }
@@ -285,7 +294,7 @@ html, body {
 }
 
 #right-panel ul li a.ui-icon-carat-r:after {
-	background-color: #FFF;
+	background-color: transparent;
 	background-image: url("../images/content/arrow_right.png");
 	background-position: center;
 	background-size: 10px;
@@ -295,13 +304,13 @@ html, body {
 #right-panel ul li.logout, 
 #right-panel ul li.terms-of-service {
 	position: absolute;
-	bottom: 0;
+	bottom: 15px;;
 	left: 27px;
-	right: 35px;
+	right: 0;
 }
 
 #right-panel ul li.terms-of-service {
-	bottom: 46px;
+	bottom: 61px;
 }
 
 #right-panel ul li.logout a, 
@@ -317,6 +326,9 @@ html, body {
 
 #right-panel.ui-panel {
 	width: 90%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 
 /* Panel */
