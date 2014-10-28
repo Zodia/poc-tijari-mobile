@@ -27,6 +27,7 @@ a#cs-cancel {
 	text-shadow: 0 0px 0 #eeeeee;
 	border-radius: 0px 0px 0px 5px;
 	background-color: white;
+	font-weight: normal;
 }
 
 a#cs-continue {
@@ -37,6 +38,7 @@ a#cs-continue {
 	text-shadow: 0 0px 0 #eeeeee;
 	border-radius: 0px 0px 5px;
 	background-color: white;
+	font-weight: normal;
 }
 
 .customer-details-list .attribute {
@@ -478,4 +480,11 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow
 	width: 1px;
 	border: none;
 	background: #ddd;
+}
+
+#button-div {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
 }
