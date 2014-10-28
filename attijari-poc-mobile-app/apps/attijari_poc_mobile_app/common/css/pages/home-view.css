@@ -29,13 +29,14 @@
 
 .paths tr td.path.advertisement {
 	width: 100%;
-	background-image: url(../../images/content/advertisement_1_home.png);
+ 	background-image: url(../../images/content/advertisement_1_home.png); 
+
 } 
 
 .paths tr td.path.mortgages {
 	width: 50%;
 	border-right: 1px solid #FFF;
-	background-image: url(../../images/content/mortgage_home.png);
+/*  	background-image: url(../../images/content/mortgage_home.png);  */
 } 
 
 .paths tr td.path.investments {
