@@ -3,14 +3,13 @@
  * accessed : mortgage-simulator or mortgage-terms.
  * 
  */
-sourcePage.title = "Home"; 	 
-sourcePage.url = "home-view.html"; 	
+sourcePage.title = "Home";
+sourcePage.url = "home-view.html";
 
-$(".left a").attr ("href", "../" + sourcePage.url);
-$(".left a .label").text (sourcePage.title);
+$(".left a").attr("href", "../" + sourcePage.url);
+$(".left a .label").text(sourcePage.title);
 
-
-//Title of page
+// Title of page
 $(".current-title").text("Ask an expert");
 
 /*
@@ -56,25 +55,36 @@ function dynamicExpertInfo(expertType) {
 function chatConversation() {
 	htmlText = $("#chatArea").html();
 
-	$("#chatArea")
-			.html(
-					htmlText
+	htmlText=	htmlText
 							+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
 							+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
-							+ '<div class="ui-block-b" style="width: 75%">'
-							+ document.getElementById("employeeChatTextInput").value
-							+ '</div>'
+							+ '<div class="ui-block-b" style="width: 75%">';
+	
+							//if ((document.getElementById("employeeChatTextInput").value).indexOf('.png'  || '.jpg' || '.gif')>0){
+							if ((document.getElementById("employeeChatTextInput").value).indexOf('.')>0){
+								htmlText= htmlText +'<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">'; 
+							}else{
+								htmlText= htmlText + document.getElementById("employeeChatTextInput").value;
+							}
+							htmlText= htmlText + '</div>'
 							+ '</div>'
 
 							+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 							+ '<div class="ui-block-a" style="width: 25%">'
-							//+ document.getElementById('chatExpertName').value
-							+'Shouhail Guennouni'
+							// + document.getElementById('chatExpertName').value
+							+ 'Shouhail Guennouni'
 							+ ':</div>'
-							+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
-							+ '</div>');
+							+ '<div class="ui-block-b" style="width: 75%">';
+							
+							if (htmlText.indexOf('Ali')< 0){	
+								htmlText= htmlText + 	'Ok';
+							}else{
+								htmlText= htmlText + 	'Ok, should we convert to this voice chat</div>';								}
+							htmlText= htmlText+ '</div>';
 
-	document.getElementById("employeeChatTextInput").value = "";
+							$("#chatArea").html(htmlText);
+							
+							document.getElementById("employeeChatTextInput").value = "";
 
 }
 
@@ -102,8 +112,9 @@ $('#employeeChatTextInput')
 
 												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 												+ '<div class="ui-block-a" style="width: 25%">'
-											//	+ document.getElementById('chatExpertName').value
-												+'Shouhail Guennouni'
+												// +
+												// document.getElementById('chatExpertName').value
+												+ 'Shouhail Guennouni'
 												+ ':</div>'
 												+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
 												+ '</div>');
@@ -111,6 +122,18 @@ $('#employeeChatTextInput')
 						document.getElementById("employeeChatTextInput").value = "";
 					}
 				});
+
+/*
+ * Browse File folder
+ */
+function openFile() {
+	$('input[type=file]').click();
+}
+
+$('#attachFile').change(function(click) {
+	$('#employeeChatTextInput').val(this.value);
+	//alert(document.getElementById('employeeChatTextInput').value());
+});
 
 // Invoking "Chat with expert" page
 /*
