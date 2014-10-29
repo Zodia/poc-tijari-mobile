@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	var options = {
 			$AutoPlay: "false",
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval: 10000,
             $Loop: 0,            
             $DragOrientation: 3, 
             $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
@@ -21,13 +21,31 @@ $( document ).ready(function() {
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
+	var options2 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 7000,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options3 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 4500,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options4 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 6500,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
 	
 
 		var jssor_slider1 = new $JssorSlider$("slideshow5", options);
-		var jssor_slider1 = new $JssorSlider$("slideshow6", options);
-		var jssor_slider1 = new $JssorSlider$("slideshow7", options);
-		var jssor_slider1 = new $JssorSlider$("slideshow8", options);
-		var jssor_slider1 = new $JssorSlider$("slideshow9", options);
+		var jssor_slider1 = new $JssorSlider$("slideshow6", options1);
+		var jssor_slider1 = new $JssorSlider$("slideshow7", options2);
+		var jssor_slider1 = new $JssorSlider$("slideshow8", options3);
+		var jssor_slider1 = new $JssorSlider$("slideshow9", options4);
 
 		
    
