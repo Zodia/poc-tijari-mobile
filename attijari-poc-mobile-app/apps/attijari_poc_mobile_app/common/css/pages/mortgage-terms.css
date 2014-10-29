@@ -198,3 +198,8 @@ div.image .bottom-title {
 
 }
 
+#popupDialog-popup{
+	width: 45%;
+	top: 435px;
+	left: 27.5%;
+}
