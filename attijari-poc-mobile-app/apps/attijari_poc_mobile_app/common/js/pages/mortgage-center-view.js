@@ -44,7 +44,7 @@ $(".applications").click(function() {
 
 $(".new-mortgage").on('click', function() {
 	confirmDialog("Choisir", function() {
-		loadPage("customer-view.html");
+		loadPage("swipe.html");
 	}, function() {
 		loadPage("customers-list-view.html");
 	});
