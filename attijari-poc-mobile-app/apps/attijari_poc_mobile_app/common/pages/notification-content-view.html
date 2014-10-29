@@ -1,6 +1,6 @@
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/pages/notification-content-view.css" />
+	<link rel="stylesheet" href="../css/pages/notification-content-view.css" />
    	
 	<div data-role="header" id="header" data-position="fixed">
 	
@@ -31,12 +31,16 @@
 			<div class="notifications-content-content">
 			
 				<div class="header-message">
-					<div class="thumbnail"></div>
-					<h2 class="title">Credit elligibility</h2>
-					<p class="date"><em>Received : 15 / 10 / 2014</em></p>
-					<p class="status">Approved</p>
+					<div class="thumbnail-wrapper">
+						<div class="thumbnail"></div>
+					</div>
+					<div class="header-text">
+						<h2 class="title">Credit elligibility</h2>
+						<p class="date"><em>Received : 15 / 10 / 2014</em></p>
+						<p class="status">Approved</p>
+					</div>
+					<button class="resend-rejected" disabled="disabled">Resend</button>
 				</div>
-				<button class="resend-rejected" disabled="disabled">Resend</button>
 				<p class="message-core">
 					We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it's not good 
 					We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it's not good
@@ -59,14 +63,13 @@
 					We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it's not good
 					We have recievede  uhdccd uhc cdyucd cduhcd ucdhcd cduhcd ucdcd ucd cuhcd ucdcd ucdbcd ubc ahlan you how are you doing it's not good
 				</p>
+				<div class="separator"></div>
 				<h3>Attachements</h3>
 				<div class="ui-grid-c attachements">
 					<p class="ui-block-a attachements-content">
-						<i class="fa fa-file-pdf-o"></i>
 						<span>Invoice</span>
 					</p>
 					<p class="ui-block-b attachements-content">
-						<i class="fa fa-file-image-o"></i>
 						<span>Scanned document</span>
 					</p>
 				</div>

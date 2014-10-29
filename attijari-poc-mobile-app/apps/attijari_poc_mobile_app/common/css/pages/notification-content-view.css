@@ -1,50 +1,92 @@
-.header-message {
-	width: 85%;
-	float: left;
-	margin-bottom: 30px;
+.notifications-content-content {
+	padding: 20px;
+	padding-top: 30px;
 }
 
-.header-message .thumbnail {
-	width: 75px;
-	height: 75px;
+.notifications-content-content .header-message {
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	position: relative;
+	height: 121px;
+}
+
+.header-message .thumbnail-wrapper {
+	width: 105px;
+	height: 105px;
+	border-radius: 150px;
+	border: 8px solid #ef5a49;
+	position: absolute;
+	left: 0;
+}
+
+.header-text {
+	position: absolute;
+	left: 140px;
+	right: 120px;
+}
+
+.header-message .thumbnail-wrapper .thumbnail {
+	width: 95px;
+	height: 95px;
+	margin: 0 auto;
+	margin-top: 5px;
 	border-radius: 100px;
 	background-position: center;
 	background-size: cover;
 	background-color: #000;
 	background-image: url("../../images/mehdi.jpg");
-	float: left;
-	margin-right: 15px;
 }
 
 .header-message .title {
 	float: left;
-	margin-top: 0px;
-	width: 700px;
-	margin-bottom: 0px;
+	margin-top: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+	font-weight: normal;
 }
 
 .header-message .date {
 	float: left;
 	margin-top: 0;
 	margin-bottom: 0;
-	width: 700px;
+	width: 100%;
 	font-size: 13px;
 }
 
 .header-message .status {
 	float: left;
-	margin-top: 0;
+	margin-top: 10px;
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: bold;
-	width: 700px;
+	width: 100%;
 }
 
 .notifications-content-content .resend-rejected {
 	width: 14%;
 	display: inline-block;
 	float: right;
-	background: #FF0000;
+	border: 1px solid #ef5a49;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: normal;
+	background: #FFF;
+	text-shadow: none;
+	position: absolute;
+	color: #ef5a49;
+	right: 0;
+	top: 20px;
+}
+
+.notifications-content-content .resend-rejected:hover,
+.notifications-content-content .resend-rejected:active
+.notifications-content-content .resend-rejected:focus {
+	border: 1px solid #ef5a49;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: normal;
+	background: #ef5a49;
 	text-shadow: none;
 	color: #FFF;
 }
@@ -54,12 +96,25 @@
 	margin-top: 0;
 	width: 100%;
 	text-align: justify;
+	position: relative;
+}
+
+.separator {
+	float: left;
+	width: 5%;
+	margin-left: 47.5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ef5a49;
 }
 
 h3 {
 	float: left;
+	font-size: 25px;
+	font-weight: normal;
 	width: 100%;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 .attachements {
@@ -70,10 +125,18 @@ h3 {
 }
 
 .attachements .attachements-content {
-	border: 1px solid #000;
-	border-radius: 5px;
+	border: 1px solid #ef5a49;
+	border-radius: 0;
 	padding: 15px;
+	color: #ef5a49;
 	text-align: center;
+}
+
+.attachements .attachements-content:hover,
+.attachements .attachements-content:active, 
+.attachements .attachements-content:focus {
+	color: #FFF;
+	background-color: #ef5a49;
 }
 
 .attachements .attachements-content:first-child {
