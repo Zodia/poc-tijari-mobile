@@ -182,6 +182,7 @@ div.image .bottom-title-effect {
 	margin: 0;
 	height: 45px;
 	background-color: #5e5e5e;	
+	opacity:0.5;
 }
 
 div.image .bottom-title {
@@ -190,7 +191,7 @@ div.image .bottom-title {
 	left: 0; 
 	right: 0;
 	margin: 0;
-	text-align: center;
+	text-align: right;
 	color: #FFF;
 	padding: 5px;
 	font-size: 25px;
