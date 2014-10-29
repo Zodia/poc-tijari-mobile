@@ -55,36 +55,39 @@ function dynamicExpertInfo(expertType) {
 function chatConversation() {
 	htmlText = $("#chatArea").html();
 
-	htmlText=	htmlText
-							+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
-							+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
-							+ '<div class="ui-block-b" style="width: 75%">';
-	
-							//if ((document.getElementById("employeeChatTextInput").value).indexOf('.png'  || '.jpg' || '.gif')>0){
-							if ((document.getElementById("employeeChatTextInput").value).indexOf('.')>0){
-								htmlText= htmlText +'<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">'; 
-							}else{
-								htmlText= htmlText + document.getElementById("employeeChatTextInput").value;
-							}
-							htmlText= htmlText + '</div>'
-							+ '</div>'
+	htmlText = htmlText
+			+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
+			+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
+			+ '<div class="ui-block-b" style="width: 75%">';
 
-							+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
-							+ '<div class="ui-block-a" style="width: 25%">'
-							// + document.getElementById('chatExpertName').value
-							+ 'Shouhail Guennouni'
-							+ ':</div>'
-							+ '<div class="ui-block-b" style="width: 75%">';
-							
-							if (htmlText.indexOf('Ali')< 0){	
-								htmlText= htmlText + 	'Ok';
-							}else{
-								htmlText= htmlText + 	'Ok, should we convert to this voice chat</div>';								}
-							htmlText= htmlText+ '</div>';
+	// if
+	// ((document.getElementById("employeeChatTextInput").value).indexOf('.png'
+	// || '.jpg' || '.gif')>0){
+	if ((document.getElementById("employeeChatTextInput").value).indexOf('.') > 0) {
+		htmlText = htmlText
+				+ '<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">';
+	} else {
+		htmlText = htmlText
+				+ document.getElementById("employeeChatTextInput").value;
+	}
+	htmlText = htmlText + '</div>' + '</div>'
 
-							$("#chatArea").html(htmlText);
-							
-							document.getElementById("employeeChatTextInput").value = "";
+	+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
+			+ '<div class="ui-block-a" style="width: 25%">'
+			// + document.getElementById('chatExpertName').value
+			+ 'Shouhail Guennouni' + ':</div>'
+			+ '<div class="ui-block-b" style="width: 75%">';
+
+	if (htmlText.indexOf('Ali') < 0) {
+		htmlText = htmlText + 'Ok';
+	} else {
+		htmlText = htmlText + 'Ok, should we convert to this voice chat</div>';
+	}
+	htmlText = htmlText + '</div>';
+
+	$("#chatArea").html(htmlText);
+
+	document.getElementById("employeeChatTextInput").value = "";
 
 }
 
@@ -99,36 +102,45 @@ $('#employeeChatTextInput')
 					if (event.keyCode == 13) {
 						htmlText = $("#chatArea").html();
 
-						htmlText=	htmlText
-												+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
-												+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
-												+ '<div class="ui-block-b" style="width: 75%">';
-						
-												//if ((document.getElementById("employeeChatTextInput").value).indexOf('.png'  || '.jpg' || '.gif')>0){
-												if ((document.getElementById("employeeChatTextInput").value).indexOf('.')>0){
-													htmlText= htmlText +'<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">'; 
-												}else{
-													htmlText= htmlText + document.getElementById("employeeChatTextInput").value;
-												}
-												htmlText= htmlText + '</div>'
-												+ '</div>'
+						htmlText = htmlText
+								+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
+								+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
+								+ '<div class="ui-block-b" style="width: 75%">';
 
-												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
-												+ '<div class="ui-block-a" style="width: 25%">'
-												// + document.getElementById('chatExpertName').value
-												+ 'Shouhail Guennouni'
-												+ ':</div>'
-												+ '<div class="ui-block-b" style="width: 75%">';
-												
-												if (htmlText.indexOf('Ali')< 0){	
-													htmlText= htmlText + 	'Ok';
-												}else{
-													htmlText= htmlText + 	'Ok, should we convert to this voice chat</div>';								}
-												htmlText= htmlText+ '</div>';
+						// if
+						// ((document.getElementById("employeeChatTextInput").value).indexOf('.png'
+						// || '.jpg' || '.gif')>0){
+						if ((document.getElementById("employeeChatTextInput").value)
+								.indexOf('.') > 0) {
+							htmlText = htmlText
+									+ '<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">';
+						} else {
+							htmlText = htmlText
+									+ document
+											.getElementById("employeeChatTextInput").value;
+						}
+						htmlText = htmlText
+								+ '</div>'
+								+ '</div>'
 
-												$("#chatArea").html(htmlText);
-												
-												document.getElementById("employeeChatTextInput").value = "";
+								+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
+								+ '<div class="ui-block-a" style="width: 25%">'
+								// +
+								// document.getElementById('chatExpertName').value
+								+ 'Shouhail Guennouni' + ':</div>'
+								+ '<div class="ui-block-b" style="width: 75%">';
+
+						if (htmlText.indexOf('Ali') < 0) {
+							htmlText = htmlText + 'Ok';
+						} else {
+							htmlText = htmlText
+									+ 'Ok, should we convert to this voice chat</div>';
+						}
+						htmlText = htmlText + '</div>';
+
+						$("#chatArea").html(htmlText);
+
+						document.getElementById("employeeChatTextInput").value = "";
 					}
 				});
 
@@ -141,27 +153,57 @@ function openFile() {
 
 $('#attachFile').change(function(click) {
 	$('#employeeChatTextInput').val(this.value);
-	//alert(document.getElementById('employeeChatTextInput').value());
+	// alert(document.getElementById('employeeChatTextInput').value());
 });
 
-
-/* Display Video section for 
- * Chatting F2F
+/*
+ * Display Video section for Chatting F2F
  */
-function openVedio(){
-	$("#chatVideoSection").show();
-	//document.getElementById('chatArea').style.height=280px;
-	document.getElementById('chatArea').setAttribute("style","height:290px;overflow: scroll;background-color: #FFFFFF;");
+function openVideoWithChat() {
+	$("#chatVideoSectionBig").hide();
+	$("#chatVideoSectionSmall").show();
+	document.getElementById("chatArea").setAttribute("style",
+			"height:290px;overflow: scroll;background-color: #FFFFFF;");
+	/*
+	 * document.getElementById("chatVideoSection").setAttribute("style","margin-left:200px");
+	 * document.getElementById("videoPlayer").setAttribute("width","320");
+	 * document.getElementById("videoPlayer").setAttribute("height","240");
+	 * $("#msgChatImage").show();
+	 */
+	$("#liveChat").show();
+	$("#chatArea").show();
+	$("#enterChatTextAndSendBtnSection").show();
+	$("#footterAudioVedioBtnSection").show();
 };
 
-/* Close chat video 
+/*
+ * Close chat video
  */
-function closeVideo(){
-	$("#chatVideoSection").hide();
-	//document.getElementById('chatArea').style.height=535px;
-	document.getElementById('chatArea').setAttribute("style","height:535px;overflow: scroll;background-color: #FFFFFF;");
+function closeVideo() {
+	 $("#chatVideoSectionBig").hide();
+	 $("#chatVideoSectionSmall").hide();
+	 $("#liveChat").show();
+	 $("#chatArea").show();
+	 document.getElementById('chatArea').setAttribute("style","height:535px;overflow: scroll;background-color: #FFFFFF;");
+	 $("#enterChatTextAndSendBtnSection").show();
+	$("#footterAudioVedioBtnSection").show();
 };
 
+/*
+ * Display Video section for Chatting F2F
+ */
+function openVedio() {
+	$("#chatVideoSectionSmall").hide();
+	$("#chatVideoSectionBig").show();
+	$("#liveChat").hide();
+	$("#chatArea").hide();
+	$("#enterChatTextAndSendBtnSection").hide();
+	$("#footterAudioVedioBtnSection").hide();
+
+	// document.getElementById('chatArea').style.height=280px;
+	// document.getElementById('chatArea').setAttribute("style","height:290px;overflow:
+	// scroll;background-color: #FFFFFF;");
+};
 
 // Invoking "Chat with expert" page
 /*

@@ -95,7 +95,7 @@
     height: 40px;
 }
 
-a#audioChat {
+a#audioChatBtn {
 	margin: 0;
 	border-color: #DF4B20;
 	color: #BD2020;
@@ -103,7 +103,7 @@ a#audioChat {
 	border-radius: 0px 0px 0px 5px;
 }
 
-a#videoChat {
+a#videoChatBtn {
 	margin: 0;
 	border-color: #DF4B20;
 	border-width: 1px 1px 1px 0;
