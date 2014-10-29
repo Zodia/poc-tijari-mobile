@@ -99,27 +99,36 @@ $('#employeeChatTextInput')
 					if (event.keyCode == 13) {
 						htmlText = $("#chatArea").html();
 
-						$("#chatArea")
-								.html(
-										htmlText
+						htmlText=	htmlText
 												+ '<div class="ui-grid-a" style="color: #000000; margin-left: 15px;">'
 												+ '<div class="ui-block-a" style="width: 25%">Ali Abbas:</div>'
-												+ '<div class="ui-block-b" style="width: 75%">'
-												+ document
-														.getElementById("employeeChatTextInput").value
-												+ '</div>'
+												+ '<div class="ui-block-b" style="width: 75%">';
+						
+												//if ((document.getElementById("employeeChatTextInput").value).indexOf('.png'  || '.jpg' || '.gif')>0){
+												if ((document.getElementById("employeeChatTextInput").value).indexOf('.')>0){
+													htmlText= htmlText +'<img src="../../images/pages/ask_expert/expert_view/sampleMortgageForm.png">'; 
+												}else{
+													htmlText= htmlText + document.getElementById("employeeChatTextInput").value;
+												}
+												htmlText= htmlText + '</div>'
 												+ '</div>'
 
 												+ '<div class="ui-grid-a" style="color: #B22222; margin-left: 15px;">'
 												+ '<div class="ui-block-a" style="width: 25%">'
-												// +
-												// document.getElementById('chatExpertName').value
+												// + document.getElementById('chatExpertName').value
 												+ 'Shouhail Guennouni'
 												+ ':</div>'
-												+ '<div class="ui-block-b" style="width: 75%"> Ok, should we convert to this voice chat</div>'
-												+ '</div>');
+												+ '<div class="ui-block-b" style="width: 75%">';
+												
+												if (htmlText.indexOf('Ali')< 0){	
+													htmlText= htmlText + 	'Ok';
+												}else{
+													htmlText= htmlText + 	'Ok, should we convert to this voice chat</div>';								}
+												htmlText= htmlText+ '</div>';
 
-						document.getElementById("employeeChatTextInput").value = "";
+												$("#chatArea").html(htmlText);
+												
+												document.getElementById("employeeChatTextInput").value = "";
 					}
 				});
 
@@ -140,14 +149,18 @@ $('#attachFile').change(function(click) {
  * Chatting F2F
  */
 function openVedio(){
-	$("#chatVideo").show();
-}
+	$("#chatVideoSection").show();
+	//document.getElementById('chatArea').style.height=280px;
+	document.getElementById('chatArea').setAttribute("style","height:290px;overflow: scroll;background-color: #FFFFFF;");
+};
 
-/* Close F2F Video 
+/* Close chat video 
  */
 function closeVideo(){
-	$("#chatVideo").hide();
-}
+	$("#chatVideoSection").hide();
+	//document.getElementById('chatArea').style.height=535px;
+	document.getElementById('chatArea').setAttribute("style","height:535px;overflow: scroll;background-color: #FFFFFF;");
+};
 
 
 // Invoking "Chat with expert" page
