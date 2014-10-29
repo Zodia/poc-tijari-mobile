@@ -18,14 +18,41 @@ $("#existingapp").click(function() {
 
 $( document ).ready(function() {
 	var options = {
+			$AutoPlay: "false",
+			$AutoPlayInterval: 100000,
+            $Loop: 0,            
+            $DragOrientation: 3,                               
+        };
+	var options1 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
 			$AutoPlayInterval: 2000,
-            $AutoPlay: false,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options2 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 3000,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options3 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 5000,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options4 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 9000,
+            $AutoPlay: true,
             $DragOrientation: 3,                               
         };
 
 		var jssor_slider1 = new $JssorSlider$("slideshow", options);
-		var jssor_slider2 = new $JssorSlider$("slideshow1", options);
+		var jssor_slider2 = new $JssorSlider$("slideshow1", options1);
+		var jssor_slider3 = new $JssorSlider$("slideshow2", options2);
+		var jssor_slider4 = new $JssorSlider$("slideshow3", options3);
+		var jssor_slider5 = new $JssorSlider$("slideshow4", options4);
 		
    
         jssor_slider1.$Play();
@@ -33,34 +60,7 @@ $( document ).ready(function() {
 	
 });
 
-/*
- * starting  the slide  effect
- * */
-$("#one").hide();
-$("#two").hide();
-$("#tree").hide();
-var i=0;
-$("#slider").on ("click", function () {
-	//$("#two").show("slide", { direction: "right" }, 1200);
-	//$( "#slider" ).hide();
-	//$( "#slider" ).html( $("#two").html());
-	if(i==0){
-		$( "#slider" ).html( $("#one").html());
-		//$("#one").show("slide", { direction: "left" }, 3000);
-	i=i+1;
-	return -1;
-	}
-	if(i==1){
-		$( "#slider" ).html( $("#two").html());
-		i=i+1;
-		return -1; 
-		}
-	if(i==3){
-		$( "#slider" ).html( $("#tree").html());
-		i=0;
-		return -1;
-		}
-});
+
 
 
 $(".mortgages").click(function() {

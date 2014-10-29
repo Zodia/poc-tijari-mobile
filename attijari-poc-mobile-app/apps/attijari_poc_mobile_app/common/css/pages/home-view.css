@@ -42,13 +42,13 @@
 .paths tr td.path.investments {
 	width: 50%;
 	border-left: 1px solid #FFF;
- 	background-image: url(../../images/content/investments_home.jpg); 
+/*  	background-image: url(../../images/content/investments_home.jpg);  */
 } 
 
 .paths tr td.path.autoloans {
 	width: 50%;
 	border-right: 1px solid #FFF;
- 	background-image: url(../../images/content/auto_loans_home.jpg); 
+/*  	background-image: url(../../images/content/auto_loans_home.jpg);  */
 } 
 
 .paths tr td.path.insurances {
