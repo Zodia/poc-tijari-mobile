@@ -30,31 +30,31 @@
 .paths tr td.path.advertisement {
 	width: 100%;
 	height: 434px;
-	background-image: url(../../images/content/advertisement_1_home.jpg);
+	/* background-image: url(../../images/content/advertisement_1_home.jpg); */
 } 
 
 .paths tr td.path.mortgages {
 	width: 50%;
 	border-right: 1px solid #FFF;
- 	background-image: url(../../images/content/mortgage_home.jpg);
+/*  	background-image: url(../../images/content/mortgage_home.jpg); */
 } 
 
 .paths tr td.path.investments {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/investments_home.jpg);
+ 	background-image: url(../../images/content/investments_home.jpg); 
 } 
 
 .paths tr td.path.autoloans {
 	width: 50%;
 	border-right: 1px solid #FFF;
-	background-image: url(../../images/content/auto_loans_home.jpg);
+ 	background-image: url(../../images/content/auto_loans_home.jpg); 
 } 
 
 .paths tr td.path.insurances {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	background-image: url(../../images/content/insurance_home.jpg);
+ 	background-image: url(../../images/content/insurance_home.jpg); 
 } 
 
 .paths tr.spacer {
