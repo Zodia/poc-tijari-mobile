@@ -11,8 +11,9 @@ ul.customer-details-list {
 	margin: 0px;
 }
 
-#pageContent{
+#pageContent1{
 	background-color: white;
+	height: 95%;
 }
 #customers-list{
 	border:none;

@@ -1,0 +1,760 @@
+<div data-role="page" id="page">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/pages/customer-view.css">
+	<link rel="stylesheet" href="../css/pages/property-view.css">
+	<link rel="stylesheet" href="../css/pages/mortgage-terms.css">
+	<script type="text/javascript" src="../js/pages/swipe.js"></script>
+
+	<div data-role="header" id="header" data-position="fixed">
+	
+		<div class="right">
+			<a class="menu-display" href="#right-panel"> <img alt="mmenu"
+				src="../images/header/drawer_menu_header_button.png" />
+			</a> <a class="top-notifications"> <img alt="top-notifications"
+				src="../images/header/top_notification_button.png" />
+			</a>
+		</div>
+		<div class="left">
+			<a href="#" data-rel="back"> <img alt="back"
+				src="../images/header/back_arrow.png" /> <span class="back">Search</span>
+			</a>
+		</div>
+
+
+		<!--<div class="center with-logo"></div>-->
+		<div class="center">
+			<p class="current-title">Informations du client</p>
+		</div>
+	</div>
+	
+	<div data-role="content" id="pageContent">
+		<div id="slideshow" style="position: absolute; left: 0px; top: 0px; height : 838px ; width : 746px;">
+			<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; height : 838px ; width : 746px;
+	            overflow: hidden;">
+	            <div><div data-role="content" id="pageContent1">
+					<div class="customer-view-content" data-type="vertical" style="overflow: inherit;">
+						<div class="customer-image-out-border">
+							<div class="customer-image"></div>
+							<div id="camera-icon"></div>
+						</div>
+						<form data-role="tabs" action="" method="post" id="customer-form">
+							<ul data-role="listview" data-inset="true"
+								class="customer-details-list" id="customers-list">
+			
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb"></div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">First Name</span> <span
+												class="attribute-value"> <input name="First_name"
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb"></div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Last Name</span> <span
+												class="attribute-value"> <input name="Last_name"
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+			
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/date.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Date of Birth</span> <span
+												class="attribute-value"> <input name="dob"
+												data-wrapper-class="ui-custom" type="date" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/address.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Street Address</span> <span
+												class="attribute-value"> <input
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/building.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">City</span> <span
+												class="attribute-value"> <input
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/flag.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Country</span> <span
+												class="attribute-value"> <input name="Nationality"
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+			
+			
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/languages.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Primary Language</span> <select
+												data-role="none" class="select-informations" name="language"
+												id="select-native-1">
+												<option value="0">Arabic</option>
+												<option value="1">French</option>
+												<option value="2">English</option>
+											</select>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/phone.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Primary Phone</span> <span
+												class="attribute-value"> <input name="Mobile"
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/envelop.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Email Address</span> <span
+												class="attribute-value"> <input name="Email"
+												data-wrapper-class="ui-custom" type="email" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/radar.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Preferred Communication
+												Method</span> <span class="attribute-value"> <select
+												data-role="none" class="select-informations" name="comm"
+												id="select-native-1">
+													<option value="1">Email</option>
+													<option value="2">Telephone</option>
+											</select>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/checking.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Checking Account #</span> <span
+												class="attribute-value"> <input
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/saving_account_number.png"
+											class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Savings Account #</span> <span
+												class="attribute-value"> <input
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/amount.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Monghly Salary(MAD)</span> <span
+												class="attribute-value"> <input name="Monthly_income"
+												data-wrapper-class="ui-custom" type="number" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/gift.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Other Income</span> <span
+												class="attribute-value"> <input
+												data-wrapper-class="ui-custom" type="text" class="rightText" />
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/camera_gray.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Customer ID Documents</span> <span
+												class="attribute-value"> <img
+												onclick="openFileOption('file1');return;"
+												src="../images/content/img_preview.png" class="thumb-icon">
+												<input type="file" id="file1" style="display: none"
+												data-role="none">
+			
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+								<li class="ui-field-contain">
+									<div class="ui-li-thumb thumb">
+										<img src="../images/content/camera_gray.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Recent Paycheck</span> <span
+												class="attribute-value"> <img
+												onclick="openFileOption('file2');return;"
+												src="../images/content/img_preview.png" class="thumb-icon">
+												<input type="file" id="file2" style="display: none"
+												data-role="none">
+			
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+			
+								</li>
+			
+			
+							</ul>
+			
+			
+			
+			
+							<!-- 	<a href="#" data-role="button" data-inline="true"  id="cancel">Cancel </a> -->
+							<!-- 	<a href="#" data-role="button" data-inline="true" id="continue">Continue</a> -->
+			
+							<div class="ui-grid-a ui-responsive" id="button-div">
+								<div class="ui-block-a">
+									<a id="cs-cancel" href="mortgage-center-view.html"
+										class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Cancel</a>
+								</div>
+								<div class="ui-block-b">
+									<a id="cs-continue" href="property-view.html"
+										class="ui-btn ui-shadow " data-transition="slide">Continue</a>
+								</div>
+							</div>
+						</form>
+					</div>
+	            </div></div>
+	            <div><div data-role="content" id="pageContent2">
+					<form data-role="tabs" action="" method="post" id="property_form">
+						<ul data-role="listview" data-inset="true" class="property-details-list">
+							<li class="ui-field-contain">
+								<div class="thumb">
+									<img src="../images/content/address.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Adresse</span> 
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value=""/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+				
+							</li>
+							<li class="ui-field-contain">
+								<div class="thumb">
+									<img src="../images/content/house_new.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Nouveau/Existant/Pas de Structure</span>
+										<span class="attribute-value">
+											<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
+												<option value="New">Nouveau</option>
+												<option value="Existing">Existant</option>
+												<option value="NoStruct">Pas de Structure</option>
+											</select>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+				
+							</li>
+							<li class="ui-field-contain">
+								<div class="thumb">
+									<img src="../images/content/house.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Residentiel/Commercial</span>
+										<span class="attribute-value">
+				    						<select data-role="none" class="select-informations" name="usage" id="select-native-1">
+												<option value="personal">Residentiel</option>
+												<option value="commercial">Commercial</option>
+											</select>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+				
+							</li>
+							<li class="ui-field-contain">
+								<div class="thumb">
+									<img src="../images/content/building.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Type d'immeuble</span> 
+										<span class="attribute-value">
+											<select data-role="none" class="select-informations" name="rooms" id="select-native-1">
+												<option value="studio">Studio</option>
+												<option value="1">1 BR Appartement</option>
+												<option value="2">2 BRAppartement</option>
+												<option value="3">3 BR Appartement</option>
+												<option value="4">4 BR Appartement</option>
+												<option value=">4">>4 BR Appartement</option>
+											</select>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/house_star.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Résidence primaire</span> 
+										<span class="attribute-value">
+											<select data-role="none" class="select-informations" name="Primary" id="select-native-1">
+												<option value="Yes">Oui</option>
+												<option value="No">Non</option>
+											</select>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/land_area.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Surface de terre</span> 
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value="N/A"/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/construction.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Surface de construction/logement</span> 
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="liveableArea" id="name" value=""/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+				
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/contractor.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Entrepreneurs en construction</span> 
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="contractors" id="name" value="N/A"/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/amount.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Estimation de construction (MAD)</span>
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="constructionSum" id="name" value="N/A"/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/estimate.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Estimation de propriété (MAD)</span>
+										<span class="attribute-value">
+											<input class="rightText" data-wrapper-class="ui-custom" type="text" name="evaluationSum" id="name" value=""/>
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-thumb thumb">
+									<img src="../images/content/camera_gray.png" class="thumb-icon"></img>
+								</div>
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Document de registration</span>
+										<span class="attribute-value">
+											
+											<img onclick="openFileOption();return;" src="../images/content/img_preview.png" class="thumb-icon">
+											<input type="file" id="file1" style="display:none" data-role="none">
+											
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+						</ul>
+						<div class="ui-grid-a ui-responsive" id="button-div">
+				    		<div class="ui-block-a"><a id="back" href="customer-view.html" class="ui-btn ui-shadow" data-transition="slide" data-direction="reverse">Retour</a></div>
+				    		<div class="ui-block-b"><a id="continue" href="mortgage-terms.html" class="ui-btn ui-shadow" data-transition="slide">Suivant</a></div>
+				    	</div>
+					</form>
+				</div></div>
+	            <div><div data-role="content" id="pageContent3">
+					<div class="mortgage-view-content" data-type="vertical">
+						<div class="image">
+							<div class="bottom-title-effect"></div>
+							<p class="bottom-title">Contacter un expert</p>
+						</div>
+						<form data-role="tabs" action="" method="post" id="mortgage-terms-form">
+							<ul data-role="listview" data-inset="true" class="mortgage-terms-list">
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/terms.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Durée du prêt</span>
+											<span class="attribute-value">
+												<select data-role="none" class="select-informations" name="mortgage_term" id="select-native-1" onchange=loan()>
+													<option value="0">5ans</option>
+													<option value="1">10ans</option>
+													<option value="2">15ans</option>
+													<option value="3">20ans</option>
+													<option value="4">25ans</option>
+													<option value="5">30ans</option>
+													<option value="6">35ans</option>
+													<option value="7">40ans</option>
+												</select>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/percent.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Taux d'intérêt</span>
+											<span class="attribute-value">
+												<select data-role="none" class="select-informations" name="interesType" id="select-native-2" onchange=loan()>
+													<option value="0"> 1%</option>
+													<option value="1"> 2%</option>
+													<option value="2"> 3%</option>
+													<option value="3"> 4%</option>
+													<option value="4"> 5%</option>
+													<option value="5"> 6%</option>
+													<option value="6"> 7%</option>
+													<option value="7"> 8%</option>
+													<option value="8"> 9%</option>
+													<option value="9"> 10%</option>
+												</select>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/amount.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Montant du prêt</span>
+											<span class="attribute-value">
+												<input class="rightText" data-wrapper-class="ui-custom" type="number" name="loanAmount" id="name" onkeyup="loan()"/>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/pay_off_date.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Date d'origine</span>
+											<span class="attribute-value">
+												<input data-wrapper-class="ui-custom" type="text" name="orgDate" class="rightText" readonly/>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/pay_off_date.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Echéance</span>
+											<span class="attribute-value">
+												<input data-wrapper-class="ui-custom" type="text" name="payOffDate" class="rightText" readonly/>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+								<li class="ui-field-contain">
+									<div class="thumb">
+										<img src="../images/content/amount.png" class="thumb-icon"></img>
+									</div>
+									<div class="ui-li-text attribute">
+										<p>
+											<span class="attribute-label">Mensualité</span>
+											<span class="attribute-value">
+												<input class="rightText" data-wrapper-class="ui-custom" type="text" name="monthlyPay" id="name" readonly/>
+											</span>
+										</p>
+									</div>
+									<div class="ui-li-thumb thumb-info">
+										<img src="../images/content/info.png" class="thumb-icon"></img>
+									</div>
+								</li>
+							</ul>
+							<div class="ui-grid-a ui-responsive" id="button-div">
+				    			<div class="ui-block-a"><a id="back" href="property-view.html" class="ui-btn ui-shadow">Retour</a></div>
+				    			<div class="ui-block-b"><a id="submit" href="#" class="ui-btn ui-shadow">Envoyer le dossier</a></div>
+				    		</div>
+						</form>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div data-role="footer" id="footer" data-position="fixed"
+		data-id="footer">
+		<a id="homeAction" class="footer-action" data-role="none"> <img
+			alt="back" src="../images/footer/home.png" /> <span class="label">Home</span>
+		</a> <a id="notificationsAction" class="footer-action" data-role="none">
+			<img alt="back" s870pxrc="../images/footer/notifications.png" /> <span
+			class="label">Inbox</span>
+		</a> <a id="settingsAction" class="footer-action right" data-role="none">
+			<img alt="back" src="../images/footer/settings.png" /> <span
+			class="label">Settings</span>
+		</a>
+
+		<div id="center" class="with-logo"></div>
+	</div>
+
+
+	<div data-role="panel" id="right-panel" data-display="push"
+		data-position="right"
+		class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+			<p class="employee-name">Welcome, Ali</p>
+			<ul data-role="listview" data-inset="true">
+				<li><img src="../images/content/home_filled.png" /> <a
+					href="home-view.html" data-rel="close">Home</a></li>
+				<li><img src="../images/content/settings_filled.png" /> <a
+					href="#" data-rel="close">Settings</a></li>
+				<li><img src="../images/content/notifications_filled.png" /> <a
+					href="notifications-view.html" data-rel="close">Notifications</a></li>
+				<li><img src="../images/content/recent_activity.png" /> <a
+					href="#" data-rel="close">Recent Activity</a></li>
+				<li><img src="../images/content/news.png" /> <a href="#"
+					data-rel="close">News, Events & Projects</a></li>
+				<li><img src="../images/content/mortgage.png" /> <a
+					href="mortgage-simulator-view.html" data-rel="close">Mortgage
+						Center</a></li>
+				<li><img src="../images/content/amount.png" /> <a href="#"
+					data-rel="close">Investment Center</a></li>
+				<li><img src="../images/content/auto_loan.png" /> <a href="#"
+					data-rel="close">Auto Loans Center</a></li>
+				<li><img src="../images/content/insurance_center.png" /> <a
+					href="ask_expert/expert-view.html" data-rel="close">Insurance
+						Center</a></li>
+				<li><img src="../images/content/help.png" /> <a
+					href="help-center-view.html" data-rel="close">Help Center</a></li>
+				<li class="terms-of-service"><a href="#" data-rel="close">Terms
+						Of Service</a></li>
+				<li class="logout"><a href="#" data-rel="close">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/libs/jssor.js"></script>
+    <script type="text/javascript" src="../js/libs/jssor.slider.js"></script>
+	<script type="text/javascript" src="../js/pages/customer-view.js"></script>
+	<script type="text/javascript" src="../js/pages/property-view.js"></script>
+	<script type="text/javascript" src="../js/pages/mortgage-terms.js"></script>
+
+
+
+</div>

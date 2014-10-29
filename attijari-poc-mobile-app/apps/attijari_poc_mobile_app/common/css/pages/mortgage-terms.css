@@ -8,8 +8,9 @@
 	height: 40%;
 }
 
-#pageContent {
+#pageContent3 {
 	background-color: white;
+	height: 95%;
 }
 
 .mortgage-terms-list {
@@ -46,6 +47,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	height :51%;
 }
 
 input.rightText {
