@@ -67,18 +67,35 @@
 			</div>
 			<!-- ------------------------End: Expert Detail section------------------------  ------------>
 			<!-- ------------------------Start: Video section------------------------  ------------>
-			<div id="chatVideoSection" style="display:none; margin-left:200px;" onClick="closeVideo()">
-				<video width="320" height="240" controls autoplay  
+			<!-- This div will get display when agent want to do only video chat -->
+			<div id="chatVideoSectionBig"
+				style="display: none; margin-left: 10px;margin-top: 10px;">
+			<div onClick="closeVideo()">
+				<hr size="5" style="background-color: #CC3300">
+				<video width="720px" height="620px" controls autoplay
 					src="../../images/pages/ask_expert/expert_view/videoChatwithExpert2.MOV"
-					poster="../../images/pages/ask_expert/expert_view/video-error-screen.png">				
+					poster="../../images/pages/ask_expert/expert_view/video-error-screen.png">
 				</video>
-				<!-- src="http://www.youtube.com/watch?v=Af6mqcKirzM" -->
+				</div>
+				<a><img
+					src="../../images/pages/ask_expert/expert_view/lineAndChatImage.png"
+					onClick="openVideoWithChat()"></img></a>
+				<!-- <hr size="5" style="background-color:#CC3300"> -->
 			</div>
-
-			<!-- ------------------------End: Video section ------------------------  ------------>
 			
-		    <!-- ------------------------Start: Live chat bar section ------------------------  -->
-			<div data-role="header" class="ui-bar"
+
+			<!-- This div will get display when agent want to do video + Text chat -->
+			<div id="chatVideoSectionSmall"
+				style="display: none; margin-left: 200px;" onClick="closeVideo()">
+				<video width="320px" height="240px" controls autoplay
+					src="../../images/pages/ask_expert/expert_view/videoChatwithExpert2.MOV"
+					poster="../../images/pages/ask_expert/expert_view/video-error-screen.png">
+				</video>
+			</div>
+			<!-- ------------------------End: Video section ------------------------  ------------>
+
+			<!-- ------------------------Start: Live chat bar section ------------------------  -->
+			<div id="liveChat" data-role="header" class="ui-bar"
 				style="background-color: #FF9933;">Live Chat</div>
 			<!-- ------------------------End: Live chat bar section ------------------------  -->
 
@@ -96,7 +113,7 @@
 			</div>
 			<!-- ------------------------End: Chat area section ------------------------  -->
 
-			<div class="ui-grid-a">
+			<div class="ui-grid-a" id="enterChatTextAndSendBtnSection">
 				<div class="ui-block-a" style="width: 15%">
 					<img class="logoRed"
 						src="../../images/pages/ask_expert/expert_view/logo-red.png">
@@ -106,11 +123,9 @@
 						data-clear-btn="true" />
 				</div>
 				<div class="ui-block-c" style="width: 15%">
-					<img
-						style="align: center; margin-top: 10px; margin-left: 5px"
+					<img style="align: center; margin-top: 10px; margin-left: 5px"
 						src="../../images/pages/ask_expert/expert_view/btn-send50.png"
-						onClick="chatConversation()"> 
-					<img style="margin-top: 10px;"
+						onClick="chatConversation()"> <img style="margin-top: 10px;"
 						src="../../images/pages/ask_expert/expert_view/icon-attachment-red.png"
 						onClick="openFile()">
 					<div style="visibility: hidden; width: 1px; height: 1px;">
@@ -121,16 +136,16 @@
 			</div>
 
 			<!-- ------------------------Start: Audio-Chat & Video-Chat link section-----------------------  -->
-			<div class="ui-grid-a ui-responsive">
+			<div class="ui-grid-a ui-responsive" id="footterAudioVedioBtnSection">
 				<div id="audioChat" class="ui-block-a">
-					<a id="audioChatBtn" href="#" class="ui-btn ui-shadow"> Audio Chat
-						<img
+					<a id="audioChatBtn" href="#" class="ui-btn ui-shadow"> Audio
+						Chat <img
 						src="../../images/pages/ask_expert/expert_view/icon-audio.png">
 					</a>
 				</div>
 				<div id="videoChat" class="ui-block-b" onClick="openVedio()">
-					<a id="videoChatBtn" href="#" class="ui-btn ui-shadow"> Video Chat
-						<img
+					<a id="videoChatBtn" href="#" class="ui-btn ui-shadow"> Video
+						Chat <img
 						src="../../images/pages/ask_expert/expert_view/icon-video.png">
 					</a>
 				</div>

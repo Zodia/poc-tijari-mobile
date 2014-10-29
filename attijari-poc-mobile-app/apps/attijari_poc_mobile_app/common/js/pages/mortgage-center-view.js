@@ -1,3 +1,61 @@
+$( document ).ready(function() {
+	var options = {
+			$AutoPlay: "false",
+			$AutoPlayInterval: 10000,
+            $Loop: 0,            
+            $DragOrientation: 3, 
+            $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+            }
+        };
+	var options1 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 5000,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options2 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 7000,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options3 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 4500,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	var options4 = {
+			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
+			$AutoPlayInterval: 6500,
+			$AutoPlay: true,
+			$DragOrientation: 3,                               
+	};
+	
+
+		var jssor_slider1 = new $JssorSlider$("slideshow5", options);
+		var jssor_slider1 = new $JssorSlider$("slideshow6", options1);
+		var jssor_slider1 = new $JssorSlider$("slideshow7", options2);
+		var jssor_slider1 = new $JssorSlider$("slideshow8", options3);
+		var jssor_slider1 = new $JssorSlider$("slideshow9", options4);
+
+		
+   
+        jssor_slider1.$Play();
+	
+});
+
+
+
+
 $(".applications").click(function() {
 	loadPage("applications-search-view.html");
 });
