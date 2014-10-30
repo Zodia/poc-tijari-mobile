@@ -1,18 +1,9 @@
-$(document).ready(function() {
-
-//	$("#property_form").validationEngine({
-//		validateNonVisibleFields : true
-//	});
-
-});
 
 function openFileOption()
 {
   document.getElementById("file1").click();
 }
 
-// if(prop_index== -1)
-// document.getElementById("doc_call").disabled = true;
 
 $.fn.serializeObject = function() {
 	var o = {};
@@ -51,13 +42,4 @@ function loadForm() {
 
 loadForm();
 
-
-//$("#mortgage_terms").on("click", function() {
-//	property = $("form").serializeObject();
-//	var correct = $("#property_form").validationEngine('validate');
-//	// alert(correct);
-//	if (correct) {
-//		loadPage("mortgage-terms.html");
-//	}
-//});
 

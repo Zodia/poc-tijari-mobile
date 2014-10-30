@@ -6,7 +6,7 @@ $('#list-results').children('li').on('click', function () {
 	  // alert('Selected Name=' + $(this).find("id").text());
 	   customer = customers[$(this).attr("id")];
 	   property = customer.properties[0];
-	   loadPage("customer-view.html");
+	   loadPage("swipe.html");
 	});
 
 $(function() {
