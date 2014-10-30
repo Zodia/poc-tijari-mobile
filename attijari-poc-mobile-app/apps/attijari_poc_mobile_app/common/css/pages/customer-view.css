@@ -342,6 +342,10 @@ em {
 	display: none;
 }
 
+#customer-form{
+	margin-bottom: 30px;
+}
+
 .formError .formErrorContent {
 	width: 100%;
 	background: #ee0101;

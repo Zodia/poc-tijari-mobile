@@ -113,59 +113,6 @@ input.rightText {
 	margin: 0px;
 }
 
-a#back {
-	margin: 0;
-	border-color: #DF4B20;
-	color: #BD2020;
-	background-color: white;
-	font-weight: normal;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 0px 5px;
-}
-
-a#submit {
-	margin: 0;
-	border-color: #DF4B20;
-	border-width: 1px 1px 1px 0;
-	color: #BD2020;
-	background-color: white;
-	font-weight: normal;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 5px;
-}
-
-#button-div {
-	position: absolute;
-	left: 5px;
-	right: 5px;
-	bottom: 0px;
-	margin-bottom: 5px;
-}
-
-.ui-title #button-div .ui-block-a {
-	color: #BD2020;
-	background-color: #FFF;
-	font-weight: normal;
-	text-shadow: 0px 0px 0px #EEE;
-	border-radius: 0px 0px 0px 5px;
-	margin: 0px;
-	border: 1px solid #DF4B20;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.ui-title #button-div .ui-block-b {
-	color: #BD2020;
-	background-color: #FFF;
-	font-weight: normal;
-	text-shadow: 0px 0px 0px #EEE;
-	border-radius: 0px 0px 5px 0px;
-	margin: 0px;
-	border: 1px solid #DF4B20;
-	border-left: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
 
 div.image {
 	position: relative;
@@ -198,7 +145,6 @@ div.image .bottom-title {
 	padding: 5px;
 	font-size: 25px;
 	z-index: 10;
-
 }
 
 #popupDialog-popup{

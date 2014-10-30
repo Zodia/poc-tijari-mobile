@@ -15,63 +15,7 @@ $.fn.serializeObject = function() {
 };
 
 var prop_index = -1;
-// $("#home_call").on("click", function() {
-// $("#pageContent").load("pages/customer-entry-view.html", function() {
-// $(this).enhanceWithin(); /* apply styles */
-// });
-// });
-//$("#cs-cancel").on("click", function() {
-//	customer = $("form").serializeObject();
-//	var correct = $("#customer_form").validationEngine('validate');
-//	// alert(correct);
-//	// if(correct){
-//
-//	// if (customer_index == -1)
-//	$("#pageContent").load("pages/property-view.html", function() {
-//		// $(this).enhanceWithin(); /* apply styles */
-//	});
-//	// else
-//	// $("#pageContent").load("pages/properties-listview.html", function() {
-//	// $(this).enhanceWithin(); /* apply styles */
-//	// });
-//
-//	// }
-//});
-//
-//$("#cs-continue").on("click", function() {
-//
-//	loadPage("../pages/property-view.html");
-//
-//});
 
-$(".current-title").text("Customer Information");
-$(".left .back").text("Back");
-$(".left").unbind("click").on("click", function() {
-	customer = {};
-	if (customer_index == -1)
-		loadPage("pages/customer-entry-view.html"); // "pages/splash-view.html"
-	else
-		loadPage("pages/customers-list.html");
-});
-
-// data = {
-// "Title" : "",
-// "First_name" : "",
-// "Last_name" : "",
-// "Nationality" : "",
-// "Email" : "",
-// "Mobile" : "",
-// "Monthly_income" : "",
-// "personal_loans" : "",
-// "MP_personal_loans" : "",
-// "car_loans" : "",
-// "MP_car_loans" : "",
-// "existing_mortgages" : "",
-// "MP_existing_mortgages" : "",
-// "Existing_debit_card" : "",
-// "Existing_credit_card" : ""
-//
-// };
 
 function openFileOption(file) {
 	document.getElementById(file).click();
@@ -95,72 +39,11 @@ function resetForm() {
 		default:
 			$el.val(val);
 		}
-	})
+	});
 }
 
 resetForm();
 
-// photography preview
-
-// $(document).ready(function(){
-//
-// $("#customer_form").validationEngine({validateNonVisibleFields: true});
-// //date picker
-//	
-// $('#dob').scroller({ preset: 'date',
-// seconds: true,
-// ampm : false,
-// dateOrder: 'dMyy',
-// dateFormat :'dd/mm/yy',
-// theme: 'ios'
-// });
-//	
-// // photography preview
-//	
-//	
-//	
-//	
-//	
-//	
-//
-// });
-
-$(document).ready(function() {
-	// $("#customer-form").validationEngine({validateNonVisibleFields: true});
-	// $("#owl-demo").owlCarousel({
-	//
-	// navigation : false,
-	// slideSpeed : 300,
-	// paginationSpeed : 400,
-	// singleItem : true,
-	// afterInit : function(elem){
-	// var that = this;
-	// that.owlControls.prependTo(elem);
-	//	 
-	// }
-	//
-	// // "singleItem:true" is a shortcut for:
-	// // items : 1,
-	// // itemsDesktop : false,
-	// // itemsDesktopSmall : false,
-	// // itemsTablet: false,
-	// // itemsMobile : false
-	//
-	// });
-});
-
-// function hideHistory(){
-// if (customer_index == -1){
-// $('#historyContent').hide();
-//		
-// }else{
-// $('#historyContent').show();
-// }
-//	     
-// }
-//
-//
-// hideHistory();
 
 // /////////////////////
 
@@ -184,6 +67,8 @@ $("#chooseFile").click(function(e) {
 	e.preventDefault();
 	$("#imageInput").trigger("click");
 });
+
+
 $("#imageInput").change(function() {
 	var file = $("#imageInput")[0].files[0];
 	$("#preview").empty();
@@ -200,9 +85,5 @@ $("#imageInput").change(function() {
 	if (file && file.size) {
 		$info.append("<li>size:<span>" + file.size + " bytes</span></li>");
 	}
-	// if (file && file.lastModifiedDate) {
-	// $info.append("<li>lastModifiedDate:<span>" + file.lastModifiedDate +
-	// "</span></li>");
-	// }
 	$info.listview("refresh");
 });

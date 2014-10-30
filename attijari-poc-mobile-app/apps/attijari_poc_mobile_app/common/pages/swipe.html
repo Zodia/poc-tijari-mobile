@@ -3,6 +3,7 @@
 	<link rel="stylesheet" href="../css/pages/customer-view.css">
 	<link rel="stylesheet" href="../css/pages/property-view.css">
 	<link rel="stylesheet" href="../css/pages/mortgage-terms.css">
+	<link rel="stylesheet" href="../css/pages/swipe.css">
 	<script type="text/javascript" src="../js/pages/swipe.js"></script>
 
 	<div data-role="header" id="header" data-position="fixed">
@@ -337,16 +338,16 @@
 							<!-- 	<a href="#" data-role="button" data-inline="true"  id="cancel">Cancel </a> -->
 							<!-- 	<a href="#" data-role="button" data-inline="true" id="continue">Continue</a> -->
 			
-							<div class="ui-grid-a ui-responsive" id="button-div">
-								<div class="ui-block-a">
-									<a id="cs-cancel" href="mortgage-center-view.html"
-										class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Cancel</a>
-								</div>
-								<div class="ui-block-b">
-									<a id="cs-continue" href="property-view.html"
-										class="ui-btn ui-shadow " data-transition="slide">Continue</a>
-								</div>
-							</div>
+<!-- 							<div class="ui-grid-a ui-responsive" id="button-div"> -->
+<!-- 								<div class="ui-block-a"> -->
+<!-- 									<a id="cs-cancel" href="mortgage-center-view.html" -->
+<!-- 										class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Cancel</a> -->
+<!-- 								</div> -->
+<!-- 								<div class="ui-block-b"> -->
+<!-- 									<a id="cs-continue" href="property-view.html" -->
+<!-- 										class="ui-btn ui-shadow " data-transition="slide">Continue</a> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
 						</form>
 					</div>
 	            </div></div>
@@ -554,10 +555,10 @@
 								</div>
 							</li>
 						</ul>
-						<div class="ui-grid-a ui-responsive" id="button-div">
-				    		<div class="ui-block-a"><a id="back" href="customer-view.html" class="ui-btn ui-shadow" data-transition="slide" data-direction="reverse">Retour</a></div>
-				    		<div class="ui-block-b"><a id="continue" href="mortgage-terms.html" class="ui-btn ui-shadow" data-transition="slide">Suivant</a></div>
-				    	</div>
+<!-- 						<div class="ui-grid-a ui-responsive" id="button-div"> -->
+<!-- 				    		<div class="ui-block-a"><a id="back" href="customer-view.html" class="ui-btn ui-shadow" data-transition="slide" data-direction="reverse">Retour</a></div> -->
+<!-- 				    		<div class="ui-block-b"><a id="continue" href="mortgage-terms.html" class="ui-btn ui-shadow" data-transition="slide">Suivant</a></div> -->
+<!-- 				    	</div> -->
 					</form>
 				</div></div>
 	            <div><div data-role="content" id="pageContent3">
@@ -685,14 +686,25 @@
 									</div>
 								</li>
 							</ul>
-							<div class="ui-grid-a ui-responsive" id="button-div">
-				    			<div class="ui-block-a"><a id="back" href="property-view.html" class="ui-btn ui-shadow">Retour</a></div>
-				    			<div class="ui-block-b"><a id="submit" href="#" class="ui-btn ui-shadow">Envoyer le dossier</a></div>
-				    		</div>
+<!-- 							<div class="ui-grid-a ui-responsive" id="button-div"> -->
+<!-- 				    			<div class="ui-block-a"><a id="back" href="property-view.html" class="ui-btn ui-shadow">Retour</a></div> -->
+<!-- 				    			<div class="ui-block-b"><a id="submit" href="#" class="ui-btn ui-shadow">Envoyer le dossier</a></div> -->
+<!-- 				    		</div> -->
 						</form>
 					</div>
 				</div></div>
 			</div>
+			<span id="btn-div-l" u="arrowleft" class="jssora02l" style="width: 50%; height: 55px; left: 10px;">
+				<div class="ui-block-a">
+					<a class="ui-btn ui-shadow">Retour</a>
+				</div>
+			</span>
+			<!-- Arrow Right -->
+			<span id="btn-div-r" u="arrowright" class="jssora02r" style="width: 50%; height: 55px; right: 0px;">
+				<div class="ui-block-b">
+					<a class="ui-btn ui-shadow">Suivant</a>
+				</div>
+			</span>
 		</div>
 	</div>
 	
