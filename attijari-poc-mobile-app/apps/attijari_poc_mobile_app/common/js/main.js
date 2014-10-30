@@ -6,7 +6,7 @@ var pagesStack = new Array ();
 
 function wlCommonInit () {
 	// Common initialization code goes here
-	loadPage ("pages/splash-view.html");
+	loadPage ("pages/login-view.html");
 }
 
 function loadPage (url) {
