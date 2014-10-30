@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$("#property_form").validationEngine({
-		validateNonVisibleFields : true
-	});
+//	$("#property_form").validationEngine({
+//		validateNonVisibleFields : true
+//	});
 
 });
 
