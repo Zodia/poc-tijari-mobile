@@ -1,12 +1,16 @@
-$(document).on('pagecreate', function () {
-	/*$("#dialog").popup ("open");
+$(document).on('pageshow', function () {
+	$("#confirmationPopup").popup ("open");
 	
-	$(document).on('popupafteropen', '.ui-popup', function () {
-		setTimeout (
-			function () {
-				$(this).popup ('close');
-			}, 
-			5000
-		);
-	});*/
+	/*setTimeout (
+		function () {
+			$("#confirmationPopup").popup ('close');
+		}, 
+		3000
+	);*/
+	
+	$(".ui-popup-container.ui-popup-active").css("max-width", "inherit");
+	$(".ui-popup-container.ui-popup-active").css("top", "88px");
+	$(".ui-popup-container.ui-popup-active").css("bottom", "100px");
+	$(".ui-popup-container.ui-popup-active").css("right", "12px");
+	$(".ui-popup-container.ui-popup-active").css("left", "12px");
 });

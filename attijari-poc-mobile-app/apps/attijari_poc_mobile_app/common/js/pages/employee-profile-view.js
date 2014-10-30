@@ -1,1 +1,0 @@
-$(".current-title").text ("Employee profile");

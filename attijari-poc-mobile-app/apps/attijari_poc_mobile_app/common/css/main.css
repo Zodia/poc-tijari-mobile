@@ -302,6 +302,7 @@ html, body {
 }
 
 #right-panel ul li.logout, 
+#right-panel ul li.employee-account-information, 
 #right-panel ul li.terms-of-service {
 	position: absolute;
 	bottom: 15px;;
@@ -309,11 +310,16 @@ html, body {
 	right: 0;
 }
 
-#right-panel ul li.terms-of-service {
+#right-panel ul li.logout {
+	bottom: 107px;
+}
+
+#right-panel ul li.employee-account-information {
 	bottom: 61px;
 }
 
 #right-panel ul li.logout a, 
+#right-panel ul li.employee-account-information a,
 #right-panel ul li.terms-of-service a {
 	border-bottom: none;
 	border-top: 1px solid #abacae;

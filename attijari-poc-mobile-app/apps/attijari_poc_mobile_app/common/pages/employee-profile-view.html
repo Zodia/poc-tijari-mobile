@@ -1,43 +1,6 @@
-<link rel="stylesheet" href="css/pages/employee-profile-view.css">
-
-<div id="employee-profile-wrapper">
-	<div class="employee-profile-content">
-	
-		<div class="fields">
-			<div class="thumbnail"></div>
-			<form id="form" class="ui-field-contain">
-			    <input type="text" name="name" placeholder="name" value="Bendriss Mehdi"/>
-			    <input type="text" name="phone" placeholder="phone" value="+212 5 28 20 69 61"/>
-			    <input type="text" name="mobile" placeholder="mobile" value="+212 6 28 20 69 61"/>
-			    <select name="branch">
-			    	<option>Branch 1</option>
-			    	<option>Branch 2</option>
-			    	<option>Branch 3</option>
-			    </select>
-			    <select name="department">
-			    	<option>Department 1</option>
-			    	<option>Department 2</option>
-			    	<option>Department 3</option>
-			    </select>
-			    <p>
-			    	<input type="button" value="Cancel"/>
-    				<input type="button" value="Save"/>
-			    </p>
-			</form>
-			<div class="thumbnail-actions">
-				<i class="fa fa-trash-o"></i>
-				<i class="fa fa-pencil"></i>
-			</div>
-		</div>		
-	</div>
-</div>
-
-<script src="js/pages/employee-profile-view.js"></script>
-
-
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-   	<link rel="stylesheet" href="../css/pages/faqs-view.css">
+   	<link rel="stylesheet" href="../css/pages/employee-profile-view.css" />
    	
 	<div data-role="header" id="header" data-position="fixed">
 	
@@ -53,22 +16,152 @@
 		<div class="left">
 			<a href="#" data-rel="back">
 				<img alt="back" src="../images/header/back_arrow.png" />
-				<span class="back">Help Center</span>
+				<span class="back">Accueil</span>
 			</a>
 		</div>
 		<!--<div class="center with-logo"></div>-->
 		<div class="center">
-			<p class="current-title">FAQ's</p>
+			<p class="current-title">Paramètres du Compte</p>
 		</div>
 		
 	</div>
 	
 	<div data-role="content" id="pageContent">
-		<div id="faqs-wrapper">
-			<div class="faqs-content">
-				<div data-role="collapsible-set" data-corners="false" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="faq-set">
+		<div id="employee-profile-wrapper">
+			<div class="employee-profile-content">
+			
+				<div class="fields">
+					<div class="thumbnail-wrapper">
+						<div class="thumbnail"></div>
+						<div class="camera"></div>
+					</div>
 					
-				</div>
+					<form data-role="tabs" action="" method="post" id="customer-form">
+						<ul data-role="listview" data-inset="true" class="customer-details-list" id="customers-list">
+	
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Nom</span> 
+										<span class="attribute-value"> 
+											<input name="last_name" data-wrapper-class="ui-custom" type="text" class="rightText" />
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Prénom</span> 
+										<span class="attribute-value"> 
+											<input name="first_name" data-wrapper-class="ui-custom" type="text" class="rightText" />
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+		
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Fix</span> 
+										<span class="attribute-value"> 
+											<input name=fix_phone data-wrapper-class="ui-custom" type="tel" class="rightText" />
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon" />
+								</div>
+		
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Mobile</span> 
+										<span class="attribute-value"> 
+											<input name="mobile_phone" data-wrapper-class="ui-custom" type="tel" class="rightText" />
+										</span>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon" />
+								</div>
+							</li>		
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Agence</span> 
+										<select data-role="none" class="select-informations" name="agencies" id="select-native-1">
+											<option value="agency0">Agence Attijari Beau Séjour 1</option>
+											<option value="agency1">Agence Attijari Mâarif 2</option>
+											<option value="agency2">Agence Attijari Sidi Maârouf 3</option>
+										</select>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+							<li class="ui-field-contain">
+								<div class="ui-li-text attribute">
+									<p>
+										<span class="attribute-label">Départemennt</span> 
+										<select data-role="none" class="select-informations" name="department" id="select-native-1">
+											<option value="department0">Département Crédits Immobiliers</option>
+											<option value="department1">Département Crédits Agricoles</option>
+											<option value="department2">Département Investissements</option>
+											<option value="department3">Département Assurance</option>
+											<option value="department4">Département Crédit Automobile</option>
+										</select>
+									</p>
+								</div>
+								<div class="ui-li-thumb thumb-info">
+									<img src="../images/content/info.png" class="thumb-icon"></img>
+								</div>
+							</li>
+						</ul>
+	
+						<div class="ui-grid-a ui-responsive" id="button-div">
+							<div class="ui-block-a">
+								<a id="cs-cancel" href="mortgage-center-view.html"
+									class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Annuler</a>
+							</div>
+							<div class="ui-block-b">
+								<a id="cs-continue" href="property-view.html"
+									class="ui-btn ui-shadow " data-transition="slide">Continuer</a>
+							</div>
+						</div>
+					</form>	
+					
+					
+					<!-- 
+					<form id="form-data" class="ui-field-contain">
+					    <input type="text" name="name" placeholder="name" value="Bendriss Mehdi"/>
+					    <input type="text" name="phone" placeholder="phone" value="+212 5 28 20 69 61"/>
+					    <input type="text" name="mobile" placeholder="mobile" value="+212 6 28 20 69 61"/>
+					    <select name="branch">
+					    	<option>Branche 1</option>
+					    	<option>Branche 2</option>
+					    	<option>Branche 3</option>
+					    </select>
+					    <select name="department">
+					    	<option>Département 1</option>
+					    	<option>Département 2</option>
+					    	<option>Département 3</option>
+					    </select>
+					    <p>
+					    	<input type="button" value="Cancel"/>
+		    				<input type="button" value="Save"/>
+					    </p>
+					</form>
+					-->
+				</div>		
 			</div>
 		</div>
 	</div>
@@ -76,7 +169,7 @@
 	<div data-role="footer" id="footer" data-position="fixed">			
 		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
 			<img alt="Home" src="../images/footer/home.png" />
-			<span class="label">Home</span>
+			<span class="label">Accueil</span>
 		</a>
 		<a href="notifications-center-view.html" id="notificationsAction" class="footer-action" data-role="none">
 			<img alt="Inbox" src="../images/footer/notifications.png" />
@@ -84,7 +177,7 @@
 		</a>
 		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
 			<img alt="Settings" src="../images/footer/settings.png" />
-			<span class="label">Settings</span>
+			<span class="label">Réglages</span>
 		</a>
 		
 		<div id="center" class="with-logo"></div>
@@ -93,55 +186,58 @@
 	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
 		<div class="ui-panel-inner">
 			
-			<p class="employee-name">Welcome, Ali</p>
+			<p class="employee-name">Bonjour, Ali</p>
 
 			<ul data-role="listview" data-inset="true">
 				<li>
 					<img src="../images/content/home_filled.png" />
-					<a href="home-view.html" data-rel="close">Home</a>
+					<a href="home-view.html" data-rel="close">Accueil</a>
 				</li>
 				<li>
 					<img src="../images/content/settings_filled.png" />
-					<a href="#" data-rel="close">Settings</a>
+					<a href="settings-view.html" data-rel="close">Paramètres</a>
 				</li>
 				<li>
 					<img src="../images/content/notifications_filled.png" />
-					<a href="notifications-view.html" data-rel="close">Notifications</a>
+					<a href="notifications-center-view.html" data-rel="close">Notifications</a>
 				</li>
 				<li>
 					<img src="../images/content/recent_activity.png" />
-					<a href="#" data-rel="close">Recent Activity</a>
+					<a href="#">Activity Récente</a>
 				</li>
 				<li>
 					<img src="../images/content/news.png" />
-					<a href="#" data-rel="close">News, Events & Projects</a>
+					<a href="#">News, Evènements et Projets</a>
 				</li>
 				<li>
 					<img src="../images/content/mortgage.png" />
-					<a href="mortgage-simulator-view.html" data-rel="close">Mortgage Center</a>
+					<a href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
 				</li>
 				<li>
 					<img src="../images/content/amount.png" />
-					<a href="#" data-rel="close">Investment Center</a>
+					<a href="#">Centre d'Investissement </a>
 				</li>
 				<li>
 					<img src="../images/content/auto_loan.png" />
-					<a href="#" data-rel="close">Auto Loans Center</a>
+					<a href="#">Centre de Crédit Automobile</a>
 				</li>
 				<li>
 					<img src="../images/content/insurance_center.png" />
-					<a href="ask_expert/expert-view.html" data-rel="close">Insurance Center</a>
+					<a href="ask_expert/expert-view.html" data-rel="close">Centre d'Assurance</a>
 				</li>
 				<li>
 					<img src="../images/content/help.png" />
-					<a href="help-center-view.html" data-rel="close">Help Center</a>
+					<a href="help-center-view.html" data-rel="close">Aide</a>
 				</li>
 				
-				<li class="terms-of-service">
-					<a href="#" data-rel="close">Terms Of Service</a>
-				</li>
 				<li class="logout">
-					<a href="#" data-rel="close">Logout</a>
+					<a href="#" data-rel="close">Déconnexion</a>
+				</li>
+				<li class="employee-account-information">
+					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateurs</a>
+				</li>
+				<li class="terms-of-service">
+					<a href="#">Conditions d'Utilisation</a>
 				</li>
 			</ul>
 		</div>
