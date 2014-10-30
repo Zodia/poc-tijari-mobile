@@ -1,3 +1,3 @@
 $("#loginAction").on ("click", function () {
-	loadPage ("login-view.html");
+	loadPage ("next-best-offer-view.html");
 });
