@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$( document ).on( "pageinit", "#page", function( event ) {
 	var options = {
             $AutoPlay: false,
             $DragOrientation: 1,  
@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
 		var jssor_slider = new $JssorSlider$("slideshow", options);
    
-//        jssor_slider1.$Play();
+//        jssor_slider.$Play();
 	//$(".current-title").text ("Choosing Application Type");	
 	
 });
