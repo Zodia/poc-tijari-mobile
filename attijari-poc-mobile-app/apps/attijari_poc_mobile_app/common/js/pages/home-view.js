@@ -19,31 +19,31 @@ $("#existingapp").click(function() {
 $( document ).ready(function() {
 	var options = {
 			$AutoPlay: "false",
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval:10000,
             $Loop: 0,            
             $DragOrientation: 3,                               
         };
 	var options1 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval:4500,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options2 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval: 3000,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options3 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval: 4000,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options4 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 100000,
+			$AutoPlayInterval: 3500,
             $AutoPlay: true,
             $DragOrientation: 3,                               
         };
