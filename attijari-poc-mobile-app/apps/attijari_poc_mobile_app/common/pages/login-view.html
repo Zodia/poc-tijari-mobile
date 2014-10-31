@@ -1,56 +1,55 @@
 <div data-role="page" id="page">
-
 	<meta charset="utf-8">
    	<link rel="stylesheet" href="../css/pages/login-view.css" />
-
+   	
+   	<div data-role="popup" id="confirmationPopup" class="ui-content" data-position-to="origin" data-theme="a" data-transition="fade">
+   		<p class="loader"></p>
+		<p class="loading-language">
+			Chargement des fichiers de langue...
+			</br></br>
+			Merci de patienter.
+		</p>
+		<p class="authentication-error">
+			Erreur d'authentification.
+		</p>
+	</div>
+   	
 	<div data-role="header" id="header" data-position="fixed">
-
 		<div class="right"></div>
 		<div class="left"></div>
 		<div class="center with-logo"></div>
-
 	</div>
-
+	
 	<div data-role="content" id="pageContent">
-		<div id="loginWrapper">
-		<div id="backgroundimg"><img src="../images/content/welcome-bg.jpg"/></div>
-			<div id="loginContent">
-				<div id="logo"></div>
-
-				<div id="email">
-					<input type="text" id="emailinput" placeholder="Login">
-					<img src="../images/content/envelop.png" width="15" class="smallicon" />
+		<div id="login-wrapper">
+			<div class="login-content">
+			
+				<div class="form" data-role="none">
+					
+					<p class="email-p">
+						<label class="email"></label>
+						<input type="text" name="email" placeholder="Addresse E-mail" />
+					</p>
+					<p class="pass-p">
+						<label class="password"></label>
+						<input type="password" name="password" placeholder="Mot de passe" />
+					</p>
+					<p class="submit-login">
+						<button>Connexion</button>
+					</p>
+					<p class="links">
+						<a href="forgot-password-view.html" class="left">Mot de passe oublié ?</a>
+						<!--<a href="register-view.html" class="right">Créer un compte</a>-->
+					</p>
+					
 				</div>
-				<div id="password">
-					<input type="password" id="passwordinput" placeholder="Mot de passe">
-					<img src="../images/content/lock.png" class="smallicon" width="15" />
-				</div>
-					<button class="mybutton" id="buttongo">Se connecter</button>
-				<div id=links>
-		  			<div id="forgot"><a id="forgotpass" href="#">Mot de passe oublié?</a></div>
-					<div id="register"><a id="registerlink" href="#">S'enregister</a></div>
-				</div>
-
+				
 			</div>
-
-
-			<div id="languages">
-				<div id="frensh">Français</div>
-				<div id="arabic">Arabic</div>
-			</div>
-
-			<div data-role="dialog" id="dialog">
-				<div data-role="header" id="headerdialog">
-					<h3 align="center">Erreur d'autentification</h3>
-				</div>
-				<div data-role="content" id="dialogmessage" align="center">
-					<b>veuillez réessayer !!</b>
-				</div>
-			</div>
-
 		</div>
 	</div>
-
+	
+	<p class="bottom-copyright">&copy;2014 Attijari Wafa Bank &nbsp; | &nbsp; <a>Conditions d'utilisation</a></p>
+	
 	<script src="../js/pages/login-view.js"></script>
-
- </div>
+	
+</div>
