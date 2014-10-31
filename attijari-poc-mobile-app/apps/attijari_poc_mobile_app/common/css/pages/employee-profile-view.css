@@ -9,7 +9,20 @@
 }
 
 .fields { 
-	padding: 20px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	right: 30px;
+	bottom: 20px;
+}
+
+.camera label {
+	width: 100%;
+	height: 100%;
+}
+
+.camera > input {
+	display: none;
 }
 
 .fields .thumbnail-wrapper {
@@ -21,6 +34,9 @@
 	background-size: cover;
 	background-color: #ef5a49;
 	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 25%;
 }
 
 .fields .thumbnail {
@@ -54,17 +70,10 @@
 	clear: inherit;
 	margin-top: 0;
 	border-bottom: none;
+	position: absolute;
+	top: 330px;
+	bottom: 0;
 }
-
-/*.fields form p div {
-	width: 40%;
-	text-shadow: none;
-	float: left;
-}*/
-
-/*.fields form p div:last-child {
-	float: right;
-}*/
 
 .fields .thumbnail-actions {
 	float: left;
@@ -72,63 +81,58 @@
 	margin-top: -75px;
 }
 
-.fields .thumbnail-actions i {
-	display: block;
-	font-size: 35px;
-	float: left;
+.save-actions {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
-
-.fields .thumbnail-actions i.fa-pencil {
-	float: right;
-}
-
-
 
 
 /* */
-ul.customer-details-list {
+ul.data-details-list {
 	padding: 0px;
 	margin: 0px;
 }
 
-#pageContent1{
-	background-color: white;
-	height: 95%;
-}
-#customers-list{
+#data-list{
 	border:none;
 	margin:0px;
 	margin-top: 10px;
 }
 
-a#cs-cancel {
+a#cs-cancel,
+a#cs-continue {
 	margin: 0;
-	border-color: #DF4B20;
-	color: #BD2020;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 0px 5px;
+	border-color: #ef5a49;
+	color: #ef5a49;
+	text-shadow: none;
+	border-radius: 0px 0px 0px 15px;
+	box-shadow: none;
 	background-color: white;
 	font-weight: normal;
 }
 
 a#cs-continue {
-	margin: 0;
-	border-color: #DF4B20;
-	border-width: 1px 1px 1px 0;
-	color: #BD2020;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 5px;
-	background-color: white;
-	font-weight: normal;
+	border-left: 0;
+	border-radius: 0px 0px 15px 0px;
 }
 
-.customer-details-list .attribute {
+a#cs-cancel:active,
+a#cs-continue:active,
+a#cs-cancel:focus,
+a#cs-continue:focus {
+	background-color: #ef5a49;
+	color: #FFF;
+}
+
+.data-details-list .attribute {
 	float: left;
 	width: 97%;
 	height: 30px;
 }
 
-.customer-details-list .attribute .attribute-label {
+.data-details-list .attribute .attribute-label {
 	display: inline-block;
 	float: left;
 	font-size: 17px;
@@ -136,7 +140,7 @@ a#cs-continue {
 	line-height: 30px;
 }
 
-.customer-details-list .attribute .attribute-value {
+.data-details-list .attribute .attribute-value {
 	display: inline-block;
 	float: right;
 	width: 40%;
@@ -195,12 +199,18 @@ input.rightText {
 	border: none;
 	box-shadow: none;
 	background-color: transparent;
+	outline: none;
 	margin: 0px;
 	text-align: right;
-	height: 40px;
-	font-size: 18px;
+	height: 37px;
+	font-size: 16px;
 	overflow: hidden;
-	width: 105%;
-	float: right;
+	width: 40%;
 	direction: rtl;
+}
+
+.ui-li-thumb.thumb-info {
+	width: 3%;
+	float: right;
+	margin-top: 8px;
 }
