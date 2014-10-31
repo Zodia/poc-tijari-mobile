@@ -33,7 +33,9 @@
 
 			<div class="customer-image-out-border" style="margin-top: 15px;">
 				<div class="customer-image" id="customer-image"></div>
-				<div id="camera-icon"></div>
+				<div id="camera-icon" onclick="openFileOption('file0');return;">
+					<input type="file" id="file0" style="display: none" data-role="none">
+				</div>
 			</div>
 
 			<form data-role="tabs" action="" method="post" id="customer-form">
