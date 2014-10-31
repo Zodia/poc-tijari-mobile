@@ -1,73 +1,731 @@
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/pages/application-details.css">
-<div data-role="header">
-	<h1>Personal informations</h1>
-</div>
-<div class="ui-field-contain">
+<div data-role="page" id="page">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/pages/application-details.css">
 
-	<label for="textinput-1">First name </label> <input
-		name="First_name" id="First_name" type="text" readonly="readonly"
-		class="required">
-</div>
-<div class="ui-field-contain">
-	<label for="textinput-1">Last name </label> <input
-		name="Last_name" id="Last_name" type="text" readonly="readonly"
-		class="required">
-</div>
-<div class="ui-field-contain">
-	<label for="textinput-1">D.O.B</label> <input type="text"
-		name="startDate" id="filter-date-from" readonly="readonly"
-		class="ui-input-text ui-body-b">
-</div>
-<div class="ui-field-contain">
-	<label for="textinput-1">Nationality</label> <input name="Nationality"
-		readonly="readonly" id="textinput-1" type="text">
-</div>
-<div class="ui-field-contain">
-	<label for="textinput-1">Email</label> <input name="Email"
-		readonly="readonly" id="textinput-1" type="text">
-</div>
-<div class="ui-field-contain">
-	<label for="textinput-1">Mobile</label> <input name="Mobile"
-		readonly="readonly" id="textinput-1" type="text">
-</div>
-
-<div data-role="header">
-	<h1>Properties informations</h1>
-</div>
-
-<div class="ui-field-contain">
-
-	<label for="textinput-1">Already an owner? </label> <input
-		name="AlreadyOwn"  type="text" readonly="readonly">
-</div>
-<div class="ui-field-contain">
-
-	<label for="textinput-1">New/Existing? </label> <input
-		name="isExisting"  type="text" readonly="readonly">
-</div>
-
-<div class="ui-field-contain">
-
-	<label for="textinput-1">Property address</label> <input
-		name="propAddress"  type="text" readonly="readonly">
-</div>
-
-<div class="ui-field-contain">
-
-	<label for="textinput-1">Property type</label> <input
-		name="propType"  type="text" readonly="readonly">
-</div>
-
-<div data-type="horizontal">
-	<button id="cancel"
-		style="width: 30%; margin-right: 5%; float: left;"
-		class="ui-btn">Cancel</button>
-	<button id="edit"
-		style="width: 30%; float: right; "
-		class="ui-btn">Edit</button>
-</div>
+	<div data-role="header" id="header" data-position="fixed">
 
 
+		<div class="right">
+			<a class="menu-display" href="#right-panel"> <img alt="mmenu"
+				src="../images/header/drawer_menu_header_button.png" />
+			</a> <a class="top-notifications"> <img alt="top-notifications"
+				src="../images/header/top_notification_button.png" />
+			</a>
+		</div>
+		<div class="left">
+			<a href="mortgage-center.html" data-rel="back"> <img alt="back"
+				src="../images/header/back_arrow.png" /> <span class="back">Centre de crédit</span>
+			</a>
+		</div>
 
-<script src="js/pages/application-details.js"></script>
+
+		<!--<div class="center with-logo"></div>-->
+		<div class="center">
+			<p class="current-title">Détail de la demande</p>
+		</div>
+
+	</div>
+
+	<div data-role="content" id="pageContent">
+
+
+		<div class="customer-view-content" data-type="vertical">
+
+			<div class="customer-image-out-border" style="margin-top: 15px;">
+				<div class="customer-image" id="customer-image"></div>
+				<div id="camera-icon"></div>
+			</div>
+
+			<form data-role="tabs" action="" method="post" id="customer-form">
+				<ul data-role="listview" data-inset="true"
+					class="customer-details-list" id="customers-list">
+					<li class="ui-field-contain">
+						<div data-role="header">
+							<h1>Information Client</h1>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb"></div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Prénom</span> <span
+									class="attribute-value"> <input name="First_name"
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb"></div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Nom</span> <span
+									class="attribute-value"> <input name="Last_name"
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/date.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Date de naissance</span> <span
+									class="attribute-value"> <input name="dob"
+									data-wrapper-class="ui-custom" type="date" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/address.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">adresse</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/building.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Ville</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/flag.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Pays</span> <span
+									class="attribute-value"> <input name="Nationality"
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+
+
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/languages.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Primary Language</span> <select
+									data-role="none" class="select-informations" name="language"
+									id="select-native-1">
+									<option value="0">Arabic</option>
+									<option value="1">French</option>
+									<option value="2">English</option>
+								</select>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/phone.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">
+								Numéro de téléphone principal
+								</span> <span
+									class="attribute-value"> <input name="Mobile"
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/envelop.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Adresse email</span> <span
+									class="attribute-value"> <input name="Email"
+									data-wrapper-class="ui-custom" type="email" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/radar.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Méthode de communication préférée </span> <span class="attribute-value"> <select
+									data-role="none" class="select-informations" name="comm"
+									id="select-native-1">
+										<option value="1">Email</option>
+										<option value="2">Téléphone</option>
+								</select>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/checking.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Compte Courant #</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/saving_account_number.png"
+								class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Compte d'épargne #</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/amount.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Salaire Mensuel (MAD)</span> <span
+									class="attribute-value"> <input name="Monthly_income"
+									data-wrapper-class="ui-custom" type="number" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/gift.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Revenus additionels</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="text" class="rightText" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/camera_gray.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Documents d'identité</span> <span
+									class="attribute-value"> <img
+									onclick="openFileOption('file1');return;"
+									src="../images/content/img_preview.png" class="thumb-icon">
+									<input type="file" id="file1" style="display: none"
+									data-role="none">
+
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/camera_gray.png" class="thumb-icon"></img> 
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Dernier salaire</span> <span
+									class="attribute-value"> <img
+									onclick="openFileOption('file2');return;"
+									src="../images/content/img_preview.png" class="thumb-icon">
+									<input type="file" id="file2" style="display: none"
+									data-role="none">
+
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+
+					</li>
+					<li class="ui-field-contain">
+						<div data-role="header">
+							<h1>Information Propriété</h1>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="../images/content/address.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Adresse</span> 
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value=""/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+	
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="../images/content/house_new.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Nouveau/Existant/Pas de Structure</span>
+							<span class="attribute-value">
+								<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
+									<option value="New">Nouveau</option>
+									<option value="Existing">Existant</option>
+									<option value="NoStruct">Pas de Structure</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+	
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="../images/content/house.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Residentiel/Commercial</span>
+							<span class="attribute-value">
+	    						<select data-role="none" class="select-informations" name="usage" id="select-native-1">
+									<option value="personal">Residentiel</option>
+									<option value="commercial">Commercial</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+	
+				</li>
+				<li class="ui-field-contain">
+					<div class="thumb">
+						<img src="../images/content/building.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Type d'immeuble</span> 
+							<span class="attribute-value">
+								<select data-role="none" class="select-informations" name="rooms" id="select-native-1">
+									<option value="studio">Studio</option>
+									<option value="1">1 BR Appartement</option>
+									<option value="2">2 BRAppartement</option>
+									<option value="3">3 BR Appartement</option>
+									<option value="4">4 BR Appartement</option>
+									<option value=">4">>4 BR Appartement</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/house_star.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Résidence primaire</span> 
+							<span class="attribute-value">
+								<select data-role="none" class="select-informations" name="Primary" id="select-native-1">
+									<option value="Yes">Oui</option>
+									<option value="No">Non</option>
+								</select>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/land_area.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Surface de terre</span> 
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value="N/A"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/construction.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Surface de construction/logement</span> 
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="liveableArea" id="name" value=""/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+	
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/contractor.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Entrepreneurs en construction</span> 
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="contractors" id="name" value="N/A"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/amount.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Estimation de construction (MAD)</span>
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="constructionSum" id="name" value="N/A"/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/estimate.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Estimation de propriété (MAD)</span>
+							<span class="attribute-value">
+								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="evaluationSum" id="name" value=""/>
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div class="ui-li-thumb thumb">
+						<img src="../images/content/camera_gray.png" class="thumb-icon"></img>
+					</div>
+					<div class="ui-li-text attribute">
+						<p>
+							<span class="attribute-label">Document de registration</span>
+							<span class="attribute-value">
+								
+								<img onclick="openFileOption();return;" src="../images/content/img_preview.png" class="thumb-icon">
+								<input type="file" id="file1" style="display:none" data-role="none">
+								
+							</span>
+						</p>
+					</div>
+					<div class="ui-li-thumb thumb-info">
+						<img src="../images/content/info.png" class="thumb-icon"></img>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+					<div data-role="header">
+						<h1>Conditions du crédit</h1>
+					</div>
+				</li>
+				<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/terms.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Durée du prêt</span>
+								<span class="attribute-value">
+									<select data-role="none" class="select-informations" name="mortgage_term" id="select-native-1" onchange=loan()>
+										<option value="0">5ans</option>
+										<option value="1">10ans</option>
+										<option value="2">15ans</option>
+										<option value="3">20ans</option>
+										<option value="4">25ans</option>
+										<option value="5">30ans</option>
+										<option value="6">35ans</option>
+										<option value="7">40ans</option>
+									</select>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/percent.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Taux d'intérêt</span>
+								<span class="attribute-value">
+									<select data-role="none" class="select-informations" name="interesType" id="select-native-2" onchange=loan()>
+										<option value="0"> 1%</option>
+										<option value="1"> 2%</option>
+										<option value="2"> 3%</option>
+										<option value="3"> 4%</option>
+										<option value="4"> 5%</option>
+										<option value="5"> 6%</option>
+										<option value="6"> 7%</option>
+										<option value="7"> 8%</option>
+										<option value="8"> 9%</option>
+										<option value="9"> 10%</option>
+									</select>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/amount.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Montant du prêt</span>
+								<span class="attribute-value">
+									<input class="rightText" data-wrapper-class="ui-custom" type="number" name="loanAmount" id="name" onkeyup="loan()"/>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/pay_off_date.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Date d'origine</span>
+								<span class="attribute-value">
+									<input data-wrapper-class="ui-custom" type="text" name="orgDate" class="rightText" readonly/>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/pay_off_date.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Echéance</span>
+								<span class="attribute-value">
+									<input data-wrapper-class="ui-custom" type="text" name="payOffDate" class="rightText" readonly/>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/amount.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Mensualité</span>
+								<span class="attribute-value">
+									<input class="rightText" data-wrapper-class="ui-custom" type="text" name="monthlyPay" id="name" readonly/>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+				</ul>
+
+
+
+
+				<!-- 	<a href="#" data-role="button" data-inline="true"  id="cancel">Cancel </a> -->
+				<!-- 	<a href="#" data-role="button" data-inline="true" id="continue">Continue</a> -->
+
+				
+			</form>
+			</div>
+
+	</div>
+
+
+
+	<div data-role="footer" id="footer" data-position="fixed">
+		<a href="home-view.html" class="footer-action" data-role="none"> <img
+			alt="back" src="../images/footer/home.png" /> <span class="label">Home</span>
+		</a> <a href="notifications-center-view.html" class="footer-action" data-role="none">
+			<img alt="back" src="../images/footer/notifications.png" /> <span
+			class="label">Inbox</span>
+		</a> <a href="settings-view.html" class="footer-action right" data-role="none">
+			<img alt="back" src="../images/footer/settings.png" /> <span
+			class="label">Settings</span>
+		</a>
+
+		<div id="center" class="with-logo"></div>
+	</div>
+
+
+	<div data-role="panel" id="right-panel" data-display="push"
+		data-position="right"
+		class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+		
+			<p class="employee-name">Welcome, Ali</p>
+			
+			<ul data-role="listview" data-inset="true">
+				<li><img src="../images/content/home_filled.png" /> <a
+					href="home-view.html" data-rel="close">Home</a></li>
+				<li><img src="../images/content/settings_filled.png" /> <a
+					href="#" data-rel="close">Settings</a></li>
+				<li><img src="../images/content/notifications_filled.png" /> <a
+					href="notifications-center-view.html" data-rel="close">Notifications</a></li>
+				<li><img src="../images/content/recent_activity.png" /> <a
+					href="#" data-rel="close">Recent Activity</a></li>
+				<li><img src="../images/content/news.png" /> <a href="#"
+					data-rel="close">News, Events & Projects</a></li>
+				<li><img src="../images/content/mortgage.png" /> <a
+					href="mortgage-simulator-view.html" data-rel="close">Mortgage
+						Center</a></li>
+				<li><img src="../images/content/amount.png" /> <a href="#"
+					data-rel="close">Investment Center</a></li>
+				<li><img src="../images/content/auto_loan.png" /> <a href="#"
+					data-rel="close">Auto Loans Center</a></li>
+				<li><img src="../images/content/insurance_center.png" /> <a
+					href="ask_expert/expert-view.html" data-rel="close">Insurance
+						Center</a></li>
+				<li><img src="../images/content/help.png" /> <a
+					href="help-center-view.html" data-rel="close">Help Center</a></li>
+				
+				<li class="terms-of-service"><a href="#" data-rel="close">Terms
+						Of Service</a></li>
+				<li class="logout"><a href="#" data-rel="close">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/pages/application-details.js"></script>
+</div>
+			
