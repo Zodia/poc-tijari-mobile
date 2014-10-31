@@ -62,6 +62,8 @@ $(".applications").click(function() {
 
 $(".new-mortgage").on('click', function() {
 	confirmDialog("Choisir", function() {
+		customer = {};
+		property = {};
 		loadPage("customer-view.html");
 	}, function() {
 		loadPage("customers-list-view.html");
