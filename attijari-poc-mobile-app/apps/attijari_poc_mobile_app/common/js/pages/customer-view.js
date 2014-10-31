@@ -1,3 +1,21 @@
+function loadProfileImage(index){
+	switch (index) {
+	case 0:
+		document.getElementById("customer-image").style.backgroundImage= "url('../images/ayoub.jpg')";
+		break;
+	case 1:
+		document.getElementById("customer-image").style.backgroundImage= "url('../images/mehdi.jpg')";
+		break;
+	case 2:
+		document.getElementById("customer-image").style.backgroundImage= "url('../images/souhail.jpg')";
+		break;
+	default:
+		break;
+	}
+}
+
+loadProfileImage(customer.id);
+
 $.fn.serializeObject = function() {
 	var o = {};
 	var a = this.serializeArray();
