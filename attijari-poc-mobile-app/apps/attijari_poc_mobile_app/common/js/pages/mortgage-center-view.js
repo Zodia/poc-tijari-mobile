@@ -61,7 +61,7 @@ $(".applications").click(function() {
 });
 
 $(".new-mortgage").on('click', function() {
-	confirmDialog("Choisir", function() {
+	confirmDialog("Nouveau Client?", function() {
 		customer = {};
 		property = {};
 		loadPage("customer-view.html");
@@ -85,7 +85,7 @@ function confirmDialog(text, callback_New, callback_Existing) {
 					+ popupDialogId
 					+ '" data-confirmed="no" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;"> \
 	                    <div data-role="header" data-theme="a">\
-	                        <h1>Nouveau Client?</h1>\
+	                        <h1>Confirmation:</h1>\
 	                    </div>\
 	                    <div role="main" class="ui-content" align="center" style="background-color: white;">\
 	                        <h3 style="color:black;margin-bottom: 55px;font-weight: normal;" class="ui-title">'
