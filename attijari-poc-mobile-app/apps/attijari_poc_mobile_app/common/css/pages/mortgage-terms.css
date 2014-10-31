@@ -1,6 +1,7 @@
 .mortgage-view-content {
 	height: 100%;
 	background-color: white;
+	padding: 5px;
 }
 
 #panel-expert {
@@ -8,8 +9,9 @@
 	height: 40%;
 }
 
-#pageContent3 {
+#pageContent {
 	background-color: white;
+	overflow: hidden;
 	height: 95%;
 }
 
@@ -47,7 +49,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height :51%;
+	height: 350px;
 }
 
 input.rightText {
@@ -55,9 +57,11 @@ input.rightText {
 }
 
 #mortgage-terms-form ul li {
-	border-bottom: none;
+	border-top: none;
 	border-right: none;
+	border-bottom: 1px solid #efefef;
 	border-left: none;
+	border-radius: 0;
 }
 
 .ui-listview li p {
@@ -113,7 +117,6 @@ input.rightText {
 	margin: 0px;
 }
 
-
 div.image {
 	position: relative;
 	width: 100%;
@@ -121,7 +124,7 @@ div.image {
 	background-image: url(../../images/content/mortgage-terms.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-} 
+}
 
 div.image .bottom-title-effect {
 	position: absolute;
@@ -130,14 +133,14 @@ div.image .bottom-title-effect {
 	right: 0;
 	margin: 0;
 	height: 45px;
-	background-color: #5e5e5e;	
-	opacity:0.5;
+	background-color: #5e5e5e;
+	opacity: 0.5;
 }
 
 div.image .bottom-title {
 	position: absolute;
 	bottom: 0;
-	left: 0; 
+	left: 0;
 	right: 0;
 	margin: 0;
 	text-align: right;
@@ -147,8 +150,29 @@ div.image .bottom-title {
 	z-index: 10;
 }
 
-#popupDialog-popup{
+#popupDialog-popup {
 	width: 45%;
 	top: 435px;
 	left: 27.5%;
+}
+
+a#cs-cancel {
+	margin: 0;
+	border-color: #DF4B20;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
+	background-color: white;
+	font-weight: normal;
+}
+
+a#submit {
+	margin: 0;
+	border-color: #DF4B20;
+	border-width: 1px 1px 1px 0;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
+	background-color: white;
+	font-weight: normal;
 }

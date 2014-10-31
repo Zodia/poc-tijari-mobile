@@ -9,9 +9,19 @@
 ul.customer-details-list {
 	padding: 0px;
 	margin: 0px;
+	border: 0;
+	box-shadow : none
 }
 
-#pageContent1{
+#customer-form ul li{
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #efefef;
+	border-left: none;
+	border-radius: 0;
+}
+
+#pageContent{
 	background-color: white;
 	height: 95%;
 }
@@ -343,7 +353,13 @@ em {
 }
 
 #customer-form{
-	margin-bottom: 30px;
+	margin-bottom: 26px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 115px;
+	height: 646px;
+	overflow-y: scroll;
 }
 
 .formError .formErrorContent {

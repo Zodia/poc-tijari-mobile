@@ -82,9 +82,11 @@ input.rightText {
 }
 
 #property_form ul li {
-	border-bottom: none;
+	border-top: none;
 	border-right: none;
+	border-bottom: 1px solid #efefef;
 	border-left: none;
+	border-radius: 0;
 }
 
 .ui-listview li p {
@@ -97,7 +99,7 @@ input.rightText {
 	white-space: nowrap;
 }
 
-#pageContent2 {
+#pageContent {
 	background-color: white;
 	height: 95%;
 }
@@ -107,4 +109,25 @@ input.rightText {
 	left: 10px;
 	right: 10px;
 	bottom: 10px;
+}
+
+a#cs-cancel {
+	margin: 0;
+	border-color: #DF4B20;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 0px 5px;
+	background-color: white;
+	font-weight: normal;
+}
+
+a#cs-continue {
+	margin: 0;
+	border-color: #DF4B20;
+	border-width: 1px 1px 1px 0;
+	color: #BD2020;
+	text-shadow: 0 0px 0 #eeeeee;
+	border-radius: 0px 0px 5px;
+	background-color: white;
+	font-weight: normal;
 }
