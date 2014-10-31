@@ -1,19 +1,7 @@
-$(".current-title").text("Application details");
-$(".left").off();
-$(".left").on("click", function() {
-	loadPage("pages/apps-list.html");
-});
-
-$('#edit').on('click', function() {
-	property = applications[application_index].customer.property;
-	customer = applications[application_index].customer;
-	loadPage("pages/customer-view.html");
-});
-$('#cancel').on('click', function() {
-	loadPage("pages/home-view.html");
-});
+property = applications[0].customer.property;
+customer = applications[0].customer;
 function resetFormCustomer() {
-	$.each(applications[application_index].customer, function(name, val) {
+	$.each(customer, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
 		switch (type) {
@@ -32,7 +20,7 @@ function resetFormCustomer() {
 resetFormCustomer();
 
 function resetFormProperty() {
-	$.each(applications[application_index].customer.property, function(name,
+	$.each(property, function(name,
 			val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
 
