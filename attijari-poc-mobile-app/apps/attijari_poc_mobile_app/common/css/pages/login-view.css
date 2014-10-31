@@ -1,138 +1,253 @@
-#loginWrapper{
+#login-wrapper {
 	height : 100%;
-	height:auto ;
-	position : relative;
-	font-family: "Helvetica Neue";
-	
-    
-}
-#backgroundimg img{
-	max-height: 100%;
-	max-width: 100%;
-}
-a:link {
-    text-decoration: none;
+	height: 100%;
 }
 
-#imgcomplete{
-	background-image: url ("../../images/content/imgbuttom.png") ;
-	background-repeat: repeat-y;
-	background-color: white;
-}
-#loginContent {
-	width: 300px;
-	margin: 0px auto;
-	right: auto;
-	left: auto;
-	margin-top: -72px;
-
+.login-content {
+	height: 100%;
+	height: 100%;
+	background-image: url(../../images/content/welcome-bg.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-#email,#password {
-    position:relative;
-    
+.login-content div,
+.login-content p,
+.login-content input {
+	margin: 0;
 }
 
-#emailinput{
-	padding-left: 50px;
-	width: 80%;
-	
+.login-content .ui-input-text input {
+	min-height: 45px;
 }
-#passwordinput{
-	padding-left: 50px;
-	width: 80%;
-	
+
+.login-content .form {
+	position: absolute;
+	width: 35%;
+	left: 32.5%;
+	top: 35%;
 }
-.smallicon{
-    position: absolute;
-	left: 9px;
-	top: 8px;
-	object-fit: contain;
-	width: 20px;
-	height: 20px; 
-	background-color: #FFF;
+
+.login-content .form p {
+	margin-bottom: 10px;
 }
-#logo1{	
-	margin-left: auto;
-	background-image: url("../../images/logo.png"); 
+
+.login-content .form p.email-p label,
+.login-content .form p.pass-p label {
+	position: absolute;
+	left: 10px;
+	top: 9px;
+	height: 30px;
+	width: 30px;
+	margin-bottom: 0;
+	z-index: 9;
 	background-position: center;
-	height: 150px; 
-	margin-right: auto;
-	background-repeat: no-repeat; 
-	width: 100%;	
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-#dialog{
-	margin-top: 162px;
-	height: 300px;
-}
-#headerdialog{
-	background-color:  #ef5a49;
-	color :white;
-}
-#dialogmessage{
-	background-color: white;
-	height: 100px;
-}
-#links a{
-color : #ef5a49;	
-}
-#buttongo{
-	background-color: #ef5a49;
-	color: white;
-		
+.login-content .form p.pass-p label {
+	top: 66px;
+	width: 17px;
+	left: 17px;
 }
 
-#sentpassword{
-	margin-top: 92px;
-	height: 200px;
+.login-content .form p.email-p label {
+	background: url(../../images/content/envelop.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-#register{
-	float: right;
-	
+.login-content .form p.pass-p label {
+	background: url(../../images/content/lock.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-#forgot{
+
+.login-content .form p.email-p .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset,
+.login-content .form p.pass-p .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+	position: relative;
+	height: 47px;
+}
+
+.login-content .form p.email-p input,
+.login-content .form p.pass-p input {
+	position: absolute;
+	height: 47px;
+	top: 0;
+	left: 39px;
+	right: 0;
+	width: inherit;
+	text-trans.form: lowercase;
+}
+
+.login-content .form div.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+	margin: 0;
+	border: 1px solid #818181;
+	box-shadow: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+p.submit-login {
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+p.submit-login button.ui-btn.ui-shadow.ui-corner-all {
+	height: 47px;
+	line-height: 23px;
+	font-size: 18px;
+	margin: 0;
+}
+
+.submit-login button.ui-btn.ui-shadow.ui-corner-all {
+	background: #ef5a49;
+	color: #FFF;
+	border: none;
+	text-shadow: none;
+	font-weight: normal;
+	border-radius: 7px;
+	box-shadow: none;
+}
+
+.submit-login div.ui-btn.ui-input-btn.ui-corner-all.ui-shadow input {
+	font-weight: normal;
+}
+
+p.links a.left.ui-link,
+p.links a.right.ui-link {
+	font-weight: normal;
 	float: left;
+	text-decoration: none;
+	color: #ef5a49;
+	font-size: 13px;
 }
-#languages{
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-	border: 1px solid #EF5A49;
-	margin-left: 2%;
-	margin-right: 10px;
-	width: 95%;
-	height: 81px;
-	border-bottom-right-radius:10px;
-	border-bottom-left-radius:10px;
-	overflow: hidden;
-	display: inline-block;
-	clear: both;
-	margin-top: 274px;
-}
-#frensh{
-	padding-top : 4%;
-	padding-bottom : 6%;
-	float:left;
-	width :50%;
-	height :auto;
-	text-align : center;
-	color :#ef5a49;
-	border-right: 1px solid #EF5A49;
-	
-}	
-#arabic{
-	padding-top : 4%;
-	padding-bottom : 5%;
+
+p.links a.right.ui-link {
 	float: right;
-	width: 49%;
-	height: auto;
+}
+
+p.links a.left.ui-link:active,
+p.links a.right.ui-link:active,
+p.links a.left.ui-link:focus,
+p.links a.right.ui-link:focus {
+	color: #ef5a49;
+}
+
+.language-actions {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+}
+
+.language-actions .ui-block-a a,
+.language-actions .ui-block-b a {
+	margin: 0;
+	border-color: #ef5a49;
+	color: #ef5a49;
+	text-shadow: none;
+	border-radius: 0px 0px 0px 15px;
+	box-shadow: none;
+	background-color: white;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.language-actions .ui-block-b a {
+	color: #FFF;
+	background-color: #ef5a49;
+}
+
+.language-actions .ui-block-b a {
+	border-radius: 0px 0px 15px 0px;
+	border-left: 0;
+}
+
+.language-actions .ui-block-a a:active,
+.language-actions .ui-block-b a:active, 
+.language-actions .ui-block-a a:focus,
+.language-actions .ui-block-b a:focus,
+.language-actions .ui-block-a a:hover,
+.language-actions .ui-block-b a:hover {
+	color: #FFF;
+	background-color: #ef5a49;
+	border-color: #ef5a49;
+	text-shadow: none;
+}
+
+p.bottom-copyright {
+	position: absolute;
+	bottom: 5px;
+	margin: 0;
+	font-size: 12px;
+	left: 25%;
+	width: 50%;
 	text-align: center;
-	color: #EF5A49;
-	
+	color: #595959;
+}
+
+p.bottom-copyright a,
+p.bottom-copyright a:hover,
+p.bottom-copyright a:focus,
+p.bottom-copyright a:active {
+	font-weight: normal;
+	color: #595959;
+	text-decoration: none;
+}
+
+/*-- --*/
+#confirmationPopup-popup {
+	max-width: 100%;
+	top: 88px;
+	right: 12px;
+	bottom: 32px;
+	left: 12px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: rgba(0, 0, 0, 0.67);
+}
+
+#confirmationPopup {
+	width: 550px;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-top: 50%;
+	box-shadow: none;
+	color: #FFF;
+	border-radius: 10px;
+	background: #ef5a49;
+}
+
+#confirmationPopup p {
+	text-align: center;
+	font-size: 20px;
+}
+
+.ui-popup-container.fade.in.ui-popup-active {
+	position: absolute;
+	max-width: 100%;
+	top: 88px;
+	bottom: 32px;
+	z-index: 10;
+}
+/* --- */
+
+#confirmationPopup p.loader {
+	background: url(../../images/loader.GIF);
+	float: left;
+	width: 60px;
+	height: 64px;
+	margin-top: 15px;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+#confirmationPopup p.authentication-error {
+	display: none;
 }
