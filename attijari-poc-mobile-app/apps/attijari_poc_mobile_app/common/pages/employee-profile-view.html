@@ -9,7 +9,7 @@
 				<img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
 			</a>
 			
-			<a class="top-notifications">
+			<a href="notifications-center-view.html" class="top-notifications">
 				<img alt="top-notifications" src="../images/header/top_notification_button.png" />
 			</a>
 		</div>
@@ -33,18 +33,21 @@
 				<div class="fields">
 					<div class="thumbnail-wrapper">
 						<div class="thumbnail"></div>
-						<div class="camera"></div>
+						<div class="camera">
+							<label for="profile-thumb"></label>
+							<input type="file" accept="image/*" id="profile-thumb" data-role="none" />
+						</div>
 					</div>
 					
-					<form data-role="tabs" action="" method="post" id="customer-form">
-						<ul data-role="listview" data-inset="true" class="customer-details-list" id="customers-list">
+					<form data-role="tabs" action="" method="post" id="data-form">
+						<ul data-role="listview" data-inset="true" class="data-details-list" id="data-list">
 	
 							<li class="ui-field-contain">
 								<div class="ui-li-text attribute">
 									<p>
 										<span class="attribute-label">Nom</span> 
 										<span class="attribute-value"> 
-											<input name="last_name" data-wrapper-class="ui-custom" type="text" class="rightText" />
+											<input name="last_name" data-wrapper-class="ui-custom" type="text" value="Bendriss" class="rightText" />
 										</span>
 									</p>
 								</div>
@@ -57,7 +60,7 @@
 									<p>
 										<span class="attribute-label">Prénom</span> 
 										<span class="attribute-value"> 
-											<input name="first_name" data-wrapper-class="ui-custom" type="text" class="rightText" />
+											<input name="first_name" data-wrapper-class="ui-custom" type="text" value="Mehdi" class="rightText" />
 										</span>
 									</p>
 								</div>
@@ -71,7 +74,7 @@
 									<p>
 										<span class="attribute-label">Fix</span> 
 										<span class="attribute-value"> 
-											<input name=fix_phone data-wrapper-class="ui-custom" type="tel" class="rightText" />
+											<input name=fix_phone data-wrapper-class="ui-custom" type="tel" value="(+212) 5 38 35 76" class="rightText" />
 										</span>
 									</p>
 								</div>
@@ -85,7 +88,7 @@
 									<p>
 										<span class="attribute-label">Mobile</span> 
 										<span class="attribute-value"> 
-											<input name="mobile_phone" data-wrapper-class="ui-custom" type="tel" class="rightText" />
+											<input name="mobile_phone" data-wrapper-class="ui-custom" type="tel" value="(+212) 6 28 20 69 61" class="rightText" />
 										</span>
 									</p>
 								</div>
@@ -127,40 +130,15 @@
 							</li>
 						</ul>
 	
-						<div class="ui-grid-a ui-responsive" id="button-div">
+						<div class="save-actions ui-grid-a ui-responsive" id="button-div">
 							<div class="ui-block-a">
-								<a id="cs-cancel" href="mortgage-center-view.html"
-									class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Annuler</a>
+								<a id="cs-cancel" href="home-view.html" class="ui-btn ui-shadow " data-transition="slide" data-direction="reverse">Annuler</a>
 							</div>
 							<div class="ui-block-b">
-								<a id="cs-continue" href="property-view.html"
-									class="ui-btn ui-shadow " data-transition="slide">Continuer</a>
+								<a id="cs-continue" href="home-view.html" class="ui-btn ui-shadow" data-transition="slide">Continuer</a>
 							</div>
 						</div>
 					</form>	
-					
-					
-					<!-- 
-					<form id="form-data" class="ui-field-contain">
-					    <input type="text" name="name" placeholder="name" value="Bendriss Mehdi"/>
-					    <input type="text" name="phone" placeholder="phone" value="+212 5 28 20 69 61"/>
-					    <input type="text" name="mobile" placeholder="mobile" value="+212 6 28 20 69 61"/>
-					    <select name="branch">
-					    	<option>Branche 1</option>
-					    	<option>Branche 2</option>
-					    	<option>Branche 3</option>
-					    </select>
-					    <select name="department">
-					    	<option>Département 1</option>
-					    	<option>Département 2</option>
-					    	<option>Département 3</option>
-					    </select>
-					    <p>
-					    	<input type="button" value="Cancel"/>
-		    				<input type="button" value="Save"/>
-					    </p>
-					</form>
-					-->
 				</div>		
 			</div>
 		</div>
@@ -177,7 +155,7 @@
 		</a>
 		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
 			<img alt="Settings" src="../images/footer/settings.png" />
-			<span class="label">Réglages</span>
+			<span class="label">Paramètres</span>
 		</a>
 		
 		<div id="center" class="with-logo"></div>
@@ -234,7 +212,7 @@
 					<a href="#" data-rel="close">Déconnexion</a>
 				</li>
 				<li class="employee-account-information">
-					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateurs</a>
+					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateur</a>
 				</li>
 				<li class="terms-of-service">
 					<a href="#">Conditions d'Utilisation</a>
