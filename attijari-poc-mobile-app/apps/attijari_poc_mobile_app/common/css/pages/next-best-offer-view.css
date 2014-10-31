@@ -1,9 +1,11 @@
+/*-- --*/
 #confirmationPopup-popup {
 	max-width: 100%;
 	top: 88px;
 	right: 12px;
 	bottom: 100px;
 	left: 12px;
+	z-index: 100000;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	background: rgba(0, 0, 0, 0.67);
@@ -22,8 +24,17 @@
 
 #confirmationPopup p {
 	text-align: center;
-	font-size: 23px;
+	font-size: 20px;
 }
+
+.ui-popup-container.fade.in.ui-popup-active {
+	position: absolute;
+	max-width: 100%;
+	top: 88px;
+	bottom: 32px;
+	z-index: 10;
+}
+/* --- */
 
 #next-best-offer-wrapper {
 	width: 100%;
