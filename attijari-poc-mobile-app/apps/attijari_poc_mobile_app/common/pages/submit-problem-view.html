@@ -30,13 +30,14 @@
 		<div id="submit-problem-wrapper">
 			<div class="submit-problem-content">
 			
-				<form class="submit-problem-form" action="pages/confirmation-view.html">
+				<form class="submit-problem-form" action="home-view.html">
 					<div class="subject-problem">
 						<input type="text" placeholder="Subject" />
 					</div>
 					
 					<div class="attachment">
-						<input type="file" placeholder="Screenshot" />
+						<label for="screenshot-attachement"></label>
+						<input type="file" accept="image/*" id="screenshot-attachement" data-role="none" />
 					</div>
 					
 					<div class="message-core">
