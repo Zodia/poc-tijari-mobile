@@ -1,12 +1,14 @@
 var customer_index = -1;
-var application_index = -1;
+var application_index = 0;
 var connected = 0;
-
-var pagesStack = new Array ();
 
 function wlCommonInit () {
 	// Common initialization code goes here
-	loadPage ("pages/login-view.html");
+	if (connected == 0) {
+		loadPage ("pages/login-view.html");
+	} else {
+		loadPage ("pages/home-view.html");
+	}
 }
 
 function loadPage (url) {
