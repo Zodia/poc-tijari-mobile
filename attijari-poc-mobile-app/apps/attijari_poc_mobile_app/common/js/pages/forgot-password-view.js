@@ -1,23 +1,20 @@
-/*   hiding the dialog box , */
-
-$(document).ready(function() {
-	$("#dialog").hide();
-	$(".right").hide();
-	$("#header").show();
-	$("#footer").hide();
-	$(".current-title").text("Forgot Password");
-	$(".left .back").text("Back");
-
-});
-/*   */
-
-$("#buttongo").on("click", function() {
+$(document).on("pageshow", function () {
 	
-	$("#dialog").show();
+	$(".submit-button").on ("click", function () {
+		$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+		$("#confirmationPopup").popup ("open");
+		
+		setTimeout (
+			function () {
+				$("#confirmationPopup").popup ("close");
+			}, 
+			8000
+		);
+	});
 	
-});
-
-$("#dialog").on("click", function() {
-
-	$("#dialog").hide();
+	$(document).bind ({
+		popupafterclose: function (event, ui) {
+			$("#header .left a.ui-link").trigger ("click");
+		}
+	});
 });
