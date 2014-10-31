@@ -57,7 +57,7 @@ $( document ).ready(function() {
 
 
 $(".applications").click(function() {
-	loadPage("application-details.html");
+	loadPage("applications-search-view.html");
 });
 
 $(".new-mortgage").on('click', function() {

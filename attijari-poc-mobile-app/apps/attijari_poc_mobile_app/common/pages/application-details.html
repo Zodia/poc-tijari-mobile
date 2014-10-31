@@ -49,7 +49,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Prénom</span> <span
-									class="attribute-value"> <input name="First_name"
+									class="attribute-value"> <input  readonly name="First_name" disable
 									data-wrapper-class="ui-custom" type="text" class="rightText" />
 								</span>
 							</p>
@@ -64,7 +64,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Nom</span> <span
-									class="attribute-value"> <input name="Last_name"
+									class="attribute-value"> <input  readonly name="Last_name"
 									data-wrapper-class="ui-custom" type="text" class="rightText" />
 								</span>
 							</p>
@@ -82,7 +82,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Date de naissance</span> <span
-									class="attribute-value"> <input name="dob"
+									class="attribute-value"> <input  readonly name="dob"
 									data-wrapper-class="ui-custom" type="date" class="rightText" />
 								</span>
 							</p>
@@ -133,7 +133,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Pays</span> <span
-									class="attribute-value"> <input name="Nationality"
+									class="attribute-value"> <input  readonly name="Nationality"
 									data-wrapper-class="ui-custom" type="text" class="rightText" />
 								</span>
 							</p>
@@ -174,7 +174,7 @@
 								<span class="attribute-label">
 								Numéro de téléphone principal
 								</span> <span
-									class="attribute-value"> <input name="Mobile"
+									class="attribute-value"> <input  readonly name="Mobile"
 									data-wrapper-class="ui-custom" type="text" class="rightText" />
 								</span>
 							</p>
@@ -191,7 +191,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Adresse email</span> <span
-									class="attribute-value"> <input name="Email"
+									class="attribute-value"> <input  readonly name="Email"
 									data-wrapper-class="ui-custom" type="email" class="rightText" />
 								</span>
 							</p>
@@ -263,7 +263,7 @@
 						<div class="ui-li-text attribute">
 							<p>
 								<span class="attribute-label">Salaire Mensuel (MAD)</span> <span
-									class="attribute-value"> <input name="Monthly_income"
+									class="attribute-value"> <input  readonly name="Monthly_income"
 									data-wrapper-class="ui-custom" type="number" class="rightText" />
 								</span>
 							</p>
@@ -345,7 +345,7 @@
 						<p>
 							<span class="attribute-label">Adresse</span> 
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value=""/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value=""/>
 							</span>
 						</p>
 					</div>
@@ -445,7 +445,7 @@
 						<p>
 							<span class="attribute-label">Surface de terre</span> 
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value="N/A"/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="propAddress" id="name" value="N/A"/>
 							</span>
 						</p>
 					</div>
@@ -461,7 +461,7 @@
 						<p>
 							<span class="attribute-label">Surface de construction/logement</span> 
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="liveableArea" id="name" value=""/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="liveableArea" id="name" value=""/>
 							</span>
 						</p>
 					</div>
@@ -478,7 +478,7 @@
 						<p>
 							<span class="attribute-label">Entrepreneurs en construction</span> 
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="contractors" id="name" value="N/A"/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="contractors" id="name" value="N/A"/>
 							</span>
 						</p>
 					</div>
@@ -494,7 +494,7 @@
 						<p>
 							<span class="attribute-label">Estimation de construction (MAD)</span>
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="constructionSum" id="name" value="N/A"/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="constructionSum" id="name" value="N/A"/>
 							</span>
 						</p>
 					</div>
@@ -510,7 +510,7 @@
 						<p>
 							<span class="attribute-label">Estimation de propriété (MAD)</span>
 							<span class="attribute-value">
-								<input class="rightText" data-wrapper-class="ui-custom" type="text" name="evaluationSum" id="name" value=""/>
+								<input  readonly class="rightText" data-wrapper-class="ui-custom" type="text" name="evaluationSum" id="name" value=""/>
 							</span>
 						</p>
 					</div>
@@ -528,7 +528,7 @@
 							<span class="attribute-value">
 								
 								<img onclick="openFileOption();return;" src="../images/content/img_preview.png" class="thumb-icon">
-								<input type="file" id="file1" style="display:none" data-role="none">
+								<input  readonly type="file" id="file1" style="display:none" data-role="none">
 								
 							</span>
 						</p>
@@ -602,7 +602,7 @@
 							<p>
 								<span class="attribute-label">Montant du prêt</span>
 								<span class="attribute-value">
-									<input class="rightText" data-wrapper-class="ui-custom" type="number" name="loanAmount" id="name" onkeyup="loan()"/>
+									<input  readonly class="rightText" data-wrapper-class="ui-custom" type="number" name="loanAmount" id="name" onkeyup="loan()" value="900000"/>
 								</span>
 							</p>
 						</div>
@@ -618,7 +618,7 @@
 							<p>
 								<span class="attribute-label">Date d'origine</span>
 								<span class="attribute-value">
-									<input data-wrapper-class="ui-custom" type="text" name="orgDate" class="rightText" readonly/>
+									<input   data-wrapper-class="ui-custom" type="text" name="orgDate" class="rightText" value ="31/10/2014" readonly/>
 								</span>
 							</p>
 						</div>
@@ -634,7 +634,7 @@
 							<p>
 								<span class="attribute-label">Echéance</span>
 								<span class="attribute-value">
-									<input data-wrapper-class="ui-custom" type="text" name="payOffDate" class="rightText" readonly/>
+									<input value ="31/01/2015" readonly data-wrapper-class="ui-custom" type="text" name="payOffDate" class="rightText" readonly/>
 								</span>
 							</p>
 						</div>
@@ -650,7 +650,7 @@
 							<p>
 								<span class="attribute-label">Mensualité</span>
 								<span class="attribute-value">
-									<input class="rightText" data-wrapper-class="ui-custom" type="text" name="monthlyPay" id="name" readonly/>
+									<input  value="5000" class="rightText" data-wrapper-class="ui-custom" type="text" name="monthlyPay" id="name" readonly/>
 								</span>
 							</p>
 						</div>
