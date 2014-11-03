@@ -97,7 +97,7 @@
 
 .paths tr td div.bottom-title-effect-main {
 	position: absolute;
-	bottom: 14px;
+	bottom: 0px;
 	left: 0;
 	right: 0;
 	margin: 0;

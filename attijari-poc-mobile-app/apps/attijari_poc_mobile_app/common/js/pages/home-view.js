@@ -74,13 +74,11 @@ $( document ).ready(function() {
 });
 function tik() {
 	var j = Math.floor((Math.random() * 4) + 0);
-	//	alert("j = "+j);
-//	alert("the lenght is  = "+globalarray.length);
 	
 	for (var i=0;i<globalarray.length;i++){
 		if (j==i){
-		//alert("found"+globalarray[i]);
-			 globalarray[i].$Play();
+		
+			 //globalarray[i].$Play();
 		}
 		else{
 			 globalarray[i].$Pause();
