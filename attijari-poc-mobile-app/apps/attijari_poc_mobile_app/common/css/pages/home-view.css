@@ -59,7 +59,8 @@
 } 
 
 .paths tr.spacer {
-	height: 2px;
+	height: 1px;
+	width: 1px;
 }
 
 .paths tr.offer-autoloan td p.top-title{

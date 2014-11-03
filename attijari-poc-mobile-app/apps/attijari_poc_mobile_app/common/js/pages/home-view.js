@@ -78,7 +78,7 @@ function tik() {
 	for (var i=0;i<globalarray.length;i++){
 		if (j==i){
 		
-			 //globalarray[i].$Play();
+			 globalarray[i].$Play();
 		}
 		else{
 			 globalarray[i].$Pause();
