@@ -66,7 +66,7 @@ $(".new-mortgage").on('click', function() {
 		property = {};
 		loadPage("customer-view.html");
 	}, function() {
-		loadPage("customers-list-view.html");
+		loadPage("customers-search-view.html");
 	});
 });
 

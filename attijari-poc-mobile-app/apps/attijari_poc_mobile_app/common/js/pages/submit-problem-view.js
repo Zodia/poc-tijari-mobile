@@ -36,8 +36,13 @@
 
 $(document).on("pageshow", function () {
 	
-	$(".message-submit input").on ("click", function () {
-		$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+	$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+	
+	$(".message-submit .send-problem-button").on ("click", function (e) {
+		
+		e.stopImmediatePropagation ();
+	    e.preventDefault ();
+		
 		$("#confirmationPopup").popup ("open");
 		
 		setTimeout (
@@ -46,11 +51,15 @@ $(document).on("pageshow", function () {
 			}, 
 			4000
 		);
+		
+		return false;
 	});
 	
 	$(document).bind ({
 		popupafterclose: function (event, ui) {
-			loadPage("home-view.html");
+			$(".submit-problem-form").attr ("action", "home-view.html");
+			
+			$(".submit-problem-form").submit();
 		}
 	});
 });
