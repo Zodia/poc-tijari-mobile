@@ -62,7 +62,7 @@ function fillList (count, append, all) {
 			
 			content += '<li id=' + listItemClass + '>';
 			content += '<div class="delete-button"><a href="#" class="ui-btn delete-btn">Delete</a></div>';
-			content += '<a href="notification-content-view.html" class="notification-item-a">';
+			content += '<a href="notification-content-view.html" class="notification-item-a" data-transition="slide">';
 			content += '<div class="ui-li-thumb"></div>';
 			content += '<div class="ui-li-text">';
 			content += '<h3>Credit elligibility</h3>';

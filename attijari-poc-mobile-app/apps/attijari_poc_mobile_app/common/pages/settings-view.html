@@ -1,6 +1,6 @@
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-   	<link rel="stylesheet" href="../css/pages/settings-view.css">
+   	<link rel="stylesheet" href="../css/pages/settings-view.css" />
    	
 	<div data-role="header" id="header" data-position="fixed">
 	
@@ -16,12 +16,12 @@
 		<div class="left">
 			<a href="#" data-rel="back">
 				<img alt="back" src="../images/header/back_arrow.png" />
-				<span class="back">Home</span>
+				<span class="back">Accueil</span>
 			</a>
 		</div>
 		<!--<div class="center with-logo"></div>-->
 		<div class="center">
-			<p class="current-title">Settings Center</p>
+			<p class="current-title">Paramètres</p>
 		</div>
 		
 	</div>
@@ -32,49 +32,49 @@
 		
 				<div class="ui-field-contain">
 					
-					<h3>Account</h3>
+					<h3>Informations du compte</h3>
 					<p class="bottom-border">
-						<span><strong>Username</strong></span>
+						<span><strong>Nom d'utilisateur</strong></span>
 						<span>Mehdi_Bendriss</span>
 					</p>
 					<p class="clickable popup">
-						<span><strong>Password</strong></span>
+						<span><strong>Mot de passe</strong></span>
 						<span>********</span>
 					</p>
 					
 					<h3>Notifications</h3>
 					<p class="bottom-border no-padding" data-iconpos="right">
 						<input type="checkbox" name="receive" id="receive" class="custom">
-						<label class="clickable" for="receive">Receive push notifications</label>
+						<label class="clickable" for="receive">Recevoir les notifications</label>
 					</p>
 					<p class="bottom-border no-padding" data-iconpos="right">
 						<input type="checkbox" name="sound" id="sound" class="custom">
-						<label class="clickable" for="sound">Enable notifications sound</label>
+						<label class="clickable" for="sound">Activer le son des notifications</label>
 					</p>
 					<p class="no-padding" data-iconpos="right">
 						<input type="checkbox" name="light" id="light" class="custom">
-						<label class="clickable" for="light">Enable notifications light</label>
+						<label class="clickable" for="light">Activer la LED de notifications</label>
 					</p>
 					
-					<h3>Language</h3>
+					<h3>Langue</h3>
 					<p class="select">
 						<select name="flip" id="flip" data-role="slider">
 							<option value="french">Français</option>
 							<option value="arabic">العربية</option>
 						</select>
-						<label for="light">Default language</label>
+						<label for="light">Langue par défaut</label>
 					</p>
 					
-					<h3>About</h3>
+					<h3>A propos de</h3>
 					<p class="bottom-border clickable">
 						<span><strong>Version</strong></span>
 						<span>Beta 0.1</span>
 					</p>
-					<p class="bottom-border clickable">Confidentiality policy</p>
-					<p class="clickable">General conditions of use</p>
+					<p class="bottom-border clickable">Politique de confidentialité</p>
+					<p class="clickable">Conditions générales d'utilisation</p>
 					
-					<h3>Others</h3>
-					<p class="bottom-border clickable">Logout</p>
+					<h3>Divers</h3>
+					<p class="bottom-border clickable">Déconnexion</p>
 					<p class="clickable">
 						<span><strong>Copyright Info</strong></span>
 						<span>Attijari Corporation &copy; 2014.</span>
@@ -88,7 +88,7 @@
 	<div data-role="footer" id="footer" data-position="fixed">			
 		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
 			<img alt="Home" src="../images/footer/home.png" />
-			<span class="label">Home</span>
+			<span class="label">Accueil</span>
 		</a>
 		<a href="notifications-center-view.html" id="notificationsAction" class="footer-action" data-role="none">
 			<img alt="Inbox" src="../images/footer/notifications.png" />
@@ -96,10 +96,11 @@
 		</a>
 		<a href="" id="settingsAction" class="footer-action right" data-role="none">
 			<img alt="Settings" src="../images/footer/settings.png" />
-			<span class="label">Settings</span>
-		</a><a href="ask_expert/expert-view.html" id="expertAction"
-			class="footer-action right" data-role="none"> <img alt="Settings"
-			src="../images/content/ask_expert.png" /> <span class="label">Ask Expert</span>
+			<span class="label">Paramètres</span>
+		</a>
+		<a href="ask_expert/expert-view.html" id="expertAction" class="footer-action right" data-role="none"> 
+			<img alt="Settings" src="../images/content/ask_expert.png" /> 
+			<span class="label">Chat Expert</span>
 		</a>
 		
 		<div id="center" class="with-logo"></div>
@@ -108,16 +109,16 @@
 	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
 		<div class="ui-panel-inner">
 			
-			<p class="employee-name">Welcome, Ali</p>
+			<p class="employee-name">Bonjour, Ali</p>
 
 			<ul data-role="listview" data-inset="true">
 				<li>
 					<img src="../images/content/home_filled.png" />
-					<a href="home-view.html" data-rel="close">Home</a>
+					<a href="home-view.html" data-rel="close">Accueil</a>
 				</li>
 				<li>
 					<img src="../images/content/settings_filled.png" />
-					<a href="#" data-rel="close">Settings</a>
+					<a class="current" href="settings-view.html" data-rel="close">Paramètres</a>
 				</li>
 				<li>
 					<img src="../images/content/notifications_filled.png" />
@@ -125,38 +126,41 @@
 				</li>
 				<li>
 					<img src="../images/content/recent_activity.png" />
-					<a href="#" data-rel="close">Recent Activity</a>
+					<a href="#">Activity Récente</a>
 				</li>
 				<li>
 					<img src="../images/content/news.png" />
-					<a href="#" data-rel="close">News, Events & Projects</a>
+					<a href="#">News, Evènements et Projets</a>
 				</li>
 				<li>
 					<img src="../images/content/mortgage.png" />
-					<a href="mortgage-simulator-view.html" data-rel="close">Mortgage Center</a>
+					<a href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
 				</li>
 				<li>
 					<img src="../images/content/amount.png" />
-					<a href="#" data-rel="close">Investment Center</a>
+					<a href="#">Centre d'Investissement </a>
 				</li>
 				<li>
 					<img src="../images/content/auto_loan.png" />
-					<a href="#" data-rel="close">Auto Loans Center</a>
+					<a href="#">Centre de Crédit Automobile</a>
 				</li>
 				<li>
 					<img src="../images/content/insurance_center.png" />
-					<a href="ask_expert/expert-view.html" data-rel="close">Insurance Center</a>
+					<a href="ask_expert/expert-view.html" data-rel="close">Centre d'Assurance</a>
 				</li>
 				<li>
 					<img src="../images/content/help.png" />
-					<a href="help-center-view.html" data-rel="close">Help Center</a>
+					<a href="help-center-view.html" data-rel="close">Aide</a>
 				</li>
 				
-				<li class="terms-of-service">
-					<a href="#" data-rel="close">Terms Of Service</a>
-				</li>
 				<li class="logout">
-					<a href="#" data-rel="close">Logout</a>
+					<a href="#" data-rel="close">Déconnexion</a>
+				</li>
+				<li class="employee-account-information">
+					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateur</a>
+				</li>
+				<li class="terms-of-service">
+					<a href="#">Conditions d'Utilisation</a>
 				</li>
 			</ul>
 		</div>

@@ -29,6 +29,11 @@ html, body {
 	margin: 0px !important;
 }
 
+h4, h3, h2, h1, strong {
+	font-family: 'RegularFont';
+	text-shadow: none; 
+}
+
 #page {
 	overflow: hidden;
 	background-color: #c9cfd6;
@@ -79,7 +84,7 @@ html, body {
 	top: 0px;
 	left: 0px;
 	border: none;
-	z-index: 1001;
+	z-index: 1003;
 }
 
 #header .left {
@@ -170,7 +175,7 @@ html, body {
 	position: fixed;
 	left: 0px;
 	border: none;
-	z-index: 1001;
+	z-index: 1003;
 }
 
 #footer a {
@@ -233,6 +238,10 @@ html, body {
 	/*display: none;*/
 }
 
+#right-panel.ui-panel.ui-panel-position-right.ui-panel-display-push.ui-body-b.ui-panel-animate.ui-body-inherit.ui-panel-open {
+	z-index: 1007;
+}
+
 #right-panel .ui-panel-inner {
 	background: #FFF;
 	padding-left: 27px;
@@ -246,6 +255,7 @@ html, body {
 	margin: 0;
 	width: 100%;
 	float: left;
+	font-family: 'RegularFont';
 }
 
 #right-panel ul {

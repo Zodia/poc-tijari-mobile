@@ -1,4 +1,4 @@
-$(".send-problem-button"). on ("click", function () {
+/*$(".send-problem-button"). on ("click", function () {
 	
 	var message = "Thank you! Problem details have been successfully submitted!";
 	/*var additionalAction = '<a href="#" data-role="button" data-inline="true" data-theme="b" id="loginAction">New application</a>';
@@ -28,7 +28,29 @@ $(".send-problem-button"). on ("click", function () {
 		promoteContent += '<p>Go to college</p>';
 		promoteContent += '</div>';
 		promoteContent += '</div>';
-		promoteContent += '</div>';*/
+		promoteContent += '</div>';
 	
 	confirmOperation (message, null, null, null);
+});
+*/
+
+$(document).on("pageshow", function () {
+	
+	$(".message-submit input").on ("click", function () {
+		$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+		$("#confirmationPopup").popup ("open");
+		
+		setTimeout (
+			function () {
+				$("#confirmationPopup").popup ("close");
+			}, 
+			4000
+		);
+	});
+	
+	$(document).bind ({
+		popupafterclose: function (event, ui) {
+			loadPage("home-view.html");
+		}
+	});
 });

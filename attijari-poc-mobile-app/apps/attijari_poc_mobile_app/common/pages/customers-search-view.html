@@ -1,53 +1,52 @@
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="../css/pages/applications-search-view.css" />
+	<link rel="stylesheet" href="../css/pages/customers-list-view.css" />
 	
 	<div data-role="header" id="header" data-position="fixed">
 
 		<div class="right">
-			<a class="menu-display" href="#right-panel">
+			<a class="menu-display" href="#right-panel"> 
 				<img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
-			</a>
-			
-			<a href="notifications-center-view.html" class="top-notifications">
+			</a> 
+			<a class="top-notifications"> 
 				<img alt="top-notifications" src="../images/header/top_notification_button.png" />
 			</a>
 		</div>
 		<div class="left">
-			<a href="#" data-rel="back">
+			<a href="home-view.html">
 				<img alt="back" src="../images/header/back_arrow.png" />
 				<span class="back">Centre de Crédit Immobilier</span>
 			</a>
 		</div>
 		<!--<div class="center with-logo"></div>-->
 		<div class="center">
-			<p class="current-title">Chercher un Dossier</p>
+			<p class="current-title">Chercher un Client</p>
 		</div>
 
 	</div>
 
 	<div data-role="content" id="pageContent">
 	
-		<div id="applications-list-wrapper">
-			<div id="applications-list-content">	
+		<div id="customers-list-wrapper">
+			<div id="customers-list-content">	
 				
 				<div class="search-area-bg">
 					<div class="logo"></div>
-					<button class="cancel">Effacer</button>
+					<button class="cancel">Cancel</button>
 				</div>
 				
 				<ul data-role="listview" id="list-results" class="swipe-delete" data-inset="true" data-filter-placeholder="Chercher" data-filter="true" data-filter-reveal="true">
 					
-					<p class="results-title">Résultats de Recherche</p>
+					<p class="results-title">Search Results</p>
 					
 					<li id="0">
 						<div class="behind">
-                            <a href="#" class="ui-btn delete-btn">Effacer</a>
-                            <a href="#" class="ui-btn edit-btn pull-left">Modifier</a>
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
                         </div>
-						<a class="result-item-a" href="application-details.html">
-	       				 	<div class="application-image-out-border">
-	    						<div class="application-thumbnail application-image-ayoub"></div>
+						<a class="result-item-a" href="customer-view.html" data-transition="slide">
+	       				 	<div class="customer-image-out-border">
+	    						<div class="customer-thumbnail customer-image-ayoub"></div>
 	    					</div>
     						<div class="coordinates-left">
     							<h2>Ayoub</h2>
@@ -55,20 +54,17 @@
     							<p class="city">Casablanca, Morocco</p>
     						</div>
     						<p class="phone">0655261420</p>
-    						<div class="status">
-    							<p class="id">3456899547</p>
-    							<p class="status-app accepted">Accepté</p>
-    						</div>
+    						<p class="next"></p>
 	    				</a>
 	    			</li>
 					<li id="1">
 						<div class="behind">
-                            <a href="#" class="ui-btn delete-btn">Effacer</a>
-                            <a href="#" class="ui-btn edit-btn pull-left">Modifier</a>
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
                         </div>
-						<a class="result-item-a" href="application-details.html">
-	       				 	<div class="application-image-out-border">
-	    						<div class="application-thumbnail application-image-mehdi"></div>
+						<a class="result-item-a" href="customer-view.html" data-transition="slide">
+	       				 	<div class="customer-image-out-border">
+	    						<div class="customer-thumbnail customer-image-mehdi"></div>
 	    					</div>
     						<div class="coordinates-left">
     							<h2>Mehdi</h2>
@@ -76,16 +72,13 @@
     							<p class="city">Casablanca, Morocco</p>
     						</div>
     						<p class="phone">0655261420</p>
-    						<div class="status">
-    							<p class="id">9864630242</p>
-    							<p class="status-app pending">En cours...</p>
-    						</div>
+    						<p class="next"></p>
 	    				</a>
 	    			</li>
 	    			<li id="2">
-						<a class="result-item-a" href="application-details.html">
-	       				 	<div class="application-image-out-border">
-	    						<div class="application-thumbnail application-image-souhail"></div>
+						<a class="result-item-a" href="customer-view.html" data-transition="slide">
+	       				 	<div class="customer-image-out-border">
+	    						<div class="customer-thumbnail customer-image-souhail"></div>
 	    					</div>
     						<div class="coordinates-left">
     							<h2>Souhail</h2>
@@ -93,27 +86,7 @@
     							<p class="city">Rabat, Maroc</p>
     						</div>
     						<p class="phone">0678261420</p>
-    						<div class="status">
-    							<p class="id">1098649853</p>
-    							<p class="status-app rejected">Rejeté</p>
-    						</div>
-	    				</a>
-	    			</li>
-	    			<li id="3">
-						<a class="result-item-a" href="application-details.html">
-	       				 	<div class="application-image-out-border">
-	    						<div class="application-thumbnail application-image-cris"></div>
-	    					</div>
-    						<div class="coordinates-left">
-    							<h2>Cristian</h2>
-    							<p class="address">10 Avenue Enhakhil Hay Riad</p>
-    							<p class="city">Rabat, Maroc</p>
-    						</div>
-    						<p class="phone">0668287320</p>
-    						<div class="status">
-    							<p class="id">6785310897</p>
-    							<p class="status-app missing">Manque d'infos</p>
-    						</div>
+    						<p class="next"></p>
 	    				</a>
 	    			</li>
 				</ul>
@@ -169,7 +142,7 @@
 				</li>
 				<li>
 					<img src="../images/content/mortgage.png" />
-					<a href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
+					<a class="current" href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
 				</li>
 				<li>
 					<img src="../images/content/amount.png" />
@@ -177,7 +150,86 @@
 				</li>
 				<li>
 					<img src="../images/content/auto_loan.png" />
-					<a class="current" href="#">Centre de Crédit Automobile</a>
+					<a href="#">Centre de Crédit Automobile</a>
+				</li>
+				<li>
+					<img src="../images/content/insurance_center.png" />
+					<a href="#" data-rel="close">Centre d'Assurance</a>
+				</li>
+				<li>
+					<img src="../images/content/help.png" />
+					<a href="help-center-view.html" data-rel="close">Aide</a>
+				</li>
+				
+				<li class="logout">
+					<a href="#" data-rel="close">Déconnexion</a>
+				</li>
+				<li class="employee-account-information">
+					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateur</a>
+				</li>
+				<li class="terms-of-service">
+					<a href="#">Conditions d'Utilisation</a>
+				</li>
+			</ul>
+		</div>
+	</div><div data-role="footer" id="footer" data-position="fixed">			
+		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
+			<img alt="Home" src="../images/footer/home.png" />
+			<span class="label">Accueil</span>
+		</a>
+		<a href="notifications-center-view.html" id="notificationsAction" class="footer-action" data-role="none">
+			<img alt="Inbox" src="../images/footer/notifications.png" />
+			<span class="label">Inbox</span> 
+		</a>
+		<a href="" id="settingsAction" class="footer-action right" data-role="none">
+			<img alt="Settings" src="../images/footer/settings.png" />
+			<span class="label">Paramètres</span>
+		</a>
+		<a href="ask_expert/expert-view.html" id="expertAction" class="footer-action right" data-role="none"> 
+			<img alt="Settings" src="../images/content/ask_expert.png" /> 
+			<span class="label">Chat Expert</span>
+		</a>
+		
+		<div id="center" class="with-logo"></div>
+	</div>
+	
+	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+			
+			<p class="employee-name">Bonjour, Ali</p>
+
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<img src="../images/content/home_filled.png" />
+					<a href="home-view.html" data-rel="close">Accueil</a>
+				</li>
+				<li>
+					<img src="../images/content/settings_filled.png" />
+					<a href="settings-view.html" data-rel="close">Paramètres</a>
+				</li>
+				<li>
+					<img src="../images/content/notifications_filled.png" />
+					<a href="notifications-center-view.html" data-rel="close">Notifications</a>
+				</li>
+				<li>
+					<img src="../images/content/recent_activity.png" />
+					<a href="#">Activity Récente</a>
+				</li>
+				<li>
+					<img src="../images/content/news.png" />
+					<a href="#">News, Evènements et Projets</a>
+				</li>
+				<li>
+					<img src="../images/content/mortgage.png" />
+					<a class="current" href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
+				</li>
+				<li>
+					<img src="../images/content/amount.png" />
+					<a href="#">Centre d'Investissement </a>
+				</li>
+				<li>
+					<img src="../images/content/auto_loan.png" />
+					<a href="#">Centre de Crédit Automobile</a>
 				</li>
 				<li>
 					<img src="../images/content/insurance_center.png" />
@@ -201,6 +253,6 @@
 		</div>
 	</div>
 
-	<script src="../js/pages/applications-search-view.js"></script>
+	<script src="../js/pages/customers-list-view.js"></script>
 
 </div>
