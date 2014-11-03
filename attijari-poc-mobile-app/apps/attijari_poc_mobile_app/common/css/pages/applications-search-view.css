@@ -27,7 +27,10 @@
 	background-size: cover;
 }
 
-.search-area-bg .cancel {
+.search-area-bg .cancel,
+.search-area-bg .cancel:hover,
+.search-area-bg .cancel:active,
+.search-area-bg .cancel:focus {
 	position: absolute;
 	color: #FFF;
 	height: 33px;
@@ -42,6 +45,8 @@
 	font-weight: normal;
 	font-size: 14px;
 	border: none;
+	outline: none;
+	box-shadow: none;
 }
 
 .ui-filterable {

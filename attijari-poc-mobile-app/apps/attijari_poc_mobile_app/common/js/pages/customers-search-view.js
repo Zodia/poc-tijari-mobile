@@ -2,6 +2,11 @@
  * 
  */
 
+$(".cancel").on("click", function () {
+	$("div.ui-input-search.ui-shadow-inset.ui-input-has-clear.ui-body-inherit.ui-corner-all input").val ("");
+	$("a.ui-input-clear.ui-btn.ui-icon-delete.ui-btn-icon-notext.ui-corner-all").addClass("ui-input-clear-hidden");
+});
+
 $('#list-results').children('li').on('click', function () {
 	  // alert('Selected Name=' + $(this).find("id").text());
 	   customer = customers[$(this).attr("id")];
@@ -9,7 +14,7 @@ $('#list-results').children('li').on('click', function () {
 //	   loadPage("swipe.html");
 	});
 
-$(function() {
+/*$(function() {
 
     function prevent_default(e) {
         e.preventDefault();
@@ -64,4 +69,4 @@ $(function() {
         $(this).parents('li').children('a').html('edited')
     })
 
-});
+});*/
