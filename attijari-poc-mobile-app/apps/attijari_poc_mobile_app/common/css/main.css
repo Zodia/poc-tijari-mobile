@@ -183,6 +183,7 @@ html, body {
 
 #footer .footer-action.right {
 	float: right;
+	width: 70px;
 }
 
 #footer .footer-action:first-child {
