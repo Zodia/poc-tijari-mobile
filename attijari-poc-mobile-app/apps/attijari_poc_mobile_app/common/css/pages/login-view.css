@@ -79,8 +79,8 @@
 	top: 0;
 	left: 39px;
 	right: 0;
-	width: inherit;
-	text-trans.form: lowercase;
+	width: 85%;
+	text-transform: lowercase;
 }
 
 .login-content .form div.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
@@ -125,6 +125,8 @@ p.links a.right.ui-link {
 	color: #ef5a49;
 	font-size: 13px;
 	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
 
 p.links a.right.ui-link {

@@ -1,11 +1,23 @@
-/*@font-face {
-    font-family: helveticaNeueThin;
-    src: url (../fonts/HelveticaNeueThin.ttf);
-}*/
+@font-face {
+    font-family: 'LightFont'; /* Roboto Light */
+    src: url('../fonts/RobotoLight/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoLight/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-* {
+@font-face {
+    font-family: 'RegularFont'; /* Roboto Regular */
+    src: url('../fonts/RobotoRegular/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoRegular/Roboto-Regular-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, body, p, div, span, a, form, input, select, textarea, button, .ui-btn {
 	text-shadow: none;
-	/*font-family: helveticaNeueThin;*/
+	font-weight: normal;
+	font-family: 'LightFont';
 }
 
 html, body {
@@ -94,6 +106,7 @@ html, body {
 	margin-top: 8px;
 	display: block;
 	float: right;
+	font-family: 'RegularFont';
 }
 
 #header .left a {
