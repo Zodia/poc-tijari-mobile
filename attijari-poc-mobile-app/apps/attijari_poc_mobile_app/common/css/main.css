@@ -14,7 +14,11 @@
     font-style: normal;
 }
 
-*, body, p, div, span, a, form, input, select, textarea, button, .ui-btn {
+*, body, p, div, h4, h3, h2, h1, span, a, form, input, select, textarea, button, 
+.ui-btn, .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, 
+html .ui-bar-a .ui-bar-inherit, 
+html .ui-body-a .ui-bar-inherit, 
+html body .ui-group-theme-a .ui-bar-inherit {
 	text-shadow: none;
 	font-weight: normal;
 	font-family: 'LightFont';
@@ -153,6 +157,8 @@ html, body {
 	line-height: 48px;
 	color: #FFF;
 	font-weight: normal;
+	font-size: 22px;
+	font-family: RegularFont;
 }
 
 #footer {
@@ -185,21 +191,20 @@ html, body {
 
 #footer .footer-action {
 	display: block;
-	width: 70px;
+	width: 75px;
 	text-align: center;
 	height: 48px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 15px;
 	cursor: pointer;
 }
 
 #footer .footer-action.right {
 	float: right;
-	width: 70px;
 }
 
 #footer .footer-action:first-child {
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 #footer .footer-action img {
@@ -220,6 +225,7 @@ html, body {
 	color: #FFF;
 	font-weight: normal;
 	font-size: 14px;
+	width: 100%;
 }
 
 #right-panel {
@@ -298,6 +304,10 @@ html, body {
 	width: 88%;
 	left: 6%;
 	min-height: inherit;
+}
+
+#right-panel ul li a.current {
+	background: #F5F5F5;
 }
 
 #right-panel ul li:last-child a {
