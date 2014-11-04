@@ -1,3 +1,7 @@
+span.boldText {
+	font-family: 'RegularFont';
+}
+
 .faqs-content {
 	padding: 20px;
 }
@@ -14,6 +18,10 @@
 	font-weight: normal;
 }
 
+#faq-set .faq-item .details-container {
+	text-align: justify;
+}
+
 #faq-set .faq-item .details-container pre {
 	display: inline;
 	background: #fafafa;
@@ -21,6 +29,10 @@
 	padding-right: 5px;
 	border: 1px solid #ececec;
 	border-radius: 3px;
+}
+
+#faq-set .faq-item .details-container ul {
+	list-style: square;
 }
 
 #faq-set .faq-item h3.ui-collapsible-heading.ui-collapsible-heading-collapsed a {
@@ -40,6 +52,8 @@
 
 #faq-set .faq-item .ui-collapsible-content.ui-body-inherit {
 	border-color: #ef5a49;
+	padding-bottom: 25px;
+	padding-top: 25px;
 }
 
 #faq-set .faq-item .ui-collapsible-content.ui-body-inherit:last-child {
