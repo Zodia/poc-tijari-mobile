@@ -32,26 +32,50 @@ ul.customer-details-list {
 	margin-top: 10px;
 }
 
-a#cs-cancel {
-	margin: 0;
-	border-color: #DF4B20;
-	color: #BD2020;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 0px 5px;
-	background-color: white;
-	font-weight: normal;
+#button-div .ui-block-a,
+#button-div .ui-block-b {
+	text-shadow: none;
+	margin: 0px;
+	height: 48px;
+	width: 49.8%;
 }
 
-a#cs-continue {
-	margin: 0;
-	border-color: #DF4B20;
-	border-width: 1px 1px 1px 0;
-	color: #BD2020;
-	text-shadow: 0 0px 0 #eeeeee;
-	border-radius: 0px 0px 5px;
-	background-color: white;
-	font-weight: normal;
+#button-div .ui-block-b {
+	border-radius: 0px 0px 5px 0px;
 }
+
+#button-div .ui-block-a a,
+#button-div .ui-block-b a {
+	color: #ef5a49;
+	width: 99.5%;
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+	border: 1px solid #ef5a49;
+	background-color: #FFF;
+	font-weight: normal;
+	display: block;
+	border-radius: 0px 0px 5px 0px;
+	text-decoration: none;
+}
+
+#button-div .ui-block-a a {
+	border-radius: 0px 0px 0px 5px;
+	border-right: 0px;
+}
+
+#button-div .ui-block-a a:active,
+#button-div .ui-block-b a:active, 
+#button-div .ui-block-a a:focus,
+#button-div .ui-block-b a:focus,
+#button-div .ui-block-a a:hover,
+#button-div .ui-block-b a:hover {
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}
+
 
 .customer-details-list .attribute {
 	float: left;
@@ -360,7 +384,7 @@ em {
 	right: 0;
 	margin-top: 15px;
 	top: 115px;
-	height: 646px;
+	height: 625px;
 	overflow-y: scroll;
 }
 

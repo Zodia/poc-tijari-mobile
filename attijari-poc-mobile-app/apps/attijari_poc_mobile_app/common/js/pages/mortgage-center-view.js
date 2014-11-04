@@ -91,8 +91,8 @@ function confirmDialog(text, callback_New, callback_Existing) {
 	                        <h3 style="color:black;margin-bottom: 55px;font-weight: normal;" class="ui-title">'
 					+ text
 					+ '<div class="ui-grid-a ui-responsive" id="button-div">'
-					+ '<div class="ui-block-a"><a href="#" class="btn-submit optionNew" data-rel="back" style="color:#DF4B20;font-weight:normal;text-decoration: none;">Oui</a></div>'
-					+ '<div class="ui-block-b"><a href="#" class="btn-back optionExisting" data-rel="back" data-transition="flow" style="color:#DF4B20;font-weight:normal;text-decoration: none;">Non</a></div>'
+					+ '<div class="ui-block-a"><a href="#" class="btn-submit optionNew" data-rel="back">Oui</a></div>'
+					+ '<div class="ui-block-b"><a href="#" class="btn-back optionExisting" data-rel="back" data-transition="flow">Non</a></div>'
 					+ '</div>' + '</div>').appendTo($.mobile.pageContainer);
 	var popupDialogObj = $('#' + popupDialogId);
 	popupDialogObj.trigger('create');
