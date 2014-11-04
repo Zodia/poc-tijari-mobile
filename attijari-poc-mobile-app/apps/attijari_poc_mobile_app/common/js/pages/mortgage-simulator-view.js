@@ -6,8 +6,6 @@
 $("#submitButton").on("click", function() {
 	sourcePage.title = "Mortgage Simulator"; 
 	sourcePage.url = "mortgage-simulator-view.html";
-	loadPage("ask_expert/expert-view.html");
-
 });
 
 /**

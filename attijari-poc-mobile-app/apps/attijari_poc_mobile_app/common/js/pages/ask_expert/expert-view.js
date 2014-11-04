@@ -3,11 +3,8 @@
  * accessed : mortgage-simulator or mortgage-terms.
  * 
  */
-sourcePage.title = "Home";
-sourcePage.url = "home-view.html";
-
 $(".left a").attr("href", "../" + sourcePage.url);
-$(".left a .label").text(sourcePage.title);
+$(".left a .back").text(sourcePage.title);
 
 // Title of page
 $(".current-title").text("Ask an expert");
