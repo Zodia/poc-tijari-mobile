@@ -4,6 +4,16 @@
 	padding-right: 15px;
 }
 
+.ui-li-text h3 {
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.ui-li-text p {
+	font-weight: normal;
+	text-shadow: none;
+}
+
 .notifications-categories ul #all-notifications {
 	height: 30px;
 	line-height: 30px;

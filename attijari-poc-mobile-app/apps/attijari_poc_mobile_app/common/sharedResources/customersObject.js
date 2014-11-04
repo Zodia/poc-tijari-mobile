@@ -282,6 +282,14 @@ var sourcePage = {
 	url : ""
 }
 
+var expertNotification = {
+	pic: "",
+	title: "",
+	status: "",
+	date: "",
+	content: ""
+}
+
 function getCustomer() {
 	return customer;
 }

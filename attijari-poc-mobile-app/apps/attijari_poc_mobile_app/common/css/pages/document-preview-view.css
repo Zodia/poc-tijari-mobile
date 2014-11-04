@@ -10,9 +10,10 @@
 	overflow: hidden;
 }
 
-.document-preview-content iframe {
+.document-preview-content embed {
 	height: 100%;
 	width: 100%;
+	object-fit: contain;
 	background: #FFF;
 	border: none;
 }
