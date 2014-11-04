@@ -37,7 +37,6 @@ ul.customer-details-list {
 	text-shadow: none;
 	margin: 0px;
 	height: 48px;
-	width: 49.8%;
 }
 
 #button-div .ui-block-b {
@@ -46,6 +45,8 @@ ul.customer-details-list {
 
 #button-div .ui-block-a a,
 #button-div .ui-block-b a {
+	box-shadow: none;
+	text-shadow: none;
 	color: #ef5a49;
 	width: 99.5%;
 	height: 43px;
@@ -62,7 +63,7 @@ ul.customer-details-list {
 
 #button-div .ui-block-a a {
 	border-radius: 0px 0px 0px 5px;
-	border-right: 0px;
+	width: 100%;
 }
 
 #button-div .ui-block-a a:active,
