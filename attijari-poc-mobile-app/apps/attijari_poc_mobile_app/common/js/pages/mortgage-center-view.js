@@ -81,9 +81,9 @@ $(".refinancing").click(function() {
 function confirmDialog(text, callback_New, callback_Existing) {
 	var popupDialogId = 'popupDialog';
 	$(
-			'<div data-role="popup" id="'
+			'<div data-role="popup" data-dismissible="true" id="'
 					+ popupDialogId
-					+ '" data-confirmed="no" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;"> \
+					+ '" data-confirmed="" data-transition="pop" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;"> \
 	                    <div data-role="header" data-theme="a">\
 	                        <h1>Confirmation:</h1>\
 	                    </div>\
@@ -100,13 +100,13 @@ function confirmDialog(text, callback_New, callback_Existing) {
 			.popup({
 				afterclose : function(event, ui) {
 					popupDialogObj.find(".optionNew").first().off('click');
-					var isNew = popupDialogObj.attr('data-confirmed') === 'yes' ? true
-							: false;
+//					var isNew = popupDialogObj.attr('data-confirmed') === 'yes' ? true
+//							: false;
 					$(event.target).remove();
-					if (isNew && callback_New) {
+					if (popupDialogObj.attr('data-confirmed') === 'yes') {
 						callback_New();
 					}
-					if(!isNew && callback_Existing){
+					else if(popupDialogObj.attr('data-confirmed') === 'no'){
 						callback_Existing();
 					}
 				}

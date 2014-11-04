@@ -9,10 +9,6 @@ $("#submitButton").on("click", function() {
 	loadPage("ask_expert/expert-view.html");
 
 });
-$("#back").on("click", function() {
-	loadPage ("mortgage-center-view.html");
-
-});
 
 /**
  * Function to check and calculate the loan

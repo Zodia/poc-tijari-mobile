@@ -43,6 +43,7 @@
 
 .select-informations{
 	border: none;
+	outline: none;
     box-shadow: none;
     background-color: transparent;
     margin: 0px;
@@ -117,6 +118,7 @@ input.centerText{
     margin: 0px;
     text-align: right;
 }
+
 #testimage img{
 	max-width:900px;
     max-height:750px;
@@ -124,13 +126,6 @@ input.centerText{
 
 }
 
-
-#pageContent{
-	bottom: 84px;
-	overflow: hidden;
-}
-	
-	
 #button-div{
 	position: absolute;
 	width: 98%;
@@ -189,4 +184,8 @@ input.centerText{
 	border-bottom: 1px solid #efefef;
 	border-left: none;
 	border-radius: 0;
+}
+
+.property-details-list .attribute .attribute-value input{
+	text-align: right;
 }

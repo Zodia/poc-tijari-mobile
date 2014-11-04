@@ -1,45 +1,37 @@
-
-
 <div data-role="page" id="page">
 	<meta charset="utf-8">
-	
-   	<link rel="stylesheet" href="../css/pages/mortgage-simulator-view.css">
-   	
+	<link rel="stylesheet" href="../css/pages/mortgage-simulator-view.css">
+<!-- 	Header -->
 	<div data-role="header" id="header" data-position="fixed">
-		
+
 		<div class="right">
-			<a class="menu-display" href="#right-panel">
-				<img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
-			</a>
-			
-			<a href="notifications-center-view.html" class="top-notifications">
-				<img alt="top-notifications" src="../images/header/top_notification_button.png" />
+			<a class="menu-display" href="#right-panel"> <img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
+			</a> <a href="notifications-center-view.html" class="top-notifications"> <img alt="top-notifications" src="../images/header/top_notification_button.png" />
 			</a>
 		</div>
 		<div class="left">
-			<a href="#" data-rel="back"> 
-				<img alt="back" src="../images/header/back_arrow.png" />
-				<span class="back">Back</span>
+			<a href="property-view.html" data-rel="back"> <img alt="back" src="../images/header/back_arrow.png" /> <span class="back">Detail propriété</span>
 			</a>
 		</div>
 
-		<!--<div class="center with-logo"></div>-->
+
 		<div class="center">
-			<p class="current-title"><strong>Crédit Immobilier<strong></p> 
+			<p class="current-title">Détail du crédit</p>
 		</div>
-		
+
+
 	</div>
-	
+<!-- 	Content -->
 	<div data-role="content" id="pageContent">
-
-<div id="testimage">
-<img src="../images/pages/agadir.png" alt="header" />
-
-</div>
-
-<div id="mortgageSimulator">
-	<ul data-role="listview" data-inset="true"
-			class="property-details-list">
+		<div class="mortgage-view-content" data-type="vertical">
+		
+<!-- 			<img id="panel-expert" alt="" src="../images/content/ask_expert_pic.png"> -->
+			<div class="image">
+				<div class="bottom-title-effect"></div>
+				<img src="../images/pages/agadir.png" style="width: 100%;">
+			</div>
+		<div id="mortgageSimulator">
+			<ul data-role="listview" data-inset="true" class="property-details-list">
 			<li class="ui-field-contain">
 				<div class="thumb">
 					<img src="../images/content/terms.png" class="thumb-icon"></img>
@@ -93,7 +85,7 @@
 					<img src="../images/content/info.png" class="thumb-icon"></img>
 				</div>
 			</li>
-			
+					
 			<li class="ui-field-contain">
 				<div class="thumb">
 					<img src="../images/content/amount.png" class="thumb-icon"></img>
@@ -103,7 +95,7 @@
 						<span class="attribute-label">Montant du prêt</span> 
 						<span class="attribute-value">
 
-					<input  data-wrapper-class="ui-custom"type = "text"  onkeyup=checkAndValidate(this) />
+					<input  data-wrapper-class="ui-custom" type = "text"  onkeyup=checkAndValidate(this) />
 
 						</span>
 					</p>
@@ -127,9 +119,9 @@
 				<div class="ui-li-thumb thumb-info">
 					<img src="../images/content/info.png" class="thumb-icon"></img>
 				</div>
-</li>
-
-				<li class="ui-field-contain">
+			</li>
+		
+			<li class="ui-field-contain">
 				<div class="ui-li-thumb thumb">
 					<img src="../images/content/pmi.png" class="thumb-icon"></img>
 				</div>
@@ -144,58 +136,54 @@
 				<div class="ui-li-thumb thumb-info">
 					<img src="../images/content/info.png" class="thumb-icon"></img>
 				</div> 
-</li>
-
-</ul>
-
+			</li>
+		</ul>
 
 
-    <table style="width: 100%;">
-	<tr>
-	<td> <p><strong>Mensualités</strong></p>
-	<input class="centerText" data-wrapper-class="ui-custom"type = "text"  /></td>
-	
-	<td> <p><strong>Intérêts payés</strong></p>
-	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  /></td>
-	</tr>
-	<tr>
-	<td> <p><strong>Impôts payés </strong></p>
-	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  />
-	</td>
-	<td> <p><strong>Assurance payés </strong></p>
-	<input class="centerText" data-wrapper-class="ui-custom" type = "text"  />
-	 </td>
-	</tr>
-	</table>
+
+	    <table style="width: 100%;">
+			<tr>
+				<td> <p><strong>Mensualités</strong></p>
+					<input class="centerText" data-wrapper-class="ui-custom"type = "text" readonly="readonly" />
+				</td>
+				<td> <p><strong>Intérêts payés</strong></p>
+					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+				</td>
+			</tr>
+			<tr>
+				<td> <p><strong>Impôts payés </strong></p>
+					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+				</td>
+				<td> <p><strong>Assurance payés </strong></p>
+					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+				</td>
+			</tr>
+		</table>
 
 		<div class="ui-grid-a ui-responsive" id="button-div">
-    		<div class="ui-block-a"><a id="back" href="#" class="ui-btn ui-shadow">Mortgage Center</a></div>
-    		<div class="ui-block-b"><a id="submitButton" href="#" class="ui-btn ui-shadow">Ask an Expert</a></div>
+    		<div class="ui-block-a"><a id="back" href="#" class="ui-btn ui-shadow">Centre de Crédit</a></div>
+    		<div class="ui-block-b"><a id="submitButton" href="#" class="ui-btn ui-shadow">Chat avec Expert</a></div>
     	</div>
-
+	</div>
 </div>
-
 	</div>
 	
-<div data-role="footer" id="footer" data-position="fixed">			
-		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
-			<img alt="Home" src="../images/footer/home.png" />
-			<span class="label">Home</span>
-		</a>
-		<a href="notifications-view.html" id="notificationsAction" class="footer-action" data-role="none">
-			<img alt="Inbox" src="../images/footer/notifications.png" />
-			<span class="label">Inbox</span> 
-		</a>
-		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
-			<img alt="Settings" src="../images/footer/settings.png" />
-			<span class="label">Settings</span>
+	<div data-role="footer" id="footer" data-position="fixed">
+		<a href="home-view.html" class="footer-action" data-role="none"> <img
+			alt="back" src="../images/footer/home.png" /> <span class="label">Accueil</span>
+		</a> <a href="notifications-center-view.html" class="footer-action" data-role="none">
+			<img alt="back" src="../images/footer/notifications.png" /> <span
+			class="label">Inbox</span>
+		</a> <a href="settings-view.html" class="footer-action right" data-role="none">
+			<img alt="back" src="../images/footer/settings.png" /> <span
+			class="label">Paramètres</span>
 		</a><a href="ask_expert/expert-view.html" id="expertAction"
-			class="footer-action right" data-role="none"> <img alt="Settings"
-			src="../images/content/ask_expert.png" /> <span class="label">Ask Expert</span>
+			class="footer-action right" data-role="none"> <img alt="Paramètres"
+			src="../images/content/ask_expert.png" /> <span class="label">Chat Expert</span>
 		</a>
 
 		<div id="center" class="with-logo"></div>
-	</div> 
+	</div>
 	
 	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
 		<div class="ui-panel-inner">
@@ -253,10 +241,6 @@
 			</ul>
 		</div>
 	</div>
-	
-	
+
 	<script src="../js/pages/mortgage-simulator-view.js"></script>
-
-
-	
  </div>
