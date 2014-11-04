@@ -172,3 +172,8 @@
 	top: 88px;
 	z-index: 1001;
 }
+
+.ui-slider-label.ui-slider-label-a.ui-btn-active {
+	background-color: #ef5a49;
+	text-shadow: none;
+}
