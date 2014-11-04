@@ -29,6 +29,10 @@
 	text-align: right;
 }
 
+.property-details-list{
+	box-shadow : none;
+}
+
 .ui-input-text.ui-custom {
     border: none;
     box-shadow: none;
@@ -88,23 +92,6 @@ overflow: hidden;
 white-space: nowrap;
 }
 
-a#back{
-  margin:0;
-  border-color:#DF4B20;
-  color: #BD2020;
-  background-color:white;	
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 0px 5px ;
-}
-a#submitButton{
-  margin:0;
-  border-color: #DF4B20;
-  border-width: 1px 1px 1px 0;
-  color: #BD2020;
-  background-color:white;
-  text-shadow: 0 0px 0 #eeeeee;	
-  border-radius:0px 0px 5px ;
-}
 
 table, td, th {
     border-color:#DF4B20;
@@ -135,4 +122,71 @@ input.centerText{
     max-height:750px;
     min-height:380px;
 
-} 
+}
+
+
+#pageContent{
+	bottom: 84px;
+	overflow: hidden;
+}
+	
+	
+#button-div{
+	position: absolute;
+	width: 98%;
+	bottom: 10px;
+	left: 1%;
+	right: 1%;
+}	
+#button-div .ui-block-a,
+#button-div .ui-block-b {
+	text-shadow: none;
+	margin: 0px;
+	height: 48px;
+}
+
+#button-div .ui-block-b {
+	border-radius: 0px 0px 5px 0px;
+}
+
+#button-div .ui-block-a a,
+#button-div .ui-block-b a {
+	box-shadow: none;
+	text-shadow: none;
+	color: #ef5a49;
+	width: 99.5%;
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+	border: 1px solid #ef5a49;
+	background-color: #FFF;
+	font-weight: normal;
+	display: block;
+	border-radius: 0px 0px 5px 0px;
+	text-decoration: none;
+}
+
+#button-div .ui-block-a a {
+	border-radius: 0px 0px 0px 5px;
+	width: 100%;
+}
+
+#button-div .ui-block-a a:active,
+#button-div .ui-block-b a:active, 
+#button-div .ui-block-a a:focus,
+#button-div .ui-block-b a:focus,
+#button-div .ui-block-a a:hover,
+#button-div .ui-block-b a:hover {
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}
+
+#mortgageSimulator ul li{
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #efefef;
+	border-left: none;
+	border-radius: 0;
+}

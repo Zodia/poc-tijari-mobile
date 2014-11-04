@@ -1237,3 +1237,8 @@ a#submit {
 	bottom: 0px;
 	margin-bottom: 5px;
 }
+
+#header-axe{
+	background-color: white;
+	color: #ef5a49;
+}
