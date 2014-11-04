@@ -51,14 +51,14 @@ function changeStyle (focusBlock, freeBlock) {
 }
 
 function displayRedPopup (dismissibleBool, translateBool) {
-	$("#confirmationPopup").attr ("data-dismissible", dismissibleBool);
+	$("#confirmationLoginPopup").attr ("data-dismissible", dismissibleBool);
 	
-	$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
-	$("#confirmationPopup").popup ("open");
+	$("#confirmationLoginPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+	$("#confirmationLoginPopup").popup ("open");
 		
 	setTimeout (
 		function () {
-			$("#confirmationPopup").popup ("close");
+			$("#confirmationLoginPopup").popup ("close");
 		}, 
 		4000
 	);
@@ -66,7 +66,6 @@ function displayRedPopup (dismissibleBool, translateBool) {
 	$(document).bind ({
 		popupafterclose: function (event, ui) {
 			if (translateBool) {
-				console.log ("yes translate");
 				translate ();
 			}
 		}
@@ -98,8 +97,8 @@ function testData () {
 	
 	if ($.trim ($(".email-p input").val ()) === '' || 
 			$.trim ($(".pass-p input").val ()) === '' || 
-			$.trim ($(".email-p input").val ()) !== 'demo' || 
-			$.trim ($(".pass-p input").val ()) !== 'demo') {
+			($.trim ($(".email-p input").val ())).toLowerCase () !== 'demo' || 
+			($.trim ($(".pass-p input").val ())).toLowerCase () !== 'demo') {
 		
 		$(".loading-language").css ("display", "none");
 		$(".loader").css ("display", "none");

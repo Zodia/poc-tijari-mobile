@@ -2,6 +2,24 @@
 	<meta charset="utf-8">
    	<link rel="stylesheet" href="../css/pages/settings-view.css" />
    	
+   	<div data-role="popup" id="languagePopup" class="ui-content" data-dismissible="true" data-theme="a" data-transition="fade">
+   		<div data-rold="header" class="header" data-theme="a">
+   			<h1>Changer la langue</h1>
+   		</div>
+   		<div role="main" class="main ui-content">
+   			<p>Changer la langue de l'application entrainera son redémarrage.</p>
+   			
+   			<div class="language-actions ui-grid-a ui-responsive">
+				<div class="ui-block-a">
+					<a href="#" class="ui-btn ui-shadow">Annuler</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#" class="ui-btn ui-shadow">Continuer</a>
+				</div>
+			</div>
+   		</div>
+	</div>
+   	
 	<div data-role="header" id="header" data-position="fixed">
 	
 		<div class="right">
@@ -58,7 +76,7 @@
 					
 					<h3>Langue</h3>
 					<p class="select">
-						<select name="flip" id="flip" data-role="slider">
+						<select name="flip" id="language-flip" data-role="slider">
 							<option value="french">Français</option>
 							<option value="arabic">العربية</option>
 						</select>

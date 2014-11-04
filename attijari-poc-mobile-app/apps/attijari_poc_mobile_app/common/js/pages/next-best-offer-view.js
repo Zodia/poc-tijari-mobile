@@ -1,10 +1,10 @@
 $(document).on ('pageshow', function () {
-	$("#confirmationPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
-	$("#confirmationPopup").popup ("open");
+	$("#confirmationOffersPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
+	$("#confirmationOffersPopup").popup ("open");
 	
 	setTimeout (
 		function () {
-			$("#confirmationPopup").popup ("close");
+			$("#confirmationOffersPopup").popup ("close");
 		}, 
 		3000
 	);

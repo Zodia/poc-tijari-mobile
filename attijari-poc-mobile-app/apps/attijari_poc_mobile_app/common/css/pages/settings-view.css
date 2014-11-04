@@ -94,3 +94,81 @@
 .settings-content p.no-padding .ui-checkbox label:FOCUS {
 	border-radius: 0; 
 }
+
+
+/* --- */
+#languagePopup {
+	padding: 0;
+	padding: 0;
+	top: 42%;
+	position: absolute;
+	width: 74%;
+	left: 13%;
+}
+
+#languagePopup .header {
+	padding: 10px;
+	text-align: center;
+	background: #ef5a49;
+	color: #FFF;
+}
+
+#languagePopup .header h1 {
+	margin: 0;
+}
+
+#languagePopup .main {
+	padding-bottom: 10px;
+}
+
+#languagePopup .main p {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+#languagePopup .language-actions .ui-block-a a, 
+#languagePopup .language-actions .ui-block-b a {
+	margin: 0;
+	border-color: #ef5a49;
+	color: #ef5a49;
+	text-shadow: none;
+	border-radius: 0px 0px 0px 15px;
+	box-shadow: none;
+	background-color: #FFF;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+#languagePopup .main.ui-content .language-actions .ui-block-b a {
+	border-left: 0;
+	border-radius: 0px 0px 15px 0px;
+}
+
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-a a:hover, 
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-b a:hover,
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-a a:focus, 
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-b a:focus,
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-a a:active, 
+#languagePopup .main.ui-content .language-actions.ui-grid-a.ui-responsive .ui-block-b a:active {
+	background-color: #ef5a49;
+	color: #FFF;
+}
+
+#languagePopup-popup {
+	max-width: 100%;
+	top: 0px;
+	right: 12px;
+	bottom: 99px;
+	left: 12px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: rgba(0, 0, 0, 0.67);
+}
+
+.ui-popup-container.fade.in.ui-popup-active {
+	position: absolute;
+	max-width: 100%;
+	top: 88px;
+	z-index: 1001;
+}
