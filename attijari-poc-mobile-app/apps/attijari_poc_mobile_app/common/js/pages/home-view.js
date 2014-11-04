@@ -74,10 +74,9 @@ $( document ).ready(function() {
 });
 function tik() {
 	var j = Math.floor((Math.random() * 4) + 0);
-	console.log(globalarray.length-1);
+
 	for (var i=0;i<globalarray.length;i++){
 		if (j==i){
-			console.log(i);
 			 globalarray[i].$Play();
 		}
 		else {globalarray[i].$Pause();}
