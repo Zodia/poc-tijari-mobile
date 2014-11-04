@@ -20,31 +20,31 @@ var globalarray=[];
 $( document ).ready(function() {
 	var options = {
 			$AutoPlay: "false",
-			$AutoPlayInterval:4000,
+			$AutoPlayInterval:3000,
             $Loop: 0,            
             $DragOrientation: 1,                               
         };
 	var options1 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval:4000,
+			$AutoPlayInterval:3000,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options2 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 4000,
+			$AutoPlayInterval: 3000,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options3 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 4000,
+			$AutoPlayInterval: 3000,
 			$AutoPlay: true,
 			$DragOrientation: 3,                               
 	};
 	var options4 = {
 			$Transitions :{$Duration:1200,x:-0.3,y:0.3,$Delay:60,$Zoom:1,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2,$Round:{$Left:0.8,$Top:0.8}},
-			$AutoPlayInterval: 10000,
+			$AutoPlayInterval: 3000,
             $AutoPlay: true,
             $DragOrientation: 3,                               
         };
@@ -67,7 +67,7 @@ $( document ).ready(function() {
 		globalarray[2]=jssor_slider3 ;
 		globalarray[3]=jssor_slider4 ;
 		globalarray[4]=jssor_slider5 ;
-		   var timer=setInterval("tik()",5000);
+		setInterval("tik()",1000);
 
 		
 	
