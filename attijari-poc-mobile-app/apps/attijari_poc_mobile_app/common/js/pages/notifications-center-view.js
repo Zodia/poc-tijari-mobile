@@ -130,8 +130,6 @@ $(document).on ("pageshow", function () {
 			cls = cls.split ("-");
 			cls = parseInt (cls[1]);
 			
-			alert (cls);
-			
 			if (cls % 4 == 0) {
 				expertNotification.pic = "../images/mehdi.jpg";
 				expertNotification.title = "[Client : M. Bendriss Mehdi] : Eligibilité de crédit";
