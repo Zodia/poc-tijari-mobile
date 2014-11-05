@@ -1,0 +1,189 @@
+<div data-role="page" id="page">
+	<meta charset="utf-8">
+   	<link rel="stylesheet" href="../css/pages/ask-expert-view.css" />
+   	
+	<div data-role="header" id="header" data-position="fixed">
+	
+		<div class="right">
+			<a class="menu-display" href="#right-panel">
+				<img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
+			</a>
+			
+			<a href="notifications-center-view.html" class="top-notifications">
+				<img alt="top-notifications" src="../images/header/top_notification_button.png" />
+			</a>
+		</div>
+		<div class="left">
+			<a href="#" data-rel="back">
+				<img alt="back" src="../images/header/back_arrow.png" />
+				<span class="back">Retour</span>
+			</a>
+		</div>
+		<div class="center">
+			<p class="current-title">Chat avec Expert</p>
+		</div>
+		
+	</div>
+	
+	<div data-role="content" id="pageContent">
+		<div id="ask-expert-wrapper">
+			<div class="ask-expert-content">
+				
+				<div class="expert-data-header">
+					<div class="expert-image-out-border">
+   						<div class="expert-thumbnail"></div>
+   					</div>
+					<div class="coordinates-left">
+						<h2>Souhail Guennouni</h2>
+						<p class="job-title">Expert Crédits Immobiliers</p>
+						<p class="phone">+(212) 6 28 20 69 61</p>
+					</div>
+					<div class="coordinates-middle">
+						<p class="address">Immeuble F5, étage 3</p>
+						<p class="city">Rabat, Maroc</p>
+					</div>
+					<p class="coordinates-right">E-mail</p>
+				</div>
+				
+				<p class="chat-title">Chat en direct</p>
+				
+				<div class="video-core">
+					<video controls>
+					  <source src="../videos/video-chat.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="conversation-core">
+				
+					<div class="bg-left"></div>
+					
+					<div id="chat-results">
+						
+						<p class="expert">
+							<span class="left">Souhail Guennouni : </span>
+							<span class="right">Bonjour Ali, que puis-je pour toi ?</span>
+						</p>
+						
+						<p class="employee">
+							<span class="left">Ali Abbas : </span>
+							<span class="right">Bonjour Souhail, J'aurai 2 ou 3 questions à te poser concernant un nouveau client avec une situation assez particulière.</span>
+						</p>
+						
+						<p class="expert">
+							<span class="left">Souhail Guennouni : </span>
+							<span class="right">Je t'écoute, explique-moi.</span>
+						</p>
+						
+					</div>
+					
+				</div>
+				
+				<div class="bottom-actions">
+					
+					<div class="chat-text-content">
+						<div class="logo"></div>
+						<div class="text">
+							<input type="text" placeholder="Message" class="text-message" />
+						</div>
+						<p class="send">Envoyer</p>
+					</div>
+					
+					<div class="chat-actions ui-grid-a ui-responsive">
+						<div class="ui-block-a">
+							<a href="#" class="ui-btn ui-shadow">Chat Messages</a>
+						</div>
+						<div class="ui-block-b">
+							<a href="#" class="ui-btn ui-shadow">Chat Vidéo</a>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="footer" id="footer" data-position="fixed">			
+		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
+			<img alt="Home" src="../images/footer/home.png" />
+			<span class="label">Accueil</span>
+		</a>
+		<a href="notifications-center-view.html" id="notificationsAction" class="footer-action" data-role="none">
+			<img alt="Inbox" src="../images/footer/notifications.png" />
+			<span class="label">Inbox</span> 
+		</a>
+		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
+			<img alt="Settings" src="../images/footer/settings.png" />
+			<span class="label">Paramètres</span>
+		</a>
+		<a href="ask-expert-view.html" id="expertAction" class="footer-action right" data-role="none"> 
+			<img alt="Expert" src="../images/content/ask_expert.png" /> 
+			<span class="label">Chat Expert</span>
+		</a>
+		
+		<div id="center" class="with-logo"></div>
+	</div>
+	
+	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+		<div class="ui-panel-inner">
+			
+			<p class="employee-name">Bonjour, Ali</p>
+
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<img src="../images/content/home_filled.png" />
+					<a href="home-view.html" data-rel="close">Accueil</a>
+				</li>
+				<li>
+					<img src="../images/content/settings_filled.png" />
+					<a href="settings-view.html" data-rel="close">Paramètres</a>
+				</li>
+				<li>
+					<img src="../images/content/notifications_filled.png" />
+					<a href="notifications-center-view.html" data-rel="close">Notifications</a>
+				</li>
+				<li>
+					<img src="../images/content/recent_activity.png" />
+					<a href="#">Activity Récente</a>
+				</li>
+				<li>
+					<img src="../images/content/news.png" />
+					<a href="#">News, Evènements et Projets</a>
+				</li>
+				<li>
+					<img src="../images/content/mortgage.png" />
+					<a href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
+				</li>
+				<li>
+					<img src="../images/content/amount.png" />
+					<a href="#">Centre d'Investissement </a>
+				</li>
+				<li>
+					<img src="../images/content/auto_loan.png" />
+					<a href="#">Centre de Crédit Automobile</a>
+				</li>
+				<li>
+					<img src="../images/content/insurance_center.png" />
+					<a href="#" data-rel="close">Centre d'Assurance</a>
+				</li>
+				<li>
+					<img src="../images/content/help.png" />
+					<a class="current" href="help-center-view.html" data-rel="close">Aide</a>
+				</li>
+				
+				<li class="logout">
+					<a href="#" data-rel="close">Déconnexion</a>
+				</li>
+				<li class="employee-account-information">
+					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateur</a>
+				</li>
+				<li class="terms-of-service">
+					<a href="#">Conditions d'Utilisation</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script src="../js/pages/ask-expert-view.js"></script>
+	
+ </div>

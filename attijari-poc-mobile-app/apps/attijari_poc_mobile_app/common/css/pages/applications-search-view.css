@@ -10,7 +10,7 @@
 
 .search-area-bg {
 	position: relative;
-	background-color: #d1d2d4;;
+	background-color: #d1d2d4;
 	border-bottom: 1px solid #abacae;
 	padding: 10px;
 	height: 32px;
@@ -119,7 +119,7 @@
 }
 
 .application-image-cris {
-	background-image: url('../../images/cristian.jpg');
+	background-image: url('../../images/customer.png');
 }
 
 .coordinates-left {
