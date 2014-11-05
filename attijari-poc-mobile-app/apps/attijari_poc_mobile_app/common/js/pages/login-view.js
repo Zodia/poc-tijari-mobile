@@ -54,12 +54,11 @@ function displayRedPopup (dismissibleBool, translateBool) {
 	$("#confirmationLoginPopup").attr ("data-dismissible", dismissibleBool);
 	
 	if (language == 'french') {
-		$('#chargement-msg').html('تحميل ملفات اللغة ...</br></br>المرجو الانتظار');
-		$('#erreur-msg').html('Erreur d\'authentification');
-	}
-	else {
-		$('#chargement-msg').html('Chargement des fichiers de langue...</br></br>Merci de patienter.');
-		$('#erreur-msg').html('كلمة السر او الرمز غير صحيحة');
+		$('.loading-language').html('تحميل ملفات اللغة ...</br></br>المرجو الانتظار');
+		$('.authentication-error').html('Erreur d\'authentification');
+	} else {
+		$('.loading-language').html('Chargement des fichiers de langue...</br></br>Merci de patienter.');
+		$('.authentication-error').html('كلمة السر او الرمز غير صحيحة');
 	} 
 	
 	$("#confirmationLoginPopup").popup ({ tolerance: "0px, 12px, 32px, 12px" });
