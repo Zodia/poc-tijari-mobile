@@ -157,7 +157,6 @@ input.rightText {
 	background-position: center;
 	background-size: cover;
 	background-color: #FFF;
-	background-image: url('../../images/customer.png');
 	padding: 2px;
 	margin: auto;
 	margin-top: 10px;
@@ -663,17 +662,6 @@ input.rightText {
 	margin-left: auto;
 }
 
-.customer-image {
-	width: 75px;
-	height: 75px;
-	border-radius: 100px;
-	background-position: center;
-	background-size: cover;
-	background-color: #FFF;
-	padding: 2px;
-	margin: auto;
-	margin-top: 10px;
-}
 
 em {
 	color: red;

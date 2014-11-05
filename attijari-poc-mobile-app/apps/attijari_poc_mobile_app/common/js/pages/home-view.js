@@ -73,7 +73,7 @@ $( document ).ready(function() {
 	
 });
 function tik() {
-	var j = Math.floor((Math.random() * 4) + 0);
+	var j = Math.floor((Math.random() * 5) + 0);
 
 	for (var i=0;i<globalarray.length;i++){
 		if (j==i){
