@@ -1,13 +1,23 @@
-function loadProfileImage(index){
+$("#takePictureField").on("click", gotPic);
+
+function gotPic(event) {
+	if (event.target.files.length == 1
+			&& event.target.files[0].type.indexOf("image/") == 0) {
+		$("#customer-image").style.backgroundImage = "url('"
+				+ (URL.createObjectURL(event.target.files[0])) + "')";
+	}
+}
+
+function loadProfileImage(index) {
 	switch (index) {
 	case 0:
-		document.getElementById("customer-image").style.backgroundImage= "url('../images/ayoub.jpg')";
+		document.getElementById("customer-image").style.backgroundImage = "url('../images/ayoub.jpg')";
 		break;
 	case 1:
-		document.getElementById("customer-image").style.backgroundImage= "url('../images/mehdi.jpg')";
+		document.getElementById("customer-image").style.backgroundImage = "url('../images/mehdi.jpg')";
 		break;
 	case 2:
-		document.getElementById("customer-image").style.backgroundImage= "url('../images/souhail.jpg')";
+		document.getElementById("customer-image").style.backgroundImage = "url('../images/souhail.jpg')";
 		break;
 	default:
 		break;
@@ -33,7 +43,6 @@ $.fn.serializeObject = function() {
 };
 
 var prop_index = -1;
-
 
 function openFileOption(file) {
 	document.getElementById(file).click();
@@ -62,7 +71,6 @@ function resetForm() {
 
 resetForm();
 
-
 // /////////////////////
 
 function displayAsImage3(file, containerid) {
@@ -85,7 +93,6 @@ $("#chooseFile").click(function(e) {
 	e.preventDefault();
 	$("#imageInput").trigger("click");
 });
-
 
 $("#imageInput").change(function() {
 	var file = $("#imageInput")[0].files[0];
