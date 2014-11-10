@@ -342,12 +342,12 @@ h4, h3, h2, h1, strong {
 	right: 0;
 }
 
-#right-panel ul li.logout {
-	bottom: 107px;
+#right-panel ul li.terms-of-service {
+	bottom: 61px;
 }
 
 #right-panel ul li.employee-account-information {
-	bottom: 61px;
+	bottom: 107px;
 }
 
 #right-panel ul li.logout a, 
