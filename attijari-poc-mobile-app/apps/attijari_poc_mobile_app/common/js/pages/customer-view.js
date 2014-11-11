@@ -1,10 +1,57 @@
-$("#takePictureField").on("change", gotPic);
+$(document).on ("pageshow", function () {
+	
+	$("#takePictureField").on ("change", gotPic);
+	
+	loadProfileImage(customer.id);
+
+	$.fn.serializeObject = function() {
+		var o = {};
+		var a = this.serializeArray();
+		$.each(a, function() {
+			if (o[this.name] !== undefined) {
+				if (!o[this.name].push) {
+					o[this.name] = [ o[this.name] ];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
+			}
+		});
+		return o;
+	};
+	
+	populateCountries ('#countries');
+	resetForm ();
+	
+	$("#chooseFile").on ("click", function(e) {
+		e.preventDefault();
+		$("#imageInput").trigger("click");
+	});
+
+	$("#imageInput").on ("change", function() {
+		var file = $("#imageInput")[0].files[0];
+		$("#preview").empty();
+		displayAsImage3(file, "preview");
+
+		$info = $("#info");
+		$info.empty();
+		if (file && file.name) {
+			$info.append("<li>name:<span>" + file.name + "</span></li>");
+		}
+		if (file && file.type) {
+			$info.append("<li>type:<span>" + file.type + "</span></li>");
+		}
+		if (file && file.size) {
+			$info.append("<li>size:<span>" + file.size + " bytes</span></li>");
+		}
+		$info.listview("refresh");
+	});
+
+});
 
 function gotPic(event) {
-	if (event.target.files.length == 1
-			&& event.target.files[0].type.indexOf("image/") == 0) {
-		document.getElementById("customer-image").style.backgroundImage = "url('"
-				+ (URL.createObjectURL(event.target.files[0])) + "')";
+	if (event.target.files.length == 1 && event.target.files[0].type.indexOf("image/") == 0) {
+		document.getElementById("customer-image").style.backgroundImage = "url('" + (URL.createObjectURL(event.target.files[0])) + "')";
 	}
 }
 
@@ -23,24 +70,6 @@ function loadProfileImage(index) {
 		break;
 	}
 }
-
-loadProfileImage(customer.id);
-
-$.fn.serializeObject = function() {
-	var o = {};
-	var a = this.serializeArray();
-	$.each(a, function() {
-		if (o[this.name] !== undefined) {
-			if (!o[this.name].push) {
-				o[this.name] = [ o[this.name] ];
-			}
-			o[this.name].push(this.value || '');
-		} else {
-			o[this.name] = this.value || '';
-		}
-	});
-	return o;
-};
 
 var prop_index = -1;
 
@@ -69,16 +98,6 @@ function resetForm() {
 	});
 }
 
-$( document ).on( "pageinit", "#page", function( event ) {
-	
-	populateCountries('#countries');
-	resetForm();
-	});
-
-
-
-// /////////////////////
-
 function displayAsImage3(file, containerid) {
 	if (typeof FileReader !== "undefined") {
 
@@ -94,27 +113,3 @@ function displayAsImage3(file, containerid) {
 		reader.readAsDataURL(file);
 	}
 }
-
-$("#chooseFile").click(function(e) {
-	e.preventDefault();
-	$("#imageInput").trigger("click");
-});
-
-$("#imageInput").change(function() {
-	var file = $("#imageInput")[0].files[0];
-	$("#preview").empty();
-	displayAsImage3(file, "preview");
-
-	$info = $("#info");
-	$info.empty();
-	if (file && file.name) {
-		$info.append("<li>name:<span>" + file.name + "</span></li>");
-	}
-	if (file && file.type) {
-		$info.append("<li>type:<span>" + file.type + "</span></li>");
-	}
-	if (file && file.size) {
-		$info.append("<li>size:<span>" + file.size + " bytes</span></li>");
-	}
-	$info.listview("refresh");
-});
