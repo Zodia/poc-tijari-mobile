@@ -40,7 +40,7 @@
 					<p>
 						<span class="attribute-label">Durée du prêt</span>
 						<span class="attribute-value">
-							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1" onchange=loan()>
+							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
 								<option value="0">5ans</option>
 								<option value="1">10ans</option>
 								<option value="2">15ans</option>
@@ -66,7 +66,7 @@
 					<p>
 						<span class="attribute-label">Taux d'intérêt</span>
 						<span class="attribute-value">
-    						<select data-role="none" class="select-informations" name="usage" id="select-native-2" onchange=loan()>
+    						<select data-role="none" class="select-informations" name="usage" id="select-native-2">
 								<option value="0"> 1%</option>
 								<option value="1"> 2%</option>
 								<option value="2"> 3%</option>
@@ -95,7 +95,7 @@
 						<span class="attribute-label">Montant du prêt</span> 
 						<span class="attribute-value">
 
-					<input  data-wrapper-class="ui-custom" type = "number"  onkeyup=checkAndValidate(this) />
+					<input  data-wrapper-class="ui-custom" type = "number"  />
 
 						</span>
 					</p>
@@ -112,7 +112,7 @@
 					<p>
 						<span class="attribute-label">Taux d'assurance</span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "number"  onkeyup=checkAndValidate(this) />
+							<input  data-wrapper-class="ui-custom" type="number" />
 						</span>
 					</p>
 				</div>
@@ -129,7 +129,7 @@
 					<p>
 						<span class="attribute-label">Taux d'Impôt Foncier </span> 
 						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom"type = "number" onkeyup=checkAndValidate(this)  />
+							<input  data-wrapper-class="ui-custom" type="number" />
 						</span>
 					</p>
 				</div>
@@ -144,18 +144,18 @@
 	    <table style="width: 100%;">
 			<tr>
 				<td> <p><strong>Mensualités</strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom"type = "text" readonly="readonly" />
+					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
 				</td>
 				<td> <p><strong>Intérêts payés</strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
 				</td>
 			</tr>
 			<tr>
 				<td> <p><strong>Impôts payés </strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
 				</td>
 				<td> <p><strong>Assurance payés </strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type = "text" readonly="readonly" />
+					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
 				</td>
 			</tr>
 		</table>
