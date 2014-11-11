@@ -64,6 +64,9 @@ input.rightText {
 	border-radius: 0;
 }
 
+#mortgage-terms-form ul li.not-editable{
+	background-color: #F5F5F5;
+}
 .ui-listview li p {
 	font-size: .75em;
 	font-weight: normal;
@@ -93,7 +96,10 @@ input.rightText {
 	width: 90%;
 	height: 30px;
 }
-
+.mortgage-terms-list .ui-li-text-not-editable .attribute {
+	
+	background-color: red;
+}
 .mortgage-terms-list .attribute .attribute-label {
 	display: inline-block;
 	float: left;
