@@ -1,6 +1,6 @@
 var language = "french";
 
-$(document).on ("pageinit", function () {
+$(document).on ("pageshow", function () {
 	
 	$(".language-actions .ui-block-b a").on ("click", function () {
 		if (language == "arabic") {
@@ -116,6 +116,6 @@ function testData () {
 	} else {
 		connected = 1;
 //		loadPage ("home-view.html");
-		loadPage("customer-view.html");
+		loadPage("home-view.html");
 	}
 }
