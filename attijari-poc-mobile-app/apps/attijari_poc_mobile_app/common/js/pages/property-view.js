@@ -1,25 +1,27 @@
-
-function openFileOption()
-{
-  document.getElementById("file1").click();
-}
-
-
-$.fn.serializeObject = function() {
-	var o = {};
-	var a = this.serializeArray();
-	$.each(a, function() {
-		if (o[this.name] !== undefined) {
-			if (!o[this.name].push) {
-				o[this.name] = [ o[this.name] ];
+$(document).on ("pageshow", function () {
+	$.fn.serializeObject = function() {
+		var o = {};
+		var a = this.serializeArray();
+		$.each(a, function() {
+			if (o[this.name] !== undefined) {
+				if (!o[this.name].push) {
+					o[this.name] = [ o[this.name] ];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
 			}
-			o[this.name].push(this.value || '');
-		} else {
-			o[this.name] = this.value || '';
-		}
-	});
-	return o;
-};
+		});
+		return o;
+	};
+	
+	loadForm ();
+});
+
+
+function openFileOption() {
+	document.getElementById("file1").click();
+}
 
 function loadForm() {
 	var data;
@@ -39,7 +41,3 @@ function loadForm() {
 		}
 	});
 }
-
-loadForm();
-
-
