@@ -8,7 +8,7 @@ var zoom = 0;
 function wlCommonInit () {
 	// Common initialization code goes here
 	if (connected == 0) {
-		loadPage ("pages/applications-search-view.html");
+		loadPage ("pages/login-view.html");
 	} else {
 		loadPage ("pages/home-view.html");
 	}
