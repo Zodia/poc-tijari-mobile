@@ -34,8 +34,6 @@
 	border-radius: 100px;
 	background-position: center;
 	background-size: cover;
-	background-color: #000;
-	background-image: url("../../images/mehdi.jpg");
 }
 
 .header-message .title {
@@ -127,7 +125,6 @@ h3 {
 .attachements .attachements-content {
 	border: 1px solid #ef5a49;
 	border-radius: 0;
-	padding: 15px;
 	color: #ef5a49;
 	text-align: center;
 }
@@ -135,6 +132,24 @@ h3 {
 .attachements .attachements-content:hover,
 .attachements .attachements-content:active, 
 .attachements .attachements-content:focus {
+	color: #FFF;
+	background-color: #ef5a49;
+}
+
+.attachements .attachements-content a {
+	width: 80%;
+	text-decoration: none;
+	height: 100%;
+	color: #ef5a49;
+	display: inline-block;
+	padding: 10%;
+	text-align: center;
+	font-weight: normal;
+}
+
+.attachements .attachements-content a:hover,
+.attachements .attachements-content a:active, 
+.attachements .attachements-content a:focus {
 	color: #FFF;
 	background-color: #ef5a49;
 }
