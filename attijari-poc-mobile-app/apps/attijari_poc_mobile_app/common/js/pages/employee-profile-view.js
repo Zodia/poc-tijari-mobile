@@ -1,0 +1,5 @@
+$(document).on ("pageshow", function () {
+	
+	
+	
+});
