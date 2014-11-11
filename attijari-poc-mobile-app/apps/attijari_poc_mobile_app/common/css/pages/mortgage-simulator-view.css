@@ -185,7 +185,9 @@ input.centerText{
 	border-left: none;
 	border-radius: 0;
 }
-
+#mortgageSimulator ul li.not-editable{
+background-color: #F5F5F5	;
+}
 .property-details-list .attribute .attribute-value input{
 	text-align: right;
 }
