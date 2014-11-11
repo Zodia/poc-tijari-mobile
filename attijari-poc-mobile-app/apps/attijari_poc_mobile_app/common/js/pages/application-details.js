@@ -1,3 +1,23 @@
+$(document).on ("pageshow", function () {
+	loadProfileImage (customer.id);
+	
+	resetFormCustomer ();
+	
+	resetFormProperty ();
+	
+	$('#submit').on('click', function() {
+		confirmDialog("Envoyer la Demande?", function() {
+			loadPage("next-best-offer-view.html");
+		});
+	});
+
+	$(".image").on("click", function() {
+		sourcePage.title = "Mortgage Terms";
+		sourcePage.url = "mortgage-terms-view.html";
+		loadPage("ask-expert-view.html");
+	});
+});
+
 function loadProfileImage(index){
 	switch (index) {
 	case 0:
@@ -17,9 +37,6 @@ function loadProfileImage(index){
 	}
 }
 
-loadProfileImage(customer.id);
-
-
 function resetFormCustomer() {
 	$.each(customer, function(name, val) {
 		var $el = $('[name="' + name + '"]'), type = $el.attr('type');
@@ -36,8 +53,6 @@ function resetFormCustomer() {
 		}
 	});
 }
-
-resetFormCustomer();
 
 function resetFormProperty() {
 	$.each(property, function(name,
@@ -57,7 +72,6 @@ function resetFormProperty() {
 	});
 }
 
-resetFormProperty();
 function confirmDialog(text, callback) {
 	var popupDialogId = 'popupDialog';
 	$(
@@ -94,25 +108,12 @@ function confirmDialog(text, callback) {
 	});
 }
 
-$('#submit').on('click', function() {
-	confirmDialog("Envoyer la Demande?", function() {
-		loadPage("next-best-offer-view.html");
-	});
-});
-
-$(".image").on("click", function() {
-	sourcePage.title = "Mortgage Terms";
-	sourcePage.url = "mortgage-terms-view.html";
-	loadPage("ask_expert/expert-view.html");
-});
-
 /**
  * Function that computes the loan details
  */
 function loan() {
 
-	var cn = document.getElementById("pageContent").getElementsByTagName(
-			"input");
+	var cn = document.getElementById("pageContent").getElementsByTagName("input");
 
 	var select = document.getElementById("select-native-1");
 	var mValue = select.options[select.selectedIndex].value;
