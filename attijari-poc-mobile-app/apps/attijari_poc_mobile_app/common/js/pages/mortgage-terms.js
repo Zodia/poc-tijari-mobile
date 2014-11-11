@@ -1,3 +1,19 @@
+$(document).on ("pageshow", function() {
+	
+	$('#submit').on('click', function() {
+		confirmDialog("Envoyer la Demande?", function() {
+			loadPage("next-best-offer-view.html");
+		});
+	});
+
+	$(".image").on("click", function() {
+		sourcePage.title = "Mortgage Terms";
+		sourcePage.url = "mortgage-terms-view.html";
+		loadPage("ask-expert-view.html");
+	});
+	
+});
+
 function confirmDialog(text, callback) {
 	var popupDialogId = 'popupDialog';
 	$(
@@ -33,18 +49,6 @@ function confirmDialog(text, callback) {
 		popupDialogObj.attr('data-confirmed', 'yes');
 	});
 }
-
-$('#submit').on('click', function() {
-	confirmDialog("Envoyer la Demande?", function() {
-		loadPage("next-best-offer-view.html");
-	});
-});
-
-$(".image").on("click", function() {
-	sourcePage.title = "Mortgage Terms";
-	sourcePage.url = "mortgage-terms-view.html";
-	loadPage("ask-expert-view.html");
-});
 
 /**
  * Function that computes the loan details
