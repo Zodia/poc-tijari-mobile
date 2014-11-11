@@ -115,7 +115,6 @@ function testData () {
 		displayRedPopup (true, false);
 	} else {
 		connected = 1;
-//		loadPage ("home-view.html");
 		loadPage("home-view.html");
 	}
 }

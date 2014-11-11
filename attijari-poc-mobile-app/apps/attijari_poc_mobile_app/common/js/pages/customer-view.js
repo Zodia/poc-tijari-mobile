@@ -1,9 +1,9 @@
-$("#takePictureField").on("click", gotPic);
+$("#takePictureField").on("change", gotPic);
 
 function gotPic(event) {
 	if (event.target.files.length == 1
 			&& event.target.files[0].type.indexOf("image/") == 0) {
-		$("#customer-image").style.backgroundImage = "url('"
+		document.getElementById("customer-image").style.backgroundImage = "url('"
 				+ (URL.createObjectURL(event.target.files[0])) + "')";
 	}
 }
