@@ -1,22 +1,19 @@
-$(document).on ("pageshow", function() {
-	
-	$(".applications").on ("click", function() {
-		loadPage("applications-search-view.html");
-	});
+$(".applications").on ("click", function() {
+	loadPage("applications-search-view.html");
+});
 
-	$(".new-mortgage").on ('click', function() {
-		confirmDialog("Nouveau Client?", function() {
-			customer = {};
-			property = {};
-			loadPage("customer-view.html");
-		}, function() {
-			loadPage("customers-search-view.html");
-		});
+$(".new-mortgage").on ('click', function() {
+	confirmDialog("Nouveau Client?", function() {
+		customer = {};
+		property = {};
+		loadPage("customer-view.html");
+	}, function() {
+		loadPage("customers-search-view.html");
 	});
+});
 
-	$(".mortgage-simulator").on ("click", function() {
-		loadPage ("mortgage-simulator-view.html");
-	});
+$(".mortgage-simulator").on ("click", function() {
+	loadPage ("mortgage-simulator-view.html");
 });
 
 function confirmDialog(text, callback_New, callback_Existing) {

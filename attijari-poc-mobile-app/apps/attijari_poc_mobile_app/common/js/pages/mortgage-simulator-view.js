@@ -1,20 +1,17 @@
-$(document).on ("pageshow", function () {
-	
-	$("select.select-informations").on ("change", function () {
-		loan ();
-	});
-	
-	$("input.loan-amount-input").on ("keyup", function () {
-		checkAndValidate (this);
-	})
-	
-	/** 
-	 * Submit button Action.
-	 */
-	$("#submitButton").on ("click", function () {
-		sourcePage.title = "Mortgage Simulator"; 
-		sourcePage.url = "mortgage-simulator-view.html";
-	});
+$("select.select-informations").on ("change", function () {
+	loan ();
+});
+
+$("input.loan-amount-input").on ("keyup", function () {
+	checkAndValidate (this);
+})
+
+/** 
+ * Submit button Action.
+ */
+$("#submitButton").on ("click", function () {
+	sourcePage.title = "Mortgage Simulator"; 
+	sourcePage.url = "mortgage-simulator-view.html";
 });
 
 /**

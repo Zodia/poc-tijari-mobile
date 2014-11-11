@@ -1,6 +1,4 @@
-$(document).on ("pageshow", function() {
-	
-	$('#submit').on('click', function() {
+$('#submit').on('click', function() {
 		confirmDialog("Envoyer la Demande?", function() {
 			loadPage("next-best-offer-view.html");
 		});
@@ -11,8 +9,6 @@ $(document).on ("pageshow", function() {
 		sourcePage.url = "mortgage-terms-view.html";
 		loadPage("ask-expert-view.html");
 	});
-	
-});
 
 function confirmDialog(text, callback) {
 	var popupDialogId = 'popupDialog';

@@ -1,6 +1,4 @@
-$(document).on ("pageshow", function () {
-	
-	var listItemId = "listItemId-0";
+var listItemId = "listItemId-0";
 	var pic = "";
 	var title = "";
 	var extract = "";
@@ -131,4 +129,3 @@ $(document).on ("pageshow", function () {
 	$(".load-more").on ("click", function () {
 		fillList (10, true, true);
 	});
-});

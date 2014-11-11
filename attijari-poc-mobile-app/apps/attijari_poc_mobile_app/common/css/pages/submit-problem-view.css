@@ -1,5 +1,5 @@
 /*-- --*/
-#confirmationPopup-popup {
+#confirmationPopupQst-popup {
 	max-width: 100%;
 	top: 0px;
 	right: 12px;
@@ -10,7 +10,7 @@
 	background: rgba(0, 0, 0, 0.67);
 }
 
-#confirmationPopup {
+#confirmationPopupQst {
 	width: 550px;
 	max-width: 550px;
 	margin: 0 auto;
@@ -21,7 +21,7 @@
 	background: #ef5a49;
 }
 
-#confirmationPopup p {
+#confirmationPopupQst p {
 	text-align: center;
 	font-size: 20px;
 }

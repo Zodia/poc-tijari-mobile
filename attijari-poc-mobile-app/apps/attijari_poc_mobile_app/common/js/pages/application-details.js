@@ -1,21 +1,19 @@
-$(document).on ("pageshow", function () {
-	loadProfileImage (customer.id);
-	
-	resetFormCustomer ();
-	
-	resetFormProperty ();
-	
-	$('#submit').on('click', function() {
-		confirmDialog("Envoyer la Demande?", function() {
-			loadPage("next-best-offer-view.html");
-		});
-	});
+loadProfileImage (customer.id);
 
-	$(".image").on("click", function() {
-		sourcePage.title = "Mortgage Terms";
-		sourcePage.url = "mortgage-terms-view.html";
-		loadPage("ask-expert-view.html");
+resetFormCustomer ();
+
+resetFormProperty ();
+
+$('#submit').on('click', function() {
+	confirmDialog("Envoyer la Demande?", function() {
+		loadPage("next-best-offer-view.html");
 	});
+});
+
+$(".image").on("click", function() {
+	sourcePage.title = "Mortgage Terms";
+	sourcePage.url = "mortgage-terms-view.html";
+	loadPage("ask-expert-view.html");
 });
 
 function loadProfileImage(index){

@@ -1,6 +1,4 @@
-$(document).on ("pageshow", function () {
-	
-	$("#takePictureField").on ("change", gotPic);
+$("#takePictureField").on ("change", gotPic);
 	
 	loadProfileImage(customer.id);
 
@@ -46,8 +44,6 @@ $(document).on ("pageshow", function () {
 		}
 		$info.listview("refresh");
 	});
-
-});
 
 function gotPic(event) {
 	if (event.target.files.length == 1 && event.target.files[0].type.indexOf("image/") == 0) {

@@ -1,5 +1,4 @@
-$(document).on ("pageshow", function () {
-	$.fn.serializeObject = function() {
+$.fn.serializeObject = function() {
 		var o = {};
 		var a = this.serializeArray();
 		$.each(a, function() {
@@ -16,8 +15,6 @@ $(document).on ("pageshow", function () {
 	};
 	
 	loadForm ();
-});
-
 
 function openFileOption() {
 	document.getElementById("file1").click();

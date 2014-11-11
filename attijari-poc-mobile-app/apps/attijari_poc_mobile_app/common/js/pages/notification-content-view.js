@@ -1,6 +1,4 @@
-$(document).on ("pageshow", function () {
-	
-	$(".thumbnail-c").attr ("style", "background-image: url(" + expertNotification.pic + ");");
+$(".thumbnail-c").attr ("style", "background-image: url(" + expertNotification.pic + ");");
 	$(".title-c").html (expertNotification.title);
 	$(".status-c").html (expertNotification.status);
 	$(".date-c em").html ("Reçu le : " + expertNotification.date);
@@ -12,4 +10,3 @@ $(document).on ("pageshow", function () {
 	} else {
 		$(".resend-rejected").attr("disabled", "disabled");
 	}
-});

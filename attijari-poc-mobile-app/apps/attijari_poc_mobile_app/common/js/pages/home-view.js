@@ -1,18 +1,14 @@
 var globalarray = [];
 
-$(document).on ("pageshow", function() {
+$("#existingapp").on ("click", function () {
 	
-	$("#existingapp").on ("click", function () {
-		
-		loadPage ("apps-list.html");
-	});
-	
-	$(".mortgages").on ("click", function () {
-		$("#slideshow").remove ();
-		loadPage ("mortgage-center-view.html");	
-	});
-});	
+	loadPage ("apps-list.html");
+});
 
+$(".mortgages").on ("click", function () {
+	$("#slideshow").remove ();
+	loadPage ("mortgage-center-view.html");	
+});
 
 var options = {
 	$AutoPlay: "false",

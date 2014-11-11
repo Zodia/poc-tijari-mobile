@@ -1,6 +1,4 @@
-$(document).on ("pageshow", function () {
-	fillFaqs (30);
-});
+fillFaqs (30);
 
 function fillFaqs (count) {
 	
