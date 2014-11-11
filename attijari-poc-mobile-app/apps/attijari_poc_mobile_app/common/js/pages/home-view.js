@@ -3,16 +3,18 @@ var globalarray = [];
 $(document).on ("pageshow", function() {
 	
 	$("#existingapp").on ("click", function () {
+		
 		loadPage ("apps-list.html");
 	});
 	
 	$(".mortgages").on ("click", function () {
+		$("#slideshow").remove();
 		loadPage ("mortgage-center-view.html");	
 	});
-	
+});	
 	var options = {
 		$AutoPlay: "false",
-		$AutoPlayInterval:2000,
+		$AutoPlayInterval: 2000,
         $Loop: 0,            
         $DragOrientation: 1,                               
     };
@@ -132,16 +134,16 @@ $(document).on ("pageshow", function() {
 	globalarray[4] = jssor_slider5 ;
 	
 	setInterval ("tik()",3000);
-});
+
 
 function tik () {
-	var j = Math.floor ((Math.random () * 5) + 0);
+	var j = Math.floor ((Math.random () * 4) + 0);
 
 	for (var i = 0; i < globalarray.length; i++){
 		if (j == i){
-			globalarray [i].$Play ();
+			globalarray [i].$Play();
 		} else {
-			globalarray [i].$Pause ();
+			globalarray [i].$Pause();
 		}
 	}
 }

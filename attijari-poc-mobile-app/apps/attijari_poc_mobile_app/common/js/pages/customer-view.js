@@ -69,7 +69,13 @@ function resetForm() {
 	});
 }
 
-resetForm();
+$( document ).on( "pageinit", "#page", function( event ) {
+	
+	populateCountries('#countries');
+	resetForm();
+	});
+
+
 
 // /////////////////////
 
