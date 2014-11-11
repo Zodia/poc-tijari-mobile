@@ -30,31 +30,31 @@
 .paths tr td.path.advertisement {
 	width: 100%;
 	height: 434px;
-	/* 	background-image: url(../../images/content/advertisements_mortgage.png); */
+	 	background-image: url(../../images/content/advertisements_mortgage.jpg); 
 }
 
 .paths tr td.path.new-mortgage {
 	width: 50%;
 	border-right: 1px solid #FFF;
-	/* 	background-image: url(../../images/content/new_mortgage.png); */
+ 	background-image: url(../../images/content/new_mortgage.jpg); 
 }
 
 .paths tr td.path.refinancing {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	/* 	background-image: url(../../images/content/refinancing_mortgage.png); */
+ 	background-image: url(../../images/content/refinancing_mortgage.jpg); 
 }
 
 .paths tr td.path.applications {
 	width: 50%;
 	border-right: 1px solid #FFF;
-	/* 	background-image: url(../../images/content/view_application_mortgage.png); */
+	background-image: url(../../images/content/view_application_mortgage.jpg); 
 }
 
 .paths tr td.path.mortgage-simulator {
 	width: 50%;
 	border-left: 1px solid #FFF;
-	/* 	background-image: url(../../images/content/simulator_mortgage.png); */
+ 	background-image: url(../../images/content/simulator_mortgage.jpg); 
 }
 
 .paths tr.spacer {
