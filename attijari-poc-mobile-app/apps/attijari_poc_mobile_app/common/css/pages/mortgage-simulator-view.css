@@ -20,7 +20,6 @@
 	line-height: 40px;
 }
 
-
 .property-details-list .attribute .attribute-value {
 	display: inline-block;
 	float: right;
@@ -29,37 +28,36 @@
 	text-align: right;
 }
 
-.property-details-list{
-	box-shadow : none;
+.property-details-list {
+	box-shadow: none;
 }
 
 .ui-input-text.ui-custom {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: right;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
 }
 
-.select-informations{
+.select-informations {
 	border: none;
 	outline: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: center;
-    height: 40px;
-    font-size: 18px;
-    overflow: hidden;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: center;
+	height: 40px;
+	font-size: 18px;
+	overflow: hidden;
 	width: 105%;
 	float: right;
 	direction: rtl;
 }
 
-input.rightText{
+input.rightText {
 	text-align: right;
 }
-
 
 .property-details-list .thumb-info {
 	float: right;
@@ -69,72 +67,69 @@ input.rightText{
 	text-align: right;
 }
 
-.thumb-icon{
+.thumb-icon {
 	margin-top: 8px;
 	width: 20px;
 	height: 20px;
 }
 
-#property_form{
+#property_form {
 	background-color: white;
 }
 
-#property_form ul li{
+#property_form ul li {
 	border: none;
 }
 
 .ui-listview li p {
-font-size: .75em;
-font-weight: normal;
-display: block;
-margin: 0px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+	font-size: .75em;
+	font-weight: normal;
+	display: block;
+	margin: 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
-
-table, td, th {
-    border-color:#DF4B20;
-    background-color:white;
-    height:90px;
-    text-align: center;
-
-}
-
-input.centerText{
+table,td,th {
+	border-color: #DF4B20;
+	background-color: white;
+	height: 90px;
 	text-align: center;
-	border:none;
-	border:0;
+}
+
+input.centerText {
+	text-align: center;
+	border: none;
+	border: 0;
 	border-color: white;
-	margin:0; 
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 .ui-input-text.ui-custom {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px;
-    text-align: right;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin: 0px;
+	text-align: right;
 }
 
-#testimage img{
-	max-width:900px;
-    max-height:750px;
-    min-height:380px;
-
+#testimage img {
+	max-width: 900px;
+	max-height: 750px;
+	min-height: 380px;
 }
 
-#button-div{
+#button-div {
 	position: absolute;
 	width: 98%;
 	bottom: 10px;
 	left: 1%;
 	right: 1%;
-}	
-#button-div .ui-block-a,
-#button-div .ui-block-b {
+}
+
+#button-div .ui-block-a,#button-div .ui-block-b {
 	text-shadow: none;
 	margin: 0px;
 	height: 48px;
@@ -144,8 +139,7 @@ input.centerText{
 	border-radius: 0px 0px 5px 0px;
 }
 
-#button-div .ui-block-a a,
-#button-div .ui-block-b a {
+#button-div .ui-block-a a,#button-div .ui-block-b a {
 	box-shadow: none;
 	text-shadow: none;
 	color: #ef5a49;
@@ -167,27 +161,21 @@ input.centerText{
 	width: 100%;
 }
 
-#button-div .ui-block-a a:active,
-#button-div .ui-block-b a:active, 
-#button-div .ui-block-a a:focus,
-#button-div .ui-block-b a:focus,
-#button-div .ui-block-a a:hover,
-#button-div .ui-block-b a:hover {
+#button-div .ui-block-a a:active,#button-div .ui-block-b a:active,#button-div .ui-block-a a:focus,#button-div .ui-block-b a:focus,#button-div .ui-block-a a:hover,#button-div .ui-block-b a:hover
+	{
 	color: #FFF;
 	background-color: #ef5a49;
 	text-shadow: none;
 }
 
-#mortgageSimulator ul li{
+#mortgageSimulator ul li {
 	border-top: none;
 	border-right: none;
 	border-bottom: 1px solid #efefef;
 	border-left: none;
 	border-radius: 0;
 }
-#mortgageSimulator ul li.not-editable{
-background-color: #F5F5F5	;
-}
-.property-details-list .attribute .attribute-value input{
+
+.property-details-list .attribute .attribute-value input {
 	text-align: right;
 }
