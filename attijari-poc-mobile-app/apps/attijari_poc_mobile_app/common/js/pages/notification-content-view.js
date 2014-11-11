@@ -1,13 +1,9 @@
-$(".attachements-content").on ("click", function () {
-	loadPage ("document-preview-view.html");
-});
-
 $(document).on ("pageshow", function () {
 	
 	$(".thumbnail-c").attr ("style", "background-image: url(" + expertNotification.pic + ");");
 	$(".title-c").html (expertNotification.title);
 	$(".status-c").html (expertNotification.status);
-	$(".date-c em").append (expertNotification.date);
+	$(".date-c em").html ("Reçu le : " + expertNotification.date);
 	
 	$(".message-core-c").html (expertNotification.content);
 	
