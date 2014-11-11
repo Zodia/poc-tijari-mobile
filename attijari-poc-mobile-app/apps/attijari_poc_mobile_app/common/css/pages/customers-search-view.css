@@ -78,10 +78,28 @@
 	box-shadow: none;
 }
 
-.results-title {
+.results-title,
+.columns {
 	padding: 7px 10px;
 	margin: 0;
 	background: #f7b82e;
+}
+
+.columns {
+	background: #fafafa;
+	height: 30px;
+	line-height: 30px;
+}
+
+.columns span.name-address-col {
+	width: 38%;
+	padding-left: 12%;
+	display: inline-block;
+}
+
+.columns span.phone-col {
+	width: 22%;
+	display: inline-block;
 }
 
 .customer-image-out-border {
@@ -186,6 +204,17 @@ p.phone {
 	background-position: center;
 	background-size: 10px;
 	background-repeat: no-repeat;
+}
+
+.ui-listview > li p.history {
+	font-size: 15px;
+	height: 78px;
+	line-height: 78px;
+	left: 73%;
+	position: absolute;
+	margin: 0;
+	color: #818181;
+	margin: 0;
 }
 
 .behind {

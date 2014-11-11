@@ -94,6 +94,10 @@
 	text-align: center;
 }
 
+.coordinates-right input {
+	display: none;
+}
+
 .conversation-core {
 	overflow-y: scroll;
 }

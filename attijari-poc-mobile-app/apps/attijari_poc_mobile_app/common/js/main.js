@@ -8,7 +8,7 @@ var zoom = 0;
 function wlCommonInit () {
 	// Common initialization code goes here
 	if (connected == 0) {
-		loadPage ("pages/login-view.html");
+		loadPage ("pages/applications-search-view.html");
 	} else {
 		loadPage ("pages/home-view.html");
 	}
@@ -35,13 +35,13 @@ $(document).on ("pageshow", function () {
 		countZoom ++;
 		
 		if (countZoom % 3 == 0) {
-			zoom = -2;
+			zoom = 0;
 			changeSize ();
 		} else if (countZoom % 3 == 1) {
 			zoom = 1;
 			changeSize ();
 		} else if (countZoom % 3 == 2) {
-			zoom = 2;
+			zoom = 3;
 			changeSize ();
 		}
 		

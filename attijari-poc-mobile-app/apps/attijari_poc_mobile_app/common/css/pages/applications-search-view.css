@@ -78,10 +78,34 @@
 	box-shadow: none;
 }
 
-.results-title {
+.results-title,
+.columns {
 	padding: 7px 10px;
 	margin: 0;
 	background: #f7b82e;
+}
+
+.columns {
+	background: #fafafa;
+	height: 30px;
+	line-height: 30px;
+}
+
+.columns span.name-address-col {
+	width: 38%;
+	padding-left: 12%;
+	display: inline-block;
+}
+
+.columns span.phone-col {
+	width: 22%;
+	display: inline-block;
+}
+
+.columns span.date-col {
+	width: 26%;
+	display: inline-block;
+	text-align: center;
 }
 
 .application-image-out-border {
@@ -255,10 +279,10 @@ p.phone {
 
 .behind a.ui-btn.pull-left {
     float: left;
-}
+} 
 
 .behind a.edit-btn, .behind a.edit-btn:active, .behind a.edit-btn:visited, .behind a.edit-btn:focus, .behind a.edit-btn:hover {
     color: white;
     background-color: orange;
     text-shadow: none;
-}
+} 
