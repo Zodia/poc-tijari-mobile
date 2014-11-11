@@ -140,6 +140,7 @@
 	left: 0;
 	right: 0;
 	top: 100px;
+	z-index: 1;
 }
 
 .conversation-core #chat-results {
@@ -243,6 +244,7 @@
 	border-bottom: 1px solid #abacae;
 	padding: 10px;
 	height: 25px;
+	z-index: 1;
 }
 
 .bottom-actions .chat-text-content .logo {

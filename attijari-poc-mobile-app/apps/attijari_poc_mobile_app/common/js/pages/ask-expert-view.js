@@ -2,6 +2,8 @@ var count = 0;
 var answer = "";
 var chatType = "text";
 
+var videoPlayer = document.getElementById ('videoPlayer');
+
 $(document).on ("pageshow", function () {
 	
 	$(".bottom-actions .chat-text-content .send").on ("click", function () {
@@ -24,6 +26,8 @@ $(document).on ("pageshow", function () {
 			
 			chatType = "text";
 			
+			videoPlayer.pause ();
+			
 			$(".video-core").css ("display", "none");
 			$(".conversation-core").css ("top", "136px");
 		} 
@@ -39,6 +43,9 @@ $(document).on ("pageshow", function () {
 			 chatType = "video";
 			 
 			 $(".video-core").css ("display", "block");
+			 
+			 videoPlayer.play ();
+			 
 			 $(".conversation-core").css ("top", "" + (136 + $(".video-core video").height ()) + "px");
 		 }
 	});
