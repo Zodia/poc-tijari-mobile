@@ -16,7 +16,7 @@ $(document).on ("pageshow", function() {
 		$AutoPlay: "false",
 		$AutoPlayInterval: 2000,
         $Loop: 0,            
-        $DragOrientation: 1,                               
+        $DragOrientation: 1                           
     };
 	
 	var options1 = {
