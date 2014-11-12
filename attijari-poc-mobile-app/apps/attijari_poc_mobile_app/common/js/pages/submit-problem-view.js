@@ -1,5 +1,5 @@
 $(".send-problem-button").on ("click", function () {
-	confirmDialog("Votre problème a été soumis.", function() {
+	confirmDialog("Votre problÃ¨me a Ã©tÃ© soumis.", function() {
 		loadPage("home-view.html");
 	});
 });
