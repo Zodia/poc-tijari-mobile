@@ -2,12 +2,12 @@ var listItemId = "listItemId-0";
 	var pic = "";
 	var title = "";
 	var extract = "";
-	var content = "";
+	
 	
 	var currentAllNotifications = 0;
 
 	$("#unread-notifications").addClass ($.mobile.activeBtnClass);
-	fillList (4, false, false)
+	fillList (4, false, false);
 
 	$("#unread-notifications").on ("click", function () {
 		fillList (4, false, false);
@@ -20,6 +20,9 @@ var listItemId = "listItemId-0";
 	function fillList (count, append, all) {
 		
 		if (!$(this).hasClass ($.mobile.activeBtnClass)) {
+			
+			var content = "";
+			$(".notifications-list").html ("");
 			
 			for (i = 0; i < count; i ++) {
 				
