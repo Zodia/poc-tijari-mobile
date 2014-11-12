@@ -153,10 +153,10 @@
 	outline: none;
 }
 
-.submit-problem-form .send-problem-button {
-	width: 100%;
+.submit-problem-form a.send-problem-button {
 	height: 45px;
-	border-color: #ef5a49;
+	line-height: 45px;
+	border: 1px solid #ef5a49;
 	color: #ef5a49;
 	text-shadow: none;
 	border-radius: 0px 0px 15px 0px;
@@ -164,11 +164,64 @@
 	background-color: white;
 	font-weight: normal;
 	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	z-index: 100000;
 }
 
-.submit-problem-form .send-problem-button:active,
-.submit-problem-form .send-problem-button:focus {
+.submit-problem-form a.send-problem-button:hover,
+.submit-problem-form a.send-problem-button:active,
+.submit-problem-form a.send-problem-button:visited {
 	background-color: #ef5a49;
 	color: #FFF;
 	outline: none;
 }
+/* -------------------------------------- */
+#popupDialog-popup {
+	width: 45%;
+	top: 435px;
+	left: 27.5%;
+}
+
+#button-div .ui-block-a {
+	text-shadow: none;
+	margin: 0px;
+	height: 48px;
+	width: 99%;
+	margin-top: 20px;
+}
+
+#button-div .ui-block-a a {
+	box-shadow: none;
+	text-shadow: none;
+	color: #ef5a49;
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+	border: 1px solid #ef5a49;
+	background-color: #FFF;
+	font-weight: normal;
+	display: block;
+	border-radius: 0px 0px 5px 0px;
+	text-decoration: none;
+}
+
+#button-div .ui-block-a a {
+	border-radius: 0px 0px 5px 5px;
+	width: 100%;
+}
+
+#button-div .ui-block-a a:active,
+#button-div .ui-block-b a:active, 
+#button-div .ui-block-a a:focus,
+#button-div .ui-block-b a:focus,
+#button-div .ui-block-a a:hover,
+#button-div .ui-block-b a:hover {
+	color: #FFF;
+	background-color: #ef5a49;
+	text-shadow: none;
+}
+

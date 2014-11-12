@@ -1,3 +1,5 @@
+var problemSubmitted = false;
+
 var customers = [ {
 	"id" : 0,
 	"Title" : "Mr",

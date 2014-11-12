@@ -1,16 +1,20 @@
 <div data-role="page" id="page">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/pages/mortgage-simulator-view.css">
-<!-- 	Header -->
+	<!-- 	Header -->
 	<div data-role="header" id="header" data-position="fixed">
 
 		<div class="right">
-			<a class="menu-display" href="#right-panel"> <img alt="mmenu" src="../images/header/drawer_menu_header_button.png" />
-			</a> <a href="notifications-center-view.html" class="top-notifications"> <img alt="top-notifications" src="../images/header/top_notification_button.png" />
+			<a class="menu-display" href="#right-panel"> <img alt="mmenu"
+				src="../images/header/drawer_menu_header_button.png" />
+			</a> <a href="notifications-center-view.html" class="top-notifications" data-transition="slide"> 
+				<img alt="top-notifications"
+				src="../images/header/top_notification_button.png" />
 			</a>
 		</div>
 		<div class="left">
-			<a href="property-view.html" data-rel="back"> <img alt="back" src="../images/header/back_arrow.png" /> <span class="back">Retour</span>
+			<a href="#" data-rel="back"> <img alt="back"
+				src="../images/header/back_arrow.png" /> <span class="back">Retour</span>
 			</a>
 		</div>
 
@@ -21,233 +25,234 @@
 
 
 	</div>
-<!-- 	Content -->
+	<!-- 	Content -->
 	<div data-role="content" id="pageContent">
 		<div class="mortgage-view-content" data-type="vertical">
-		
-<!-- 			<img id="panel-expert" alt="" src="../images/content/ask_expert_pic.png"> -->
+
+			<!-- 			<img id="panel-expert" alt="" src="../images/content/ask_expert_pic.png"> -->
 			<div class="image">
 				<div class="bottom-title-effect"></div>
 				<img src="../images/pages/agadir.png" style="width: 100%;">
 			</div>
-		<div id="mortgageSimulator">
-			<ul data-role="listview" data-inset="true" class="property-details-list">
-			<li class="ui-field-contain">
-				<div class="thumb">
-					<img src="../images/content/terms.png" class="thumb-icon"></img>
-				</div>
-				<div class="ui-li-text attribute">
-					<p>
-						<span class="attribute-label">Durée du prêt</span>
-						<span class="attribute-value">
-							<select data-role="none" class="select-informations" name="isExisting" id="select-native-1">
-								<option value="0">5ans</option>
-								<option value="1">10ans</option>
-								<option value="2">15ans</option>
-								<option value="3">20ans</option>
-								<option value="4">25ans</option>
-								<option value="5">30ans</option>
-								<option value="6">35ans</option>
-								<option value="7">40ans</option>
-							</select>
-						</span>
-					</p>
-				</div>
-				<div class="ui-li-thumb thumb-info">
-					<img src="../images/content/info.png" class="thumb-icon"></img>
-				</div>
+			<div id="mortgageSimulator">
+				<ul data-role="listview" data-inset="true"
+					class="property-details-list">
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/terms.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Durée du prêt</span> <span
+									class="attribute-value"> <select data-role="none"
+									class="select-informations" name="isExisting"
+									id="select-native-1" onchange=loan()>
+										<option value="0">5ans</option>
+										<option value="1">10ans</option>
+										<option value="2">15ans</option>
+										<option value="3">20ans</option>
+										<option value="4">25ans</option>
+										<option value="5">30ans</option>
+										<option value="6">35ans</option>
+										<option value="7">40ans</option>
+								</select>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
 
-			</li>
-			<li class="ui-field-contain">
-				<div class="thumb">
-					<img src="../images/content/percent.png" class="thumb-icon"></img>
-				</div>
-				<div class="ui-li-text attribute">
-					<p>
-						<span class="attribute-label">Taux d'intérêt</span>
-						<span class="attribute-value">
-    						<select data-role="none" class="select-informations" name="usage" id="select-native-2">
-								<option value="0"> 1%</option>
-								<option value="1"> 2%</option>
-								<option value="2"> 3%</option>
-								<option value="3"> 4%</option>
-								<option value="4"> 5%</option>
-								<option value="5"> 6%</option>
-								<option value="6"> 7%</option>
-								<option value="7"> 8%</option>
-								<option value="8"> 9%</option>
-								<option value="9"> 10%</option>
-							</select>
-						</span>
-					</p>
-				</div>
-				<div class="ui-li-thumb thumb-info">
-					<img src="../images/content/info.png" class="thumb-icon"></img>
-				</div>
-			</li>
-					
-			<li class="ui-field-contain not-editable">
-				<div class="thumb">
-					<img src="../images/content/amount.png" class="thumb-icon"></img>
-				</div>
-				<div class="ui-li-text attribute">
-					<p>
-						<span class="attribute-label">Montant du prêt</span> 
-						<span class="attribute-value">
+					</li>
+					<li class="ui-field-contain">
+						<div class="thumb">
+							<img src="../images/content/percent.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Taux d'intérêt</span> <span
+									class="attribute-value"> <select data-role="none"
+									class="select-informations" name="usage" id="select-native-2" onchange=loan()>
+										<option value="0">1%</option>
+										<option value="1">2%</option>
+										<option value="2">3%</option>
+										<option value="3">4%</option>
+										<option value="4">5%</option>
+										<option value="5">6%</option>
+										<option value="6">7%</option>
+										<option value="7">8%</option>
+										<option value="8">9%</option>
+										<option value="9">10%</option>
+								</select>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
 
-					<input  data-wrapper-class="ui-custom" type = "number"  />
+					<li class="ui-field-contain not-editable">
+						<div class="thumb">
+							<img src="../images/content/amount.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Montant du prêt</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="number" onkeyup="loan()" />
 
-						</span>
-					</p>
-				</div>
-				<div class="ui-li-thumb thumb-info">
-					<img src="../images/content/info.png" class="thumb-icon"></img>
-				</div>
-			</li>
-			<li class="ui-field-contain not-editable">
-				<div class="ui-li-thumb thumb">
-					<img src="../images/content/estimate.png" class="thumb-icon"></img>
-				</div>
-				<div class="ui-li-text attribute">
-					<p>
-						<span class="attribute-label">Taux d'assurance</span> 
-						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom" type="number" />
-						</span>
-					</p>
-				</div>
-				<div class="ui-li-thumb thumb-info">
-					<img src="../images/content/info.png" class="thumb-icon"></img>
-				</div>
-			</li>
-		
-			<li class="ui-field-contain not-editable">
-				<div class="ui-li-thumb thumb">
-					<img src="../images/content/pmi.png" class="thumb-icon"></img>
-				</div>
-				<div class="ui-li-text attribute">
-					<p>
-						<span class="attribute-label">Taux d'Impôt Foncier </span> 
-						<span class="attribute-value">
-							<input  data-wrapper-class="ui-custom" type="number" />
-						</span>
-					</p>
-				</div>
-				<div class="ui-li-thumb thumb-info">
-					<img src="../images/content/info.png" class="thumb-icon"></img>
-				</div> 
-			</li>
-		</ul>
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+					<li class="ui-field-contain not-editable">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/estimate.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Taux d'assurance</span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="number" onkeyup="loan()" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
 
+					<li class="ui-field-contain not-editable">
+						<div class="ui-li-thumb thumb">
+							<img src="../images/content/pmi.png" class="thumb-icon"></img>
+						</div>
+						<div class="ui-li-text attribute">
+							<p>
+								<span class="attribute-label">Taux d'Impôt Foncier </span> <span
+									class="attribute-value"> <input
+									data-wrapper-class="ui-custom" type="number" onkeyup="loan()" />
+								</span>
+							</p>
+						</div>
+						<div class="ui-li-thumb thumb-info">
+							<img src="../images/content/info.png" class="thumb-icon"></img>
+						</div>
+					</li>
+				</ul>
 
 
-	    <table style="width: 100%;">
-			<tr>
-				<td> <p><strong>Mensualités</strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
-				</td>
-				<td> <p><strong>Intérêts payés</strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
-				</td>
-			</tr>
-			<tr>
-				<td> <p><strong>Impôts payés </strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
-				</td>
-				<td> <p><strong>Assurance payés </strong></p>
-					<input class="centerText" data-wrapper-class="ui-custom" type="text" readonly="readonly" />
-				</td>
-			</tr>
-		</table>
 
-		<div class="ui-grid-a ui-responsive" id="button-div">
-    		<div class="ui-block-a"><a href="mortgage-center-view.html" class="ui-btn ui-shadow">Centre de Crédit</a></div>
-    		<div class="ui-block-b"><a id="submitButton" href="ask-expert-view.html" class="ui-btn ui-shadow">Chat avec Expert</a></div>
-    	</div>
+				<table style="width: 100%;">
+					<tr>
+						<td>
+							<p>
+								<strong>Mensualités</strong>
+							</p> <input class="centerText" data-wrapper-class="ui-custom"
+							type="text" readonly="readonly" />
+						</td>
+						<td>
+							<p>
+								<strong>Intérêts payés</strong>
+							</p> <input class="centerText" data-wrapper-class="ui-custom"
+							type="text" readonly="readonly" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								<strong>Impôts payés </strong>
+							</p> <input class="centerText" data-wrapper-class="ui-custom"
+							type="text" readonly="readonly" />
+						</td>
+						<td>
+							<p>
+								<strong>Assurance payés </strong>
+							</p> <input class="centerText" data-wrapper-class="ui-custom"
+							type="text" readonly="readonly" />
+						</td>
+					</tr>
+				</table>
+
+				<div class="ui-grid-a ui-responsive" id="button-div">
+					<div class="ui-block-a">
+						<a href="mortgage-center-view.html" class="ui-btn ui-shadow">Centre
+							de Crédit</a>
+					</div>
+					<div class="ui-block-b">
+						<a id="submitButton" href="ask-expert-view.html"
+							class="ui-btn ui-shadow">Chat avec Expert</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-	</div>
-	
+
 	<div data-role="footer" id="footer" data-position="fixed">
-		<a href="home-view.html" id="homeAction" class="footer-action" data-role="none">
+		<a href="home-view.html" id="homeAction" class="footer-action" data-transition="slide" data-role="none">
 			<img alt="Home" src="../images/footer/home.png" />
 			<span class="label">Accueil</span>
 		</a>
-		<a href="ask-expert-view.html" id="expertAction" class="footer-action" data-role="none">
+		<a href="ask-expert-view.html" id="expertAction" class="footer-action" data-transition="slide" data-role="none">
 			<img alt="Expert" src="../images/content/ask_expert.png" /> 
 			<span class="label">Chat Expert</span>
 		</a>
-		<a href="#" id="changeSizeAction" class="footer-action right" data-role="none"> 
+		<a href="#" id="changeSizeAction" class="footer-action right" data-transition="slide" data-role="none"> 
 			<img alt="Size" src="../images/footer/text-size.png" /> 
 			<span class="label">Taille Police</span>
 		</a>
-		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-role="none">
+		<a href="settings-view.html" id="settingsAction" class="footer-action right" data-transition="slide" data-role="none">
 			<img alt="Settings" src="../images/footer/settings.png" />
 			<span class="label">Paramètres</span>
 		</a>
 
 		<div id="center" class="with-logo"></div>
 	</div>
-	
-	<div data-role="panel" id="right-panel" data-display="push" data-position="right" class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
+
+	<div data-role="panel" id="right-panel" data-display="push"
+		data-position="right"
+		class="ui-panel ui-panel-position-right ui-panel-display-push ui-panel-closed ui-body-b ui-panel-animate">
 		<div class="ui-panel-inner">
-			
+
 			<p class="employee-name">Bonjour, Ali</p>
 
 			<ul data-role="listview" data-inset="true">
-				<li>
-					<img src="../images/content/home_filled.png" />
-					<a href="home-view.html" data-rel="close">Accueil</a>
+				<li><img src="../images/content/home_filled.png" /> <a
+					href="home-view.html" data-rel="close">Accueil</a></li>
+				<li><img src="../images/content/settings_filled.png" /> <a
+					href="settings-view.html" data-rel="close">Paramètres</a></li>
+				<li><img src="../images/content/notifications_filled.png" /> <a
+					href="notifications-center-view.html" data-rel="close">Notifications</a>
 				</li>
-				<li>
-					<img src="../images/content/settings_filled.png" />
-					<a href="settings-view.html" data-rel="close">Paramètres</a>
+				<li><img src="../images/content/recent_activity.png" /> <a
+					href="#">Activity Récente</a></li>
+				<li><img src="../images/content/news.png" /> <a href="#">News,
+						Evènements et Projets</a></li>
+				<li><img src="../images/content/mortgage.png" /> <a
+					class="current" href="mortgage-center-view.html" data-rel="close">Centre
+						de Crédit Immobilier</a></li>
+				<li><img src="../images/content/amount.png" /> <a href="#">Centre
+						d'Investissement </a></li>
+				<li><img src="../images/content/auto_loan.png" /> <a href="#">Centre
+						de Crédit Automobile</a></li>
+				<li><img src="../images/content/insurance_center.png" /> <a
+					href="#" data-rel="close">Centre d'Assurance</a></li>
+				<li><img src="../images/content/help.png" /> <a
+					href="help-center-view.html" data-rel="close">Aide</a></li>
+
+				<li class="logout"><a href="#" data-rel="close">Déconnexion</a>
 				</li>
-				<li>
-					<img src="../images/content/notifications_filled.png" />
-					<a href="notifications-center-view.html" data-rel="close">Notifications</a>
-				</li>
-				<li>
-					<img src="../images/content/recent_activity.png" />
-					<a href="#">Activity Récente</a>
-				</li>
-				<li>
-					<img src="../images/content/news.png" />
-					<a href="#">News, Evènements et Projets</a>
-				</li>
-				<li>
-					<img src="../images/content/mortgage.png" />
-					<a class="current" href="mortgage-center-view.html" data-rel="close">Centre de Crédit Immobilier</a>
-				</li>
-				<li>
-					<img src="../images/content/amount.png" />
-					<a href="#">Centre d'Investissement </a>
-				</li>
-				<li>
-					<img src="../images/content/auto_loan.png" />
-					<a href="#">Centre de Crédit Automobile</a>
-				</li>
-				<li>
-					<img src="../images/content/insurance_center.png" />
-					<a href="#" data-rel="close">Centre d'Assurance</a>
-				</li>
-				<li>
-					<img src="../images/content/help.png" />
-					<a href="help-center-view.html" data-rel="close">Aide</a>
-				</li>
-				
-				<li class="logout">
-					<a href="#" data-rel="close">Déconnexion</a>
-				</li>
-				<li class="employee-account-information">
-					<a href="employee-profile-view.html" data-rel="close">Compte d'Utilisateur</a>
-				</li>
-				<li class="terms-of-service">
-					<a href="#">Conditions d'Utilisation</a>
-				</li>
+				<li class="employee-account-information"><a
+					href="employee-profile-view.html" data-rel="close">Compte
+						d'Utilisateur</a></li>
+				<li class="terms-of-service"><a href="#">Conditions
+						d'Utilisation</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<script src="../js/pages/mortgage-simulator-view.js"></script>
- </div>
+</div>

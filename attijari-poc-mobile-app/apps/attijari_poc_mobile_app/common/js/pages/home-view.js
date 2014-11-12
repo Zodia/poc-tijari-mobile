@@ -1,5 +1,15 @@
 var globalarray = [];
 
+if (!problemSubmitted) {
+	$("#confirmationPopupQst").popup ({tolerance : "0px, 12px, 32px, 12px"});
+	$("#confirmationPopupQst").popup ("open");
+
+	/*setTimeout(function() {
+		$("#confirmationPopupQst").popup("close");
+		problemSubmitted = false;
+	}, 4000);*/
+}
+
 $("#existingapp").on ("click", function () {
 	
 	loadPage ("apps-list.html");
